@@ -1,13 +1,9 @@
 <?php
 /**
  * Functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package WordPress
- * @subpackage soyes_One
- * @since Twenty Twenty-One 1.0
  */
+
+require "inc/template-functions.php";
 
 
 if ( ! function_exists( 'soyes_one_setup' ) ) {
@@ -17,9 +13,6 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 	 * Note that this function is hooked into the after_setup_theme hook, which
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
-	 *
-	 * @return void
-	 * @since Twenty Twenty-One 1.0
 	 *
 	 */
 	function soyes_one_setup() {
@@ -54,10 +47,12 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 				'quote',
 				'status',
 				'video',
-				'audio',
-				'chat',
 			)
 		);
+
+		if ( ! isset( $content_width ) ) {
+			$content_width = 600;
+		}
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
@@ -99,8 +94,7 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 		$logo_width  = 300;
 		$logo_height = 100;
 
-		add_theme_support(
-			'custom-logo',
+		add_theme_support( 'custom-logo',
 			array(
 				'height'               => $logo_height,
 				'width'                => $logo_width,
@@ -118,19 +112,6 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 
 		// Add support for full and wide align images.
 		add_theme_support( 'align-wide' );
-
-		// Add support for responsive embedded content.
-		add_theme_support( 'responsive-embeds' );
-
-		// Add support for custom line height controls.
-		add_theme_support( 'custom-line-height' );
-
-		// Add support for experimental cover block spacing.
-		add_theme_support( 'custom-spacing' );
-
-		// Add support for custom units.
-		// This was removed in WordPress 5.6 but is still required to properly support WP 5.5.
-		add_theme_support( 'custom-units' );
 	}
 }
 add_action( 'after_setup_theme', 'soyes_one_setup' );
@@ -156,4 +137,5 @@ function soyes_scripts() {
 		);
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'soyes_scripts' );

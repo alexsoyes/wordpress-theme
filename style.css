@@ -1,24 +1,47 @@
 /*
 Theme Name: soyes
-Author: Alex so yes
 Description: A very simple blog for eco friendly bloggers!
 Version: 0.0.1
+Author: Alex so yes
+Theme URI: #
+Author URI: https://alexsoyes.com
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: one-column, two-columns, right-sidebar, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, blog, theme-options
 Text Domain: soyes
 Domain Path: /languages
+Tested up to: 5.0
+Requires PHP: 7.1
 */
 
 /**
  * Variables.
  */
 :root {
-    --container-padding: 20px;
+    /* Container */
+    --container-padding: 40px;
     --container-width: calc(100% - var(--container-padding) * 2);
 
     /* Colors */
-    --global--color-white: #fff;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #ddd;
+
+    /* Breakpoints */
+    --breakpoint-small: 0;
+    --breakpoint-medium: 768px;
+    --breakpoint-large: 992px;
+
+    /* Fonts */
+    --font-size-menu: 13px;
+    --font-size-category: 9px;
+}
+
+/**
+ * Global.
+ */
+a {
+    text-decoration: none;
 }
 
 /**
@@ -31,8 +54,14 @@ Domain Path: /languages
 
 #header nav li {
     display: inline;
+    margin: 0px 4px;
 }
 
+#header nav li a {
+    color: var(--color-black);
+    font-size: var(--font-size-menu);
+
+}
 
 /**
  * Container.
@@ -45,8 +74,8 @@ Domain Path: /languages
     padding-right: calc(50% - var(--container-width) / 2);
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 992px) {
     :root {
-        --container-width: 1000px;
+        --container-width: 680px;
     }
 }

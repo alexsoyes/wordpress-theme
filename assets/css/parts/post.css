@@ -1,15 +1,13 @@
 .post-header {
-    width: 60%;
-    border-radius: 30px;
-    padding: 120px;
-    margin: 50px auto;
+    padding: 120px 0px;
+    margin-bottom: 40px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.1);
     background-size: cover;
-    color: var(--global--color-white);
+    color: var(--color-white);
 }
 
 .entry-title {
@@ -17,5 +15,17 @@
 }
 
 .entry-excerpt {
-    width: 70%;
+    width: 80%;
+}
+
+.entry-excerpt p {
+    margin-bottom: 0px;
+}
+
+.entry-category span {
+    font-size: var(--font-size-category);
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: var(--color-black);
+    background-color: var(--color-gray);
 }
