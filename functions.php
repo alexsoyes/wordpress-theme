@@ -134,3 +134,26 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 	}
 }
 add_action( 'after_setup_theme', 'soyes_one_setup' );
+
+function soyes_scripts() {
+
+	wp_enqueue_style( 'soyes-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'soyes-style-normalize', get_template_directory_uri() . '/assets/css/normalize.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'soyes-style-wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', array(), wp_get_theme()->get( 'Version' ) );
+
+	if ( is_single() ) {
+		wp_enqueue_style( 'soyes-style-single', get_template_directory_uri() . '/assets/css/parts/post.css', array(), wp_get_theme()->get( 'Version' ) );
+	}
+
+	// Main navigation scripts.
+	if ( has_nav_menu( 'primary' ) ) {
+		wp_enqueue_script(
+			'soyes-primary-navigation-script',
+			get_template_directory_uri() . '/assets/js/primary-navigation.js',
+			array( 'soyes-ie11-polyfills' ),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+	}
+}
+add_action( 'wp_enqueue_scripts', 'soyes_scripts' );

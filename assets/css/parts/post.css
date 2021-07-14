@@ -1,0 +1,21 @@
+.post-header {
+    width: 60%;
+    border-radius: 30px;
+    padding: 120px;
+    margin: 50px auto;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    color: var(--global--color-white);
+}
+
+.entry-title {
+    width: 90%;
+}
+
+.entry-excerpt {
+    width: 70%;
+}

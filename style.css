@@ -9,3 +9,44 @@ Tags: one-column, two-columns, right-sidebar, editor-style, featured-images, mic
 Text Domain: soyes
 Domain Path: /languages
 */
+
+/**
+ * Variables.
+ */
+:root {
+    --container-padding: 20px;
+    --container-width: calc(100% - var(--container-padding) * 2);
+
+    /* Colors */
+    --global--color-white: #fff;
+}
+
+/**
+ * Header.
+ */
+
+#header nav {
+    text-align: right;
+}
+
+#header nav li {
+    display: inline;
+}
+
+
+/**
+ * Container.
+ */
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: calc(50% - var(--container-width) / 2);
+    padding-right: calc(50% - var(--container-width) / 2);
+}
+
+@media only screen and (min-width: 1040px) {
+    :root {
+        --container-width: 1000px;
+    }
+}
