@@ -108,7 +108,7 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		// Add support for Block Styles.
-		add_theme_support( 'wp-block-styles' );
+//		add_theme_support( 'wp-block-styles' );
 
 		// Add support for full and wide align images.
 		add_theme_support( 'align-wide' );
@@ -124,17 +124,6 @@ function soyes_scripts() {
 
 	if ( is_single() ) {
 		wp_enqueue_style( 'soyes-style-single', get_template_directory_uri() . '/assets/css/parts/post.css', array(), wp_get_theme()->get( 'Version' ) );
-	}
-
-	// Main navigation scripts.
-	if ( has_nav_menu( 'primary' ) ) {
-		wp_enqueue_script(
-			'soyes-primary-navigation-script',
-			get_template_directory_uri() . '/assets/js/primary-navigation.js',
-			array( 'soyes-ie11-polyfills' ),
-			wp_get_theme()->get( 'Version' ),
-			true
-		);
 	}
 }
 

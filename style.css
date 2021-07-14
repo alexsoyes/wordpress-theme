@@ -25,7 +25,12 @@ Requires PHP: 7.1
     /* Colors */
     --color-white: #fff;
     --color-black: #000;
+    --color-lightgray: #f7f7f7;
     --color-gray: #ddd;
+    --color-grayer: #9e9e9e;
+    --color-italic: rgb(224, 244, 255);
+    --color-paragraph-link: #1B94C3;
+    --color-box-shadow: rgba(0, 0, 0, 0.1);
 
     /* Breakpoints */
     --breakpoint-small: 0;
@@ -34,7 +39,22 @@ Requires PHP: 7.1
 
     /* Fonts */
     --font-size-menu: 13px;
-    --font-size-category: 9px;
+    --font-size-category: 10px;
+    --font-size-excerpt: 18px;
+    --font-size-paragraph: 18px;
+    --font-size-h1: 40px;
+    --font-size-h2: 32px;
+    --font-size-h3: 26px;
+    --font-size-h4: 22px;
+    --font-size-h5: 20px;
+    --font-size-h6: 18px;
+    --font-weight-bolder: 800;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /**
@@ -52,12 +72,16 @@ a {
     text-align: right;
 }
 
+#header nav ul {
+    margin: 20px 0px;
+}
+
 #header nav li {
     display: inline;
     margin: 0px 4px;
 }
 
-#header nav li a {
+#header nav a {
     color: var(--color-black);
     font-size: var(--font-size-menu);
 
