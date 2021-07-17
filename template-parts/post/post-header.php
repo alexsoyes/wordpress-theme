@@ -1,5 +1,5 @@
 <div class="post-header" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
-    <div class="container">
+    <div class="entry-content">
 		<?php $category = soyes_get_the_main_category(); ?>
 		<?php if ( $category ): ?>
             <div class="entry-category">

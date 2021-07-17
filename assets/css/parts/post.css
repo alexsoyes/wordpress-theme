@@ -31,18 +31,6 @@
     background-color: var(--color-gray);
 }
 
-ul,
-p {
-    line-height: 32px;
-    font-size: var(--font-size-paragraph);
-    margin-bottom: 10px;
-    letter-spacing: -0.063px;
-}
-
-ul {
-    list-style-type: none;
-}
-
 figure.wp-block-image {
     display: block;
     text-align: center;
@@ -64,17 +52,39 @@ figcaption::after {
     content: "";
     width: 50px;
     height: 2px;
-    background-color: var(--color-paragraph-link);
-    bottom: -10px;
+    background-color: var(--color-gray);
+    bottom: -20px;
     left: calc(50% - 50px / 2);
     right: calc(50% - 50px / 2);
 }
 
-.entry-content li {
-    font-size: calc(var(--font-size-paragraph) - 1px);
+/**
+ * Lists.
+ */
+ul,
+p {
+    line-height: 32px;
+    font-size: var(--font-size-paragraph);
+    margin-bottom: 10px;
+    letter-spacing: -0.063px;
 }
 
-.entry-content li::before {
+ul {
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 991px) {
+    ul {
+        padding-left: 0px;
+    }
+}
+
+.entry-content li {
+    font-size: var(--font-size-list);
+    margin: 4px 0px;
+}
+
+.entry-content ul li::before {
     content: '\</>';
     display: inline-block;
     font-size: calc(var(--font-size-paragraph) - 4px);
@@ -104,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    margin-top: 0;
+    padding-top: 0;
     font-size: var(--font-size-h1);
 }
 
@@ -131,8 +141,8 @@ h6 {
 pre:not(.wp-block-code) {
     font-size: 24px;
     line-height: 36px;
-    margin: 2em .5em;
-    padding-bottom: 1em;
+    margin: 60px 0px;
+    padding-bottom: 30px;
     position: relative;
     white-space: normal;
     color: var(--color-grayer);
@@ -144,9 +154,9 @@ pre:not(.wp-block-code)::after {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: var(--color-grayer);
+    background-color: var(--color-black);
     left: 0;
-    bottom: 0;
+    bottom: -10px;
 }
 
 .wp-block-code {
@@ -154,6 +164,11 @@ pre:not(.wp-block-code)::after {
     margin: 30px 0px;
     box-shadow: 0 1px 6px 0 var(--color-box-shadow);
     overflow-x: auto;
+    font-size: var(--font-size-code);
+}
+
+code {
+    word-break: break-word;
 }
 
 blockquote {
@@ -181,4 +196,66 @@ blockquote cite::after {
     background-color: var(--color-grayer);
     left: 0;
     bottom: -10px;
+}
+
+
+/**
+  * Table of contents.
+ */
+
+/** Link in headers **/
+.entry-content h2 {
+    position: relative;
+}
+
+.entry-content h2 a {
+    position: absolute;
+    left: -50px;
+    bottom: -5px;
+    border: none;
+    color: var(--color-grayer);
+    transition: 0.5s all;
+}
+
+.entry-content h2 a:hover {
+    color: var(--color-black);
+}
+
+.entry-content .ionicon-link {
+    width: 32px;
+}
+
+
+/** Summary **/
+.entry-content .toc {
+    background-color: var(--color-lightgray);
+    margin: 50px 0px;
+}
+
+.entry-content .toc ol {
+    padding-left: 15px;
+    counter-reset: item;
+}
+
+.entry-content .toc ol li {
+    margin: 15px 0px;
+    display: block;
+    white-space: nowrap;
+}
+
+.entry-content .toc ol li a {
+    border-bottom: 1px solid var(--color-black);
+    color: var(--color-black);
+}
+
+.entry-content .toc ol li a:hover {
+    border-bottom: 1px solid var(--color-paragraph-link);
+    color: var(--color-paragraph-link);
+}
+
+.entry-content .toc ol li::before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+    color: var(--color-black);
+    margin-right: .5rem;
 }

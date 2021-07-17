@@ -14,13 +14,17 @@ Tested up to: 5.0
 Requires PHP: 7.1
 */
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 /**
  * Variables.
  */
 :root {
     /* Container */
-    --container-padding: 40px;
-    --container-width: calc(100% - var(--container-padding) * 2);
+    --container-padding: 20px;
+    --container-width: calc(100% - (var(--container-padding) * 2));
 
     /* Colors */
     --color-white: #fff;
@@ -41,7 +45,9 @@ Requires PHP: 7.1
     --font-size-menu: 13px;
     --font-size-category: 10px;
     --font-size-excerpt: 18px;
+    --font-size-code: 15px;
     --font-size-paragraph: 18px;
+    --font-size-list: 16px;
     --font-size-caption: 13px;
     --font-size-h1: 40px;
     --font-size-h2: 32px;
@@ -54,13 +60,19 @@ Requires PHP: 7.1
     --font-weight-normal: 400;
 }
 
-html {
-    font-family: 'Open Sans', sans-serif;
+@media only screen and (min-width: 992px) {
+    :root {
+        --container-width: calc(680px - (var(--container-padding) * 2));
+    }
 }
 
 /**
  * Global.
  */
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -91,16 +103,20 @@ a {
 /**
  * Container.
  */
-
-.container {
-    box-sizing: border-box;
-    width: 100%;
-    padding-left: calc(50% - var(--container-width) / 2);
-    padding-right: calc(50% - var(--container-width) / 2);
+.alignfull > *,
+.post-thumbnail,
+.entry-content .wp-audio-shortcode,
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce),
+*[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce),
+.default-max-width {
+    max-width: var(--container-width);
+    width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media only screen and (min-width: 992px) {
-    :root {
-        --container-width: 680px;
-    }
+.alignwide,
+.wide-max-width {
+    max-width: 100%;
+    width: 100%;
 }
