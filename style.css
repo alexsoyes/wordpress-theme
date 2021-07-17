@@ -42,9 +42,10 @@ Requires PHP: 7.1
     --font-size-category: 10px;
     --font-size-excerpt: 18px;
     --font-size-paragraph: 18px;
+    --font-size-caption: 13px;
     --font-size-h1: 40px;
     --font-size-h2: 32px;
-    --font-size-h3: 26px;
+    --font-size-h3: 24px;
     --font-size-h4: 22px;
     --font-size-h5: 20px;
     --font-size-h6: 18px;
