@@ -97,7 +97,7 @@ class SoYes_Table_Of_Contents {
 		for ( $i = 0; $i < count( $posts ); $i ++ ) {
 			$post               = &$posts[ $i ];
 			$this->postid       = $post->ID;
-			$post->post_content = $this->the_content( $post->post_content );
+			$post->post_content = $this->the_content( $post->post_content, 2 );
 			$post->post_toc     = $this->get_toc();
 		}
 
@@ -222,3 +222,5 @@ class SoYes_Table_Of_Contents {
 		return $html;
 	}
 }
+
+add_filter( 'the_posts', array( new SoYes_Table_Of_Contents(), 'the_posts' ) );
