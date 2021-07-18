@@ -26,14 +26,21 @@ Requires PHP: 7.1
     --container-padding: 20px;
     --container-width: calc(100% - (var(--container-padding) * 2));
 
+    /* Main colors */
+    --color-primary: #8ECAE6;
+    --color-secondary: #219EBC;
+    --color-tertiary: #FFF3D6;
+    --color-quaternary: #023047;
+    --color-quinary: #FB8500;
+
     /* Colors */
     --color-white: #fff;
     --color-black: #000;
     --color-lightgray: #f7f7f7;
     --color-gray: #ddd;
     --color-grayer: #9e9e9e;
-    --color-italic: rgb(224, 244, 255);
-    --color-paragraph-link: #1B94C3;
+    --color-italic: var(--color-tertiary);
+    --color-paragraph-link: var(--color-secondary);
     --color-box-shadow: rgba(0, 0, 0, 0.1);
 
     /* Breakpoints */

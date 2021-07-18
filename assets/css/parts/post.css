@@ -1,5 +1,5 @@
 .post-header {
-    padding: 120px 0px;
+    padding: 150px 0px;
     margin-bottom: 40px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
     background-repeat: no-repeat;
@@ -24,11 +24,13 @@
 }
 
 .entry-category span {
-    font-size: var(--font-size-category);
+    text-transform: capitalize;
     padding: 4px 10px;
     border-radius: 10px;
+    font-size: var(--font-size-category);
+    font-weight: var(--font-weight-bold);
     color: var(--color-black);
-    background-color: var(--color-gray);
+    background-color: var(--color-italic);
 }
 
 figure.wp-block-image {
@@ -116,6 +118,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     padding-top: 0;
     font-size: var(--font-size-h1);
+    position: relative;
+    z-index: 10;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    border-bottom: 10px solid var(--color-italic);
+    left: 0;
+    bottom: 3px;
+    opacity: 0.5;
 }
 
 h2 {
@@ -154,7 +169,7 @@ pre:not(.wp-block-code)::after {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: var(--color-black);
+    background-color: var(--color-italic);
     left: 0;
     bottom: -10px;
 }

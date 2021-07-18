@@ -97,7 +97,7 @@ class SoYes_Table_Of_Contents {
 		for ( $i = 0; $i < count( $posts ); $i ++ ) {
 			$post               = &$posts[ $i ];
 			$this->postid       = $post->ID;
-			$post->post_content = $this->the_content( $post->post_content, 2 );
+			$post->post_content = $this->the_content( $post->post_content, "2" );
 			$post->post_toc     = $this->get_toc();
 		}
 
@@ -110,9 +110,10 @@ class SoYes_Table_Of_Contents {
 	 *  example: 2
 	 *  example: 2-3
 	 */
-	function set_post ( $post, $headers): void {
+	function set_post ( $post, $headers ): void {
 		$this->postid       = $post->ID;
 		$post->post_content = $this->the_content( $post->post_content, $headers );
+		$post->post_toc     = $this->get_toc();
 	}
 
 	/**
