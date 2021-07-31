@@ -69,7 +69,7 @@ Requires PHP: 7.1
 
 @media only screen and (min-width: 992px) {
     :root {
-        --container-width: calc(680px - (var(--container-padding) * 2));
+        --container-width: calc(992px - (var(--container-padding) * 2));
     }
 }
 

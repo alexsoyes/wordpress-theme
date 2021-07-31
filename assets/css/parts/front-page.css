@@ -1,0 +1,54 @@
+/**
+ * Title.
+ */
+.entry-title {
+    margin-top: 200px;
+    font-size: var(--font-size-h1);
+}
+
+.entry-title span {
+    font-size: var(--font-size-h2);
+    display: block;
+    position: relative;
+}
+
+.entry-title span::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    border-bottom: 10px solid var(--color-quinary);
+    left: 0;
+    bottom: 3px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/**
+ * Form.
+ */
+.entry-form > * {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.entry-form input[type="email"] {
+    border: 1px solid var(--color-gray);
+    color: var(--color-black);
+}
+
+.entry-form input[type="email"]:focus {
+    border-color: var(--color-quaternary);
+}
+
+.entry-form input[type="submit"] {
+    background-color: var(--color-quinary);
+    color: var(--color-quaternary);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-bold);
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}

@@ -126,6 +126,13 @@ function soyes_scripts() {
 	if ( is_single() ) {
 		wp_enqueue_style( 'soyes-style-single', get_template_directory_uri() . '/assets/css/parts/post.css', array(), wp_get_theme()->get( 'Version' ) );
 	}
+
+	if ( is_front_page() ) {
+		wp_enqueue_style( 'soyes-style-front-page', get_template_directory_uri() . '/assets/css/parts/front-page.css', array(), wp_get_theme()->get( 'Version' ) );
+	}
+
+	wp_deregister_script('wp-block-library');
+	wp_deregister_script('wp-embed');
 }
 
 add_action( 'wp_enqueue_scripts', 'soyes_scripts' );
