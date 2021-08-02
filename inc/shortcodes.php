@@ -1,16 +1,65 @@
 <?php
 
-add_shortcode( 'soyes_toc', function ( $atts = array() ) {
+add_shortcode( 'soyes_toc', function ( $atts = array() )
+{
+	$heading_to_target = is_array( $atts ) && array_key_exists( 'headers', $atts ) ? $atts['headers'] : '2';
 
-	$toc = new SoYes_Table_Of_Contents();
+	preg_match_all(
+		'#<h([' . $heading_to_target . ']).*?>(.*?)</h\1>#',
+		get_the_content(),
+		$headings
+	);
 
-	global $post;
-	$toc_headers = is_array( $atts ) && array_key_exists( 'headers', $atts ) ? $atts['headers'] : 2;
-	$toc->set_post( $post, $toc_headers );
+	$headings_count   = count( $headings[0] );
+	$headings_element = $headings[1];
+	$headings_text    = $headings[2];
 
-	$post_toc = $toc->get_toc();
+	$output = "<div class=\"toc wp-block-columns alignfull\"><ol>\n";
 
-	if ( $post_toc ) {
-		return wp_kses_post( $post_toc );
+	for ( $i = 0; $i < $headings_count; $i ++ ) {
+		$currentText    = $headings_text[ $i ];
+		$currentHref    = sanitize_title_with_dashes( remove_accents( ( $currentText ) ) );
+		$currentElement = $headings_element[ $i ];
+
+		$currentLink = sprintf( "<a href=\"#%s\">%s</a>\n", $currentHref, $currentText );
+
+		if ( $i === 0 ) {
+			$output .= sprintf( "<li class=\"%s\">\n\t%s\n", "toc_$currentElement", $currentLink );
+			continue;
+		}
+
+		$previousElement = $headings_element[ $i - 1 ];
+		$elementsToClose = $previousElement - $currentElement;
+
+		if ( $currentElement > $previousElement ) { // the previous title is higher h2 > h3.
+			$output .= "\n<ol class='toc_sublist'>\n\t<li class='toc_$currentElement'>\n\t\t$currentLink";
+		} elseif ( $previousElement > $currentElement ) { // the previous title is lower h4 > h2.
+
+			// close all opened li before closing the list.
+			for ( $l = 0; $l < $elementsToClose; $l ++ ) {
+				$output .= "\t</li>\n</ol>";
+			}
+
+			$output .= "\t</li>\n\t<li class='toc_$currentElement'>$currentLink";
+		} else { // the previous title is the same h2 = h2.
+
+			$output .= "\t</li>\n\t<li class='toc_$currentElement'>$currentLink";
+		}
 	}
+
+	// simply close the last element
+	if ( isset( $elementsToClose ) ) {
+		if ($elementsToClose === 0) {
+			$output .= "\n</li>";
+		} else {
+			// close all opened li before closing the list.
+			for ( $l = 0; $l < $elementsToClose; $l ++ ) {
+				$output .= '</li></ol>';
+			}
+		}
+	}
+
+	$output .= "\n</ol></div>";
+
+	return wp_kses_post( $output );
 } );

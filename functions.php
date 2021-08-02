@@ -4,7 +4,7 @@
  */
 
 require "inc/template-functions.php";
-require 'classes/table-of-contents.php';
+require 'inc/table-of-contents.php';
 require 'inc/shortcodes.php';
 
 if ( ! function_exists( 'soyes_one_setup' ) ) {

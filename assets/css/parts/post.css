@@ -219,27 +219,38 @@ blockquote cite::after {
  */
 
 /** Link in headers **/
-.entry-content h2 {
+.entry-content h2,
+.entry-content h3 {
     position: relative;
 }
 
-.entry-content h2 a {
+.entry-content h2 a,
+.entry-content h3 a {
     position: absolute;
-    left: -50px;
     bottom: -5px;
+    left: -50px;
     border: none;
     color: var(--color-grayer);
     transition: 0.5s all;
 }
 
-.entry-content h2 a:hover {
-    color: var(--color-black);
-}
-
-.entry-content .ionicon-link {
+.entry-content h2 svg {
     width: 32px;
 }
 
+.entry-content h3 svg {
+    width: 28px;
+}
+
+.entry-content h3 a {
+    left: -40px;
+    opacity: 0.25;
+}
+
+.entry-content h2 a:hover,
+.entry-content h3 a:hover {
+    color: var(--color-black);
+}
 
 /** Summary **/
 .entry-content .toc {
