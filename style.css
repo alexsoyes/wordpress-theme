@@ -65,6 +65,9 @@ Requires PHP: 7.1
     --font-weight-bolder: 800;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
+
+    /* Transition */
+    --transition-default: 0.5s all;
 }
 
 @media only screen and (min-width: 992px) {
@@ -93,18 +96,29 @@ a {
 }
 
 #header nav ul {
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
 #header nav li {
     display: inline;
-    margin: 0px 4px;
+    margin: 0 4px;
 }
 
 #header nav a {
     color: var(--color-black);
     font-size: var(--font-size-menu);
+    transition: var(--transition-default);
+}
 
+#header nav a:hover {
+    font-weight: var(--font-weight-bold);
+}
+
+
+#header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /**
