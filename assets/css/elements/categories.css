@@ -9,7 +9,7 @@
     margin: 20px 10px 0 0;
     background-color: var(--color-tertiary);
     color: var(--color-grayer);
-    box-shadow: 1px 1px 5px 0 var(--color-gray);
+    box-shadow: var(--box-shadow);
 }
 
 .entry-categories li a {

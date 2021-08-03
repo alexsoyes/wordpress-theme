@@ -43,6 +43,9 @@ Requires PHP: 7.1
     --color-paragraph-link: var(--color-secondary);
     --color-box-shadow: rgba(0, 0, 0, 0.1);
 
+    /* Elements */
+    --box-shadow: 0 1px 6px 0 var(--color-box-shadow);
+
     /* Breakpoints */
     --breakpoint-small: 0;
     --breakpoint-medium: 768px;

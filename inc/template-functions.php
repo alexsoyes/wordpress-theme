@@ -3,10 +3,10 @@
  *
  */
 
-function soyes_get_the_main_category(): ?string {
+function soyes_get_the_main_category(): ?WP_Term {
 	$categories = get_the_category();
 
 	if ( ! empty( $categories ) ) {
-		return esc_html( $categories[0]->name );
+		return $categories[0];
 	}
 }

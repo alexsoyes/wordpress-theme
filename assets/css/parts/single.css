@@ -1,7 +1,7 @@
 .post-header {
     padding: 150px 0px;
     margin-bottom: 40px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+    box-shadow: var(--box-shadow);
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: multiply;
@@ -177,7 +177,7 @@ pre:not(.wp-block-code)::after {
 .wp-block-code {
     padding: 30px;
     margin: 30px 0px;
-    box-shadow: 0 1px 6px 0 var(--color-box-shadow);
+    box-shadow: var(--box-shadow);
     overflow-x: auto;
     font-size: var(--font-size-code);
 }
@@ -192,7 +192,7 @@ blockquote {
     padding: 30px 30px 50px 30px;
     margin: 30px 0px;
     background-color: var(--color-lightgray);
-    box-shadow: 0 1px 6px 0 var(--color-box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 blockquote cite {

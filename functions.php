@@ -4,6 +4,7 @@
  */
 
 require "inc/template-functions.php";
+require "inc/navigation.php";
 require 'inc/table-of-contents.php';
 require 'inc/shortcodes.php';
 
@@ -62,6 +63,8 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 		 */
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1568, 9999 );
+
+//		add_image_size();
 
 		register_nav_menus(
 			array(
@@ -130,7 +133,7 @@ function soyes_scripts() {
 	wp_enqueue_style( 'soyes-style-wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', array(), $version );
 
 	if ( is_single() ) {
-		wp_enqueue_style( 'soyes-style-single', get_template_directory_uri() . '/assets/css/parts/post.css', array(), $version );
+		wp_enqueue_style( 'soyes-style-single', get_template_directory_uri() . '/assets/css/parts/single.css', array(), $version );
 	}
 
 	if ( is_front_page() ) {
@@ -147,6 +150,7 @@ function soyes_scripts() {
 
 	if ( is_home() || is_category() ) {
 		wp_enqueue_style( 'soyes-style-element-categories', get_template_directory_uri() . '/assets/css/elements/categories.css', array(), $version );
+		wp_enqueue_style( 'soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version );
 	}
 
 	wp_deregister_script( 'wp-block-library' );

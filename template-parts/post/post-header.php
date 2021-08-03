@@ -4,7 +4,7 @@
 		<?php if ( $category ): ?>
             <div class="entry-category">
                 <span>
-                <?php echo $category; ?>
+                <?php echo esc_html($category->name); ?>
                 </span>
             </div>
 		<?php endif; ?>
