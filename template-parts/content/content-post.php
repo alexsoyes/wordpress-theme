@@ -37,3 +37,9 @@
 
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+<?php
+
+if ( comments_open() || get_comments_number() ) {
+	comments_template();
+}

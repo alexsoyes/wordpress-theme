@@ -1,5 +1,4 @@
 .post-header {
-    padding: 150px 0px;
     margin-bottom: 40px;
     box-shadow: var(--box-shadow);
     background-repeat: no-repeat;
@@ -8,6 +7,11 @@
     background-color: var(--color-box-shadow);
     background-size: cover;
     color: var(--color-white);
+}
+
+.post-header-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 150px 0px;
 }
 
 .entry-title {
@@ -99,8 +103,8 @@ i, em {
 }
 
 .entry-content a {
-    color: var(--color-paragraph-link);
-    border-bottom: 1px solid var(--color-paragraph-link);
+    color: var(--color-link);
+    border-bottom: 1px solid var(--color-link);
 }
 
 .entry-content a:hover {
@@ -275,8 +279,8 @@ blockquote cite::after {
 }
 
 .entry-content .toc ol li a:hover {
-    border-bottom: 1px solid var(--color-paragraph-link);
-    color: var(--color-paragraph-link);
+    border-bottom: 1px solid var(--color-link);
+    color: var(--color-link);
 }
 
 .entry-content .toc ol li::before {

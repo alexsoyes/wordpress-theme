@@ -38,13 +38,15 @@ Requires PHP: 7.1
     --color-black: #000;
     --color-lightgray: #f7f7f7;
     --color-gray: #ddd;
-    --color-grayer: #9e9e9e;
+    --color-grayer: rgb(117, 117, 117); /** rgb(117, 117, 117)  | #9e9e9e **/
     --color-italic: var(--color-tertiary);
-    --color-paragraph-link: var(--color-secondary);
+    --color-link: var(--color-secondary);
     --color-box-shadow: rgba(0, 0, 0, 0.1);
 
     /* Elements */
     --box-shadow: 0 1px 6px 0 var(--color-box-shadow);
+    --radius-default: 5px;
+    --transition-default: 0.5s all;
 
     /* Breakpoints */
     --breakpoint-small: 0;
@@ -68,9 +70,6 @@ Requires PHP: 7.1
     --font-weight-bolder: 800;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
-
-    /* Transition */
-    --transition-default: 0.5s all;
 }
 
 @media only screen and (min-width: 992px) {

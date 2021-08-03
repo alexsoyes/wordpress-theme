@@ -1,7 +1,6 @@
 <?php
 
-add_shortcode( 'soyes_toc', function ( $atts = array() )
-{
+add_shortcode( 'soyes_toc', function ( $atts = array() ) {
 	$heading_to_target = is_array( $atts ) && array_key_exists( 'headers', $atts ) ? $atts['headers'] : '2';
 
 	preg_match_all(
@@ -21,7 +20,7 @@ add_shortcode( 'soyes_toc', function ( $atts = array() )
 		$currentHref    = sanitize_title_with_dashes( remove_accents( ( $currentText ) ) );
 		$currentElement = $headings_element[ $i ];
 
-		$currentLink = sprintf( "<a href=\"#%s\">%s</a>\n", $currentHref, $currentText );
+		$currentLink = sprintf( "<a href=\"%s\">%s</a>\n", "#$currentHref", $currentText );
 
 		if ( $i === 0 ) {
 			$output .= sprintf( "<li class=\"%s\">\n\t%s\n", "toc_$currentElement", $currentLink );
@@ -49,7 +48,7 @@ add_shortcode( 'soyes_toc', function ( $atts = array() )
 
 	// simply close the last element
 	if ( isset( $elementsToClose ) ) {
-		if ($elementsToClose === 0) {
+		if ( $elementsToClose === 0 ) {
 			$output .= "\n</li>";
 		} else {
 			// close all opened li before closing the list.

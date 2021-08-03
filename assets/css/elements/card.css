@@ -28,11 +28,10 @@
 
 .card-title a {
     color: var(--color-black);
-    transition: var(--transition-default);
 }
 
 .card-title a:hover {
-    border-bottom: 5px solid var(--color-gray);
+    color: var(--color-primary);
 }
 
 .card-excerpt {
