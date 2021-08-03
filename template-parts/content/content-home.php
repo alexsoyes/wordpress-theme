@@ -1,26 +1,23 @@
 <?php
 /**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * Blog main page
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
     <header class="entry-header">
-        <?php get_template_part( 'template-parts/post/post-header' ); ?>
+        <div class="entry-content">
+			<h1><?php single_post_title(); ?></h1>
+	        <?php get_template_part( 'template-parts/elements/categories' ); ?>
+        </div><!-- .entry-content -->
     </header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php
-		the_content();
+    <div class="entry-content">
 
+    </div><!-- .entry-content -->
+
+    <footer class="entry-footer default-max-width">
+		<?php
 		wp_link_pages(
 			array(
 				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'soyes' ) . '">',
@@ -29,11 +26,6 @@
 				'pagelink' => esc_html__( 'Page %', 'soyes' ),
 			)
 		);
-
 		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer default-max-width">
-
-	</footer><!-- .entry-footer -->
+    </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

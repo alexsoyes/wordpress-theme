@@ -1,0 +1,23 @@
+.entry-categories {
+    list-style: none;
+    padding: 0;
+}
+
+.entry-categories li {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 20px 10px 0 0;
+    background-color: var(--color-tertiary);
+    color: var(--color-grayer);
+    box-shadow: 1px 1px 5px 0 var(--color-gray);
+}
+
+.entry-categories li a {
+    color: var(--color-grayer);
+    font-weight: var(--font-weight-bold);
+    transition: var(--transition-default);
+}
+
+.entry-categories li a:hover {
+    border-bottom: 1px solid var(--color-grayer);
+}

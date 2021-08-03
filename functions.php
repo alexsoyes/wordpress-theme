@@ -131,6 +131,18 @@ function soyes_scripts() {
 		wp_enqueue_style( 'soyes-style-front-page', get_template_directory_uri() . '/assets/css/parts/front-page.css', array(), wp_get_theme()->get( 'Version' ) );
 	}
 
+	if ( is_home() ) {
+		wp_enqueue_style( 'soyes-style-home', get_template_directory_uri() . '/assets/css/parts/home.css', array(), wp_get_theme()->get( 'Version' ) );
+	}
+
+	if ( is_category() ) {
+		wp_enqueue_style( 'soyes-style-home', get_template_directory_uri() . '/assets/css/parts/category.css', array(), wp_get_theme()->get( 'Version' ) );
+	}
+
+	if ( is_home() || is_category() ) {
+		wp_enqueue_style( 'soyes-style-element-categories', get_template_directory_uri() . '/assets/css/elements/categories.css', array(), wp_get_theme()->get( 'Version' ) );
+	}
+
 	wp_deregister_script('wp-block-library');
 	wp_deregister_script('wp-embed');
 }
