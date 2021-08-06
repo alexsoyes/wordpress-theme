@@ -111,3 +111,44 @@
     color: var(--color-black);
     margin-right: .5rem;
 }
+
+/**
+ * Share
+ */
+.entry-social {
+    margin-top: 100px;
+    padding: 100px;
+    color: var(--color-white);
+    background-color: var(--color-quaternary);
+    text-align: center;
+}
+
+.social-title {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h2);
+}
+
+.social-description {
+    font-size: var(--font-size-h4);
+}
+
+.social-buttons {
+    margin-top: 30px;
+}
+
+.social-buttons > button:hover {
+    background-color: var(--color-gray);
+}
+
+.social-buttons > button {
+    transition: var(--transition-default);
+    cursor: pointer;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 5px 25px;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 20px;
+    border: none;
+    border-radius: var(--radius-default);
+}

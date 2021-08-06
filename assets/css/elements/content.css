@@ -232,6 +232,8 @@ video {
 
 .wp-block-table th {
     padding: 20px 10px;
+}
+.wp-block-table:not(.is-style-stripes) th {
     background-color: var(--color-lightgray);
 }
 

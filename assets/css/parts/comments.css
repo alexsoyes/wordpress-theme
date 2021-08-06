@@ -3,7 +3,8 @@
     font-size: var(--font-size-h1);
     text-align: center;
     font-weight: var(--font-weight-bolder);
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .comment-list {
@@ -68,9 +69,14 @@
 /**
  * Comment posting.
  */
-.comment-form label {
+.comment-form p:not(.comment-form-cookies-consent) label {
     display: block;
     font-weight: var(--font-weight-bold);
+}
+
+.comment-form-cookies-consent label {
+    cursor: pointer;
+    font-size: var(--font-size-label);
 }
 
 input.submit {
@@ -87,5 +93,10 @@ input.submit {
 }
 
 .comment-form {
-    display: flex;
+
+}
+
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
 }

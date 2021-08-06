@@ -11,32 +11,44 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <header class="entry-header">
-        <?php get_template_part( 'template-parts/post/post-header' ); ?>
-    </header><!-- .entry-header -->
+        <header class="entry-header">
+			<?php get_template_part( 'template-parts/post/post-header' ); ?>
+        </header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php
-		the_content();
+        <div class="entry-content">
+			<?php
+			the_content();
 
-		wp_link_pages(
-			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'soyes' ) . '">',
-				'after'    => '</nav>',
-				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'soyes' ),
-			)
-		);
+			wp_link_pages(
+				array(
+					'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'soyes' ) . '">',
+					'after'    => '</nav>',
+					/* translators: %: Page number. */
+					'pagelink' => esc_html__( 'Page %', 'soyes' ),
+				)
+			);
 
-		?>
-	</div><!-- .entry-content -->
+			?>
+        </div><!-- .entry-content -->
 
-	<footer class="entry-footer default-max-width">
+        <footer class="entry-footer entry-social">
+            <div class="default-max-width">
+                <p class="social-title">❤️ Tu as aimé cet article ?️</p>
+                <p class="social-description">
+                    J'ai mis un moment à l'écrire... Ce serait top si tu pouvais le partager à la communauté !
+                </p>
+                <div class="social-buttons">
+					<?php $socialButtons = soyes_get_social_share(); ?>
+					<?php foreach ( $socialButtons as $button ): ?>
+                        <button <?php echo $button['attr']; ?>><?php echo $button['svg']; ?><?php echo $button['name']; ?></button>
+					<?php endforeach; ?>
+                </div>
+            </div><!-- .default-max-width -->
+        </footer><!-- .entry-footer -->
 
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+    </article><!-- #post-<?php the_ID(); ?> -->
 
 <?php
 

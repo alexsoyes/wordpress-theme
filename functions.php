@@ -138,6 +138,7 @@ function soyes_scripts() {
 		wp_enqueue_style( 'soyes-style-comments', get_template_directory_uri() . '/assets/css/parts/comments.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-element-content', get_template_directory_uri() . '/assets/css/elements/content.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-block-library', get_template_directory_uri() . '/assets/css/block-library.css', array(), $version );
+		wp_enqueue_script( 'soyes-script-share', get_template_directory_uri() . '/assets/js/share.js', array(), $version );
 	}
 
 	if ( is_front_page() ) {
