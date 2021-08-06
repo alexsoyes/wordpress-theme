@@ -64,3 +64,28 @@
     line-height: 30px;
     margin-bottom: 0;
 }
+
+/**
+ * Comment posting.
+ */
+.comment-form label {
+    display: block;
+    font-weight: var(--font-weight-bold);
+}
+
+input.submit {
+    background-color: var(--color-tertiary);
+    color: var(--color-quaternary);
+    font-size: var(--font-size-button);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    --color-box-shadow: var(--color-quaternary);
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.comment-form {
+    display: flex;
+}

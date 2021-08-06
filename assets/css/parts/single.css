@@ -1,3 +1,6 @@
+/**
+ * Post header.
+ */
 .post-header {
     margin-bottom: 40px;
     box-shadow: var(--box-shadow);
@@ -11,7 +14,7 @@
 
 .post-header-overlay {
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 150px 0px;
+    padding: 150px 0;
 }
 
 .entry-title {
@@ -20,7 +23,7 @@
 
 .entry-excerpt p {
     font-size: var(--font-size-excerpt);
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .entry-category {
@@ -36,187 +39,6 @@
     color: var(--color-black);
     background-color: var(--color-italic);
 }
-
-figure.wp-block-image {
-    display: block;
-    text-align: center;
-    margin: 30px 0px 60px 0px;
-    position: relative;
-    font-size: var(--font-size-caption);
-}
-
-.wp-block-image img {
-    height: auto;
-}
-
-.wp-block-image figcaption {
-    margin-top: 20px;
-}
-
-figcaption::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 2px;
-    background-color: var(--color-gray);
-    bottom: -20px;
-    left: calc(50% - 50px / 2);
-    right: calc(50% - 50px / 2);
-}
-
-/**
- * Lists.
- */
-ul,
-p {
-    line-height: 32px;
-    font-size: var(--font-size-paragraph);
-    margin-bottom: 10px;
-    letter-spacing: -0.063px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-@media only screen and (max-width: 991px) {
-    ul {
-        padding-left: 0px;
-    }
-}
-
-.entry-content li {
-    font-size: var(--font-size-list);
-    margin: 4px 0px;
-}
-
-.entry-content ul li::before {
-    content: '\</>';
-    display: inline-block;
-    font-size: calc(var(--font-size-paragraph) - 4px);
-    margin-right: 10px;
-}
-
-i, em {
-    background-color: var(--color-italic);
-    padding: 4px 6px;
-}
-
-.entry-content a {
-    color: var(--color-link);
-    border-bottom: 1px solid var(--color-link);
-}
-
-.entry-content a:hover {
-    color: var(--color-black);
-    border-color: var(--color-black);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--font-weight-bolder);
-    padding-bottom: 0px;
-    padding-top: 60px;
-    display: block;
-}
-
-h1 {
-    padding-top: 0;
-    font-size: var(--font-size-h1);
-    position: relative;
-    z-index: 10;
-}
-
-h1::after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 60%;
-    border-bottom: 10px solid var(--color-italic);
-    left: 0;
-    bottom: 3px;
-    opacity: 0.5;
-}
-
-h2 {
-    font-size: var(--font-size-h2);
-}
-
-h3 {
-    font-size: var(--font-size-h3);
-}
-
-h4 {
-    font-size: var(--font-size-h4);
-}
-
-h5 {
-    font-size: var(--font-size-h5);
-}
-
-h6 {
-    font-size: var(--font-size-h6);
-}
-
-pre:not(.wp-block-code) {
-    font-size: 24px;
-    line-height: 36px;
-    margin: 60px 0px;
-    padding-bottom: 30px;
-    position: relative;
-    white-space: normal;
-    color: var(--color-grayer);
-}
-
-pre:not(.wp-block-code)::after {
-    position: absolute;
-    content: "";
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: var(--color-italic);
-    left: 0;
-    bottom: -10px;
-}
-
-.wp-block-code {
-    padding: 30px;
-    margin: 30px 0px;
-    box-shadow: var(--box-shadow);
-    overflow-x: auto;
-    font-size: var(--font-size-code);
-}
-
-code {
-    word-break: break-word;
-}
-
-blockquote {
-    color: #4d4d4d;
-    font-style: italic;
-    padding: 30px 30px 50px 30px;
-    margin: 30px 0px;
-    background-color: var(--color-lightgray);
-    box-shadow: var(--box-shadow);
-}
-
-blockquote cite {
-    color: #000;
-    font-size: .8em;
-    margin-top: 1em;
-    display: block;
-    position: relative;
-}
-
-blockquote cite::after {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 20px;
-    background-color: var(--color-grayer);
-    left: 0;
-    bottom: -10px;
-}
-
 
 /**
   * Table of contents.
@@ -259,7 +81,7 @@ blockquote cite::after {
 /** Summary **/
 .entry-content .toc {
     background-color: var(--color-lightgray);
-    margin: 50px 0px;
+    margin: 50px 0;
 }
 
 .entry-content .toc ol {
@@ -268,7 +90,7 @@ blockquote cite::after {
 }
 
 .entry-content .toc ol li {
-    margin: 15px 0px;
+    margin: 15px 0;
     display: block;
     white-space: nowrap;
 }

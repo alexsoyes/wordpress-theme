@@ -41,7 +41,7 @@ $soyes_comment_count = get_comments_number();
 				array(
 					'avatar_size' => 50,
 					'short_ping'  => true,
-					'walker'    => new Soyes_Walker_Comment
+					'walker'      => new Soyes_Walker_Comment
 				)
 			);
 			?>
