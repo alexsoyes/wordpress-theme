@@ -14,6 +14,7 @@ figure.wp-block-image {
 
 .wp-block-image img {
     height: auto;
+    margin-bottom: 15px;
 }
 
 .wp-block-image figcaption {
@@ -59,12 +60,17 @@ ul {
     }
 }
 
+.entry-content ul {
+    margin: 20px 0;
+}
+
 .entry-content li {
     font-size: var(--font-size-list);
     margin: 4px 0;
 }
 
 .entry-content ul li::before {
+    color: var(--color-quaternary);
     content: '\</>';
     display: inline-block;
     font-size: calc(var(--font-size-paragraph) - 4px);
@@ -100,16 +106,16 @@ h1 {
     z-index: 10;
 }
 
-h1::after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 60%;
-    border-bottom: 10px solid var(--color-italic);
-    left: 0;
-    bottom: 3px;
-    opacity: 0.5;
-}
+/*h1::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    width: 60%;*/
+/*    border-bottom: 10px solid var(--color-italic);*/
+/*    left: 0;*/
+/*    bottom: 3px;*/
+/*    opacity: 0.5;*/
+/*}*/
 
 h2 {
     font-size: var(--font-size-h2);
@@ -155,7 +161,7 @@ pre:not(.wp-block-code)::after {
 .wp-block-code {
     padding: 30px;
     margin: 30px 0;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-default);
     overflow-x: auto;
     font-size: var(--font-size-code);
 }
@@ -223,7 +229,7 @@ video {
 }
 
 .wp-block-table {
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-default);
 }
 
 .wp-block-table.is-style-stripes th {

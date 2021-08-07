@@ -1,6 +1,6 @@
 .card {
     margin: 50px 0;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-default);
     border-radius: 5px;
     background-size: contain;
     background-position: right center;

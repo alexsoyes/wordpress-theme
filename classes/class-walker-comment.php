@@ -275,11 +275,12 @@ class Soyes_Walker_Comment extends Walker {
 							<?php printf( '<b class="fn">%s</b>', $comment_author ); ?>
 
                             <time datetime="<?php comment_time( 'c' ); ?>">
-                                <a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>" class="comment-link">
-	                                <?php
-	                                /* translators: 1: Comment date, 2: Comment time. */
-	                                printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() );
-	                                ?>
+                                <a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>"
+                                   class="comment-link">
+									<?php
+									/* translators: 1: Comment date, 2: Comment time. */
+									printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() );
+									?>
                                 </a>
                             </time>
                         </div>
@@ -300,11 +301,16 @@ class Soyes_Walker_Comment extends Walker {
 						array_merge(
 							$args,
 							array(
-								'add_below' => 'div-comment',
-								'depth'     => $depth,
-								'max_depth' => $args['max_depth'],
-								'before'    => '<div class="reply">',
-								'after'     => '</div>',
+								'add_below'     => 'div-comment',
+								'depth'         => $depth,
+								'max_depth'     => $args['max_depth'],
+								'before'        => '<div class="reply">',
+								'after'         => '</div>',
+								'reply_text' => sprintf(
+								        '%s <img src="%s" width="15" height="15" role="presentation" />',
+									__( 'Reply' ),
+									get_stylesheet_directory_uri() . "/assets/images/icons/chatbox-outline.svg",
+                                ),
 							)
 						)
 					);
@@ -474,3 +480,10 @@ class Soyes_Walker_Comment extends Walker {
 		return $comment_text;
 	}
 }
+
+/**
+ * Open author link to a new window.
+ */
+add_filter( 'get_comment_author_link', function ( $return ) {
+	return str_replace( '<a', '<a target="_blank"', $return );
+} );

@@ -32,12 +32,31 @@
 /**
  * Comment link.
  */
+.reply {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
 .comment-reply-link {
-    color: var(--color-link);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 0 15px;
+    border-radius: var(--radius-strong);
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    transition: var(--transition-default);
+    box-shadow: var(--box-shadow-default);
+}
+
+.comment-reply-link img {
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .comment-reply-link:hover {
-    border-bottom: 1px solid var(--color-link);
+    background-color: var(--color-lightgray);
+    border: none;
 }
 
 .comment-link {
@@ -61,11 +80,6 @@
 .comment-metadata time {
     display: block;
 }
-
-.reply {
-    text-align: right;
-}
-
 /**
  * Comment content.
  */
@@ -74,7 +88,7 @@
 }
 
 .depth-1 > .comment-body {
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-default);
     padding: 20px 20px 10px 20px;
 }
 
@@ -101,9 +115,23 @@
 /**
  * Comment posting.
  */
+
+.entry-comment-leave {
+    text-align: center;
+}
+
+.comment-form-comment {
+    margin-top: 40px;
+}
+
+.comment-form {
+    white-space: nowrap;
+}
+
 .comment-form p:not(.comment-form-cookies-consent) label {
     display: block;
     font-weight: var(--font-weight-bold);
+    text-align: left;
 }
 
 .comment-form-cookies-consent label {
@@ -111,23 +139,54 @@
     font-size: var(--font-size-label);
 }
 
-input.submit {
+.comment-form input.submit {
     background-color: var(--color-tertiary);
-    color: var(--color-quaternary);
+    color: var(--color-black);
     font-size: var(--font-size-button);
+    font-weight: var(--font-weight-bold);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     cursor: pointer;
-    box-shadow: var(--box-shadow);
-    --color-box-shadow: var(--color-quaternary);
-    border-radius: 4px;
+    box-shadow: var(--box-shadow-default);
     text-transform: uppercase;
+    margin-top: 15px;
+    border-radius: var(--radius-strong);
 }
 
-.comment-form {
-
+.comment-form input:focus,
+.comment-form textarea:focus {
+    border: 1px solid var(--color-grayer);
 }
 
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input,
+.comment-form textarea {
+    width: 100%;
+    border-radius: var(--radius-default);
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-lightgray);
+    padding: 10px;
+    font-size: var(--font-size-input);
+}
+
+.comment-respond {
+    padding: 0 150px;
+}
+
+.comment-form-author,
+.comment-form-email {
+    display: inline-block;
+    width: 50%;
+}
+
+.comment-form-author > * {
+    width: 90%;
+}
+
+.comment-form-email > * {
+    width: 90%;
+}
 
 input:focus, textarea:focus, select:focus {
     outline: none;
