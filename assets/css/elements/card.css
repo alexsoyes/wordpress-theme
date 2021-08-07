@@ -7,19 +7,11 @@
     background-repeat: no-repeat;
 }
 
-.card:nth-child(odd) {
-    background-position: left center;
-}
-
 .card-content {
     color: var(--color-black);
     background-color: var(--color-white);
     width: 50%;
     padding: 60px 30px;
-}
-
-.card:nth-child(odd) .card-content {
-    margin-left: auto;
 }
 
 .card-title {
@@ -47,4 +39,16 @@
     font-size: var(--font-size-category);
     border-radius: 5px;
     text-transform: capitalize;
+}
+
+/**
+ * Odd.
+ */
+.card:nth-child(odd) {
+    background-position: left center;
+}
+
+.card:nth-child(odd) .card-content {
+    margin-left: auto;
+    position: relative;
 }

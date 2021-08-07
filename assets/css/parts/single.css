@@ -113,7 +113,52 @@
 }
 
 /**
- * Share
+ * Comment.
+ */
+.link-comment {
+    background-color: var(--color-tertiary);
+    color: var(--color-black);
+    border-radius: var(--radius-default);
+    padding: 5px 15px;
+    font-size: var(--font-size-button);
+
+}
+
+/**
+ * Share top
+ */
+.link-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    margin: 30px 0;
+    font-weight: var(--font-weight-bold);
+}
+
+.link-share p {
+    margin: 0 5px 0 0;
+}
+
+.link-share button {
+    background: transparent;
+    border: none;
+}
+
+.link-share svg {
+    fill: var(--color-white);
+    color: var(--color-black);
+}
+
+.entry-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/**
+ * Share bottom
  */
 .entry-social {
     margin-top: 100px;

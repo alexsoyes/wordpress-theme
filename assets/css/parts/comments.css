@@ -21,10 +21,17 @@
     border-radius: 50%;
 }
 
-.comment-body {
-    margin-bottom: 50px;
+.comment {
+    margin-bottom: 80px;
 }
 
+.comment-author.vcard {
+    margin-bottom: 5px;
+}
+
+/**
+ * Comment link.
+ */
 .comment-reply-link {
     color: var(--color-link);
 }
@@ -42,6 +49,10 @@
     line-height: 20px;
 }
 
+.comment-metadata .fn a {
+    color: var(--color-black);
+}
+
 .comment-metadata a:hover {
     border-bottom: 1px solid var(--color-grayer);
 }
@@ -55,15 +66,36 @@
     text-align: right;
 }
 
+/**
+ * Comment content.
+ */
+.comment-body {
+    margin-bottom: 35px;
+}
+
+.depth-1 > .comment-body {
+    box-shadow: var(--box-shadow);
+    padding: 20px 20px 10px 20px;
+}
+
+.depth-2 .comment-body {
+    margin-bottom: 25px;
+}
+
 .comment.parent .odd .comment-content {
     background-color: var(--color-lightgray);
     padding: 10px 30px;
 }
 
 .comment-content > * {
-    font-size: calc(var(--font-size-paragraph) - 2px);
+    font-size: var(--font-size-comment);
     line-height: 30px;
     margin-bottom: 0;
+}
+
+.comment-content blockquote {
+    padding: 10px;
+    margin-top: 5px;
 }
 
 /**

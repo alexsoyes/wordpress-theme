@@ -13,6 +13,15 @@
             <div class="entry-excerpt">
 			    <?php the_excerpt(); ?>
             </div>
+            <div class="entry-links">
+                <div class="link-share">
+                    <p>Partager :</p>
+			        <?php get_template_part( 'template-parts/elements/share-icons' ); ?>
+                </div>
+                <div class="link-comment">
+                    0 commentaire
+                </div>
+            </div>
         </div>
     </div>
 </div>
