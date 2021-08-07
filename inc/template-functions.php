@@ -43,3 +43,7 @@ function soyes_get_social_share(): array {
 		],
 	];
 }
+
+function soyes_the_social_icon(string $socialName): void {
+	echo get_stylesheet_directory_uri() . "/assets/images/icons/social/" . $socialName . ".svg";
+}

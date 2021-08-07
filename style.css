@@ -28,7 +28,7 @@ Requires PHP: 7.1
 
     /* Main colors */
     --color-primary: #8ECAE6;
-    --color-secondary: #219EBC;
+    --color-secondary: #1DA1F2;
     --color-tertiary: #FFF3D6;
     --color-quaternary: #023047;
     --color-quinary: #FB8500;
@@ -55,7 +55,7 @@ Requires PHP: 7.1
     --breakpoint-large: 992px;
 
     /* Fonts */
-    --font-size-menu: 13px;
+    --font-size-menu: 14px;
     --font-size-category: 10px;
     --font-size-excerpt: 18px;
     --font-size-label: 15px;
@@ -110,7 +110,7 @@ button {
  */
 
 #header nav {
-    text-align: right;
+
 }
 
 #header nav ul {
@@ -129,7 +129,8 @@ button {
 }
 
 #header nav a:hover {
-
+    border-color: var(--color-quaternary);
+    color: var(--color-quaternary);
 }
 
 
@@ -137,6 +138,83 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+a.custom-logo-link:hover {
+    border: none;
+}
+
+/**
+ * Footer.
+ */
+.site-footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: var(--color-quaternary);
+    padding: 100px 0 40px 0;
+    color: var(--color-white);
+}
+
+.follow-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+}
+
+.follow-me-title {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-tertiary);
+    margin: 0;
+}
+
+.follow-me-list {
+    padding-left: 15px;
+}
+
+.follow-me-list li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.follow-me-list li a {
+    transition: var(--transition-default);
+}
+
+.follow-me-list li a:hover {
+    border: none;
+    background-color: var(--color-black);
+    border-radius: 50%;
+}
+
+.site-footer img.image {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.footer-navigation-wrapper {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-navigation-wrapper li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-navigation-wrapper li a {
+    color: var(--color-white);
+    transition: var(--transition-default);
+    font-weight: var(--font-weight-bold);
+}
+
+.footer-navigation-wrapper li a:hover {
+    border-color: var(--color-white);
 }
 
 /**

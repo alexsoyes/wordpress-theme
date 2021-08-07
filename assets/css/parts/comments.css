@@ -96,7 +96,7 @@
     margin-bottom: 25px;
 }
 
-.comment.parent .odd .comment-content {
+.depth-2 > article > .comment-content {
     background-color: var(--color-lightgray);
     padding: 10px 30px;
 }
@@ -135,8 +135,8 @@
 }
 
 .comment-form-cookies-consent label {
-    cursor: pointer;
     font-size: var(--font-size-label);
+    cursor: default;
 }
 
 .comment-form input.submit {
@@ -177,7 +177,8 @@
 .comment-form-author,
 .comment-form-email {
     display: inline-block;
-    width: 50%;
+    width: 48%;
+    margin: 0 4% 0 0;
 }
 
 .comment-form-author > * {

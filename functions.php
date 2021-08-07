@@ -96,24 +96,23 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		$logo_width  = 300;
-		$logo_height = 100;
 
+		$logo_width = 150;
 		add_theme_support( 'custom-logo',
 			array(
-				'height'               => $logo_height,
-				'width'                => $logo_width,
-				'flex-width'           => true,
-				'flex-height'          => true,
-				'unlink-homepage-logo' => true,
+				'width'       => $logo_width,
+				'flex-height' => true,
 			)
 		);
 
+		add_filter( 'get_custom_logo_image_attributes', function ( array $custom_logo_attr ) use ( $logo_width ) {
+			$custom_logo_attr['width'] = $logo_width;
+
+			return $custom_logo_attr;
+		} );
+
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
-
-		// Add support for Block Styles.
-//		add_theme_support( 'wp-block-styles' );
 
 		// Add support for full and wide align images.
 		add_theme_support( 'align-wide' );
@@ -171,3 +170,17 @@ function soyes_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'soyes_scripts' );
+
+function soyes_sidebar(): void {
+	register_sidebar(
+		[
+			'name'          => __( 'Footer text', 'soyes' ),
+			'id'            => 'sidebar-footer-about',
+			'description'   => __( 'Display some basic info about who you are in the footer.', 'soyes' ),
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+		]
+	);
+}
+
+add_action( 'widgets_init', 'soyes_sidebar' );

@@ -94,13 +94,13 @@
 }
 
 .entry-content .toc ol li {
-    margin: 15px 0;
+    margin: 5px 0;
     display: block;
     white-space: nowrap;
 }
 
 .entry-content .toc ol li a {
-    border-bottom: 1px solid var(--color-black);
+    border-bottom: none;
     color: var(--color-black);
 }
 
