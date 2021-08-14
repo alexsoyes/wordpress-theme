@@ -86,6 +86,8 @@
 .entry-content .toc {
     background-color: var(--color-lightgray);
     margin: 50px 0;
+    padding: 50px 0;
+    border-bottom: 10px solid var(--color-tertiary);
 }
 
 .entry-content .toc ol {
@@ -116,16 +118,25 @@
     margin-right: .5rem;
 }
 
+.entry-content .toc_full .toc_2 > a {
+    font-weight: var(--font-weight-bold);
+}
+
 /**
  * Comment.
  */
 .link-comment {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-white);
     color: var(--color-black);
     border-radius: var(--radius-default);
     padding: 5px 15px;
     font-size: var(--font-size-button);
+    font-weight: var(--font-weight-bold);
     box-shadow: var(--box-shadow-default);
+}
+
+.link-comment img {
+    margin-left: 5px;
 }
 
 .entry-content .link-comment a {
@@ -147,7 +158,7 @@
 }
 
 .link-share p {
-    margin: 0 5px 0 0;
+    margin: 0 15px 0 0;
 }
 
 .link-share button {
@@ -158,7 +169,12 @@
 .link-share svg {
     fill: var(--color-white);
     color: var(--color-black);
-    margin: 0 5px;
+    margin: 0 3px;
+    transition: var(--transition-default);
+}
+
+.link-share svg:hover {
+    fill: var(--color-tertiary);
 }
 
 .entry-links {

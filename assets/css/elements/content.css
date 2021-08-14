@@ -8,6 +8,8 @@ figure.wp-block-image {
     margin: 30px 0 60px 0;
     position: relative;
     font-size: var(--font-size-caption);
+    box-shadow: var(--box-shadow-default);
+    padding: 20px;
 }
 
 .wp-block-image img {
@@ -16,6 +18,7 @@ figure.wp-block-image {
 }
 
 .wp-block-image figcaption {
+    text-align: center;
     margin-top: 20px;
     position: relative;
     font-size: var(--font-size-caption);
@@ -176,27 +179,26 @@ code {
 blockquote {
     color: var(--color-grayer);
     font-style: italic;
-    padding: 30px 30px 50px 30px;
+    padding: 50px 30px 50px 30px;
     margin: 30px 0;
     background-color: var(--color-lightgray);
+    position: relative;
 }
 
 blockquote cite {
     color: #000;
+    font-weight: var(--font-weight-bold);
     font-size: var(--font-size-caption);
-    margin-top: 50px;
+    margin-top: 30px;
     display: block;
-    position: relative;
 }
 
-blockquote cite::after {
+blockquote::after {
     position: absolute;
-    content: "";
-    height: 1px;
-    width: 20px;
-    background-color: var(--color-grayer);
-    left: 0;
-    bottom: -10px;
+    content: "💬";
+    font-size: 30px;
+    right: 30px;
+    top: 20px;
 }
 
 video {
@@ -206,4 +208,16 @@ video {
 .wp-block-video,
 .wp-block-image {
     margin: 30px 0;
+}
+
+/**
+ * Date.
+ */
+.entry-date {
+    margin-top: 20px;
+}
+
+.entry-date small {
+    padding: 5px 10px;
+    border: 1px solid var(--color-white);
 }

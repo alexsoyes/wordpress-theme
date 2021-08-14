@@ -18,7 +18,4 @@
 		<?php the_content(); ?>
     </div><!-- .entry-content -->
 
-    <footer class="entry-footer default-max-width">
-    </footer><!-- .entry-footer -->
-
 </article><!-- #post-<?php the_ID(); ?> -->

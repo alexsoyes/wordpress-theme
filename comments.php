@@ -81,6 +81,7 @@ $soyes_comment_count = get_comments_number();
                 'title_reply'          => esc_html__('Leave a comment', 'soyes'),
                 'title_reply_before'   => '<h2 id="reply-title" class="comment-reply-title">👩‍💻 ',
                 'title_reply_after'    => '👨‍💻 </h2>',
+                'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="wp-block-button__link %3$s" value="%4$s" />',
             )
         );
         ?>

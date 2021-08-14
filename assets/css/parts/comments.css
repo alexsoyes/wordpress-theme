@@ -69,11 +69,12 @@
 }
 
 .comment-metadata .fn a {
-    color: var(--color-black);
+    color: var(--color-quaternary);
 }
 
 .comment-metadata a:hover {
-    border-bottom: 1px solid var(--color-grayer);
+    color: var(--color-secondary);
+    border: none;
 }
 
 .comment-metadata b,
@@ -109,7 +110,7 @@
 }
 
 .comment-content blockquote {
-    padding: 10px;
+    padding: 10px 100px 10px 10px;
     margin-top: 5px;
 }
 
@@ -141,17 +142,7 @@
 }
 
 .comment-form input.submit {
-    background-color: var(--color-tertiary);
-    color: var(--color-black);
-    font-size: var(--font-size-button);
-    font-weight: var(--font-weight-bold);
-    border: none;
-    padding: 10px 30px;
-    cursor: pointer;
-    box-shadow: var(--box-shadow-default);
-    text-transform: uppercase;
     margin-top: 15px;
-    border-radius: var(--radius-strong);
 }
 
 .comment-form input:focus,

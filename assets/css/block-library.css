@@ -167,8 +167,8 @@
     border-bottom: 1px solid var(--color-gray);
 }
 
-.wp-block-table:not(.is-style-stripes) th:nth-child(2n+1),
-.wp-block-table:not(.is-style-stripes) td:nth-child(2n+1) {
+.wp-block-table:not(.is-style-stripes) th,
+.wp-block-table:not(.is-style-stripes) td {
     border-right: 1px solid var(--color-gray);
 }
 
@@ -270,9 +270,9 @@
  */
 .wp-block-button__link,
 a.wp-block-button__link {
-    background-color: var(--color-primary);
+    background-color: var(--color-tertiary);
     color: var(--color-quaternary);
-    font-size: var(--font-size-h6);
+    box-shadow: var(--box-shadow-default);
     border: none;
     margin: 5px 0;
     cursor: pointer;

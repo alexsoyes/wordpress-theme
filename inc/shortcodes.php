@@ -3,6 +3,13 @@
 add_shortcode('soyes_toc', function ($atts = array()) {
     $heading_to_target = is_array($atts) && array_key_exists('headers', $atts) ? $atts['headers'] : '2';
 
+    $toc_class = 'toc';
+
+    // "toc_full" changes the frontend style.
+	if ( $heading_to_target !== "2" ) {
+		$toc_class = "toc toc_full";
+	}
+
     preg_match_all(
         '#<h([' . $heading_to_target . ']).*?>(.*?)</h\1>#',
         get_the_content(),
@@ -13,7 +20,7 @@ add_shortcode('soyes_toc', function ($atts = array()) {
     $headings_element = $headings[1];
     $headings_text    = $headings[2];
 
-    $output = "<div class=\"toc wp-block-columns alignfull\"><ol>\n";
+    $output = "<div class=\"$toc_class wp-block-columns alignfull\"><ol>\n";
 
     for ($i = 0; $i < $headings_count; $i ++) {
         $currentText    = $headings_text[ $i ];

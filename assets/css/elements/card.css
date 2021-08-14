@@ -23,7 +23,8 @@
 }
 
 .card-title a:hover {
-    color: var(--color-primary);
+    color: var(--color-quaternary);
+    border: none;
 }
 
 .card-excerpt {
@@ -32,13 +33,37 @@
 }
 
 .card-category {
-    color: var(--color-black);
-    background-color: var(--color-primary);
-    padding: 5px;
+    color: var(--color-white);
+    background-color: var(--color-quaternary);
+    padding: 5px 10px;
     display: inline-block;
     font-size: var(--font-size-category);
+    font-weight: var(--font-weight-bold);
     border-radius: 5px;
     text-transform: capitalize;
+}
+
+.card-metadata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-comments {
+    background-color: var(--color-tertiary);
+    font-weight: var(--font-weight-bold);
+    padding: 5px 10px;
+    border-radius: var(--radius-default);
+    font-size: var(--font-size-category);
+}
+
+.card-comments img {
+    margin-left: 5px;
+}
+
+.card-date {
+    color: var(--color-grayer);
+
 }
 
 /**
