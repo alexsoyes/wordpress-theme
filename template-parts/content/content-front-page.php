@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying posts
  *
@@ -13,11 +14,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-content">
+    <div class="entry-content">
 		<?php the_content(); ?>
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
 
-	<footer class="entry-footer default-max-width">
-	</footer><!-- .entry-footer -->
+    <footer class="entry-footer default-max-width">
+    </footer><!-- .entry-footer -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

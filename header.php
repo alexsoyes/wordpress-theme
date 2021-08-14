@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header.
  *
@@ -15,8 +16,8 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="<?php bloginfo('charset'); ?>"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<?php wp_head(); ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +27,14 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'soyes' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'soyes'); ?></a>
 
-    <?php if (is_front_page()): ?>
-	    <?php get_template_part( 'template-parts/header/front-page' ); ?>
-    <?php else: ?>
-	    <?php get_template_part( 'template-parts/header/header' ); ?>
-    <?php endif; ?>
+	<?php if (is_front_page()) : ?>
+		<?php get_template_part('template-parts/header/front-page'); ?>
+	<?php else : ?>
+		<?php get_template_part('template-parts/header/header'); ?>
+	<?php endif; ?>
 
-	<div id="content" class="site-content">
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">

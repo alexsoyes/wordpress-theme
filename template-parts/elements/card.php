@@ -1,15 +1,17 @@
 <?php
+
 /**
  * Linking to post.
  */
+
 ?>
 <div class="card" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
     <div class="card-content">
 		<?php $category = soyes_get_the_main_category(); ?>
-		<?php if ( $category ): ?>
+		<?php if ($category) : ?>
             <div class="card-category">
                 <span>
-                <?php echo esc_html( $category->name ); ?>
+                <?php echo esc_html($category->name); ?>
                 </span>
             </div>
 		<?php endif; ?>

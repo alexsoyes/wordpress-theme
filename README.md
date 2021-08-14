@@ -1,6 +1,4 @@
-
 # wordpress-theme
-
 
 ## Documentation
 

@@ -1,7 +1,9 @@
 <?php
+
 /**
  *
  */
+
 ?>
 
 <div class="entry-content">
@@ -26,7 +28,7 @@
 
         <div class="wp-block-column">
 
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/alex.png" alt="Alex" width="500" />
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/alex.png" alt="Alex" width="500"/>
 
         </div>
 
