@@ -7,7 +7,7 @@
 }
 
 .entry-title span {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h3);
     display: block;
     position: relative;
 }
@@ -16,11 +16,10 @@
     content: '';
     position: absolute;
     display: inline-block;
-    width: 60%;
-    border-bottom: 10px solid var(--color-quinary);
+    width: 50%;
+    border-bottom: 10px solid var(--color-tertiary);
     left: 0;
     bottom: 3px;
-    opacity: 0.5;
     z-index: -1;
 }
 
@@ -41,14 +40,4 @@
 
 .entry-form input[type="email"]:focus {
     border-color: var(--color-quaternary);
-}
-
-.entry-form input[type="submit"] {
-    background-color: var(--color-quinary);
-    color: var(--color-quaternary);
-    font-size: var(--font-size-h4);
-    font-weight: var(--font-weight-bold);
-    border: none;
-    margin-top: 5px;
-    cursor: pointer;
 }

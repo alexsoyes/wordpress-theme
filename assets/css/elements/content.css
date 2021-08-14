@@ -75,6 +75,10 @@ ul {
     margin-right: 10px;
 }
 
+/**
+ * Text content.
+ */
+
 i, em {
     background-color: var(--color-italic);
     padding: 4px 6px;
@@ -90,6 +94,10 @@ i, em {
     border-color: var(--color-black);
 }
 
+/**
+ * Titles.
+ */
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bolder);
     padding-bottom: 0;
@@ -103,17 +111,6 @@ h1 {
     position: relative;
     z-index: 10;
 }
-
-/*h1::after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    display: inline-block;*/
-/*    width: 60%;*/
-/*    border-bottom: 10px solid var(--color-italic);*/
-/*    left: 0;*/
-/*    bottom: 3px;*/
-/*    opacity: 0.5;*/
-/*}*/
 
 h2 {
     font-size: var(--font-size-h2);
@@ -135,6 +132,9 @@ h6 {
     font-size: var(--font-size-h6);
 }
 
+/**
+ * Format.
+ */
 pre:not(.wp-block-code) {
     font-size: 24px;
     line-height: 36px;
@@ -206,71 +206,4 @@ video {
 .wp-block-video,
 .wp-block-image {
     margin: 30px 0;
-}
-
-/**
- * Table
- */
-.wp-block-table {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.wp-block-table table {
-    word-break: keep-all;
-    text-align: left;
-    border-collapse: collapse;
-}
-
-.wp-block-table.is-style-stripes {
-    border: 1px solid var(--color-black);
-}
-
-.wp-block-table {
-    box-shadow: var(--box-shadow-default);
-}
-
-.wp-block-table.is-style-stripes th {
-    text-align: center;
-}
-
-.wp-block-table th {
-    padding: 20px 10px;
-}
-
-.wp-block-table:not(.is-style-stripes) th {
-    background-color: var(--color-lightgray);
-}
-
-.wp-block-table:not(.is-style-stripes) td {
-    border-bottom: 1px solid var(--color-gray);
-}
-
-.wp-block-table:not(.is-style-stripes) th:nth-child(2n+1),
-.wp-block-table:not(.is-style-stripes) td:nth-child(2n+1) {
-    border-right: 1px solid var(--color-gray);
-}
-
-.wp-block-table td {
-    padding: 15px 10px;
-    font-size: var(--font-size-table);
-}
-
-.wp-block-table figcaption {
-    text-align: center;
-    padding: 10px 0;
-    font-size: var(--font-size-caption);
-}
-
-.wp-block-table.is-style-stripes figcaption {
-    color: var(--color-white);
-    background-color: var(--color-black);
-}
-
-.wp-block-table:not(.is-style-stripes) figcaption {
-    background-color: var(--color-lightgray);
-}
-
-.wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {
-    background-color: var(--color-lightgray);
 }

@@ -185,7 +185,7 @@ a.custom-logo-link:hover {
 
 .follow-me-list li a:hover {
     border: none;
-    background-color: var(--color-black);
+    background-color: var(--color-tertiary);
     border-radius: 50%;
 }
 
