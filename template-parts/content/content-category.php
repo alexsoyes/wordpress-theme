@@ -11,7 +11,7 @@
         <div class="entry-content">
             <h1><?php single_cat_title(); ?></h1>
             <div>
-                <?php echo category_description(); ?>
+				<?php echo wp_kses_post( wpautop( get_the_archive_description() ) ); ?>
             </div>
 			<?php get_template_part( 'template-parts/elements/categories' ); ?>
         </div><!-- .entry-content -->
@@ -19,7 +19,7 @@
 
     <div class="entry-content">
 		<?php
-		while (have_posts()) {
+		while ( have_posts() ) {
 			the_post();
 
 			get_template_part('template-parts/elements/card');
