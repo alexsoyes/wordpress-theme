@@ -23,6 +23,7 @@ Requires PHP: 7.1
  */
 :root {
     /* Container */
+    --container-max-width: 1260px;
     --container-padding: 20px;
     --container-width: calc(100% - (var(--container-padding) * 2));
 

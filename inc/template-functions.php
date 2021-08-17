@@ -28,7 +28,7 @@ function soyes_get_social_share(): array {
 	return [
 		'twitter'  => [
 			'name' => 'Twitter',
-			'attr' => "data-tab=\"$shareTwitter\"",
+			'attr' => "data-window=\"$shareTwitter\"",
 			'svg'  => $svgTwitter
 		],
 		'linkedin' => [
@@ -38,7 +38,7 @@ function soyes_get_social_share(): array {
 		],
 		'facebook' => [
 			'name' => 'Facebook',
-			'attr' => "data-tab=\"$shareFacebook\"",
+			'attr' => "data-window=\"$shareFacebook\"",
 			'svg'  => $svgFacebook
 		],
 	];

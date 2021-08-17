@@ -8,21 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	for (var link of windowLinks) {
 		link.onclick = function() {
-			openPopup( this.dataset.window, "Partager", 500, 500 );
+			openPopup( this.dataset.window, "Partager", 800, 600 );
 		};
-	}
-
-	/**
-	 * Open in a new tab.
-	 *
-	 * @type {NodeListOf<Element>}
-	 */
-	var windowTabs = document.querySelectorAll( "[data-tab]" );
-
-	for (var tab of windowTabs) {
-		tab.onclick = function () {
-			window.open(this.dataset.tab);
-		}
 	}
 });
 
