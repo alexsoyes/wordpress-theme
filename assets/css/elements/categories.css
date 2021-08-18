@@ -10,16 +10,29 @@ h1 {
 
 .entry-categories {
     list-style: none;
-    padding: 0;
+    padding: 0px;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .entry-categories li {
     display: inline-block;
-    padding: 15px 30px;
     border-radius: 30px;
-    margin: 20px 10px 0 0;
+    padding: 5px 10px;
+    margin: 30px 5px;
     background-color: var(--color-white);
     box-shadow: var(--box-shadow-default);
+}
+
+
+@media only screen and (min-width: 992px) {
+    .entry-categories {
+        padding: 0;
+    }
+
+    .entry-categories li {
+        padding: 15px 30px;
+    }
 }
 
 .entry-categories li a {

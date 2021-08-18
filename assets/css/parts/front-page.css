@@ -33,6 +33,10 @@
     border-radius: 5px;
 }
 
+.entry-form input[type="submit"] {
+    /*margin: 0;*/
+}
+
 .entry-form input[type="email"] {
     border: 1px solid var(--color-gray);
     color: var(--color-black);

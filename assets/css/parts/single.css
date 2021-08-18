@@ -104,19 +104,17 @@
 .entry-content .toc {
     background-color: var(--color-lightgray);
     margin: 50px 0;
-    padding: 50px 0;
     border-bottom: 10px solid var(--color-tertiary);
 }
 
 .entry-content .toc ol {
-    padding-left: 15px;
+    padding-left: 0px;
     counter-reset: item;
 }
 
 .entry-content .toc ol li {
     margin: 5px 0;
     display: block;
-    white-space: nowrap;
 }
 
 .entry-content .toc ol li a {
@@ -134,10 +132,26 @@
     counter-increment: item;
     color: var(--color-black);
     margin-right: .5rem;
+    font-size: var(--font-size-list-number);
 }
 
 .entry-content .toc_full .toc_2 > a {
     font-weight: var(--font-weight-bold);
+}
+
+.entry-content .toc_full .toc_3 {
+    font-size: var(--font-size-list-child);
+}
+
+
+@media only screen and (min-width: 992px) {
+    .entry-content .toc ol {
+        padding-left: 15px;
+    }
+
+    .entry-content .toc {
+        padding: 50px 0;
+    }
 }
 
 /**
@@ -163,9 +177,40 @@
 }
 
 /**
+ * Yoast FAQ.
+ */
+.schema-faq-question {
+    font-size: var(--font-size-h3);
+    padding-top: 60px;
+    display: block;
+}
+
+.schema-faq-answer br {
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/**
+ * Content.
+ */
+.entry-content ul a[target="_blank"]::after,
+.entry-content p a[target="_blank"]::after {
+    content: '';
+    width: var(--font-size-paragraph);
+    height: var(--font-size-paragraph);
+    background-image: url("/wp-content/themes/soyes/assets/images/icons/open-outline.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 3px 5px;
+}
+
+
+/**
  * Sticky share.
  */
-
 .link-share-container {
     display: none;
 }
@@ -224,7 +269,7 @@
  */
 
 .entry-meta {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -248,15 +293,29 @@
 }
 
 
+@media only screen and (min-width: 992px) {
+    .entry-meta {
+        margin-top: 100px;
+    }
+}
+
+
 /**
  * Share bottom
  */
 .entry-social {
     margin-top: 100px;
-    padding: 100px;
+    padding: 20px;
     color: var(--color-white);
     background-color: var(--color-quaternary);
     text-align: center;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .entry-social {
+        padding: 100px;
+    }
 }
 
 .social-title {

@@ -14,6 +14,7 @@
 
 .fn {
     font-size: var(--font-size-h6);
+    margin-bottom: 5px;
 }
 
 .avatar {
@@ -34,7 +35,6 @@
  */
 .reply {
     text-align: right;
-    padding-bottom: 10px;
 }
 
 .comment-reply-link {
@@ -59,11 +59,6 @@
     border: none;
 }
 
-.comment-link {
-    color: var(--color-grayer);
-    font-size: var(--font-size-caption);
-}
-
 .comment-metadata {
     line-height: 20px;
 }
@@ -80,6 +75,28 @@
 .comment-metadata b,
 .comment-metadata time {
     display: block;
+}
+
+.comment-metadata time {
+    color: var(--color-grayer);
+    font-size: var(--font-size-caption);
+}
+
+.comment-link {
+    color: var(--color-grayer);
+}
+
+.comment-link:hover {
+    color: var(--color-black);
+    border-bottom: none;
+}
+
+.comment-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 20px 0;
+    font-size: var(--font-size-caption);
 }
 
 /**
@@ -103,7 +120,7 @@
     padding: 10px 30px;
 }
 
-.comment-content > * {
+.comment-content p {
     font-size: var(--font-size-comment);
     line-height: 30px;
     margin-bottom: 0;
@@ -139,6 +156,7 @@
 .comment-form-cookies-consent label {
     font-size: var(--font-size-label);
     cursor: default;
+    white-space: break-spaces;
 }
 
 .comment-form input.submit {
@@ -162,8 +180,10 @@
     font-size: var(--font-size-input);
 }
 
-.comment-respond {
-    padding: 0 150px;
+@media only screen and (min-width: 992px) {
+    .comment-respond {
+        padding: 0 150px;
+    }
 }
 
 .comment-form-author,

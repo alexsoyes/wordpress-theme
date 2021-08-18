@@ -2,16 +2,29 @@
     margin: 50px 0;
     box-shadow: var(--box-shadow-default);
     border-radius: 5px;
-    background-size: contain;
-    background-position: right center;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+    .card {
+        flex-direction: row;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .card-image img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .card-content {
     color: var(--color-black);
     background-color: var(--color-white);
-    width: 50%;
-    padding: 60px 30px;
+    padding: 40px 30px;
 }
 
 .card-title {

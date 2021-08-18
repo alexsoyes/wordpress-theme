@@ -9,7 +9,6 @@ figure.wp-block-image {
     position: relative;
     font-size: var(--font-size-caption);
     font-weight: var(--font-weight-bold);
-    padding: 20px;
 }
 
 .wp-block-image img {
@@ -18,15 +17,24 @@ figure.wp-block-image {
 
 figure figcaption {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0;
     position: relative;
     font-size: var(--font-size-caption);
     background-color: var(--color-lightgray);
-    padding: 10px;
+    padding: 20px;
+    word-break: break-all;
 }
 
 .wp-block-embed {
     text-align: center;
+}
+
+
+@media only screen and (min-width: 992px) {
+    figure.wp-block-image {
+        padding: 10px;
+    }
+
 }
 
 /**
@@ -38,7 +46,7 @@ p {
     line-height: 32px;
     font-size: var(--font-size-paragraph);
     margin-bottom: 10px;
-    letter-spacing: -0.063px;
+    letter-spacing: -0.065px;
 }
 
 ul {
@@ -96,6 +104,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0;
     padding-top: 60px;
     display: block;
+}
+
+h3, h4, h5, h6 {
+    line-height: 32px;
 }
 
 h1 {
@@ -169,6 +181,7 @@ blockquote cite {
     color: #000;
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-caption);
+    line-height: calc(var(--font-size-caption) * 2);
     margin-top: 30px;
     display: block;
 }

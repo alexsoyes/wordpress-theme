@@ -58,7 +58,7 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 		);
 
 		if ( ! isset( $content_width ) ) {
-			$content_width = 600;
+			$content_width = 912;
 		}
 
 		/*
@@ -69,7 +69,7 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1568, 9999 );
 
-		//      add_image_size();
+		add_image_size( 'post_content', 912 );
 
 		register_nav_menus(
 			array(
@@ -102,17 +102,19 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 
-		$logo_width = 150;
+		$logo_width  = 150;
+		$logo_height = 43;
 		add_theme_support(
 			'custom-logo',
 			array(
-				'width'       => $logo_width,
-				'flex-height' => true,
+				'width'  => $logo_width,
+				'height' => $logo_height,
 			)
 		);
 
-		add_filter( 'get_custom_logo_image_attributes', function ( array $custom_logo_attr ) use ( $logo_width ) {
-			$custom_logo_attr['width'] = $logo_width;
+		add_filter( 'get_custom_logo_image_attributes', function ( array $custom_logo_attr ) use ( $logo_width, $logo_height ) {
+			$custom_logo_attr['width']  = $logo_width;
+			$custom_logo_attr['height'] = $logo_height;
 
 			return $custom_logo_attr;
 		} );
