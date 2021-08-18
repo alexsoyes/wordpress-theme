@@ -20,8 +20,8 @@
             <p>Chaque mois, reçois un conseil unique pour <strong>progresser en tant que développeur.</strong></p>
 
             <form class="entry-form">
-                <label for="email">Mon e-mail</label>
-                <input id="email" type="email" placeholder="Mon adresse mail principale" required>
+                <input id="email" type="email" placeholder="Mon adresse mail principale" required
+                       aria-label="Adresse e-mail">
                 <input type="submit" class="wp-block-button__link" value="Inscris-moi ✅">
             </form>
 

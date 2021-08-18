@@ -17,9 +17,9 @@
             <div class="entry-meta">
 
                 <div class="entry-date">
-                    <small>
+                    <span>
 						<?php printf( __( 'Last commit on: <strong>%s</strong>', 'soyes' ), get_the_modified_date() ); ?>
-                    </small>
+                    </span>
                 </div><!-- .entry-date -->
 
                 <div class="link-comment">

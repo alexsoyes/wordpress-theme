@@ -131,7 +131,6 @@
     border-radius: var(--radius-default);
     padding: 5px 15px;
     font-size: var(--font-size-button);
-    font-weight: var(--font-weight-bold);
     box-shadow: var(--box-shadow-default);
 }
 
@@ -146,14 +145,14 @@
 }
 
 /**
- * Share top
+ * Sticky share.
  */
 
 .link-share-container {
     display: none;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     .link-share-container {
         display: block;
         max-width: var(--container-max-width);
@@ -202,12 +201,22 @@
     fill: var(--color-black);
 }
 
+/**
+ * Meta
+ */
+
 .entry-meta {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
+}
+
+.entry-date {
+    padding-bottom: 2px;
+    font-size: var(--font-size-button);
+    border-bottom: 2px solid var(--color-white);
 }
 
 /**
