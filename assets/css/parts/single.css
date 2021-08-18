@@ -14,7 +14,14 @@
 
 .post-header-overlay {
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 150px 0;
+    padding: 50px 0;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .post-header-overlay {
+        padding: 150px 0;
+    }
 }
 
 .entry-title {
@@ -50,12 +57,28 @@
     position: relative;
 }
 
-.entry-content h2 > a:first-of-type,
-.entry-content h3 > a:first-of-type {
+.entry-content .toc_ref {
+    color: var(--color-grayer);
+}
+
+
+@media only screen and (min-width: 992px) {
+    .entry-content .toc_ref:hover {
+        color: var(--color-black);
+    }
+}
+
+.toc_ref {
+    display: none;
     position: absolute;
     bottom: -5px;
     left: -50px;
-    color: var(--color-grayer);
+}
+
+@media only screen and (min-width: 992px) {
+    .toc_ref {
+        display: block;
+    }
 }
 
 .entry-content h2 a,
@@ -75,11 +98,6 @@
 .entry-content h3 > a:first-of-type {
     left: -40px;
     opacity: 0.25;
-}
-
-.entry-content h2 a:hover,
-.entry-content h3 a:hover {
-    color: var(--color-black);
 }
 
 /** Summary **/
@@ -218,6 +236,17 @@
     font-size: var(--font-size-button);
     border-bottom: 2px solid var(--color-white);
 }
+
+@media only screen and (max-width: 991px) {
+    .entry-meta {
+        flex-direction: column;
+    }
+
+    .entry-date {
+        margin-bottom: 20px;
+    }
+}
+
 
 /**
  * Share bottom

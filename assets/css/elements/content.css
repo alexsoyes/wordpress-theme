@@ -5,34 +5,24 @@
 figure.wp-block-image {
     display: block;
     text-align: center;
-    margin: 30px 0 60px 0;
+    margin: 30px 0 0 0;
     position: relative;
     font-size: var(--font-size-caption);
-    box-shadow: var(--box-shadow-default);
+    font-weight: var(--font-weight-bold);
     padding: 20px;
 }
 
 .wp-block-image img {
     height: auto;
-    margin-bottom: 15px;
 }
 
-.wp-block-image figcaption {
+figure figcaption {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     position: relative;
     font-size: var(--font-size-caption);
-}
-
-.wp-block-image figcaption::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 2px;
-    background-color: var(--color-gray);
-    bottom: -20px;
-    left: calc(50% - 50px / 2);
-    right: calc(50% - 50px / 2);
+    background-color: var(--color-lightgray);
+    padding: 10px;
 }
 
 .wp-block-embed {
@@ -191,6 +181,11 @@ blockquote::after {
     top: 20px;
 }
 
+/**
+ * Video.
+ */
+
+iframe,
 video {
     max-width: 100%
 }

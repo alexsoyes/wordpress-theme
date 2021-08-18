@@ -63,17 +63,17 @@ Requires PHP: 7.1
     --font-size-code: 15px;
     --font-size-button: 15px;
     --font-size-input: 15px;
-    --font-size-paragraph: 18px;
+    --font-size-paragraph: 16px;
     --font-size-comment: 15px;
     --font-size-list: 16px;
     --font-size-caption: 13px;
     --font-size-table: 15px;
-    --font-size-h1: 48px;
-    --font-size-h2: 32px;
+    --font-size-h1: 40px;
+    --font-size-h2: 28px;
     --font-size-h3: 24px;
     --font-size-h4: 22px;
-    --font-size-h5: 20px;
-    --font-size-h6: 18px;
+    --font-size-h5: 18px;
+    --font-size-h6: 16px;
     --font-weight-bolder: 800;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
@@ -82,6 +82,13 @@ Requires PHP: 7.1
 @media only screen and (min-width: 992px) {
     :root {
         --container-width: calc(992px - (var(--container-padding) * 2));
+        --font-size-paragraph: 18px;
+        --font-size-h1: 48px;
+        --font-size-h2: 32px;
+        --font-size-h3: 24px;
+        --font-size-h4: 22px;
+        --font-size-h5: 20px;
+        --font-size-h6: 18px;
     }
 }
 
@@ -111,7 +118,9 @@ button {
  */
 
 #header nav {
-
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
 }
 
 #header nav ul {
@@ -134,11 +143,17 @@ button {
     color: var(--color-quaternary);
 }
 
-
 #header .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 991px) {
+    #header .header-container {
+        flex-direction: column;
+        padding-top: 20px;
+    }
 }
 
 a.custom-logo-link:hover {
