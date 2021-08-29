@@ -10,26 +10,29 @@ if ( have_posts() ):
     <article>
         <header class="entry-jump entry-content page-header alignwide">
             <h1 class="page-title">
-				<?php
-				printf(
-				/* translators: %s: Search term. */
-					esc_html__( 'Results for "%s"', 'twentytwentyone' ),
-					'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
-				);
-				?>
+	            <?php
+	            printf(
+	            /* translators: %s: Search term. */
+		            esc_html__( 'Results for "%s"', 'twentytwentyone' ),
+		            '<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
+	            );
+	            ?>
             </h1>
         </header><!-- .page-header -->
 
-		<?php get_search_form(); ?>
 
         <div class="entry-content">
-			<?php
-			while ( have_posts() ) {
-				the_post();
+		    <?php get_search_form(); ?>
+        </div>
 
-				get_template_part( 'template-parts/elements/card' );
-			}
-			?>
+        <div class="entry-content">
+		    <?php
+		    while ( have_posts() ) {
+			    the_post();
+
+			    get_template_part( 'template-parts/elements/card' );
+		    }
+		    ?>
         </div><!-- .entry-content -->
 
         <footer class="entry-footer default-max-width">

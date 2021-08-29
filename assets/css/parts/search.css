@@ -37,7 +37,6 @@
     margin: 0;
 }
 
-
 @media only screen and (max-width: 991px) {
     .search-button {
         display: none;
