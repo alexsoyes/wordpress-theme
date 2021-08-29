@@ -183,6 +183,9 @@ pre:not(.wp-block-code)::after {
 
 code {
     word-break: break-word;
+    color: var(--color-grayer);
+    padding: 0 5px;
+    display: inline-block;
 }
 
 .entry-content blockquote a {

@@ -1,15 +1,22 @@
 <?php
 
 /**
- *
+ * Content for front page aka /.
  */
 
 get_header();
 
-get_template_part('template-parts/header/header-front-page');
+if ( have_posts() ): ?>
 
-if (have_posts()) {
-    get_template_part('template-parts/content/content', 'front-page');
-}
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+        <div class="entry-content">
+			<?php the_content(); ?>
+        </div><!-- .entry-content -->
+
+    </article><!-- #post-<?php the_ID(); ?> -->
+
+<?php
+endif;
 
 get_footer();

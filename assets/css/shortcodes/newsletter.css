@@ -1,18 +1,24 @@
+
+.soyes-newsletter-container {
+    margin-top: 200px;
+}
+
 /**
  * Title.
  */
-.entry-title {
-    margin-top: 200px;
+.soyes-newsletter-title {
+    margin-top: 0;
+    padding-top: 20px;
     font-size: var(--font-size-h1);
 }
 
-.entry-title span {
+.soyes-newsletter-title span {
     font-size: var(--font-size-h3);
     display: block;
     position: relative;
 }
 
-.entry-title span::after {
+.soyes-newsletter-title span::after {
     content: '';
     position: absolute;
     display: inline-block;
@@ -26,22 +32,22 @@
 /**
  * Form.
  */
-.entry-form > * {
+.soyes-newsletter-form > * {
     display: block;
     width: 100%;
     padding: 20px;
     border-radius: 5px;
 }
 
-.entry-form input[type="submit"] {
-    /*margin: 0;*/
-}
-
-.entry-form input[type="email"] {
+.soyes-newsletter-email {
     border: 1px solid var(--color-gray);
     color: var(--color-black);
 }
 
-.entry-form input[type="email"]:focus {
-    border-color: var(--color-quaternary);
+.soyes-newsletter-email:focus {
+    border-color: var(--color-secondary);
+}
+
+.soyes-newsletter-submit {
+    padding: 20px;
 }
