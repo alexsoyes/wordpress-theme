@@ -38,7 +38,7 @@ Requires PHP: 7.1
     --color-white: #fff;
     --color-black: #000; /* rgba(0, 0, 0, 0.87); */
     --color-lightgray: #f7f7f7;
-    --color-gray: #ddd;
+    --color-gray: #dfe1e5; /* #dfe1e5; #ddd */
     --color-grayer: #525252; /** rgb(117, 117, 117)  | #9e9e9e **/
     --color-italic: var(--color-tertiary);
     --color-link: var(--color-secondary);
@@ -46,8 +46,10 @@ Requires PHP: 7.1
 
     /* Elements */
     --box-shadow-default: 0 1px 6px 0 var(--color-box-shadow); /* 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12); */
+    --box-shadow-strong: 0 1px 6px 0 var(--color-box-shadow); /* 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12); */
     --radius-default: 5px;
     --radius-strong: 15px;
+    --radius-stronger: 30px;
     --transition-default: 0.5s all;
 
     /* Breakpoints */
@@ -115,6 +117,10 @@ button {
     cursor: pointer;
 }
 
+input:focus {
+    outline: none;
+}
+
 /**
  * Header.
  */
@@ -125,7 +131,7 @@ button {
 }
 
 #header nav ul {
-    margin: 20px 0;
+    padding-left: 10px;
 }
 
 #header nav li {
@@ -136,7 +142,6 @@ button {
 #header nav a {
     color: var(--color-black);
     font-size: var(--font-size-menu);
-    transition: var(--transition-default);
 }
 
 #header nav a:hover {
@@ -172,6 +177,12 @@ button {
 
     #header nav li {
         margin: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #header nav ul {
+        margin: 20px 0;
     }
 }
 

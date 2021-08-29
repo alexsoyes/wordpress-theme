@@ -4,6 +4,14 @@
     padding: 40px 0;
 }
 
+#header {
+    background-color: var(--color-lightgray);
+}
+
+.entry-content {
+    margin-top: 3rem;
+}
+
 h1 {
     margin-top: 0;
 }
@@ -39,7 +47,6 @@ h1 {
     text-transform: capitalize;
     color: var(--color-quaternary);
     font-weight: var(--font-weight-bold);
-    transition: var(--transition-default);
 }
 
 .entry-categories li a:hover {

@@ -4,14 +4,14 @@
  * Functions and definitions
  */
 
-require "inc/template-functions.php";
-require "inc/performance.php";
-require "inc/gutenberg.php";
-require "inc/navigation.php";
+require 'inc/template-functions.php';
+require 'inc/performance.php';
+require 'inc/gutenberg.php';
+require 'inc/navigation.php';
 require 'inc/table-of-contents.php';
 require 'inc/shortcodes.php';
-require "classes/class-walker-comment.php";
-require "classes/class-walker-menu-social.php";
+require 'classes/class-walker-comment.php';
+require 'classes/class-walker-menu-social.php';
 
 if ( ! function_exists( 'soyes_one_setup' ) ) {
 	/**
@@ -20,7 +20,6 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 	 * Note that this function is hooked into the after_setup_theme hook, which
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
-	 *
 	 */
 	function soyes_one_setup() {
 		/*
@@ -112,12 +111,15 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 			)
 		);
 
-		add_filter( 'get_custom_logo_image_attributes', function ( array $custom_logo_attr ) use ( $logo_width, $logo_height ) {
-			$custom_logo_attr['width']  = $logo_width;
-			$custom_logo_attr['height'] = $logo_height;
+		add_filter(
+			'get_custom_logo_image_attributes',
+			function ( array $custom_logo_attr ) use ( $logo_width, $logo_height ) {
+				$custom_logo_attr['width']  = $logo_width;
+				$custom_logo_attr['height'] = $logo_height;
 
-			return $custom_logo_attr;
-		} );
+				return $custom_logo_attr;
+			}
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -178,9 +180,15 @@ function soyes_scripts(): void {
 		wp_enqueue_style( 'soyes-style-home', get_template_directory_uri() . '/assets/css/parts/category.css', array(), $version );
 	}
 
-	if ( is_home() || is_category() ) {
+	if ( is_home() || is_category() || is_search() ) {
 		wp_enqueue_style( 'soyes-style-element-categories', get_template_directory_uri() . '/assets/css/elements/categories.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version );
+	}
+
+	if ( is_search() ) {
+		wp_enqueue_style( 'soyes-style-block-library', get_template_directory_uri() . '/assets/css/block-library.css', array(), $version );
+		wp_enqueue_style( 'soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version );
+
 	}
 
 	wp_deregister_style( 'wp-block-library' );
@@ -192,13 +200,13 @@ add_action( 'wp_enqueue_scripts', 'soyes_scripts' );
 
 function soyes_sidebar(): void {
 	register_sidebar(
-		[
+		array(
 			'name'          => __( 'Footer text', 'soyes' ),
 			'id'            => 'sidebar-footer-about',
 			'description'   => __( 'Display some basic info about who you are in the footer.', 'soyes' ),
 			'before_widget' => '<div>',
 			'after_widget'  => '</div>',
-		]
+		)
 	);
 }
 

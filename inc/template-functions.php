@@ -60,7 +60,7 @@ function soyes_get_the_image( string $imageName, string $imageExtension = "svg",
 }
 
 function soyes_get_the_social_icon( string $socialName ): string {
-	return get_stylesheet_directory_uri() . "/assets/images/icons/social/" . $socialName . ".svg";
+	return soyes_get_the_image( $socialName, 'svg', true, true );
 }
 
 function soyes_the_comment_count( bool $shouldDisplayText = true ): void {

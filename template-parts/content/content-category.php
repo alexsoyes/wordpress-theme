@@ -6,7 +6,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article>
     <header class="entry-header">
         <div class="entry-content">
             <h1><?php single_cat_title(); ?></h1>
@@ -39,4 +39,4 @@
 		);
 		?>
     </footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</article>
