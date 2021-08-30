@@ -1,11 +1,7 @@
-
 .soyes-newsletter-container {
     margin-top: 200px;
 }
 
-/**
- * Title.
- */
 .soyes-newsletter-title {
     margin-top: 0;
     padding-top: 20px;
@@ -29,9 +25,6 @@
     z-index: -1;
 }
 
-/**
- * Form.
- */
 .soyes-newsletter-form > * {
     display: block;
     width: 100%;

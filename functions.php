@@ -197,6 +197,10 @@ function soyes_scripts(): void {
 		wp_enqueue_style( 'soyes-style-shortcode-newsletter', get_template_directory_uri() . '/assets/css/shortcodes/newsletter.css', array(), $version );
 	}
 
+	if ( has_shortcode( $post->post_content, 'soyes_toc' ) ) {
+		wp_enqueue_style( 'soyes-style-shortcode-toc', get_template_directory_uri() . '/assets/css/shortcodes/toc.css', array(), $version );
+	}
+
 	wp_deregister_style( 'wp-block-library' );
 	wp_deregister_script( 'wp-block-library' );
 	wp_deregister_script( 'wp-embed' );

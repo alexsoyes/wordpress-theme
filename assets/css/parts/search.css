@@ -13,7 +13,7 @@
     border-radius: var(--radius-stronger);
     border: 1px solid var(--color-gray);
     color: var(--color-grayer);
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin-right: 10px;
     width: 100%;
     display: flex;
@@ -35,6 +35,20 @@
     padding: 15px 60px;
     border-radius: var(--radius-stronger);
     margin: 0;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    box-shadow: var(--box-shadow-default);
+    font-size: var(--font-size-button);
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.search-button:hover {
+    box-shadow: var(--box-shadow-strong);
+    color: var(--color-white);
 }
 
 @media only screen and (max-width: 991px) {

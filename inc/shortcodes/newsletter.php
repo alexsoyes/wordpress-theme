@@ -23,13 +23,14 @@ add_shortcode( 'soyes_newsletter', function () {
         </h2>
 
         <p>
-			<?php _e( 'Chaque mois, reçois un conseil unique pour <strong>progresser en tant que développeur.</strong>', 'soyes' ); ?>
+		    <?php _e( 'Chaque mois, reçois un conseil unique pour <strong>progresser en tant que développeur.</strong>', 'soyes' ); ?>
         </p>
 
         <form class="soyes-newsletter-form">
             <input id="email" type="email" placeholder="Mon adresse mail principale" required
                    aria-label="Adresse e-mail" class="soyes-newsletter-email">
-            <input type="submit" class="wp-block-button__link soyes-newsletter-submit" value="Inscris-moi ✅">
+            <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
+                   value="<?php esc_html_e( "Je m'inscris", 'soyes' ); ?>">
         </form>
     </div>
 	<?php

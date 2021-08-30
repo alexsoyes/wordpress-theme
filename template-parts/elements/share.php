@@ -11,4 +11,7 @@
             <button <?php echo $button['attr']; ?>><?php echo $button['svg']; ?><?php echo $button['name']; ?></button>
 		<?php endforeach; ?>
     </div>
+    <p class="social-more">
+		<?php esc_html_e( 'I do reply to every comment on the blog :)', 'soyes' ); ?>
+    </p>
 </div><!-- .default-max-width -->
