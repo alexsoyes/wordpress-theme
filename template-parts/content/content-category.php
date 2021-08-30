@@ -14,15 +14,27 @@
 				<?php echo wp_kses_post( wpautop( get_the_archive_description() ) ); ?>
             </div>
 			<?php get_template_part( 'template-parts/elements/categories' ); ?>
+
+            <div>
+                <small>
+                    <a href="<?php echo get_post_type_archive_link( 'post' ); ?>"
+                       title="<?php esc_html_e( 'Find all posts', 'soyes' ) ?>"
+                       class="wp-block-button__link">
+						<?php esc_html_e( 'Return to blog posts', 'soyes' ) ?>
+                    </a>
+                </small>
+            </div>
         </div><!-- .entry-content -->
     </header><!-- .entry-header -->
 
     <div class="entry-content">
 		<?php
+		get_search_form();
+
 		while ( have_posts() ) {
 			the_post();
 
-			get_template_part('template-parts/elements/card');
+			get_template_part( 'template-parts/elements/card' );
 		}
 		?>
     </div><!-- .entry-content -->

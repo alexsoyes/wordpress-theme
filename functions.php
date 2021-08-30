@@ -170,15 +170,12 @@ function soyes_scripts(): void {
 		wp_enqueue_style( 'soyes-style-element-content', get_template_directory_uri() . '/assets/css/elements/content.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-block-library', get_template_directory_uri() . '/assets/css/block-library.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-404', get_template_directory_uri() . '/assets/css/parts/404.css', array(), $version );
-	}
-
-	if ( is_home() ) {
-		wp_enqueue_style( 'soyes-style-home', get_template_directory_uri() . '/assets/css/parts/home.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version );
 	}
 
-	if ( is_category() ) {
-		wp_enqueue_style( 'soyes-style-home', get_template_directory_uri() . '/assets/css/parts/category.css', array(), $version );
+	if ( is_home() || is_category() ) {
+		wp_enqueue_style( 'soyes-style-home', get_template_directory_uri() . '/assets/css/parts/home.css', array(), $version );
+		wp_enqueue_style( 'soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version );
 	}
 
 	if ( is_home() || is_category() || is_search() ) {
@@ -193,12 +190,14 @@ function soyes_scripts(): void {
 
 	global $post;
 
-	if ( has_shortcode( $post->post_content, 'soyes_newsletter' ) ) {
-		wp_enqueue_style( 'soyes-style-shortcode-newsletter', get_template_directory_uri() . '/assets/css/shortcodes/newsletter.css', array(), $version );
-	}
+	if ( $post ) {
+		if ( has_shortcode( $post->post_content, 'soyes_newsletter' ) ) {
+			wp_enqueue_style( 'soyes-style-shortcode-newsletter', get_template_directory_uri() . '/assets/css/shortcodes/newsletter.css', array(), $version );
+		}
 
-	if ( is_single() && has_shortcode( $post->post_content, 'soyes_toc' ) ) {
-		wp_enqueue_style( 'soyes-style-shortcode-toc', get_template_directory_uri() . '/assets/css/shortcodes/toc.css', array(), $version );
+		if ( is_single() && has_shortcode( $post->post_content, 'soyes_toc' ) ) {
+			wp_enqueue_style( 'soyes-style-shortcode-toc', get_template_directory_uri() . '/assets/css/shortcodes/toc.css', array(), $version );
+		}
 	}
 
 	if ( is_singular() && get_option( 'thread_comments' ) ) {
