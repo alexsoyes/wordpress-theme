@@ -168,7 +168,6 @@ function soyes_scripts(): void {
 	}
 
 	if ( is_home() || is_category() ) {
-		wp_enqueue_style( 'soyes-style-home', get_template_directory_uri() . '/assets/css/parts/home.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version );
 	}
 
