@@ -1,34 +1,43 @@
 .soyes-newsletter-container {
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 .soyes-newsletter-title {
     margin-top: 0;
+    margin-bottom: 0;
     padding-top: 20px;
     font-size: var(--font-size-h1);
 }
 
 .soyes-newsletter-title span {
-    font-size: var(--font-size-h3);
-    display: block;
-    position: relative;
+    color: var(--color-secondary);
 }
 
-.soyes-newsletter-title span::after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 50%;
-    border-bottom: 10px solid var(--color-tertiary);
-    left: 0;
-    bottom: 3px;
-    z-index: -1;
+.soyes-newsletter-desc {
+    color: var(--color-grayer);
+}
+
+.soyes-newsletter-form {
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+    .soyes-newsletter-columns img:not(.soyes-newsletter-icon) {
+        width: 50%;
+        margin-bottom: -80px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .soyes-newsletter-form {
+        width: 90%;
+    }
 }
 
 .soyes-newsletter-form > * {
     display: block;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
 }
 
@@ -42,5 +51,9 @@
 }
 
 .soyes-newsletter-submit {
-    padding: 20px;
+    padding: 15px;
+}
+
+.soyes-newsletter-warn {
+    padding-left: 0;
 }

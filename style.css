@@ -66,6 +66,7 @@ Requires PHP: 7.1
     --font-size-button: 15px;
     --font-size-input: 15px;
     --font-size-paragraph: 16px;
+    --font-size-text: 16px;
     --font-size-comment: 15px;
     --font-size-list: 16px;
     --font-size-list-child: 15px;
@@ -124,6 +125,10 @@ input:focus {
 /**
  * Header.
  */
+
+#header {
+    padding-top: 5px;
+}
 
 #header nav {
     overflow: auto;
@@ -202,6 +207,8 @@ a.custom-logo-link:hover {
  * Footer.
  */
 .site-footer {
+    z-index: 20;
+    position: relative;
     margin-top: 100px;
     text-align: center;
     background-color: var(--color-quaternary);

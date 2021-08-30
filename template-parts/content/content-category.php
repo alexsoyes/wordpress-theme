@@ -9,21 +9,20 @@
 <article>
     <header class="entry-header">
         <div class="entry-content">
-            <h1><?php single_cat_title(); ?></h1>
-            <div>
-				<?php echo wp_kses_post( wpautop( get_the_archive_description() ) ); ?>
-            </div>
-			<?php get_template_part( 'template-parts/elements/categories' ); ?>
-
-            <div>
+            <div class="entry-return-link">
                 <small>
                     <a href="<?php echo get_post_type_archive_link( 'post' ); ?>"
                        title="<?php esc_html_e( 'Find all posts', 'soyes' ) ?>"
                        class="wp-block-button__link">
-						<?php esc_html_e( 'Return to blog posts', 'soyes' ) ?>
+						<?php esc_html_e( '< Return to blog posts', 'soyes' ) ?>
                     </a>
                 </small>
             </div>
+            <h1><?php single_cat_title(); ?></h1>
+            <div class="entry-text">
+				<?php echo wp_kses_post( wpautop( get_the_archive_description() ) ); ?>
+            </div>
+			<?php get_template_part( 'template-parts/elements/categories' ); ?>
         </div><!-- .entry-content -->
     </header><!-- .entry-header -->
 

@@ -78,15 +78,3 @@
     color: var(--color-grayer);
 
 }
-
-/**
- * Odd.
- */
-.card:nth-child(odd) {
-    background-position: left center;
-}
-
-.card:nth-child(odd) .card-content {
-    margin-left: auto;
-    position: relative;
-}

@@ -13,7 +13,7 @@ if ( have_posts() ) :?>
             <div class="entry-content">
                 <h1><?php single_post_title(); ?></h1>
 				<?php if ( ! is_paged() ) : ?>
-                    <div>
+                    <div class="entry-text">
 						<?php echo apply_filters( 'the_content', get_post( get_option( 'page_for_posts' ) )->post_content ); ?>
                     </div>
 				<?php endif; ?>

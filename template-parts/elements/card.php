@@ -9,8 +9,10 @@ list ( $thumbnail_url, $thumbnail_width, $thumbnail_height ) = wp_get_attachment
 
 <div class="card">
     <div class="card-image">
-        <img src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>" width="<?php echo $thumbnail_width; ?>"
-             height="<?php echo $thumbnail_height; ?>">
+		<?php if ( $thumbnail_url ): ?>
+            <img src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>" width="<?php echo $thumbnail_width; ?>"
+                 height="<?php echo $thumbnail_height; ?>">
+		<?php endif; ?>
     </div>
     <div class="card-content">
 		<?php $category = soyes_get_the_main_category(); ?>
@@ -29,7 +31,11 @@ list ( $thumbnail_url, $thumbnail_width, $thumbnail_height ) = wp_get_attachment
         <h2 class="card-title">
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h2>
-        <p class="card-excerpt"><?php the_excerpt(); ?></p>
+        <p class="card-excerpt"><?php
+			if ( has_excerpt() ) {
+				the_excerpt();
+			}
+			?></p>
 
         <div class="card-date">
             <small>

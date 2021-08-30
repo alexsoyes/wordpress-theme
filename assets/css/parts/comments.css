@@ -155,7 +155,7 @@
 
 .comment-form-cookies-consent label {
     font-size: var(--font-size-label);
-    cursor: default;
+    cursor: pointer;
     white-space: break-spaces;
 }
 
@@ -165,7 +165,7 @@
 
 .comment-form input:focus,
 .comment-form textarea:focus {
-    border: 1px solid var(--color-grayer);
+    border: 1px solid var(--color-secondary);
 }
 
 .comment-form-author input,
@@ -175,7 +175,6 @@
     width: 100%;
     border-radius: var(--radius-default);
     border: 1px solid var(--color-gray);
-    background-color: var(--color-lightgray);
     padding: 10px;
     font-size: var(--font-size-input);
 }

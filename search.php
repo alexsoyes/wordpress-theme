@@ -4,15 +4,24 @@
  */
 
 get_header();
+?>
 
-if ( have_posts() ) : ?>
     <article>
-        <header class="entry-jump entry-content page-header alignwide">
+        <header class="entry-content page-header alignwide">
             <h1 class="page-title">
 				<?php
+
 				printf(
-				/* translators: %s: Search term. */
-					esc_html__( 'Results for "%s"', 'twentytwentyone' ),
+					esc_html(
+					/* translators: %d: The number of search results. */
+						_n(
+							'We found %d result for your search "%s".',
+							'We found %d results for your search "%s".',
+							(int) $wp_query->found_posts,
+							'soyes'
+						)
+					),
+					(int) $wp_query->found_posts,
 					'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 				);
 				?>
@@ -20,16 +29,39 @@ if ( have_posts() ) : ?>
         </header><!-- .page-header -->
 
         <div class="entry-content">
+			<?php if ( ! have_posts() ): ?>
+                <p><?php esc_html_e( 'Wanna try another search? 🍀', 'soyes' ); ?></p>
+			<?php endif; ?>
+
 			<?php get_search_form(); ?>
+
+			<?php if ( ! have_posts() ): ?>
+                <div>
+                    <p>
+						<?php esc_html_e( 'Still not having it?', 'soyes' ); ?>
+                    </p>
+                    <a href="<?php echo get_home_url( '/' ) ?>"
+                       title="<?php esc_html_e( 'Return to home', 'soyes' ) ?>"
+                       class="wp-block-button__link">
+						<?php esc_html_e( 'return "/";', 'soyes' ) ?>
+                    </a>
+                    <a href="<?php echo get_post_type_archive_link( 'post' ); ?>"
+                       title="<?php esc_html_e( 'Find all posts', 'soyes' ) ?>"
+                       class="wp-block-button__link">
+						<?php esc_html_e( 'find_all_articles();', 'soyes' ) ?>
+                    </a>
+                </div>
+			<?php endif; ?>
         </div><!-- .entry-content -->
 
         <div class="entry-content">
 			<?php
-			while ( have_posts() ) {
-				the_post();
-
-				get_template_part( 'template-parts/elements/card' );
-			}
+			if ( have_posts() ):
+				while ( have_posts() ):
+					the_post();
+					get_template_part( 'template-parts/elements/card' );
+				endwhile;
+			endif;
 			?>
         </div><!-- .entry-content -->
 
@@ -48,25 +80,5 @@ if ( have_posts() ) : ?>
     </article>
 
 <?php
-else :
-	?>
-    <div class="search-result-count default-max-width">
-		<?php
-		printf(
-			esc_html(
-			/* translators: %d: The number of search results. */
-				_n(
-					'We found %d result for your search.',
-					'We found %d results for your search.',
-					(int) $wp_query->found_posts,
-					'twentytwentyone'
-				)
-			),
-			(int) $wp_query->found_posts
-		);
-		?>
-    </div><!-- .search-result-count -->
-<?php
-endif;
 
 get_footer();

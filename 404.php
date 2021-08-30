@@ -10,16 +10,21 @@ get_header();
 
     <div class="error-404 not-found default-max-width">
         <div class="entry-content">
-            <div>
-                <img src="<?php echo $dinosaur; ?>" alt="<?php esc_html_e( 'Dinosaure 404', 'soyes' ); ?>" width="200"
-                     class="aligncenter">
+            <div class="wp-block-columns">
+                <div class="wp-block-column is-vertically-aligned-bottom">
+                    <img src="<?php echo $dinosaur; ?>" alt="<?php esc_html_e( 'Dinosaure 404', 'soyes' ); ?>"
+                         width="200"
+                         class="aligncenter">
+                </div>
+                <div class="wp-block-column">
+                    <h1><?php echo esc_html_e( 'Damned!', 'soyes' ) ?></h1>
+                    <p><?php esc_html_e( 'That page does not exist (anymore?)!', 'soyes' ); ?></p>
+                    <p><?php _e( 'I am tracking <code>404 errors</code> in order to replace them with <code>301 redirections</code> in case of missing posts (which is very rare by the way).', 'soyes' ); ?></p>
+
+                </div>
             </div>
-            <h1><?php echo esc_html_e( '404', 'soyes' ) ?></h1>
-            <p><?php esc_html_e( 'Damn, that page does not exist (anymore?)!', 'soyes' ); ?></p>
-            <p><?php _e( 'I am tracking <code>404 errors</code> in order to replace them with <code>301 redirections</code> in case of missing posts (which is very rare by the way).', 'soyes' ); ?></p>
 
-
-            <h2><?php esc_html_e( 'Search for the post you are looking for? 🍀', 'soyes' ); ?></h2>
+            <h2><?php esc_html_e( 'Wanna try to search for your post? 🍀', 'soyes' ); ?></h2>
 			<?php get_search_form(); ?>
 
             <p><?php

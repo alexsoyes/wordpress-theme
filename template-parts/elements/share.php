@@ -3,7 +3,7 @@
 		<?php esc_html_e( 'Did you like this article?', 'soyes' ); ?>
     </p>
     <p class="social-description">
-		<?php esc_html_e( 'I took a long time to make this article, if you want to share it, it will make my day! ❤️', 'soyes' ); ?>
+		<?php _e( 'I took a long time to make this article,<br>if you want to share it, it will make my day! ❤️', 'soyes' ); ?>
     </p>
     <div class="social-buttons">
 		<?php $socialButtons = soyes_get_social_share(); ?>

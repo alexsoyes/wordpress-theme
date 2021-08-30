@@ -1,17 +1,23 @@
 <?php
 
-add_shortcode('soyes_toc', function ($atts = array()) {
-    $heading_to_target = is_array($atts) && array_key_exists('headers', $atts) ? $atts['headers'] : '2';
+/**
+ * A beautiful toc on single posts!
+ *
+ * @todo move outside the theme
+ */
 
-    $toc_class = 'toc';
+add_shortcode( 'soyes_toc', function ( $atts = array() ) {
+	$heading_to_target = is_array( $atts ) && array_key_exists( 'headers', $atts ) ? $atts['headers'] : '2';
 
-    // "toc_full" changes the frontend style.
+	$toc_class = 'toc';
+
+	// "toc_full" changes the frontend style.
 	if ( $heading_to_target !== "2" ) {
 		$toc_class = "toc toc_full";
 	}
 
-    preg_match_all(
-        '#<h([' . $heading_to_target . ']).*?>(.*?)</h\1>#',
+	preg_match_all(
+		'#<h([' . $heading_to_target . ']).*?>(.*?)</h\1>#',
         get_the_content(),
         $headings
     );
