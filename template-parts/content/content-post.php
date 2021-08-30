@@ -34,8 +34,8 @@
 			?>
         </div><!-- .entry-content -->
 
-        <footer class="entry-footer entry-social">
-			<?php get_template_part( 'template-parts/elements/share' ); ?>
+        <footer id="community" class="entry-footer entry-social">
+		    <?php get_template_part( 'template-parts/elements/share' ); ?>
         </footer><!-- .entry-footer -->
 
     </article><!-- #post-<?php the_ID(); ?> -->

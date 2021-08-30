@@ -76,12 +76,13 @@ $soyes_comment_count = get_comments_number();
 		<?php
         comment_form(
             array(
-                'logged_in_as'         => null,
-                'comment_notes_before' => esc_html__('Thank you for sharing your story with us!', 'soyes'),
-                'title_reply'          => esc_html__('Leave a comment', 'soyes'),
-                'title_reply_before'   => '<h2 id="reply-title" class="comment-reply-title">👩‍💻 ',
-                'title_reply_after'    => '👨‍💻 </h2>',
-                'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="wp-block-button__link %3$s" value="%4$s" />',
+	            'logged_in_as'         => null,
+	            'comment_notes_before' => esc_html__( 'Thank you for sharing your story with us!', 'soyes' ),
+	            'title_reply'          => esc_html__( 'Leave a comment', 'soyes' ),
+	            'title_reply'          => __( '👩‍💻 Leave a Reply 👨‍💻', 'soyes' ),
+	            'title_reply_before'   => '<h2 id="reply-title" class="comment-reply-title">',
+	            'title_reply_after'    => '</h2>',
+	            'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="wp-block-button__link %3$s" value="%4$s" />',
             )
         );
         ?>

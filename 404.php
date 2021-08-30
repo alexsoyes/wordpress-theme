@@ -34,12 +34,12 @@ get_header();
                         <a href="<?php echo get_home_url( '/' ) ?>"
                            title="<?php esc_html_e( 'Return to home', 'soyes' ) ?>"
                            class="wp-block-button__link">
-							<?php esc_html_e( 'return "/";', 'soyes' ) ?>
+			                <?php esc_html_e( 'return "/";', 'soyes' ) ?>
                         </a>
                         <a href="<?php echo get_post_type_archive_link( 'post' ); ?>"
-                           title="<?php esc_html_e( 'Find all article', 'soyes' ) ?>"
+                           title="<?php esc_html_e( 'Find all posts', 'soyes' ) ?>"
                            class="wp-block-button__link">
-							<?php esc_html_e( 'find_all_articles();', 'soyes' ) ?>
+			                <?php esc_html_e( 'find_all_articles();', 'soyes' ) ?>
                         </a>
                     </div>
                 </div>

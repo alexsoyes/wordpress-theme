@@ -267,6 +267,11 @@
     color: var(--color-tertiary);
 }
 
+.social-more {
+    font-size: var(--font-size-caption);
+    margin-top: 30px;
+}
+
 .social-description {
     font-size: var(--font-size-h4);
 }

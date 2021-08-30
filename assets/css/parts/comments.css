@@ -38,25 +38,25 @@
 }
 
 .comment-reply-link {
-    background-color: var(--color-white);
-    color: var(--color-black);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
     padding: 0 15px;
     border-radius: var(--radius-strong);
     display: inline-flex;
     justify-content: right;
     align-items: center;
-    transition: var(--transition-default);
     box-shadow: var(--box-shadow-default);
 }
+
+.comment-reply-link:hover {
+    border: none;
+    box-shadow: var(--box-shadow-strong);
+}
+
 
 .comment-reply-link img {
     margin-top: 5px;
     margin-left: 5px;
-}
-
-.comment-reply-link:hover {
-    background-color: var(--color-lightgray);
-    border: none;
 }
 
 .comment-metadata {
@@ -203,4 +203,17 @@
 
 input:focus, textarea:focus, select:focus {
     outline: none;
+}
+
+
+/**
+ * Comment reply
+ */
+.comment-respond {
+    margin-bottom: 100px;
+}
+
+.comment-reply-title small {
+    display: block;
+    font-size: var(--font-size-caption);
 }

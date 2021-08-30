@@ -304,7 +304,7 @@ class Soyes_Walker_Comment extends Walker {
 									'reply_text' => sprintf(
 										'%s <img src="%s" width="15" height="15" role="presentation" />',
 										__( 'Reply' ),
-										get_stylesheet_directory_uri() . "/assets/images/icons/chatbox-outline.svg",
+										soyes_get_the_image( 'chatbox-outline-white', 'svg', true, false ),
 									),
 								)
 							)

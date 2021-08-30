@@ -23,7 +23,7 @@
                 </div><!-- .entry-date -->
 
                 <div class="link-comment">
-                    <a href="#comments"><?php soyes_the_comment_count(); ?></a>
+                    <a href="#community"><?php soyes_the_comment_count(); ?></a>
                 </div><!-- .link-comment -->
 
             </div><!-- .entry-links -->
