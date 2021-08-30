@@ -2,55 +2,6 @@
   * Table of contents.
  */
 
-/** Link in headers **/
-.entry-content h2,
-.entry-content h3 {
-    position: relative;
-}
-
-.entry-content .toc_ref {
-    color: var(--color-grayer);
-}
-
-
-@media only screen and (min-width: 992px) {
-    .entry-content .toc_ref:hover {
-        color: var(--color-black);
-    }
-}
-
-.toc_ref {
-    display: none;
-    position: absolute;
-    bottom: -5px;
-    left: -50px;
-}
-
-@media only screen and (min-width: 992px) {
-    .toc_ref {
-        display: block;
-    }
-}
-
-.entry-content h2 a,
-.entry-content h3 a {
-    border: none;
-    transition: var(--transition-default);
-}
-
-.entry-content h2 svg {
-    width: 32px;
-}
-
-.entry-content h3 svg {
-    width: 28px;
-}
-
-.entry-content h3 > a:first-of-type {
-    left: -40px;
-    opacity: 0.25;
-}
-
 /** Summary **/
 .entry-content .toc {
     background-color: var(--color-lightgray);
