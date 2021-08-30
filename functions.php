@@ -23,12 +23,6 @@ if ( ! function_exists( 'soyes_one_setup' ) ) {
 	 * as indicating support for post thumbnails.
 	 */
 	function soyes_one_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Twenty Twenty-One, use a find and replace
-		 * to change 'soyes' to the name of your theme in all the template files.
-		 */
 		load_theme_textdomain( 'soyes', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.

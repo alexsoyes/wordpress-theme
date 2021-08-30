@@ -1,13 +1,7 @@
 <?php
 
 /**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * Template part for displaying posts (aka single posts).
  */
 
 ?>
@@ -30,12 +24,11 @@
 					'pagelink' => esc_html__( 'Page %', 'soyes' ),
 				)
 			);
-
 			?>
         </div><!-- .entry-content -->
 
         <footer id="community" class="entry-footer entry-social">
-		    <?php get_template_part( 'template-parts/elements/share' ); ?>
+			<?php get_template_part( 'template-parts/elements/share' ); ?>
         </footer><!-- .entry-footer -->
 
     </article><!-- #post-<?php the_ID(); ?> -->

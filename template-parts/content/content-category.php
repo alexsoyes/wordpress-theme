@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Blog main page
+ * Blog main page.
  */
 
 ?>
