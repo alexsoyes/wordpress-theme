@@ -25,11 +25,13 @@ get_header();
 
             <h2><?php esc_html_e( 'Wanna try to search for your post? 🍀', 'soyes' ); ?></h2>
 
-			<?php get_search_form(); ?>
+	        <?php get_search_form(); ?>
 
             <p><?php
-				$admin_email = get_option( 'admin_email' );
-				printf( __( 'If you arrived here, please send a kindly message to %s with the post you were looking for.', 'soyes' ), "<a href=\"mailto:$admin_email\">$admin_email</a>" ); ?>
+		        $admin_email = get_option( 'admin_email' );
+		        printf(
+		        /* translators: %s is replaced with the admin email address. */
+			        __( 'If you arrived here, please send a kindly message to %s with the post you were looking for.', 'soyes' ), "<a href=\"mailto:$admin_email\">$admin_email</a>" ); ?>
             </p>
 
             <p><?php esc_html_e( 'We will reply shorter than you think!', 'soyes' ); ?></p>
@@ -38,7 +40,7 @@ get_header();
                 <a href="<?php echo get_home_url( '/' ) ?>"
                    title="<?php esc_html_e( 'Return to home', 'soyes' ) ?>"
                    class="wp-block-button__link">
-					<?php esc_html_e( 'return "/";', 'soyes' ) ?>
+			        <?php esc_html_e( 'return "/";', 'soyes' ) ?>
                 </a>
                 <a href="<?php echo get_post_type_archive_link( 'post' ); ?>"
                    title="<?php esc_html_e( 'Find all posts', 'soyes' ) ?>"

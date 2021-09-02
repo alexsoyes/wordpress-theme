@@ -30,21 +30,23 @@ $category = soyes_get_the_main_category()
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h2><!-- .card-title -->
 
-		<?php if ( has_excerpt() ): ?>
+	    <?php if ( has_excerpt() ): ?>
             <p class="card-excerpt">
-				<?php the_excerpt(); ?>
+			    <?php the_excerpt(); ?>
             </p><!-- .card-excerpt -->
-		<?php endif; ?>
+	    <?php endif; ?>
 
         <div class="card-metadata">
             <div class="card-date">
                 <small>
-					<?php printf( __( 'Last commit: <strong>%s</strong>', 'soyes' ), get_the_modified_date() ); ?>
+				    <?php printf(
+				    /* translators: %s is replaced with the lastly updated date from current post. */
+					    __( 'Last commit: <strong>%s</strong>', 'soyes' ), get_the_modified_date() ); ?>
                 </small>
             </div><!-- .card-date -->
 
             <div class="card-comments">
-				<?php soyes_the_comment_count( false ); ?>
+			    <?php soyes_the_comment_count( false ); ?>
             </div><!-- .card-comments -->
         </div><!-- .card-metada -->
 

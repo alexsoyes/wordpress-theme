@@ -9,16 +9,18 @@
                 </span>
                 </div><!-- .entry-category -->
 			<?php endif; ?>
-			<?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
+	        <?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
             <div class="entry-excerpt">
-				<?php the_excerpt(); ?>
+		        <?php the_excerpt(); ?>
             </div><!-- .entry-excerpt -->
 
             <div class="entry-meta">
 
                 <div class="entry-date">
                     <span>
-						<?php printf( __( 'Last commit on: <strong>%s</strong>', 'soyes' ), get_the_modified_date() ); ?>
+						<?php printf(
+						/* translators: %s is replaced with the lastly updated date from current post. */
+							__( 'Last commit on: <strong>%s</strong>', 'soyes' ), get_the_modified_date() ); ?>
                     </span>
                 </div><!-- .entry-date -->
 
