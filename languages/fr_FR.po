@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: soyes\n"
+
+#: 404.php:15
+msgid "Dinosaure 404"
+msgstr ""
+
+#: 404.php:20
+msgid "Damned!"
+msgstr "Oups!"
+
+#: 404.php:21
+msgid "That page does not exist (anymore?)!"
+msgstr "Cette page n'existe plus (ou n'a jamais existé ?)."
+
+#: 404.php:22
+msgid "I am tracking <code>404 errors</code> in order to replace them with <code>301 redirections</code> in case of missing posts (which is very rare by the way)."
+msgstr "Je traque les <code>codes 404</code> pour les remplacer avec des <code>redirections 301</code> si jamais un contenu a été supprimé."
+
+#: 404.php:26
+msgid "Wanna try to search for your post? 🍀"
+msgstr "Rechercher ton contenu 🍀"
+
+#: 404.php:32
+msgid "If you arrived here, please send a kindly message to %s with the post you were looking for."
+msgstr "Si tu es arrivé ici, tu peux m'envoyer un message ici %s afin que je puisse te renseigner."
+
+#: 404.php:35
+msgid "We will reply shorter than you think!"
+msgstr "Je répondrais plus vite que tu ne le penses !"
+
+#: 404.php:39
+#: search.php:44
+msgid "Return to home"
+msgstr "Retourner sur l'accueil"
+
+#: 404.php:41
+#: search.php:46
+msgid "return \"/\";"
+msgstr ""
+
+#: 404.php:44
+#: search.php:49
+#: template-parts/content/content-category.php:15
+msgid "Find all posts"
+msgstr "Lien vers tous les articles"
+
+#: 404.php:46
+#: search.php:51
+msgid "find_all_articles();"
+msgstr "lire_tous_les_articles();"
+
+#: classes/class-walker-comment.php:288
+msgid "Comment link #"
+msgstr "Lien vers le com' #"
+
+#: comments.php:27
+#: inc/template-functions.php:71
+msgid "1 comment"
+msgstr "1 commentaire"
+
+#. translators: %s: Comment count number.
+#: comments.php:32
+#: inc/template-functions.php:75
+msgctxt "Comments title"
+msgid "%s comment"
+msgid_plural "%s commentaires"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:54
+#: inc/navigation.php:10
+#: search.php:72
+#: template-parts/content/content-category.php:45
+#: template-parts/content/content-post.php:21
+#: template-parts/content/content.php:25
+msgid "Page"
+msgstr "Page"
+
+#: comments.php:59
+msgid "Older comments"
+msgstr "Anciens commentaires"
+
+#: comments.php:63
+msgid "Newer comments"
+msgstr "Nouveaux commentaires"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: comments.php:80
+msgid "Thank you for sharing your story with us!"
+msgstr "Merci d'avoir partagé ton histoire avec nous !"
+
+#: comments.php:81
+msgid "Leave a comment"
+msgstr "Laisser un commentaire"
+
+#: comments.php:82
+msgid "👩‍💻 Leave a Reply 👨‍💻"
+msgstr "👩‍💻 Réagir à cet article 👨‍💻"
+
+#: footer.php:23
+msgid "Keep in touch"
+msgstr "On reste en contact !"
+
+#: footer.php:41
+msgid "Secondary menu"
+msgstr "Menu secondaire"
+
+#: footer.php:61
+msgid "Made with love on the top of WordPress ❤️"
+msgstr "Site WordPress fait avec ❤️"
+
+#: functions.php:70
+msgid "Primary menu (header)"
+msgstr "Menu principal (entête)"
+
+#: functions.php:71
+msgid "Secondary menu (footer)"
+msgstr "Menu secondaire (pied de page)"
+
+#: functions.php:72
+msgid "Social menu"
+msgstr "Menu des réseaux sociaux"
+
+#: functions.php:228
+msgid "Footer text"
+msgstr "Texte du pied de page"
+
+#: functions.php:230
+msgid "Display some basic info about who you are in the footer."
+msgstr "Affiche des informations dans le pied de page."
+
+#: header.php:24
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: header.php:40
+msgid "Primary menu"
+msgstr "Menu primaire"
+
+#: inc/navigation.php:16
+msgid "Newer <span class=\"nav-short\">posts</span>"
+msgstr "Nouveaux <span class=\"nav-short\">articles</span>"
+
+#: inc/navigation.php:27
+msgid "Older <span class=\"nav-short\">posts</span>"
+msgstr "Anciens <span class=\"nav-short\">articles</span>"
+
+#: inc/shortcodes/newsletter.php:23
+msgid ""
+"1 conseil unique<br>\n"
+"                <span>1 fois par mois</span>."
+msgstr ""
+"1 conseil unique<br>\n"
+"                <span>1 fois par mois</span>."
+
+#: inc/shortcodes/newsletter.php:32
+msgid "Chaque mois, reçois gratuitement un conseil unique pour <strong>progresser en tant que développeur.</strong>"
+msgstr "Chaque mois, reçois gratuitement un conseil unique pour <strong>progresser en tant que développeur.</strong>"
+
+#: inc/shortcodes/newsletter.php:39
+msgid "Je m'inscris"
+msgstr "Je m'inscris"
+
+#: inc/shortcodes/newsletter.php:41
+msgid "* Ton adresse e-mail ne sera JAMAIS utilisé par quelqu'un d'autre."
+msgstr "* Ton adresse e-mail ne sera JAMAIS utilisé par quelqu'un d'autre."
+
+#: inc/table-of-contents.php:13
+msgid "Make a link to: %s"
+msgstr "Faire un lien vers : %s"
+
+#: inc/template-functions.php:20
+msgid "Share on Twitter"
+msgstr "Partager sur Twitter"
+
+#: inc/template-functions.php:21
+msgid "Share on LinkedIn"
+msgstr "Partager sur LinkedIn"
+
+#: inc/template-functions.php:22
+msgid "Share on Facebook"
+msgstr "Partager sur Facebook"
+
+#. translators: %d: The number of search results.
+#: search.php:17
+msgid "We found %1$d result for your search \"%2$s\"."
+msgid_plural "WordPress a trouvé %1$d résultats pour la recherche de \"%2$s\"."
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:33
+msgid "Wanna try another search? 🍀"
+msgstr "Envie de tenter une autre recherche ? 🍀"
+
+#: search.php:41
+msgid "Still not having it?"
+msgstr "Tu n'as toujours pas ton contenu ?"
+
+#. translators: %: Page number.
+#: search.php:75
+#: template-parts/content/content-category.php:48
+#: template-parts/content/content-post.php:24
+#: template-parts/content/content.php:28
+msgid "Page %"
+msgstr "Page %"
+
+#: searchform.php:26
+msgid "Search&hellip;"
+msgstr "Rechercher&hellip;"
+
+#: searchform.php:30
+msgctxt "submit button"
+msgid "Search"
+msgstr "Rechercher"
+
+#: template-parts/content/content-category.php:17
+msgid "< Return to blog posts"
+msgstr "< Retourner à la liste des articles"
+
+#: template-parts/elements/card.php:42
+msgid "Last commit: <strong>%s</strong>"
+msgstr "Dernier commit : <strong>%s</strong>"
+
+#: template-parts/elements/share.php:3
+msgid "Did you like this article?"
+msgstr "Tu as aimé cet article ?"
+
+#: template-parts/elements/share.php:6
+msgid "I took a long time to make this article,<br>if you want to share it, it will make my day! ❤️"
+msgstr "Ça m'a pris un long moment pour l'écrire...<br>Si jamais tu l'as trouvé sympa, n'hésite pas à le partager ❤️"
+
+#: template-parts/elements/share.php:15
+msgid "I do reply to every comment on the blog 😊"
+msgstr "Je réponds à tous les commentaires sur le blog 😊"
+
+#: template-parts/post/post-header.php:21
+msgid "Last commit on: <strong>%s</strong>"
+msgstr "Dernier commit le : <strong>%s</strong>"
