@@ -28,7 +28,7 @@
         <header id="header" class="alignfull">
             <div class="header-container">
 				<?php if ( has_custom_logo() ) : ?>
-                    <div class="site-logo"><?php the_custom_logo(); ?></div><!-- .site-logo -->
+                    <div class="site-logo"><?php the_custom_logo(); ?></div>
 				<?php else : ?>
                     <a href="<?php echo home_url(); ?>" id="site-home">
                         <span class="site-logo-text"><?php echo get_bloginfo( 'name' ); ?></span>

@@ -25,7 +25,7 @@ $soyes_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( 
                class="search-input"
                aria-label="<?php _e( 'Search&hellip;', 'soyes' ); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations ?>"
                value="<?php echo get_search_query(); ?>" name="s"/>
-    </div><!-- .search-input-container -->
+    </div>
     <input type="submit" class="wp-block-button__link search-button"
            value="<?php echo esc_attr_x( 'Search', 'submit button', 'soyes' ); ?>"/>
-</form><!-- .search-form -->
+</form>

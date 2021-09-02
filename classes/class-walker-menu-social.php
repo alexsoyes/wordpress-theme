@@ -16,7 +16,20 @@
  */
 class SoYes_Walker_Nav_Menu_Social extends Walker {
 
-	private const EXISTING_ICONS = array( 'twitter', 'mailchimp', 'feedly', 'gmail' );
+	private const EXISTING_ICONS = ['twitter', 'mailchimp', 'feedly', 'gmail'];
+
+	public function __construct() {
+		add_filter( 'nav_menu_item_title', function( $title ) {
+
+			$titleLowercased = strtolower( $title );
+			if ( in_array( $titleLowercased, self::EXISTING_ICONS ) ) {
+				$title = sprintf( '<img src="%s" alt="%s" width="30" height="30" />', soyes_get_the_social_icon($titleLowercased),  $title );
+			}
+
+			return $title;
+		});
+	}
+
 	/**
 	 * What the class handles.
 	 *
@@ -26,6 +39,7 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 	 * @see Walker::$tree_type
 	 */
 	public $tree_type = array( 'post_type', 'taxonomy', 'custom' );
+
 	/**
 	 * Database fields to use.
 	 *
@@ -40,31 +54,16 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 		'id'     => 'db_id',
 	);
 
-	public function __construct() {
-		add_filter(
-			'nav_menu_item_title',
-			function ( $title ) {
-
-				$titleLowercased = strtolower( $title );
-				if ( in_array( $titleLowercased, self::EXISTING_ICONS ) ) {
-					$title = sprintf( '<img src="%s" alt="%s" width="30" height="30" />', soyes_get_the_social_icon( $titleLowercased ), $title );
-				}
-
-				return $title;
-			}
-		);
-	}
-
 	/**
 	 * Starts the list before the elements are added.
 	 *
-	 * @param string $output Used to append additional content (passed by reference).
-	 * @param int $depth Depth of menu item. Used for padding.
-	 * @param stdClass $args An object of wp_nav_menu() arguments.
+	 * @since 3.0.0
 	 *
 	 * @see Walker::start_lvl()
 	 *
-	 * @since 3.0.0
+	 * @param string   $output Used to append additional content (passed by reference).
+	 * @param int      $depth  Depth of menu item. Used for padding.
+	 * @param stdClass $args   An object of wp_nav_menu() arguments.
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = null ) {
 		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
@@ -82,11 +81,11 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 		/**
 		 * Filters the CSS class(es) applied to a menu list element.
 		 *
-		 * @param string[] $classes Array of the CSS classes that are applied to the menu `<ul>` element.
-		 * @param stdClass $args An object of `wp_nav_menu()` arguments.
-		 * @param int $depth Depth of menu item. Used for padding.
-		 *
 		 * @since 4.8.0
+		 *
+		 * @param string[] $classes Array of the CSS classes that are applied to the menu `<ul>` element.
+		 * @param stdClass $args    An object of `wp_nav_menu()` arguments.
+		 * @param int      $depth   Depth of menu item. Used for padding.
 		 */
 		$class_names = join( ' ', apply_filters( 'nav_menu_submenu_css_class', $classes, $args, $depth ) );
 		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
@@ -97,13 +96,13 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 	/**
 	 * Ends the list of after the elements are added.
 	 *
-	 * @param string $output Used to append additional content (passed by reference).
-	 * @param int $depth Depth of menu item. Used for padding.
-	 * @param stdClass $args An object of wp_nav_menu() arguments.
+	 * @since 3.0.0
 	 *
 	 * @see Walker::end_lvl()
 	 *
-	 * @since 3.0.0
+	 * @param string   $output Used to append additional content (passed by reference).
+	 * @param int      $depth  Depth of menu item. Used for padding.
+	 * @param stdClass $args   An object of wp_nav_menu() arguments.
 	 */
 	public function end_lvl( &$output, $depth = 0, $args = null ) {
 		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
@@ -120,16 +119,16 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 	/**
 	 * Starts the element output.
 	 *
-	 * @param string $output Used to append additional content (passed by reference).
-	 * @param WP_Post $item Menu item data object.
-	 * @param int $depth Depth of menu item. Used for padding.
-	 * @param stdClass $args An object of wp_nav_menu() arguments.
-	 * @param int $id Current item ID.
+	 * @since 3.0.0
+	 * @since 4.4.0 The {@see 'nav_menu_item_args'} filter was added.
 	 *
 	 * @see Walker::start_el()
 	 *
-	 * @since 3.0.0
-	 * @since 4.4.0 The {@see 'nav_menu_item_args'} filter was added.
+	 * @param string   $output Used to append additional content (passed by reference).
+	 * @param WP_Post  $item   Menu item data object.
+	 * @param int      $depth  Depth of menu item. Used for padding.
+	 * @param stdClass $args   An object of wp_nav_menu() arguments.
+	 * @param int      $id     Current item ID.
 	 */
 	public function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
 		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
@@ -147,24 +146,24 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 		/**
 		 * Filters the arguments for a single nav menu item.
 		 *
-		 * @param stdClass $args An object of wp_nav_menu() arguments.
-		 * @param WP_Post $item Menu item data object.
-		 * @param int $depth Depth of menu item. Used for padding.
-		 *
 		 * @since 4.4.0
+		 *
+		 * @param stdClass $args  An object of wp_nav_menu() arguments.
+		 * @param WP_Post  $item  Menu item data object.
+		 * @param int      $depth Depth of menu item. Used for padding.
 		 */
 		$args = apply_filters( 'nav_menu_item_args', $args, $item, $depth );
 
 		/**
 		 * Filters the CSS classes applied to a menu item's list item element.
 		 *
-		 * @param string[] $classes Array of the CSS classes that are applied to the menu item's `<li>` element.
-		 * @param WP_Post $item The current menu item.
-		 * @param stdClass $args An object of wp_nav_menu() arguments.
-		 * @param int $depth Depth of menu item. Used for padding.
-		 *
 		 * @since 3.0.0
 		 * @since 4.1.0 The `$depth` parameter was added.
+		 *
+		 * @param string[] $classes Array of the CSS classes that are applied to the menu item's `<li>` element.
+		 * @param WP_Post  $item    The current menu item.
+		 * @param stdClass $args    An object of wp_nav_menu() arguments.
+		 * @param int      $depth   Depth of menu item. Used for padding.
 		 */
 		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
 		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
@@ -172,13 +171,13 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 		/**
 		 * Filters the ID applied to a menu item's list item element.
 		 *
-		 * @param string $menu_id The ID that is applied to the menu item's `<li>` element.
-		 * @param WP_Post $item The current menu item.
-		 * @param stdClass $args An object of wp_nav_menu() arguments.
-		 * @param int $depth Depth of menu item. Used for padding.
-		 *
 		 * @since 3.0.1
 		 * @since 4.1.0 The `$depth` parameter was added.
+		 *
+		 * @param string   $menu_id The ID that is applied to the menu item's `<li>` element.
+		 * @param WP_Post  $item    The current menu item.
+		 * @param stdClass $args    An object of wp_nav_menu() arguments.
+		 * @param int      $depth   Depth of menu item. Used for padding.
 		 */
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args, $depth );
 		$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
@@ -199,22 +198,21 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 		/**
 		 * Filters the HTML attributes applied to a menu item's anchor element.
 		 *
+		 * @since 3.6.0
+		 * @since 4.1.0 The `$depth` parameter was added.
+		 *
 		 * @param array $atts {
 		 *     The HTML attributes applied to the menu item's `<a>` element, empty strings are ignored.
 		 *
-		 * @type string $title Title attribute.
-		 * @type string $target Target attribute.
-		 * @type string $rel The rel attribute.
-		 * @type string $href The href attribute.
-		 * @type string $aria_current The aria-current attribute.
+		 *     @type string $title        Title attribute.
+		 *     @type string $target       Target attribute.
+		 *     @type string $rel          The rel attribute.
+		 *     @type string $href         The href attribute.
+		 *     @type string $aria_current The aria-current attribute.
 		 * }
-		 *
-		 * @param WP_Post $item The current menu item.
-		 * @param stdClass $args An object of wp_nav_menu() arguments.
-		 * @param int $depth Depth of menu item. Used for padding.
-		 *
-		 * @since 3.6.0
-		 * @since 4.1.0 The `$depth` parameter was added.
+		 * @param WP_Post  $item  The current menu item.
+		 * @param stdClass $args  An object of wp_nav_menu() arguments.
+		 * @param int      $depth Depth of menu item. Used for padding.
 		 */
 		$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
 
@@ -232,12 +230,12 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 		/**
 		 * Filters a menu item's title.
 		 *
-		 * @param string $title The menu item's title.
-		 * @param WP_Post $item The current menu item.
-		 * @param stdClass $args An object of wp_nav_menu() arguments.
-		 * @param int $depth Depth of menu item. Used for padding.
-		 *
 		 * @since 4.4.0
+		 *
+		 * @param string   $title The menu item's title.
+		 * @param WP_Post  $item  The current menu item.
+		 * @param stdClass $args  An object of wp_nav_menu() arguments.
+		 * @param int      $depth Depth of menu item. Used for padding.
 		 */
 		$title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
 
@@ -254,12 +252,12 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 		 * the menu item's title, the closing `</a>`, and `$args->after`. Currently, there is
 		 * no filter for modifying the opening and closing `<li>` for a menu item.
 		 *
-		 * @param string $item_output The menu item's starting HTML output.
-		 * @param WP_Post $item Menu item data object.
-		 * @param int $depth Depth of menu item. Used for padding.
-		 * @param stdClass $args An object of wp_nav_menu() arguments.
-		 *
 		 * @since 3.0.0
+		 *
+		 * @param string   $item_output The menu item's starting HTML output.
+		 * @param WP_Post  $item        Menu item data object.
+		 * @param int      $depth       Depth of menu item. Used for padding.
+		 * @param stdClass $args        An object of wp_nav_menu() arguments.
 		 */
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
@@ -267,14 +265,14 @@ class SoYes_Walker_Nav_Menu_Social extends Walker {
 	/**
 	 * Ends the element output, if needed.
 	 *
-	 * @param string $output Used to append additional content (passed by reference).
-	 * @param WP_Post $item Page data object. Not used.
-	 * @param int $depth Depth of page. Not Used.
-	 * @param stdClass $args An object of wp_nav_menu() arguments.
-	 *
 	 * @since 3.0.0
 	 *
 	 * @see Walker::end_el()
+	 *
+	 * @param string   $output Used to append additional content (passed by reference).
+	 * @param WP_Post  $item   Page data object. Not used.
+	 * @param int      $depth  Depth of page. Not Used.
+	 * @param stdClass $args   An object of wp_nav_menu() arguments.
 	 */
 	public function end_el( &$output, $item, $depth = 0, $args = null ) {
 		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {

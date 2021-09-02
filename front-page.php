@@ -6,7 +6,7 @@
 
 get_header();
 
-if ( have_posts() ) : ?>
+if ( have_posts() ): ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

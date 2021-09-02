@@ -25,35 +25,35 @@ function soyes_get_social_share(): array {
 	$shareLinkedIn = "https://www.linkedin.com/sharing/share-offsite/?url=$post_link";
 	$shareFacebook = "https://www.facebook.com/v3.3/dialog/share?app_id=993736991064466&href=$post_link&display=page&redirect_uri=https://facebook.com";
 
-	return array(
-		'twitter'  => array(
+	return [
+		'twitter'  => [
 			'name' => 'Twitter',
 			'attr' => "data-window=\"$shareTwitter\"",
-			'svg'  => $svgTwitter,
-		),
-		'linkedin' => array(
+			'svg'  => $svgTwitter
+		],
+		'linkedin' => [
 			'name' => 'LinkedIn',
 			'attr' => "data-window=\"$shareLinkedIn\"",
-			'svg'  => $svgLinkedIn,
-		),
-		'facebook' => array(
+			'svg'  => $svgLinkedIn
+		],
+		'facebook' => [
 			'name' => 'Facebook',
 			'attr' => "data-window=\"$shareFacebook\"",
-			'svg'  => $svgFacebook,
-		),
-	);
+			'svg'  => $svgFacebook
+		],
+	];
 }
 
-function soyes_get_the_image( string $imageName, string $imageExtension = 'svg', bool $isIcon = true, bool $isSocialIcon = false ): string {
+function soyes_get_the_image( string $imageName, string $imageExtension = "svg", bool $isIcon = true, bool $isSocialIcon = false ): string {
 
-	$filepath = get_stylesheet_directory_uri() . '/assets/images';
+	$filepath = get_stylesheet_directory_uri() . "/assets/images";
 
 	if ( $isIcon ) {
-		$filepath .= '/icons';
+		$filepath .= "/icons";
 	}
 
 	if ( $isSocialIcon ) {
-		$filepath .= '/social';
+		$filepath .= "/social";
 	}
 
 	return "$filepath/$imageName.$imageExtension";
@@ -84,6 +84,6 @@ function soyes_the_comment_count( bool $shouldDisplayText = true ): void {
 		'<img src="%s" alt="%s" width="15" height="15" %s />',
 		soyes_get_the_image( 'chatbox-outline', 'svg', true, false ),
 		__( 'Comments' ),
-		$shouldDisplayText ? 'aria-hidden="true"' : ''
+		$shouldDisplayText ? 'aria-hidden="true"' : ""
 	);
 }

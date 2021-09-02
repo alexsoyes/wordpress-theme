@@ -10,7 +10,7 @@ $category = soyes_get_the_main_category()
 
 <div class="card">
     <div class="card-image">
-		<?php if ( $thumbnail_url ) : ?>
+		<?php if ( $thumbnail_url ): ?>
             <img src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>" width="<?php echo $thumbnail_width; ?>"
                  height="<?php echo $thumbnail_height; ?>">
 		<?php endif; ?>
@@ -18,9 +18,9 @@ $category = soyes_get_the_main_category()
 
 	<?php if ( $category ) : ?>
         <div class="card-category">
-			<span>
-			<?php echo esc_html( $category->name ); ?>
-			</span>
+            <span>
+            <?php echo esc_html( $category->name ); ?>
+            </span>
         </div><!-- .card-category -->
 	<?php endif; ?>
 
@@ -30,7 +30,7 @@ $category = soyes_get_the_main_category()
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h2><!-- .card-title -->
 
-		<?php if ( has_excerpt() ) : ?>
+		<?php if ( has_excerpt() ): ?>
             <p class="card-excerpt">
 				<?php the_excerpt(); ?>
             </p><!-- .card-excerpt -->

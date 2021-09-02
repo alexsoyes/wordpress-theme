@@ -58,7 +58,7 @@
 	<?php endif; ?>
 
     <div class="powered-by">
-		<?php echo esc_html__( 'Made with love on the top of WordPress ❤️', 'soyes' ); ?>
+		<?php echo esc_html__( 'Site WordPress fait avec ❤️', 'soyes' ); ?>
     </div><!-- .powered-by -->
 
 </footer><!-- #colophon -->

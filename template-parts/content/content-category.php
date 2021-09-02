@@ -12,9 +12,9 @@
             <div class="entry-return-link">
                 <small>
                     <a href="<?php echo get_post_type_archive_link( 'post' ); ?>"
-                       title="<?php esc_html_e( 'Find all posts', 'soyes' ); ?>"
+                       title="<?php esc_html_e( 'Find all posts', 'soyes' ) ?>"
                        class="wp-block-button__link">
-						<?php esc_html_e( '< Return to blog posts', 'soyes' ); ?>
+						<?php esc_html_e( '< Return to blog posts', 'soyes' ) ?>
                     </a>
                 </small>
             </div>
@@ -42,10 +42,10 @@
 		<?php
 		wp_link_pages(
 			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'soyes' ) . '">',
-				'after'    => '</nav>',
+				'before'           => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'soyes' ) . '">',
+				'after'            => '</nav>',
 				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'soyes' ),
+				'pagelink'         => esc_html__( 'Page %', 'soyes' ),
 			)
 		);
 		?>
