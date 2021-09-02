@@ -6,7 +6,7 @@
 
 function get_the_replaced_heading( ?array $match ): string {
 	if ( ! $match ) {
-		return "";
+		return '';
 	}
 
 	$heading_id = sanitize_title_with_dashes( remove_accents( ( $match[3] ) ) );

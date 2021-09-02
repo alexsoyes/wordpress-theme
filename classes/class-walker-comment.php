@@ -50,7 +50,6 @@ class Soyes_Walker_Comment extends Walker {
 	 *
 	 * @see Walker::start_lvl()
 	 * @global int $comment_depth
-	 *
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$GLOBALS['comment_depth'] = $depth + 1;
@@ -74,13 +73,12 @@ class Soyes_Walker_Comment extends Walker {
 	 * @param string $output Used to append additional content (passed by reference).
 	 * @param int $depth Optional. Depth of the current comment. Default 0.
 	 * @param array $args Optional. Will only append content if style argument value is 'ol' or 'ul'.
-	 *                       Default empty array.
+	 *                        Default empty array.
 	 *
 	 * @since 2.7.0
 	 *
 	 * @see Walker::end_lvl()
 	 * @global int $comment_depth
-	 *
 	 */
 	public function end_lvl( &$output, $depth = 0, $args = array() ) {
 		$GLOBALS['comment_depth'] = $depth + 1;
@@ -128,7 +126,6 @@ class Soyes_Walker_Comment extends Walker {
 	 *
 	 * @see Walker::display_element()
 	 * @see wp_list_comments()
-	 *
 	 */
 	public function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
 		if ( ! $element ) {
@@ -169,7 +166,6 @@ class Soyes_Walker_Comment extends Walker {
 	 * @see wp_list_comments()
 	 * @global int $comment_depth
 	 * @global WP_Comment $comment Global comment object.
-	 *
 	 */
 	public function start_el( &$output, $comment, $depth = 0, $args = array(), $id = 0 ) {
 		$depth ++;
@@ -217,7 +213,6 @@ class Soyes_Walker_Comment extends Walker {
 	 * @see wp_list_comments()
 	 *
 	 * @since 3.6.0
-	 *
 	 */
 	protected function ping( $comment, $depth, $args ) {
 		$tag = ( 'div' === $args['style'] ) ? 'div' : 'li'; ?>
@@ -238,7 +233,6 @@ class Soyes_Walker_Comment extends Walker {
 	 * @see wp_list_comments()
 	 *
 	 * @since 3.6.0
-	 *
 	 */
 	protected function html5_comment( $comment, $depth, $args ) {
 		$tag = ( 'div' === $args['style'] ) ? 'div' : 'li';
@@ -250,7 +244,8 @@ class Soyes_Walker_Comment extends Walker {
 			$moderation_note = __( 'Your comment is awaiting moderation.' );
 		} else {
 			$moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.' );
-		} ?>
+		}
+		?>
         <<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children ? 'parent' : '', $comment ); ?>>
         <article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
             <footer class="comment-meta">
@@ -264,7 +259,8 @@ class Soyes_Walker_Comment extends Walker {
 
 					if ( '0' == $comment->comment_approved && ! $show_pending_links ) {
 						$comment_author = get_comment_author( $comment );
-					} ?>
+					}
+					?>
 
                     <div class="comment-metadata">
 						<?php printf( '<b class="fn">%s</b>', $comment_author ); ?>
@@ -272,7 +268,8 @@ class Soyes_Walker_Comment extends Walker {
                         <time datetime="<?php comment_time( 'c' ); ?>">
 							<?php
 							/* translators: 1: Comment date, 2: Comment time. */
-							printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() ); ?>
+							printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() );
+							?>
                         </time>
                     </div><!-- .comment-metadata -->
                 </div><!-- .comment-author -->
@@ -309,7 +306,8 @@ class Soyes_Walker_Comment extends Walker {
 								)
 							)
 						);
-					} ?>
+					}
+					?>
                 </div><!-- .comment-actions -->
             </div><!-- .comment-content -->
         </article><!-- .comment-body -->
@@ -326,7 +324,6 @@ class Soyes_Walker_Comment extends Walker {
 	 * @see wp_list_comments()
 	 *
 	 * @since 3.6.0
-	 *
 	 */
 	protected function comment( $comment, $depth, $args ) {
 		if ( 'div' === $args['style'] ) {
@@ -344,7 +341,8 @@ class Soyes_Walker_Comment extends Walker {
 			$moderation_note = __( 'Your comment is awaiting moderation.' );
 		} else {
 			$moderation_note = __( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.' );
-		} ?>
+		}
+		?>
         <<?php echo $tag; ?><?php comment_class( $this->has_children ? 'parent' : '', $comment ); ?> id="comment-<?php comment_ID(); ?>">
 		<?php if ( 'div' !== $args['style'] ) : ?>
             <div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
@@ -353,7 +351,8 @@ class Soyes_Walker_Comment extends Walker {
 			<?php
 			if ( 0 != $args['avatar_size'] ) {
 				echo get_avatar( $comment, $args['avatar_size'] );
-			} ?>
+			}
+			?>
 			<?php
 			$comment_author = get_comment_author_link( $comment );
 
@@ -365,7 +364,8 @@ class Soyes_Walker_Comment extends Walker {
 			/* translators: %s: Comment author link. */
 				__( '%s <span class="says">says:</span>' ),
 				sprintf( '<cite class="fn">%s</cite>', $comment_author )
-			); ?>
+			);
+			?>
         </div>
 		<?php if ( '0' == $comment->comment_approved ) : ?>
             <em class="comment-awaiting-moderation"><?php echo $moderation_note; ?></em>
@@ -376,10 +376,12 @@ class Soyes_Walker_Comment extends Walker {
                     href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
 				<?php
 				/* translators: 1: Comment date, 2: Comment time. */
-				printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() ); ?>
+				printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() );
+				?>
             </a>
 			<?php
-			edit_comment_link( __( '(Edit)' ), '&nbsp;&nbsp;', '' ); ?>
+			edit_comment_link( __( '(Edit)' ), '&nbsp;&nbsp;', '' );
+			?>
         </div>
 
 		<?php
@@ -393,7 +395,8 @@ class Soyes_Walker_Comment extends Walker {
 					'max_depth' => $args['max_depth'],
 				)
 			)
-		); ?>
+		);
+		?>
 
 		<?php
 		comment_reply_link(
@@ -407,7 +410,8 @@ class Soyes_Walker_Comment extends Walker {
 					'after'     => '</div>',
 				)
 			)
-		); ?>
+		);
+		?>
 
 		<?php if ( 'div' !== $args['style'] ) : ?>
             </div>
@@ -427,7 +431,6 @@ class Soyes_Walker_Comment extends Walker {
 	 * @see wp_list_comments()
 	 *
 	 * @since 2.7.0
-	 *
 	 */
 	public function end_el( &$output, $comment, $depth = 0, $args = array() ) {
 		if ( ! empty( $args['end-callback'] ) ) {
@@ -455,7 +458,6 @@ class Soyes_Walker_Comment extends Walker {
 	 *
 	 * @return string Filtered text of the current comment.
 	 * @since 5.4.2
-	 *
 	 */
 	public function filter_comment_text( $comment_text, $comment ) {
 		$commenter          = wp_get_current_commenter();
@@ -472,10 +474,13 @@ class Soyes_Walker_Comment extends Walker {
 /**
  * Open author link to a new window.
  */
-add_filter( 'get_comment_author_link', function ( $return ) {
+add_filter(
+	'get_comment_author_link',
+	function ( $return ) {
 
-	$return = str_replace( 'ugc', 'ugc noreferrer', $return );
-	$return = str_replace( '<a', '<a target="_blank"', $return );
+		$return = str_replace( 'ugc', 'ugc noreferrer', $return );
+		$return = str_replace( '<a', '<a target="_blank"', $return );
 
-	return $return;
-} );
+		return $return;
+	}
+);
