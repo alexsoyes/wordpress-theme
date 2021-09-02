@@ -134,7 +134,7 @@ input:focus {
     white-space: nowrap;
     text-align: center;
     width: 100%;
-    background-color: var(--color-black);
+    background-color: var(--color-lightgray);
 }
 
 #header nav ul {
@@ -147,7 +147,7 @@ input:focus {
 }
 
 #header nav a {
-    color: var(--color-white);
+    color: var(--color-quaternary);
     font-weight: var(--font-weight-bold);
 }
 
