@@ -12,7 +12,7 @@ get_header();
         <div class="entry-content">
             <div class="wp-block-columns">
                 <div class="wp-block-column is-vertically-aligned-bottom">
-                    <img src="<?php echo $dinosaur; ?>" alt="<?php esc_html_e( 'Dinosaure 404', 'soyes' ); ?>"
+                    <img src="<?php echo $dinosaur; ?>" alt="<?php esc_html_e( '404', 'soyes' ); ?>"
                          width="300"
                          class="aligncenter">
                 </div><!-- .wp-block-column -->
