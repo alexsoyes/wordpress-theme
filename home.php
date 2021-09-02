@@ -15,7 +15,7 @@ if ( have_posts() ) :?>
 				<?php if ( ! is_paged() ) : ?>
                     <div class="entry-text">
 						<?php echo apply_filters( 'the_content', get_post( get_option( 'page_for_posts' ) )->post_content ); ?>
-                    </div>
+                    </div><!-- .entry-text -->
 				<?php endif; ?>
 				<?php get_template_part( 'template-parts/elements/categories' ); ?>
             </div><!-- .entry-content -->

@@ -51,26 +51,26 @@ $soyes_comment_count = get_comments_number();
 		<?php
         the_comments_pagination(
                 array(
-                'before_page_number' => esc_html__('Page', 'soyes') . ' ',
-                'mid_size'           => 0,
-                'prev_text'          => sprintf(
+	                'before_page_number' => esc_html__('Page', 'soyes') . ' ',
+	                'mid_size'           => 0,
+	                'prev_text'          => sprintf(
                     '%s <span class="nav-prev-text">%s</span>',
                     "<",
                     esc_html__('Older comments', 'soyes')
                 ),
-                'next_text'          => sprintf(
-                    '<span class="nav-next-text">%s</span> %s',
-                    esc_html__('Newer comments', 'soyes'),
-                    ">"
-                ),
-            )
-            );
-        ?>
+	                'next_text'          => sprintf(
+		                '<span class="nav-next-text">%s</span> %s',
+		                esc_html__( 'Newer comments', 'soyes' ),
+		                ">"
+	                ),
+                )
+        );
+	    ?>
 
-		<?php if (! comments_open()) : ?>
-        <p class="no-comments"><?php esc_html_e('Comments are closed.', 'soyes'); ?></p>
-	<?php endif; ?>
-	<?php endif; ?>
+	    <?php if ( ! comments_open() ) : ?>
+        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'soyes' ); ?></p>
+    <?php endif; ?>
+    <?php endif; ?>
 
     <div class="entry-comment-leave">
 		<?php

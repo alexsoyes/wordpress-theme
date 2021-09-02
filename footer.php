@@ -16,11 +16,11 @@
 	<?php if ( is_active_sidebar( 'sidebar-footer-about' ) ) : ?>
         <div class="entry-content">
 			<?php dynamic_sidebar( 'sidebar-footer-about' ); ?>
-        </div><!-- #prefooter -->
+        </div><!-- .entry-content -->
 	<?php endif; ?>
 
     <div class="follow-me">
-        <p class="follow-me-title"><?php echo __( 'On se retrouve sur', 'soyes' ); ?></p>
+        <p class="follow-me-title"><?php echo __( 'Keep in touch', 'soyes' ); ?></p><!-- .follow-me-title -->
         <ul class="follow-me-list">
 			<?php
 			wp_nav_menu(
@@ -58,7 +58,7 @@
 	<?php endif; ?>
 
     <div class="powered-by">
-		<?php echo esc_html__( 'Site WordPress fait avec ❤️', 'soyes' ); ?>
+		<?php echo esc_html__( 'Made with love on the top of WordPress ❤️', 'soyes' ); ?>
     </div><!-- .powered-by -->
 
 </footer><!-- #colophon -->
