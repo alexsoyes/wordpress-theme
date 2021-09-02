@@ -34,18 +34,18 @@
     margin-bottom: 0;
 }
 
-.entry-category {
-    margin-bottom: 80px;
-}
-
 .entry-category span {
     text-transform: capitalize;
     padding: 6px 14px;
     border-radius: 16px;
     font-size: var(--font-size-category);
     font-weight: var(--font-weight-bold);
-    color: var(--color-black);
+    color: var(--color-quaternary);
     background-color: var(--color-italic);
+}
+
+.entry-category {
+    margin-bottom: 40px;
 }
 
 /**
@@ -63,6 +63,10 @@
 @media only screen and (min-width: 992px) {
     .entry-content .toc_ref:hover {
         color: var(--color-black);
+    }
+
+    .entry-category {
+        margin-bottom: 80px;
     }
 }
 
@@ -117,6 +121,7 @@
 .entry-content .link-comment a {
     color: var(--color-black);
     font-size: var(--font-size-menu);
+    font-weight: var(--font-weight-bold);
     border: none;
 }
 
@@ -183,7 +188,7 @@
 
 .link-share-buttons .social-icons {
     display: inline-flex;
-    background-color: var(--color-secondary);
+    background-color: var(--color-quaternary);
     padding: 15px;
     flex-direction: column;
     border-radius: var(--radius-strong);
@@ -248,12 +253,7 @@
     text-align: center;
     z-index: 20;
     position: relative;
-}
-
-@media only screen and (min-width: 992px) {
-    .entry-social {
-        padding: 50px;
-    }
+    border-bottom: 10px solid var(--color-secondary);
 }
 
 .social-title {
@@ -277,7 +277,7 @@
 }
 
 .social-buttons > button:hover {
-    background-color: var(--color-gray);
+    background-color: var(--color-secondary);
 }
 
 .social-buttons > button {
@@ -285,9 +285,11 @@
     color: var(--color-white);
     padding: 5px 20px;
     font-size: var(--font-size-button);
-    display: inline-flex;
+    display: flex;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 20px 0;
     border: 1px solid var(--color-white);
     border-radius: var(--radius-default);
 }
@@ -295,4 +297,16 @@
 .social-buttons > button svg {
     margin-right: 10px;
     width: 18px;
+}
+
+@media only screen and (min-width: 992px) {
+    .entry-social {
+        padding: 100px 50px;
+    }
+
+    .social-buttons > button {
+        width: auto;
+        display: inline-flex;
+        margin: 10px;
+    }
 }

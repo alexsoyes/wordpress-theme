@@ -41,12 +41,17 @@ figure figcaption {
  * Lists.
  */
 ol,
-ul,
+.comment-content ul,
+.entry-content ul,
 p {
     line-height: 32px;
     font-size: var(--font-size-paragraph);
     margin-bottom: 10px;
     letter-spacing: -0.065px;
+}
+
+.comment-content li {
+    font-size: calc(var(--font-size-comment) - 1px);
 }
 
 ul {
@@ -59,6 +64,7 @@ ul {
     }
 }
 
+.comment-content ul,
 .entry-content ul {
     margin: 20px 0;
 }
@@ -68,6 +74,7 @@ ul {
     margin: 4px 0;
 }
 
+.comment-content ul li::before,
 .entry-content ul li::before {
     color: var(--color-quaternary);
     content: '\</>';
@@ -83,7 +90,6 @@ ul {
 i, em {
     background-color: var(--color-italic);
     padding: 4px 6px;
-    color: var(--color-grayer);
 }
 
 .entry-content a {

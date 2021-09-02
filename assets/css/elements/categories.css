@@ -1,6 +1,7 @@
 .entry-header {
-    background-color: var(--color-lightgray);
-    margin: 10px 0 50px 0;
+    background-color: var(--color-quaternary);
+    color: var(--color-white);
+    margin-bottom: 50px;
     padding: 40px 0 30px 0;
 }
 
@@ -9,13 +10,13 @@
 }
 
 .entry-return-link a {
-    border-bottom: 1px solid var(--color-black);
-    color: var(--color-black);
+    border-bottom: 1px solid var(--color-white);
+    color: var(--color-white);
 }
 
 .entry-return-link a:hover {
-    border-bottom: 1px solid var(--color-secondary);
-    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-tertiary);
+    color: var(--color-tertiary);
 }
 
 h1 {
@@ -46,17 +47,18 @@ h1 {
 
 .entry-categories li a {
     text-transform: capitalize;
-    color: var(--color-quaternary);
+    color: var(--color-tertiary);
     font-weight: var(--font-weight-bold);
 }
 
 .entry-categories li a:hover {
-    color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
 }
 
 p {
     line-height: 26px;
-    font-size: var(--font-size-list);
+    font-size: var(--font-size-comment);
     margin-bottom: 10px;
     letter-spacing: -0.063px;
 }
