@@ -104,7 +104,7 @@ Requires PHP: 7.1
 /* open-sans-regular - latin */
 /* open-sans-regular - latin */
 @font-face {
-    font-display: auto;
+    font-display: swap;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -114,7 +114,7 @@ Requires PHP: 7.1
 
 /* open-sans-italic - latin */
 @font-face {
-    font-display: auto;
+    font-display: swap;
     font-family: 'Open Sans';
     font-style: italic;
     font-weight: 400;
@@ -124,7 +124,7 @@ Requires PHP: 7.1
 
 /* open-sans-700 - latin */
 @font-face {
-    font-display: auto;
+    font-display: swap;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -134,7 +134,7 @@ Requires PHP: 7.1
 
 /* open-sans-800 - latin */
 @font-face {
-    font-display: auto;
+    font-display: swap;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
@@ -195,6 +195,7 @@ input:focus {
 
 #header nav a {
     color: var(--color-quaternary);
+    font-size: var(--font-size-menu);
 }
 
 #header nav a:hover {
@@ -242,7 +243,6 @@ input:focus {
 
     #header nav a {
         color: var(--color-black);
-        font-size: var(--font-size-menu);
         font-weight: var(--font-weight-bold);
     }
 }
