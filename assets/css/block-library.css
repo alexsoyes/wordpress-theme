@@ -139,6 +139,7 @@
 .wp-block-table {
     margin-top: 40px;
     margin-bottom: 40px;
+    overflow: auto;
 }
 
 .wp-block-table table {

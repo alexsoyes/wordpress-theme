@@ -45,18 +45,18 @@ function soyes_newsletter( $atts = array() ): string {
 
         <div class="soyes-newsletter-content">
             <p class="soyes-newsletter-desc">
-				<?php _e( 'Eech beggining of the month, receive a unique advice to <strong>improve your developer skills</strong>, for free.', 'soyes' ); ?>
+			    <?php _e( 'Eech beggining of the month, receive a unique advice to <strong>improve your developer skills</strong>, for free.', 'soyes' ); ?>
             </p><!-- . soyes-newsletter-desc -->
 
             <form class="soyes-newsletter-form"
                   action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
                   method="post">
-                <input id="email" type="email" placeholder="<? _e( 'My email address', 'soyes' ); ?>" required
+                <input type="email" placeholder="<? _e( 'My email address', 'soyes' ); ?>" required
                        aria-label="Adresse e-mail" class="soyes-newsletter-email">
                 <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
                        value="<?php esc_html_e( 'I want to receive the tips', 'soyes' ); ?>">
                 <small class="soyes-newsletter-warn">
-					<?php esc_html_e( '* Your email address will NEVER be used by someone other than me.', 'soyes' ); ?>
+				    <?php esc_html_e( '* Your email address will NEVER be used by someone other than me.', 'soyes' ); ?>
                 </small><!-- .soyes-newsletter-warn -->
             </form><!-- .soyes-newsletter-form -->
         </div><!-- .soyes-newsletter-content -->

@@ -37,6 +37,10 @@
         width: 90%;
     }
 
+    .soyes-newsletter-form .soyes-newsletter-title span {
+        color: var(--color-tertiary);
+    }
+
     .soyes-newsletter-container-footer .soyes-newsletter-form {
         width: 100%;
     }

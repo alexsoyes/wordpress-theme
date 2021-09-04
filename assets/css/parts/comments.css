@@ -104,6 +104,7 @@
  */
 .comment-body {
     margin-bottom: 35px;
+    word-break: break-word;
 }
 
 .depth-1 > .comment-body {
