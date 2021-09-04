@@ -376,6 +376,7 @@ a.custom-logo-link:hover {
  * Button.
  */
 .wp-block-button__link,
+.entry-content a.wp-block-button__link,
 a.wp-block-button__link {
     background-color: var(--color-secondary);
     color: var(--color-white);
@@ -389,10 +390,6 @@ a.wp-block-button__link {
     border-radius: 3px;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-.wp-block-button__link a {
-    color: var(--color-white);
 }
 
 .wp-block-button__link:hover,
