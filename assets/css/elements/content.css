@@ -64,10 +64,6 @@ ul {
     }
 }
 
-.entry-content {
-    word-break: break-word;
-}
-
 .comment-content ul,
 .entry-content ul {
     margin: 20px 0;

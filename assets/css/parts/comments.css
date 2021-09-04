@@ -132,6 +132,10 @@
     margin-top: 5px;
 }
 
+.comment-form-note {
+    white-space: normal;
+}
+
 /**
  * Comment posting.
  */
@@ -148,12 +152,16 @@
     white-space: nowrap;
 }
 
-.comment-form p:not(.comment-form-cookies-consent) label {
+.comment-form-comment label,
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label {
     display: block;
     font-weight: var(--font-weight-bold);
     text-align: left;
 }
 
+.comment-subscription-form label,
 .comment-form-cookies-consent label {
     font-size: var(--font-size-label);
     cursor: pointer;

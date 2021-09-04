@@ -13,6 +13,10 @@
     color: var(--color-secondary);
 }
 
+.soyes-newsletter-container-footer .soyes-newsletter-title span {
+    color: var(--color-tertiary);
+}
+
 .soyes-newsletter-desc {
     color: var(--color-grayer);
 }
@@ -35,10 +39,6 @@
 @media only screen and (min-width: 992px) {
     .soyes-newsletter-form {
         width: 90%;
-    }
-
-    .soyes-newsletter-form .soyes-newsletter-title span {
-        color: var(--color-tertiary);
     }
 
     .soyes-newsletter-container-footer .soyes-newsletter-form {
