@@ -138,6 +138,10 @@ add_action( 'after_setup_theme', 'soyes_one_setup' );
  */
 function soyes_make_script_async( string $tag ): string {
 
+	if ( is_admin() ) {
+		return $tag;
+	}
+
 	if ( ( strpos( $tag, 'comment-reply-js' ) !== - 1 ) ||
 	     strpos( $tag, 'soyes-script-share-js' ) !== - 1 ) {
 		return str_replace( ' src', ' async="async" src', $tag );
@@ -150,6 +154,11 @@ add_filter( 'script_loader_tag', 'soyes_make_script_async', 10 );
 
 
 function soyes_scripts(): void {
+
+	if ( is_admin() ) {
+		return;
+	}
+
 	if ( defined( 'WP_DEBUG' ) && WP_DEBUG === true ) {
 		$version = time();
 	} else {
