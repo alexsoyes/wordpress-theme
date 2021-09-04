@@ -391,6 +391,10 @@ a.wp-block-button__link {
     letter-spacing: 1px;
 }
 
+.wp-block-button__link a {
+    color: var(--color-white);
+}
+
 .wp-block-button__link:hover,
 a.wp-block-button__link:hover {
     box-shadow: var(--box-shadow-strong);
