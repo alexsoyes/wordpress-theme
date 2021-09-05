@@ -184,6 +184,7 @@ function soyes_scripts(): void {
 	if ( is_front_page() ) {
 		wp_enqueue_style( 'soyes-style-element-content', get_template_directory_uri() . '/assets/css/elements/content.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-block-library', get_template_directory_uri() . '/assets/css/block-library.css', array(), $version );
+		wp_enqueue_style( 'soyes-style-front-page', get_template_directory_uri() . '/assets/css/parts/front-page.css', array(), $version );
 	}
 
 	if ( is_page() ) {

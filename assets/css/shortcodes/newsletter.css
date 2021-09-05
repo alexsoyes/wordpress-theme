@@ -29,13 +29,6 @@
     color: var(--color-white);
 }
 
-@media only screen and (max-width: 991px) {
-    .soyes-newsletter-columns img:not(.soyes-newsletter-icon) {
-        width: 50%;
-        margin-bottom: -80px;
-    }
-}
-
 @media only screen and (min-width: 992px) {
     .soyes-newsletter-form {
         width: 90%;
@@ -72,5 +65,5 @@
 }
 
 .soyes-newsletter-warn {
-    padding-left: 0;
+    padding: 15px 15px 0 0;
 }
