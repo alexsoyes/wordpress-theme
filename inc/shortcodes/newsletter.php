@@ -51,7 +51,7 @@ function soyes_newsletter( $atts = array() ): string {
             <form class="soyes-newsletter-form"
                   action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
                   method="post">
-                <input type="email" placeholder="<? _e( 'My email address', 'soyes' ); ?>" required
+                <input name="EMAIL" type="email" placeholder="<? _e( 'My email address', 'soyes' ); ?>" required
                        aria-label="Adresse e-mail" class="soyes-newsletter-email">
                 <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
                        value="<?php esc_html_e( 'I want to receive the tips', 'soyes' ); ?>">
