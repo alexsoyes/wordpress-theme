@@ -77,7 +77,7 @@
     left: -50px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1100px) {
     .toc_ref {
         display: block;
     }
