@@ -182,6 +182,11 @@ code {
     display: inline-block;
 }
 
+p code {
+    background-color: var(--color-lightgray);
+    color: var(--color-secondary);
+}
+
 .entry-content blockquote a {
     border-bottom: none;
     color: var(--color-black);
