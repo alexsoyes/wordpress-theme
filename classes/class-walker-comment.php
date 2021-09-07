@@ -472,10 +472,36 @@ class Soyes_Walker_Comment extends Walker {
 /**
  * Open author link to a new window.
  */
-add_filter( 'get_comment_author_link', function ( $return ) {
+function soyes_get_comment_author_link( $return ) {
 
 	$return = str_replace( 'ugc', 'ugc noreferrer', $return );
 	$return = str_replace( '<a', '<a target="_blank"', $return );
 
 	return $return;
-} );
+}
+
+add_filter( 'get_comment_author_link', 'soyes_get_comment_author_link' );
+
+/**
+ * Add default alt tag for Gravatar's images.
+ *
+ * @param $tag
+ *
+ * @return array|string|string[]
+ */
+function soyes_get_avatar_alt( $tag ) {
+	if ( have_comments() ) {
+		$alt_attribute = get_comment_author();
+	} else {
+		$alt_attribute = get_the_author_meta( 'display_name' );
+	}
+
+	return str_replace(
+		'alt=\'\'',
+		sprintf( 'alt=\'%s %s\'', __( "Avatar from ", 'soyes' ), $alt_attribute ),
+		$tag
+	);
+}
+
+add_filter( 'get_avatar', 'soyes_get_avatar_alt' );
+

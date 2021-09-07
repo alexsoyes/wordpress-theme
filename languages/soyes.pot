@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-09-02T12:09:05+00:00\n"
+"POT-Creation-Date: 2021-09-07T17:18:16+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: soyes\n"
@@ -85,6 +85,10 @@ msgstr ""
 msgid "Comment link #"
 msgstr ""
 
+#: classes/class-walker-comment.php:501
+msgid "Avatar from "
+msgstr ""
+
 #: comments.php:27
 #: inc/template-functions.php:71
 msgid "1 comment"
@@ -156,19 +160,19 @@ msgstr ""
 msgid "Social menu"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:237
 msgid "Footer text"
 msgstr ""
 
-#: functions.php:230
+#: functions.php:239
 msgid "Display some basic info about who you are in the footer."
 msgstr ""
 
-#: header.php:24
+#: header.php:33
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:40
+#: header.php:49
 msgid "Primary menu"
 msgstr ""
 
@@ -180,25 +184,25 @@ msgstr ""
 msgid "Older <span class=\"nav-short\">posts</span>"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:20
+#: inc/shortcodes/newsletter.php:38
 msgid ""
 "1 unique advice<br>\n"
 "                <span>every month</span>."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:28
+#: inc/shortcodes/newsletter.php:48
 msgid "Eech beggining of the month, receive a unique advice to <strong>improve your developer skills</strong>, for free."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:32
+#: inc/shortcodes/newsletter.php:54
 msgid "My email address"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:35
+#: inc/shortcodes/newsletter.php:57
 msgid "I want to receive the tips"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:37
+#: inc/shortcodes/newsletter.php:59
 msgid "* Your email address will NEVER be used by someone other than me."
 msgstr ""
 

@@ -8,13 +8,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2021-09-02 12:18+0000\n"
+"PO-Revision-Date: 2021-09-07 17:19+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;"
 
-#: inc/shortcodes/newsletter.php:37
+#: inc/shortcodes/newsletter.php:59
 msgid "* Your email address will NEVER be used by someone other than me."
 msgstr ""
 "* Ton adresse e-mail ne sera JAMAIS utilisé par une autre personne que moi."
@@ -23,7 +23,7 @@ msgstr ""
 msgid "1 comment"
 msgstr "1 commentaire"
 
-#: inc/shortcodes/newsletter.php:20
+#: inc/shortcodes/newsletter.php:38
 msgid ""
 "1 unique advice<br>\n"
 "                <span>every month</span>."
@@ -46,6 +46,10 @@ msgstr "Un blog super simple fait par un bloggeur écolo !"
 #. Author of the theme
 msgid "Alex so yes"
 msgstr ""
+
+#: classes/class-walker-comment.php:501
+msgid "Avatar from "
+msgstr "Avatar de"
 
 #: classes/class-walker-comment.php:291
 msgid "Comment link #"
@@ -71,11 +75,11 @@ msgstr "Oups !"
 msgid "Did you like this article?"
 msgstr "Tu as aimé cet article ?"
 
-#: functions.php:230
+#: functions.php:239
 msgid "Display some basic info about who you are in the footer."
 msgstr "Affiche des informations dans le pied de page."
 
-#: inc/shortcodes/newsletter.php:28
+#: inc/shortcodes/newsletter.php:48
 msgid ""
 "Eech beggining of the month, receive a unique advice to <strong>improve your "
 "developer skills</strong>, for free."
@@ -91,7 +95,7 @@ msgstr "Lien vers tous les articles"
 msgid "find_all_articles();"
 msgstr "lire_tous_les_articles();"
 
-#: functions.php:228
+#: functions.php:237
 msgid "Footer text"
 msgstr "Texte du pied de page"
 
@@ -121,7 +125,7 @@ msgstr ""
 "Ça m'a pris un long moment pour l'écrire...<br>Si jamais tu l'as trouvé "
 "sympa, n'hésite pas à le partager ❤️"
 
-#: inc/shortcodes/newsletter.php:35
+#: inc/shortcodes/newsletter.php:57
 msgid "I want to receive the tips"
 msgstr "Je m'inscris !"
 
@@ -161,7 +165,7 @@ msgstr "Site WordPress fait avec ❤️"
 msgid "Make a link to: %s"
 msgstr "Faire un lien vers : %s"
 
-#: inc/shortcodes/newsletter.php:32
+#: inc/shortcodes/newsletter.php:54
 msgid "My email address"
 msgstr "Mon adresse e-mail principale"
 
@@ -195,7 +199,7 @@ msgstr "Page"
 msgid "Page %"
 msgstr "Page %"
 
-#: header.php:40
+#: header.php:49
 msgid "Primary menu"
 msgstr "Menu primaire"
 
@@ -235,7 +239,7 @@ msgstr "Partager sur LinkedIn"
 msgid "Share on Twitter"
 msgstr "Partager sur Twitter"
 
-#: header.php:24
+#: header.php:33
 msgid "Skip to content"
 msgstr "Aller au contenu"
 
