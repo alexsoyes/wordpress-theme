@@ -198,6 +198,9 @@
 .comment-form-email {
     display: inline-block;
     width: 48%;
+}
+
+.comment-form-author {
     margin: 0 4% 0 0;
 }
 
