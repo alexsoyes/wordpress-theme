@@ -139,6 +139,20 @@
     margin-bottom: 20px;
 }
 
+/**
+ * Embed.
+ */
+.is-provider-youtube iframe {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 786px) {
+    .is-provider-youtube iframe {
+        height: 500px;
+    }
+}
+
 
 /**
  * Content.
