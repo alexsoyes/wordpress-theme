@@ -505,3 +505,11 @@ function soyes_get_avatar_alt( $tag ) {
 
 add_filter( 'get_avatar', 'soyes_get_avatar_alt' );
 
+/**
+ * Do not display reply link for anonymous users (seo purpose).
+ */
+function soyes_filter_comment_reply_link( string $link ): string {
+	return is_user_logged_in() ? $link : '';
+}
+
+add_filter( 'comment_reply_link', 'soyes_filter_comment_reply_link' );

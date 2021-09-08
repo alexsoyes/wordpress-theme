@@ -97,7 +97,7 @@ i, em {
     border-bottom: 1px solid var(--color-link);
 }
 
-.entry-content a:hover {
+.entry-content a:not(.wp-block-button__link):hover {
     color: var(--color-black);
     border-color: var(--color-black);
 }
