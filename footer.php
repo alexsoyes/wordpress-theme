@@ -11,7 +11,7 @@
 
 <?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="colophon" class="site-footer">
 
 	<?php if ( is_active_sidebar( 'sidebar-footer-about' ) ) : ?>
         <div class="entry-content">

@@ -6,6 +6,9 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 20px;
+    padding-bottom: 0;
+    line-height: 1.15;
+    font-weight: var(--font-weight-bolder);
     font-size: var(--font-size-h1);
 }
 

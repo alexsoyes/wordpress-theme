@@ -45,7 +45,7 @@
 				<?php endif; ?>
 
 				<?php if ( has_nav_menu( 'primary' ) ) : ?>
-                    <nav id="site-navigation" class="primary-navigation" role="navigation"
+                    <nav id="site-navigation" class="primary-navigation"
                          aria-label="<?php esc_attr_e( 'Primary menu', 'soyes' ); ?>">
 						<?php
 						wp_nav_menu(
@@ -67,4 +67,4 @@
 
     <div id="content" class="site-content">
         <div id="primary" class="content-area">
-            <main id="main" class="site-main" role="main">
+            <main id="main" class="site-main">

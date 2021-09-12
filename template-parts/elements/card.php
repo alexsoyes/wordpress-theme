@@ -31,9 +31,9 @@ $category = soyes_get_the_main_category()
         </h2><!-- .card-title -->
 
 	    <?php if ( has_excerpt() ): ?>
-            <p class="card-excerpt">
+            <div class="card-excerpt">
 			    <?php the_excerpt(); ?>
-            </p><!-- .card-excerpt -->
+            </div><!-- .card-excerpt -->
 	    <?php endif; ?>
 
         <div class="card-metadata">

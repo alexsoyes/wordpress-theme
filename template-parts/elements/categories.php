@@ -7,7 +7,7 @@
 $main_category = soyes_get_the_main_category();
 ?>
 
-<nav role="navigation">
+<nav>
     <ul class="entry-categories">
 		<?php wp_list_categories( array(
 			'orderby'          => 'name',
