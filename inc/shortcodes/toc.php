@@ -32,7 +32,7 @@ add_shortcode(
 
 		for ( $i = 0; $i < $headings_count; $i ++ ) {
 			$currentText    = wp_strip_all_tags( $headings_text[ $i ] );
-			$currentHref    = sanitize_title_with_dashes( remove_accents( ( $currentText ) ) );
+			$currentHref    = urlencode( sanitize_title_with_dashes( remove_accents( ( $currentText ) ) ) );
 			$currentElement = $headings_element[ $i ];
 
 			$currentLink = sprintf( "<a href=\"%s\">%s</a>\n", "#$currentHref", $currentText );
