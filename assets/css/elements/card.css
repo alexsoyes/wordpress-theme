@@ -23,7 +23,7 @@
 }
 
 .card-title a:hover {
-    color: var(--color-quaternary);
+    color: var(--color-primary);
     border: none;
 }
 

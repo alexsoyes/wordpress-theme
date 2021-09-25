@@ -202,7 +202,7 @@
 
 .link-share-buttons .social-icons {
     display: inline-flex;
-    background-color: var(--color-quaternary);
+    background-color: var(--color-primary);
     padding: 15px;
     flex-direction: column;
     border-radius: var(--radius-strong);

@@ -164,7 +164,7 @@ pre:not(.wp-block-code)::after {
     left: 30px;
     width: 20px;
     height: 5px;
-    background-color: var(--color-quaternary);
+    background-color: var(--color-black);
 }
 
 .wp-block-code {
