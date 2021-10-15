@@ -235,6 +235,7 @@ video {
 .wp-block-video,
 .wp-block-image {
     margin: 30px 0;
+    text-align: center;
 }
 
 /**
