@@ -8,14 +8,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2021-09-14 14:48+0000\n"
+"PO-Revision-Date: 2021-10-15 18:46+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Loco-Version: 2.5.3; wp-5.5.1"
 
-#: inc/shortcodes/newsletter.php:59
+#: inc/shortcodes/newsletter.php:58
 msgid "* Your email address will NEVER be used by someone other than me."
 msgstr ""
 "* Ton adresse e-mail ne sera JAMAIS utilisée par une autre personne que moi."
@@ -51,6 +51,10 @@ msgstr "Alex so yes"
 #: classes/class-walker-comment.php:501
 msgid "Avatar from "
 msgstr "Avatar de"
+
+#: template-parts/content/content-post.php:33
+msgid "Back to top"
+msgstr "Retourner en haut de l'article"
 
 #: classes/class-walker-comment.php:291
 msgid "Comment link #"
@@ -116,7 +120,7 @@ msgstr ""
 
 #: template-parts/elements/share.php:15
 msgid "I do reply to every comment on the blog 😊"
-msgstr "Je réponds à tous les commentaires sur le blog 😊"
+msgstr "PS : Je réponds à tous les commentaires sur le blog 😊"
 
 #: template-parts/elements/share.php:6
 msgid ""
@@ -126,7 +130,7 @@ msgstr ""
 "Ça m'a pris un long moment pour l'écrire...<br>Si jamais tu l'as trouvé "
 "sympa, n'hésite pas à le partager ❤️"
 
-#: inc/shortcodes/newsletter.php:57
+#: inc/shortcodes/newsletter.php:56
 msgid "I want to receive the tips"
 msgstr "Je m'inscris !"
 
@@ -162,11 +166,11 @@ msgid "Made with love on the top of WordPress ❤️"
 msgstr "Site WordPress fait avec ❤️"
 
 #. translators: %s is replace with the title of the block.
-#: inc/table-of-contents.php:15
+#: inc/table-of-contents.php:14
 msgid "Make a link to: %s"
 msgstr "Faire un lien vers : %s"
 
-#: inc/shortcodes/newsletter.php:54
+#: inc/shortcodes/newsletter.php:53
 msgid "My email address"
 msgstr "Mon adresse e-mail principale"
 
@@ -216,7 +220,7 @@ msgstr "return \"/\";"
 msgid "Return to home"
 msgstr "Retourner sur l'accueil"
 
-#: searchform.php:26
+#: searchform.php:27
 msgid "Search&hellip;"
 msgstr "Rechercher&hellip;"
 
@@ -256,14 +260,14 @@ msgstr "soyes"
 msgid "Still not having it?"
 msgstr "Tu n'as toujours pas ton contenu ?"
 
-#: searchform.php:30
+#: searchform.php:31
 msgctxt "submit button"
 msgid "Search"
 msgstr "Rechercher"
 
 #: comments.php:80
 msgid "Thank you for sharing your story with us!"
-msgstr "Merci d'avoir partagé ton histoire avec nous !"
+msgstr "Merci de partager ton histoire avec la communauté !"
 
 #: 404.php:21
 msgid "That page does not exist (anymore?)!"

@@ -145,7 +145,7 @@
 }
 
 .comment-form-comment {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .comment-form {
@@ -158,6 +158,11 @@
 .comment-form-url label {
     display: block;
     font-weight: var(--font-weight-bold);
+    text-align: left;
+}
+
+.comment-subscription-form,
+.comment-form-cookies-consent {
     text-align: left;
 }
 
@@ -222,6 +227,10 @@ input:focus, textarea:focus, select:focus {
  */
 .comment-respond {
     margin-bottom: 100px;
+}
+
+.comment-reply-title {
+    font-size: var(--font-size-h3);
 }
 
 .comment-reply-title small {

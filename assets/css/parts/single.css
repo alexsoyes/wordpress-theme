@@ -170,6 +170,28 @@
     margin: 0 5px 3px 5px;
 }
 
+/**
+ * Back to the top.
+ */
+.back-to-top {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: var(--transition-default);
+}
+
+.back-to-top:hover {
+    opacity: 0.5;
+}
+
+@media only screen and (min-width: 786px) {
+    .back-to-top {
+        width: 60px;
+        height: 60px;
+    }
+}
 
 /**
  * Sticky share.

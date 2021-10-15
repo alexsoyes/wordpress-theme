@@ -28,7 +28,11 @@
         </div><!-- .entry-content -->
 
         <footer id="community" class="entry-footer entry-social">
-			<?php get_template_part( 'template-parts/elements/share' ); ?>
+		    <?php get_template_part( 'template-parts/elements/share' ); ?>
+            <a href="#content" title="<?php esc_html_e( 'Back to top', 'soyes' ); ?>">
+                <img src="<?php echo soyes_get_the_image( 'caret-up-outline', 'svg', true, false ) ?>" alt=""
+                     aria-hidden="true" class="back-to-top"/>
+            </a>
         </footer><!-- .entry-footer -->
 
     </article><!-- #post-<?php the_ID(); ?> -->
