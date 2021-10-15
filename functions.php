@@ -177,7 +177,7 @@ function soyes_scripts(): void {
 		wp_enqueue_script( 'soyes-script-share', get_template_directory_uri() . '/assets/js/share.js', array(), $version, true );
 	}
 
-	if ( is_user_logged_in() && is_singular() && get_option( 'thread_comments' ) ) {
+	if ( is_user_logged_in() && is_single() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
