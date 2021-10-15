@@ -153,23 +153,6 @@
     }
 }
 
-
-/**
- * Content.
- */
-.entry-content ul a[target="_blank"]::after,
-.entry-content p a[target="_blank"]::after {
-    content: '';
-    width: var(--font-size-paragraph);
-    height: var(--font-size-paragraph);
-    background-image: url("/wp-content/themes/soyes/assets/images/icons/open-outline.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 5px 3px 5px;
-}
-
 /**
  * Back to the top.
  */
