@@ -1,7 +1,6 @@
 <?php
-
 /**
- *
+ * Functions that are used within the templates.
  */
 
 function soyes_get_the_main_category(): ?WP_Term {

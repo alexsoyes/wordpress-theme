@@ -199,18 +199,18 @@ function soyes_scripts(): void {
 		wp_enqueue_style( 'soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version );
 	}
 
-	if ( is_home() || is_category() ) {
+	if ( is_home() || is_category() || is_search() ) {
 		wp_enqueue_style( 'soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version );
+		wp_enqueue_style( 'soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version );
+		wp_enqueue_style( 'soyes-style-element-hero', get_template_directory_uri() . '/assets/css/elements/hero.css', array(), $version );
 	}
 
-	if ( is_home() || is_category() || is_search() ) {
+	if ( is_category() ) {
 		wp_enqueue_style( 'soyes-style-element-categories', get_template_directory_uri() . '/assets/css/elements/categories.css', array(), $version );
-		wp_enqueue_style( 'soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version );
 	}
 
 	if ( is_search() ) {
 		wp_enqueue_style( 'soyes-style-block-library', get_template_directory_uri() . '/assets/css/block-library.css', array(), $version );
-		wp_enqueue_style( 'soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version );
 	}
 
 	global $post;

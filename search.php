@@ -7,10 +7,9 @@ get_header();
 ?>
 
     <article>
-        <header class="entry-content page-header alignwide">
-            <h1 class="page-title">
+        <header class="entry-content entry-header alignwide">
+            <h1>
 				<?php
-
 				printf(
 					esc_html(
 					/* translators: %d: The number of search results. */
@@ -26,7 +25,7 @@ get_header();
 				);
 				?>
             </h1>
-        </header><!-- .page-header -->
+        </header><!-- .entry-header -->
 
         <div class="entry-content">
 			<?php if ( ! have_posts() ) : ?>
