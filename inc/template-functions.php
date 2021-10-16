@@ -13,6 +13,14 @@ function soyes_get_the_main_category(): ?WP_Term {
 	return null;
 }
 
+function soyes_the_post_modified_date(): void {
+	$modifiedDateString = sprintf(
+	/* translators: %s is replaced with the lastly updated date from current post. */
+		__( 'Last commit: <strong>%s</strong>', 'soyes' ), get_the_modified_date() );
+
+	printf( "<time datetime='%s'>%s</time>", get_the_modified_date( DATE_ATOM ), $modifiedDateString );
+}
+
 function soyes_get_social_share(): array {
 	$post_link = get_the_permalink();
 

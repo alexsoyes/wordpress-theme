@@ -38,11 +38,7 @@ $category = soyes_get_the_main_category()
 
         <div class="card-metadata">
             <div class="card-date">
-                <small>
-				    <?php printf(
-				    /* translators: %s is replaced with the lastly updated date from current post. */
-					    __( 'Last commit: <strong>%s</strong>', 'soyes' ), get_the_modified_date() ); ?>
-                </small>
+			    <?php soyes_the_post_modified_date(); ?>
             </div><!-- .card-date -->
 
             <div class="card-comments">

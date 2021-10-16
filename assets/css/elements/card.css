@@ -66,6 +66,7 @@
 
 .card-date {
     color: var(--color-grayer);
+    font-size: var(--font-size-caption);
 }
 
 

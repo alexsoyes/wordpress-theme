@@ -4,23 +4,22 @@
 			<?php $category = soyes_get_the_main_category(); ?>
 			<?php if ( $category ) : ?>
                 <div class="entry-category">
-                <span>
-                <?php echo esc_html( $category->name ); ?>
-                </span>
+            <span>
+            <?php echo esc_html( $category->name ); ?>
+            </span>
                 </div><!-- .entry-category -->
 			<?php endif; ?>
-	        <?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
+
+			<?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
             <div class="entry-excerpt">
-		        <?php the_excerpt(); ?>
+				<?php the_excerpt(); ?>
             </div><!-- .entry-excerpt -->
 
             <div class="entry-meta">
 
                 <div class="entry-date">
                     <span>
-						<?php printf(
-						/* translators: %s is replaced with the lastly updated date from current post. */
-							__( 'Last commit on: <strong>%s</strong>', 'soyes' ), get_the_modified_date() ); ?>
+                    <?php soyes_the_post_modified_date(); ?>
                     </span>
                 </div><!-- .entry-date -->
 
@@ -28,7 +27,7 @@
                     <a href="#community"><?php soyes_the_comment_count(); ?></a>
                 </div><!-- .link-comment -->
 
-            </div><!-- .entry-links -->
+            </div><!-- .entry-meta -->
 
         </div><!-- .entry-content -->
     </div><!-- .post-header-overlay -->
