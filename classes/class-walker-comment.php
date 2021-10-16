@@ -267,17 +267,17 @@ class Soyes_Walker_Comment extends Walker {
 					} ?>
 
                     <div class="comment-metadata">
-						<?php printf( '<b class="fn">%s</b>', $comment_author ); ?>
+		                <?php printf( '<h2 class="fn">%s</h2>', $comment_author ); ?>
 
                         <time datetime="<?php comment_time( 'c' ); ?>">
-							<?php
-							/* translators: 1: Comment date, 2: Comment time. */
-							printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() ); ?>
+			                <?php
+			                /* translators: 1: Comment date, 2: Comment time. */
+			                printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() ); ?>
                         </time>
                     </div><!-- .comment-metadata -->
                 </div><!-- .comment-author -->
 
-				<?php if ( '0' == $comment->comment_approved ) : ?>
+	            <?php if ( '0' == $comment->comment_approved ) : ?>
                     <em class="comment-awaiting-moderation"><?php echo $moderation_note; ?></em>
 				<?php endif; ?>
             </footer><!-- .comment-meta -->

@@ -1,10 +1,10 @@
-<section class="author entry-content" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+<div class="author entry-content" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
     <div class="author-image">
         <figure>
 			<?php echo get_avatar( get_the_author_meta( 'ID' ), 64 ); ?>
         </figure>
     </div>
-    <section class="author-meta">
+    <div class="author-meta">
         <small>
 			<?php esc_html_e( 'Written by', 'soyes' ); ?>
         </small>
@@ -21,5 +21,5 @@
         <div class="author-description">
 			<?php the_author_meta( 'description' ); ?>
         </div>
-    </section>
-</section>
+    </div>
+</div>
