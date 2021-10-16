@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2021-10-15 18:46+0000\n"
+"PO-Revision-Date: 2021-10-16 16:21+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
@@ -20,7 +20,7 @@ msgid "* Your email address will NEVER be used by someone other than me."
 msgstr ""
 "* Ton adresse e-mail ne sera JAMAIS utilisée par une autre personne que moi."
 
-#: comments.php:27 inc/template-functions.php:71
+#: comments.php:27 inc/template-functions.php:78
 msgid "1 comment"
 msgstr "1 commentaire"
 
@@ -53,6 +53,7 @@ msgid "Avatar from "
 msgstr "Avatar de"
 
 #: template-parts/content/content-post.php:33
+#: template-parts/content/content-post.php:35
 msgid "Back to top"
 msgstr "Retourner en haut de l'article"
 
@@ -65,7 +66,7 @@ msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
 #. translators: %s: Comment count number.
-#: comments.php:32 inc/template-functions.php:75
+#: comments.php:32 inc/template-functions.php:82
 msgctxt "Comments title"
 msgid "%s comment"
 msgid_plural "%s comments"
@@ -80,7 +81,7 @@ msgstr "Oups !"
 msgid "Did you like this article?"
 msgstr "Tu as aimé cet article ?"
 
-#: functions.php:239
+#: functions.php:240
 msgid "Display some basic info about who you are in the footer."
 msgstr "Affiche des informations dans le pied de page."
 
@@ -92,15 +93,15 @@ msgstr ""
 "Chaque début du mois, reçois un conseil unique pour t'<strong>améliorer en "
 "tant que développeur</strong>, gratuitement."
 
-#: 404.php:46 search.php:49 template-parts/content/content-category.php:15
+#: 404.php:46 search.php:48 template-parts/content/content-category.php:15
 msgid "Find all posts"
 msgstr "Lien vers tous les articles"
 
-#: 404.php:48 search.php:51
+#: 404.php:48 search.php:50
 msgid "find_all_articles();"
 msgstr "lire_tous_les_articles();"
 
-#: functions.php:237
+#: functions.php:238
 msgid "Footer text"
 msgstr "Texte du pied de page"
 
@@ -148,12 +149,7 @@ msgid "Keep in touch"
 msgstr "On reste en contact !"
 
 #. translators: %s is replaced with the lastly updated date from current post.
-#: template-parts/post/post-header.php:23
-msgid "Last commit on: <strong>%s</strong>"
-msgstr "Dernier commit le : <strong>%s</strong>"
-
-#. translators: %s is replaced with the lastly updated date from current post.
-#: template-parts/elements/card.php:44
+#: inc/template-functions.php:19
 msgid "Last commit: <strong>%s</strong>"
 msgstr "Dernier commit : <strong>%s</strong>"
 
@@ -190,7 +186,7 @@ msgstr "Anciens <span class=\"nav-short\">articles</span>"
 msgid "Older comments"
 msgstr "Anciens commentaires"
 
-#: comments.php:54 inc/navigation.php:11 search.php:72
+#: comments.php:54 inc/navigation.php:11 search.php:71
 #: template-parts/content/content-category.php:45
 #: template-parts/content/content-post.php:21
 #: template-parts/content/content.php:25
@@ -198,7 +194,7 @@ msgid "Page"
 msgstr "Page"
 
 #. translators: %: Page number.
-#: search.php:75 template-parts/content/content-category.php:48
+#: search.php:74 template-parts/content/content-category.php:48
 #: template-parts/content/content-post.php:24
 #: template-parts/content/content.php:28
 msgid "Page %"
@@ -212,11 +208,11 @@ msgstr "Menu primaire"
 msgid "Primary menu (header)"
 msgstr "Menu principal (entête)"
 
-#: 404.php:43 search.php:46
+#: 404.php:43 search.php:45
 msgid "return \"/\";"
 msgstr "return \"/\";"
 
-#: 404.php:41 search.php:44
+#: 404.php:41 search.php:43
 msgid "Return to home"
 msgstr "Retourner sur l'accueil"
 
@@ -232,15 +228,15 @@ msgstr "Menu secondaire"
 msgid "Secondary menu (footer)"
 msgstr "Menu secondaire (pied de page)"
 
-#: inc/template-functions.php:22
+#: inc/template-functions.php:29
 msgid "Share on Facebook"
 msgstr "Partager sur Facebook"
 
-#: inc/template-functions.php:21
+#: inc/template-functions.php:28
 msgid "Share on LinkedIn"
 msgstr "Partager sur LinkedIn"
 
-#: inc/template-functions.php:20
+#: inc/template-functions.php:27
 msgid "Share on Twitter"
 msgstr "Partager sur Twitter"
 
@@ -256,7 +252,7 @@ msgstr "Menu des réseaux sociaux"
 msgid "soyes"
 msgstr "soyes"
 
-#: search.php:41
+#: search.php:40
 msgid "Still not having it?"
 msgstr "Tu n'as toujours pas ton contenu ?"
 
@@ -273,7 +269,7 @@ msgstr "Merci de partager ton histoire avec la communauté !"
 msgid "That page does not exist (anymore?)!"
 msgstr "Cette page n'existe plus (ou n'a jamais existé ?)."
 
-#: search.php:33
+#: search.php:32
 msgid "Wanna try another search? 🍀"
 msgstr "Envie de tenter une autre recherche ? 🍀"
 
@@ -282,7 +278,7 @@ msgid "Wanna try to search for your post? 🍀"
 msgstr "Rechercher ton contenu 🍀"
 
 #. translators: %d: The number of search results.
-#: search.php:17
+#: search.php:16
 msgid "We found %1$d result for your search \"%2$s\"."
 msgid_plural "We found %1$d results for your search \"%2$s\"."
 msgstr[0] "WordPress a trouvé %1$d résultat pour la recherche sur \"%2$s\"."
@@ -291,6 +287,10 @@ msgstr[1] "WordPress a trouvé %1$d résultats pour la recherche sur \"%2$s\"."
 #: 404.php:37
 msgid "We will reply shorter than you think!"
 msgstr "Je répondrais plus vite que tu ne le penses !"
+
+#: template-parts/elements/author-box.php:9
+msgid "Written by"
+msgstr "Auteur de l'article"
 
 #: comments.php:82
 msgid "👩‍💻 Leave a Reply 👨‍💻"

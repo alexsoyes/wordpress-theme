@@ -248,7 +248,7 @@
     padding-bottom: 2px;
     font-size: var(--font-size-button);
     border-bottom: 2px solid var(--color-white);
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 @media only screen and (min-width: 992px) {

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-10-15T18:38:50+00:00\n"
+"POT-Creation-Date: 2021-10-16T16:20:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: soyes\n"
@@ -61,23 +61,23 @@ msgid "We will reply shorter than you think!"
 msgstr ""
 
 #: 404.php:41
-#: search.php:44
+#: search.php:43
 msgid "Return to home"
 msgstr ""
 
 #: 404.php:43
-#: search.php:46
+#: search.php:45
 msgid "return \"/\";"
 msgstr ""
 
 #: 404.php:46
-#: search.php:49
+#: search.php:48
 #: template-parts/content/content-category.php:15
 msgid "Find all posts"
 msgstr ""
 
 #: 404.php:48
-#: search.php:51
+#: search.php:50
 msgid "find_all_articles();"
 msgstr ""
 
@@ -90,13 +90,13 @@ msgid "Avatar from "
 msgstr ""
 
 #: comments.php:27
-#: inc/template-functions.php:71
+#: inc/template-functions.php:78
 msgid "1 comment"
 msgstr ""
 
 #. translators: %s: Comment count number.
 #: comments.php:32
-#: inc/template-functions.php:75
+#: inc/template-functions.php:82
 msgctxt "Comments title"
 msgid "%s comment"
 msgid_plural "%s comments"
@@ -105,7 +105,7 @@ msgstr[1] ""
 
 #: comments.php:54
 #: inc/navigation.php:11
-#: search.php:72
+#: search.php:71
 #: template-parts/content/content-category.php:45
 #: template-parts/content/content-post.php:21
 #: template-parts/content/content.php:25
@@ -160,11 +160,11 @@ msgstr ""
 msgid "Social menu"
 msgstr ""
 
-#: functions.php:237
+#: functions.php:238
 msgid "Footer text"
 msgstr ""
 
-#: functions.php:239
+#: functions.php:240
 msgid "Display some basic info about who you are in the footer."
 msgstr ""
 
@@ -211,35 +211,40 @@ msgstr ""
 msgid "Make a link to: %s"
 msgstr ""
 
-#: inc/template-functions.php:20
+#. translators: %s is replaced with the lastly updated date from current post.
+#: inc/template-functions.php:19
+msgid "Last commit: <strong>%s</strong>"
+msgstr ""
+
+#: inc/template-functions.php:27
 msgid "Share on Twitter"
 msgstr ""
 
-#: inc/template-functions.php:21
+#: inc/template-functions.php:28
 msgid "Share on LinkedIn"
 msgstr ""
 
-#: inc/template-functions.php:22
+#: inc/template-functions.php:29
 msgid "Share on Facebook"
 msgstr ""
 
 #. translators: %d: The number of search results.
-#: search.php:17
+#: search.php:16
 msgid "We found %1$d result for your search \"%2$s\"."
 msgid_plural "We found %1$d results for your search \"%2$s\"."
 msgstr[0] ""
 msgstr[1] ""
 
-#: search.php:33
+#: search.php:32
 msgid "Wanna try another search? 🍀"
 msgstr ""
 
-#: search.php:41
+#: search.php:40
 msgid "Still not having it?"
 msgstr ""
 
 #. translators: %: Page number.
-#: search.php:75
+#: search.php:74
 #: template-parts/content/content-category.php:48
 #: template-parts/content/content-post.php:24
 #: template-parts/content/content.php:28
@@ -260,12 +265,12 @@ msgid "< Return to blog posts"
 msgstr ""
 
 #: template-parts/content/content-post.php:33
+#: template-parts/content/content-post.php:35
 msgid "Back to top"
 msgstr ""
 
-#. translators: %s is replaced with the lastly updated date from current post.
-#: template-parts/elements/card.php:44
-msgid "Last commit: <strong>%s</strong>"
+#: template-parts/elements/author-box.php:9
+msgid "Written by"
 msgstr ""
 
 #: template-parts/elements/share.php:3
@@ -278,9 +283,4 @@ msgstr ""
 
 #: template-parts/elements/share.php:15
 msgid "I do reply to every comment on the blog 😊"
-msgstr ""
-
-#. translators: %s is replaced with the lastly updated date from current post.
-#: template-parts/post/post-header.php:23
-msgid "Last commit on: <strong>%s</strong>"
 msgstr ""

@@ -1,0 +1,16 @@
+.author {
+    margin-bottom: 150px;
+}
+
+.author-name {
+    font-size: var(--font-size-h3);
+    color: var(--color-tertiary);
+}
+
+.author-description {
+    margin-top: 20px;
+}
+
+.author-image {
+    margin-bottom: 30px;
+}

@@ -173,6 +173,7 @@ function soyes_scripts(): void {
 		wp_enqueue_style( 'soyes-style-single', get_template_directory_uri() . '/assets/css/parts/single.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-comments', get_template_directory_uri() . '/assets/css/parts/comments.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-element-content', get_template_directory_uri() . '/assets/css/elements/content.css', array(), $version );
+		wp_enqueue_style( 'soyes-style-element-author-box', get_template_directory_uri() . '/assets/css/elements/author-box.css', array(), $version );
 		wp_enqueue_style( 'soyes-style-block-library', get_template_directory_uri() . '/assets/css/block-library.css', array(), $version );
 		wp_enqueue_script( 'soyes-script-share', get_template_directory_uri() . '/assets/js/share.js', array(), $version, true );
 	}
