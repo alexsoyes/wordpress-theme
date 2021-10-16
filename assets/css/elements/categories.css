@@ -45,15 +45,3 @@
     color: var(--color-white);
     border: none;
 }
-
-p {
-    line-height: 26px;
-    font-size: var(--font-size-comment);
-    margin-bottom: 10px;
-    letter-spacing: -0.063px;
-}
-
-.entry-text p {
-    font-size: var(--font-size-text);
-    line-height: 20px;
-}
