@@ -1,7 +1,7 @@
 /*
 Theme Name: soyes
 Description: A very simple blog for eco friendly bloggers!
-Version: 0.0.1
+Version: 0.0.2
 Author: Alex so yes
 Theme URI: https://alexsoyes.com
 Author URI: https://alexsoyes.com
@@ -102,46 +102,40 @@ Requires PHP: 7.1
  * Fonts.
  */
 /* open-sans-regular - latin */
-/* open-sans-regular - latin */
 @font-face {
-    font-display: swap;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src: local(''),
-    url('assets/fonts/open-sans-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* open-sans-italic - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 400;
-    src: local(''),
-    url('assets/fonts/open-sans-v23-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v23-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('assets/fonts/open-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-700 - latin */
 @font-face {
-    font-display: swap;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     src: local(''),
-    url('assets/fonts/open-sans-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('assets/fonts/open-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* open-sans-800 - latin */
 @font-face {
-    font-display: swap;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
     src: local(''),
-    url('assets/fonts/open-sans-v23-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v23-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('assets/fonts/open-sans-v27-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v27-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* open-sans-italic - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+    url('assets/fonts/open-sans-v27-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v27-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 /**
  * Global.
@@ -293,14 +287,8 @@ a.custom-logo-link:hover {
     margin: 0 10px;
 }
 
-.follow-me-list li a {
-    transition: var(--transition-default);
-}
-
 .follow-me-list li a:hover {
     border: none;
-    background-color: var(--color-tertiary);
-    border-radius: 50%;
 }
 
 .site-footer img.image {

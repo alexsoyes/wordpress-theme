@@ -12,18 +12,34 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Preloading fonts -->
     <link rel="preload"
-          href="<?php echo get_home_url( '/' ) ?>/wp-content/themes/soyes/assets/fonts/open-sans-v23-latin-800.woff2"
+          href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-800.woff2"
           as="font"
           crossorigin="anonymous"/>
     <link rel="preload"
-          href="<?php echo get_home_url( '/' ) ?>/wp-content/themes/soyes/assets/fonts/open-sans-v23-latin-700.woff2"
+          href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-700.woff2"
           as="font"
           crossorigin="anonymous"/>
     <link rel="preload"
-          href="<?php echo get_home_url( '/' ) ?>/wp-content/themes/soyes/assets/fonts/open-sans-v23-latin-regular.woff2"
+          href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-regular.woff2"
           as="font"
           crossorigin="anonymous"/>
+    <link rel="preload"
+          href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-italic.woff2"
+          as="font"
+          crossorigin="anonymous"/>
+    <!-- Prefetching usefull items -->
+    <link rel="prefetch"
+          href="<?php echo get_site_icon_url(); ?>"
+          as="image"
+          crossorigin="anonymous"/>
+	<?php if ( is_single() || is_front_page() || is_page() || is_404() ) : ?>
+        <link rel="prefetch"
+              href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/images/icons/open-outline.svg"
+              as="image"
+              crossorigin="anonymous"/>
+	<?php endif; ?>
 	<?php wp_head(); ?>
 </head>
 
