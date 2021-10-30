@@ -51,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 15px;
 }
 
 .card-comments {
@@ -67,6 +68,8 @@
 .card-date {
     color: var(--color-grayer);
     font-size: var(--font-size-caption);
+    background-color: var(--color-lightgray);
+    padding: 5px;
 }
 
 

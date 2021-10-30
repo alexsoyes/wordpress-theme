@@ -184,7 +184,11 @@ code {
 
 p code {
     background-color: var(--color-lightgray);
-    color: var(--color-secondary);
+    color: var(--color-grayer);
+    border-radius: 10px;
+    font-size: var(--font-size-code);
+    padding: 0 10px;
+    border: 1px solid var(--color-gray);
 }
 
 .entry-content blockquote a {
