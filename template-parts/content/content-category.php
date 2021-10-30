@@ -17,12 +17,12 @@
 						<?php esc_html_e( '< Return to blog posts', 'soyes' ) ?>
                     </a>
                 </small>
-            </div>
+            </div><!-- .entry-return-link -->
             <h1><?php single_cat_title(); ?></h1>
             <div class="entry-text">
 				<?php echo wp_kses_post( wpautop( get_the_archive_description() ) ); ?>
-            </div>
-			<?php get_template_part( 'template-parts/elements/categories' ); ?>
+            </div><!-- .entry-text -->
+	        <?php get_template_part( 'template-parts/elements/categories' ); ?>
         </div><!-- .entry-content -->
     </header><!-- .entry-header -->
 
