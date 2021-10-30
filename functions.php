@@ -5,6 +5,7 @@
  */
 
 require 'inc/template-functions.php';
+require 'inc/post-order.php';
 require 'inc/performance.php';
 require 'inc/gutenberg.php';
 require 'inc/navigation.php';
