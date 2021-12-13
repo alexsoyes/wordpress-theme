@@ -29,15 +29,12 @@
           href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-italic.woff2"
           as="font"
           crossorigin="anonymous"/>
-    <!-- Prefetching usefull items -->
-    <link rel="prefetch"
-          href="<?php echo get_site_icon_url(); ?>"
-          as="image"
-          crossorigin="anonymous"/>
 	<?php if ( is_single() || is_front_page() || is_page() || is_404() ) : ?>
         <link rel="prefetch"
               href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/images/icons/open-outline.svg"
-              as="image"
+              crossorigin="anonymous"/>
+        <link rel="prefetch"
+              href="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>"
               crossorigin="anonymous"/>
 	<?php endif; ?>
 	<?php wp_head(); ?>

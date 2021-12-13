@@ -5,7 +5,6 @@
 /**
  * Columns
  */
-
 .is-vertically-aligned-bottom {
     align-self: flex-end;
 }
@@ -267,4 +266,11 @@
     /*rtl:ignore*/
     padding-left: 2em;
     font-family: serif;
+}
+
+/**
+ * Layout.
+ */
+.is-content-justification-center {
+    text-align: center;
 }

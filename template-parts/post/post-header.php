@@ -36,7 +36,7 @@
         <div class="link-share">
             <div class="link-share-buttons">
 				<?php get_template_part( 'template-parts/elements/share-icons' ); ?>
-            </div>
+            </div><!-- .link-share-buttons -->
         </div><!-- .link-share -->
-    </div>
+    </div><!-- .link-share-container -->
 </div><!-- .post-header -->
