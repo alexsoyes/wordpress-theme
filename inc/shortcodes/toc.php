@@ -27,47 +27,43 @@ add_shortcode(
 		$headings_count   = count( $headings[0] );
 		$headings_element = $headings[1];
 		$headings_text    = $headings[2];
+		$elementsToClose  = 0;
 
-		$output = "<div class=\"$toc_class wp-block-columns alignfull\"><ol>\n";
+		$output = "<div class=\"$toc_class wp-block-columns alignfull\">\n\t<ol>\n";
 
 		for ( $i = 0; $i < $headings_count; $i ++ ) {
-			$currentText    = wp_strip_all_tags( $headings_text[ $i ] );
-			$currentHref    = urlencode( sanitize_title_with_dashes( remove_accents( ( $currentText ) ) ) );
-			$currentElement = $headings_element[ $i ];
+			$currentText = wp_strip_all_tags( $headings_text[ $i ] );
+			$currentHref = urlencode( sanitize_title_with_dashes( remove_accents( ( $currentText ) ) ) );
+			$currentH    = $headings_element[ $i ];
+			$previousH   = $headings_element[ $i - 1 ];
 
-			$currentLink = sprintf( "<a href=\"%s\">%s</a>\n", "#$currentHref", $currentText );
+			$currentLink = sprintf( "<a href=\"%s\">%s</a>", "#$currentHref", $currentText );
 
 			if ( $i === 0 ) {
-				$output .= sprintf( "<li class=\"%s\">\n\t%s\n", "toc_$currentElement", $currentLink );
+				$output .= sprintf( "\t<li class=\"%s\">%s", "toc_$currentH", $currentLink );
 				continue;
 			}
 
-			$previousElement = $headings_element[ $i - 1 ];
-			$elementsToClose = $previousElement - $currentElement;
-
-			if ( $currentElement > $previousElement ) { // the previous title is higher h2 > h3.
-				$output .= "\n<ol class='toc_sublist'>\n\t<li class='toc_$currentElement'>\n\t\t$currentLink";
-			} elseif ( $previousElement > $currentElement ) { // the previous title is lower h4 > h2.
+			if ( $currentH > $previousH ) { // the previous title is higher h2 > h3.
+				$output .= "\n<ol class='toc_sublist'>\n\t\t<li class='toc_$currentH'>\n\t\t$currentLink";
+				$elementsToClose ++;
+			} elseif ( $previousH > $currentH ) { // the previous title is lower h4 > h2.
 				// close all opened li before closing the list.
 				for ( $l = 0; $l < $elementsToClose; $l ++ ) {
 					$output .= "\t</li>\n</ol>";
 				}
-
-				$output .= "\t</li>\n\t<li class='toc_$currentElement'>$currentLink";
+				$elementsToClose = 0;
+				$output          .= "</li>\n\t<li class='toc_$currentH'>$currentLink";
 			} else { // the previous title is the same h2 = h2.
-				$output .= "\t</li>\n\t<li class='toc_$currentElement'>$currentLink";
+				$output .= "</li>\n\t<li class='toc_$currentH'>$currentLink";
 			}
 		}
 
 		// simply close the last element
 		if ( isset( $elementsToClose ) ) {
-			if ( $elementsToClose === 0 ) {
-				$output .= "\n</li>";
-			} else {
-				// close all opened li before closing the list.
-				for ( $l = 0; $l < $elementsToClose; $l ++ ) {
-					$output .= '</li></ol>';
-				}
+			// close all opened li before closing the list.
+			for ( $l = 0; $l < $elementsToClose; $l ++ ) {
+				$output .= '</li></ol>';
 			}
 		}
 
