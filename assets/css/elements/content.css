@@ -246,7 +246,7 @@ video {
  * Outside links
  */
 
-.entry-content ul a[target="_blank"]::after,
+.entry-content li a[target="_blank"]::after,
 .entry-content p a[target="_blank"]::after {
     content: '';
     width: var(--font-size-paragraph);
