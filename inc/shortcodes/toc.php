@@ -29,7 +29,7 @@ add_shortcode(
 		$headings_text    = $headings[2];
 		$elementsToClose  = 0;
 
-		$output = "<div class=\"$toc_class wp-block-columns alignfull\">\n\t<ol>\n";
+		$output = "<div id=\"toc\" class=\"$toc_class wp-block-columns alignfull\">\n\t<ol>\n";
 
 		for ( $i = 0; $i < $headings_count; $i ++ ) {
 			$currentText = wp_strip_all_tags( $headings_text[ $i ] );
@@ -45,7 +45,7 @@ add_shortcode(
 			}
 
 			if ( $currentH > $previousH ) { // the previous title is higher h2 > h3.
-				$output .= "\n<ol class='toc_sublist'>\n\t\t<li class='toc_$currentH'>\n\t\t$currentLink";
+				$output .= "\n<ol class=\"toc_sublist\">\n\t\t<li class=\"toc_$currentH\">\n\t\t$currentLink";
 				$elementsToClose ++;
 			} elseif ( $previousH > $currentH ) { // the previous title is lower h4 > h2.
 				// close all opened li before closing the list.
@@ -53,9 +53,9 @@ add_shortcode(
 					$output .= "\t</li>\n</ol>";
 				}
 				$elementsToClose = 0;
-				$output          .= "</li>\n\t<li class='toc_$currentH'>$currentLink";
+				$output          .= "</li>\n\t<li class=\"toc_$currentH\">$currentLink";
 			} else { // the previous title is the same h2 = h2.
-				$output .= "</li>\n\t<li class='toc_$currentH'>$currentLink";
+				$output .= "</li>\n\t<li class=\"toc_$currentH\">$currentLink";
 			}
 		}
 
