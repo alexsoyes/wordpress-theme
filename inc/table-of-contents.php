@@ -18,7 +18,7 @@ function get_the_replaced_heading( ?array $match ): string {
 
 function the_content_with_toc( string $content ): string {
 
-	if ( is_singular() && in_the_loop() && is_main_query() ) {
+	if ( is_single() && in_the_loop() && is_main_query() ) {
 
 		preg_match_all( '#\"toc_(\d)\"#', $content, $toc_headers );
 
