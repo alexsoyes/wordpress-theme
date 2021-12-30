@@ -1,7 +1,7 @@
 .author {
     text-align: center;
     margin-top: 150px;
-    background-color: var(--color-tertiary);
+    background-color: var(--color-primary);
     color: var(--color-black);
     padding: 50px 0;
 }

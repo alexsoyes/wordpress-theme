@@ -1,6 +1,6 @@
 .entry-header {
-    background-color: var(--color-quaternary);
-    color: var(--color-white);
+    background-color: var(--color-primary);
+    color: var(--color-black);
     margin-bottom: 50px;
     padding: 40px 0 30px 0;
 }

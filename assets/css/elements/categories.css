@@ -10,8 +10,8 @@
 }
 
 .entry-return-link a:hover {
-    border-bottom: 1px solid var(--color-tertiary);
-    color: var(--color-tertiary);
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
 }
 
 .entry-categories {
@@ -37,7 +37,7 @@
 
 .entry-categories li a {
     text-transform: capitalize;
-    color: var(--color-tertiary);
+    color: var(--color-primary);
     font-weight: var(--font-weight-bold);
 }
 

@@ -64,7 +64,7 @@
 }
 
 .comment-metadata .fn a {
-	color: var(--color-quaternary);
+	color: var(--color-primary);
 }
 
 .comment-metadata a:hover {

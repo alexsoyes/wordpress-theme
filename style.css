@@ -1,7 +1,7 @@
 /*
 Theme Name: soyes
 Description: A very simple blog for eco friendly bloggers!
-Version: 0.0.2
+Version: 0.1.2
 Author: Alex so yes
 Theme URI: https://alexsoyes.com
 Author URI: https://alexsoyes.com
@@ -28,10 +28,8 @@ Requires PHP: 7.1
     --container-width: calc(100% - (var(--container-padding) * 2));
 
     /* Main colors */
-    --color-primary: #0060df;
-    --color-secondary: #592acb;
-    --color-tertiary: #FFFBDD;
-    --color-quaternary: #20123a;
+    --color-primary: #FFF9C4;
+    --color-secondary: #F8BBD0;
 
     /* Colors */
     --color-white: #fff;
@@ -39,9 +37,9 @@ Requires PHP: 7.1
     --color-lightgray: #f7f7f7; /* #f9f9fa */
     --color-gray: #dfe1e5; /* #dfe1e5; #ddd */
     --color-grayer: #525252; /** rgb(117, 117, 117)  | #9e9e9e **/
-    --color-italic: var(--color-tertiary);
-    --color-link: var(--color-primary);
+    --color-link: #039be5;
     --color-box-shadow: rgba(0, 0, 0, 0.1);
+    --color-italic: var(--color-primary);
 
     /* Elements */
     --box-shadow-default: 0 1px 6px 0 var(--color-box-shadow); /* 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12); */
@@ -57,14 +55,14 @@ Requires PHP: 7.1
     --breakpoint-large: 992px;
 
     /* Font sizes */
-    --font-size-menu: 14px;
+    --font-size-menu: 16px;
     --font-size-category: 10px;
     --font-size-excerpt: 18px;
     --font-size-label: 15px;
     --font-size-code: 14px;
     --font-size-button: 15px;
     --font-size-input: 15px;
-    --font-size-paragraph: 16px;
+    --font-size-paragraph: 18px;
     --font-size-text: 16px;
     --font-size-comment: 15px;
     --font-size-list: 16px;
@@ -72,6 +70,7 @@ Requires PHP: 7.1
     --font-size-list-number: 13px;
     --font-size-caption: 13px;
     --font-size-table: 15px;
+    --font-size-h0: 44px;
     --font-size-h1: 36px;
     --font-size-h2: 28px;
     --font-size-h3: 24px;
@@ -83,13 +82,19 @@ Requires PHP: 7.1
     --font-weight-bolder: 800;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
+
+    /* Fonts */
+    --font-family-primary: "Times New Roman", Times, serif;
+    --font-family-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 @media only screen and (min-width: 992px) {
     :root {
         --container-width: calc(992px - (var(--container-padding) * 2));
-        --font-size-paragraph: 18px;
-        --font-size-h1: 48px;
+        --font-size-paragraph: 20px;
+        --font-size-list: 18px;
+        --font-size-h0: 50px;
+        --font-size-h1: 42px;
         --font-size-h2: 32px;
         --font-size-h3: 24px;
         --font-size-h4: 22px;
@@ -98,54 +103,12 @@ Requires PHP: 7.1
     }
 }
 
-/**
- * Fonts.
- */
-/* open-sans-regular - latin */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-display: optional;
-    src: local(''),
-    url('assets/fonts/open-sans-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* open-sans-700 - latin */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-display: optional;
-    src: local(''),
-    url('assets/fonts/open-sans-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* open-sans-800 - latin */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-display: optional;
-    src: local(''),
-    url('assets/fonts/open-sans-v27-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v27-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* open-sans-italic - latin */
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 400;
-    font-display: optional;
-    src: local(''),
-    url('assets/fonts/open-sans-v27-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('assets/fonts/open-sans-v27-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 /**
  * Global.
  */
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family-primary);
 }
 
 a {
@@ -164,6 +127,10 @@ button {
 
 input:focus {
     outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-secondary);
 }
 
 /**
@@ -192,13 +159,13 @@ input:focus {
 }
 
 #header nav a {
-    color: var(--color-quaternary);
+    color: var(--color-primary);
     font-size: var(--font-size-menu);
+    padding-bottom: 2px;
 }
 
 #header nav a:hover {
-    border-color: var(--color-quaternary);
-    color: var(--color-quaternary);
+    border-bottom: 3px solid var(--color-black);
 }
 
 #header .header-container {
@@ -261,7 +228,7 @@ a.custom-logo-link:hover {
     position: relative;
     margin-top: 100px;
     text-align: center;
-    background-color: var(--color-quaternary);
+    background-color: var(--color-secondary);
     padding: 100px 0 40px 0;
     color: var(--color-white);
 }
@@ -277,7 +244,7 @@ a.custom-logo-link:hover {
 .follow-me-title {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-bold);
-    color: var(--color-tertiary);
+    color: var(--color-primary);
     margin: 0;
 }
 
@@ -370,7 +337,7 @@ a.custom-logo-link:hover {
 .wp-block-button__link,
 .entry-content a.wp-block-button__link,
 a.wp-block-button__link {
-    background-color: var(--color-secondary);
+    background-color: var(--color-link);
     color: var(--color-white);
     box-shadow: var(--box-shadow-default);
     font-size: var(--font-size-button);

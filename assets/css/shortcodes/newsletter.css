@@ -9,15 +9,17 @@
     padding-bottom: 0;
     line-height: 1.15;
     font-weight: var(--font-weight-bolder);
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-h0);
 }
 
 .soyes-newsletter-title span {
-    color: var(--color-secondary);
+    background-color: var(--color-secondary);
+    padding: 0 10px;
+    font-size: var(--font-size-h1);
 }
 
 .soyes-newsletter-container-footer .soyes-newsletter-title span {
-    color: var(--color-tertiary);
+    color: var(--color-primary);
 }
 
 .soyes-newsletter-desc {
@@ -51,7 +53,6 @@
     display: block;
     width: 100%;
     padding: 15px;
-    border-radius: 5px;
 }
 
 .soyes-newsletter-email {
@@ -65,6 +66,7 @@
 
 .soyes-newsletter-submit {
     padding: 15px;
+    background-color: var(--color-black);
 }
 
 .soyes-newsletter-warn {

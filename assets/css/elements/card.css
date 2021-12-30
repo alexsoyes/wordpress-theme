@@ -23,7 +23,8 @@
 }
 
 .card-title a:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
+    background-color: var(--color-black);
     border: none;
 }
 

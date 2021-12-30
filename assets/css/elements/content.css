@@ -72,11 +72,12 @@ ul {
 .entry-content li {
     font-size: var(--font-size-list);
     margin: 4px 0;
+    color: var(--color-grayer);
 }
 
 .comment-content ul li::before,
 .entry-content ul li::before {
-    color: var(--color-quaternary);
+    color: var(--color-grayer);
     content: '\</>';
     display: inline-block;
     font-size: calc(var(--font-size-paragraph) - 4px);
@@ -94,10 +95,11 @@ i, em {
 
 .entry-content a {
     color: var(--color-link);
+    padding-bottom: 2px;
     border-bottom: 1px solid var(--color-link);
 }
 
-.entry-content a:not(.wp-block-button__link):hover {
+.entry-content a:not(.wp-block-button__link):not(.toc_ref):hover {
     color: var(--color-black);
     border-color: var(--color-black);
 }
@@ -107,10 +109,8 @@ i, em {
  */
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--font-weight-bolder);
     padding-bottom: 0;
     padding-top: 60px;
-    display: block;
 }
 
 h3, h4, h5, h6 {
@@ -118,8 +118,11 @@ h3, h4, h5, h6 {
 }
 
 h1 {
-    padding-top: 0;
     font-size: var(--font-size-h1);
+    color: var(--color-secondary);
+    background-color: var(--color-black);
+    text-align: center;
+    padding: 20px;
     position: relative;
     z-index: 10;
 }
@@ -153,7 +156,7 @@ pre:not(.wp-block-code) {
     margin: 20px 0 50px 0;
     padding: 30px;
     white-space: normal;
-    color: var(--color-quaternary);
+    color: var(--color-primary);
     position: relative;
 }
 
@@ -249,14 +252,14 @@ video {
 .entry-content li a[target="_blank"]::after,
 .entry-content p a[target="_blank"]::after {
     content: '';
-    width: var(--font-size-paragraph);
-    height: var(--font-size-paragraph);
+    width: var(--font-size-list);
+    height: var(--font-size-list);
     background-image: url("/wp-content/themes/soyes/assets/images/icons/open-outline.svg");
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 5px 3px 5px;
+    margin: 0 5px 5px 5px;
 }
 
 

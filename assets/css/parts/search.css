@@ -36,7 +36,7 @@
     padding: 15px 60px;
     border-radius: var(--radius-stronger);
     margin: 0;
-    background-color: var(--color-secondary);
+    background-color: var(--color-black);
     color: var(--color-white);
     box-shadow: var(--box-shadow-default);
     font-size: var(--font-size-button);

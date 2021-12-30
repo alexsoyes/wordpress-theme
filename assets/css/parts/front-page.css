@@ -9,3 +9,8 @@
         margin-bottom: 0px;
     }
 }
+
+#splash {
+    background-color: var(--color-primary);
+    padding: 20px 0 40px 0;
+}
