@@ -16,7 +16,7 @@
 
 h1 {
     text-align: center;
-    color: var(--color-secondary);
-    background-color: var(--color-black);
+    color: var(--color-black);
+    background-color: var(--color-secondary);
     padding: 20px;
 }

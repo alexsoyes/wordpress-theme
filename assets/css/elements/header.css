@@ -36,7 +36,7 @@
 
 #header nav li:last-of-type a {
     background-color: var(--color-secondary);
-    padding: 5px;
+    padding: 5px 8px;
     border-radius: var(--radius-default);
 }
 
