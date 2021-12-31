@@ -2,8 +2,9 @@
  * Search container.
  */
 .entry-search {
-    background-color: var(--color-primary);
-    padding: 40px 0
+    background-color: var(--color-lightgray);
+    padding: 40px 0;
+    margin-top: 50px;
 }
 
 /**
@@ -22,9 +23,10 @@
 
 .search-input-container {
     border-radius: var(--radius-stronger);
-    border: 1px solid var(--color-gray);
+    border: none;
+    box-shadow: var(--box-shadow-default);
     background-color: var(--color-white);
-    color: var(--color-grayer);
+    color: var(--color-gray);
     padding: 12px 20px;
     margin-right: 10px;
     width: 100%;
@@ -46,6 +48,7 @@
 
 .search-button {
     padding: 15px 60px;
+    background-color: var(--color-black);
     border-radius: var(--radius-stronger);
     display: inline-block;
     margin: 0;

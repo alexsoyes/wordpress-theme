@@ -79,12 +79,12 @@
 }
 
 .comment-metadata time {
-	color: var(--color-grayer);
+	color: var(--color-gray);
 	font-size: var(--font-size-s);
 }
 
 .comment-link {
-	color: var(--color-grayer);
+	color: var(--color-gray);
 }
 
 .comment-link:hover {
@@ -127,7 +127,7 @@
 .comment-content p {
 	font-size: var(--font-size-m);
 	line-height: 30px;
-	margin: 0 65px;
+	margin: 20px 65px;
 }
 
 .comment-content blockquote {

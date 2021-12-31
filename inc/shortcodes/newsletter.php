@@ -54,10 +54,10 @@ function soyes_newsletter( $atts = array() ): string {
                        aria-label="Adresse e-mail" class="soyes-newsletter-email">
                 <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
                        value="<?php esc_html_e( 'I want to receive the tips', 'soyes' ); ?>">
-                <small class="soyes-newsletter-warn">
-				    <?php esc_html_e( '* Your email address will NEVER be used by someone other than me.', 'soyes' ); ?>
-                </small><!-- .soyes-newsletter-warn -->
             </form><!-- .soyes-newsletter-form -->
+            <small class="soyes-newsletter-warn">
+                <?php esc_html_e( '* Your email address will NEVER be used by someone other than me.', 'soyes' ); ?>
+            </small><!-- .soyes-newsletter-warn -->
         </div><!-- .soyes-newsletter-content -->
     </div><!-- .soyes-newsletter-container -->
 	<?php

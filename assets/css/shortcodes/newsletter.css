@@ -18,57 +18,43 @@
     font-size: var(--font-size-h1);
 }
 
-.soyes-newsletter-container-footer .soyes-newsletter-title span {
-    color: var(--color-primary);
-}
-
 .soyes-newsletter-desc {
-    color: var(--color-grayer);
+    color: var(--color-gray);
 }
 
 .soyes-newsletter-form {
     margin-top: 40px;
-}
-
-.soyes-newsletter-container-footer .soyes-newsletter-desc {
-    color: var(--color-white);
+    display: flex;
 }
 
 @media only screen and (min-width: 992px) {
     .soyes-newsletter-form {
         width: 90%;
     }
-
-    .soyes-newsletter-container-footer .soyes-newsletter-form {
-        width: 100%;
-    }
-
-    .soyes-newsletter-container-footer .soyes-newsletter-content {
-        width: 60%;
-        margin: auto;
-    }
 }
 
 .soyes-newsletter-form > * {
-    display: block;
-    width: 100%;
     padding: 15px;
 }
 
+.soyes-newsletter-submit {
+    background-color: var(--color-black);
+    margin: 0;
+}
+
 .soyes-newsletter-email {
-    border: 1px solid var(--color-gray);
-    color: var(--color-black);
+    border: none;
+    box-shadow: var(--box-shadow-default);
+    width: 100%;
 }
 
 .soyes-newsletter-email:focus {
     border-color: var(--color-secondary);
 }
 
-.soyes-newsletter-submit {
-    padding: 15px;
-    background-color: var(--color-black);
-}
-
 .soyes-newsletter-warn {
-    padding: 15px 15px 0 0;
+    color: var(--color-gray);
+    text-align: left;
+    margin: 15px 15px 0 0;
+    display: block;
 }

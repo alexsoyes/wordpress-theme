@@ -3,7 +3,6 @@
  * Header.
  */
 #header {
-    padding: 5px 0;
     box-shadow: var(--box-shadow-default);
 }
 
@@ -27,12 +26,18 @@
 #header nav a {
     color: var(--color-black);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
     padding-bottom: 2px;
 }
 
 #header nav a:hover {
     border-bottom: 2px solid var(--color-black);
+}
+
+#header nav li:last-of-type a {
+    background-color: var(--color-secondary);
+    padding: 5px;
+    border-radius: var(--radius-default);
 }
 
 #header .header-container {
@@ -58,6 +63,10 @@
 }
 
 @media only screen and (min-width: 992px) {
+
+    #header {
+        padding: 5px 0;
+    }
 
     #header nav {
         background-color: var(--color-white);

@@ -19,7 +19,7 @@
 }
 
 .post-header-overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 50px 0;
 }
 
@@ -37,6 +37,7 @@
 }
 
 .entry-excerpt p {
+    color: var(--color-gray);
     font-size: var(--font-size-xl);
     width: 80%;
     margin: 20px auto;
@@ -53,7 +54,7 @@
 
 .entry-meta {
     font-size: var(--font-size-m);
-    color: var(--color-grayer);
+    color: var(--color-gray);
 }
 
 .entry-date {
@@ -90,7 +91,7 @@
 }
 
 .author-description {
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 /**
@@ -105,13 +106,14 @@
     display: none;
     position: absolute;
     bottom: -5px;
-    left: -50px;
+    left: -40px;
 }
 
 @media only screen and (min-width: 1100px) {
     .entry-content .toc_ref {
         display: block;
         color: var(--color-gray);
+        opacity: 0.2;
         padding-bottom: 4px;
     }
 }
@@ -119,6 +121,7 @@
 @media only screen and (min-width: 992px) {
     .entry-content .toc_ref:hover {
         color: var(--color-black);
+        opacity: 1;
     }
 }
 

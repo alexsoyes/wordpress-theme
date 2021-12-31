@@ -1,13 +1,12 @@
-.soyes-newsletter-columns figure.wp-block-image {
-    margin-top: 0;
-    margin-bottom: -75px;
+@media only screen and (min-width: 992px) {
+    .soyes-newsletter-columns {
+        margin-top: 50px;
+    }
 }
 
-@media only screen and (min-width: 992px) {
-    .soyes-newsletter-columns figure.wp-block-image {
-        margin-top: 50px;
-        margin-bottom: 0px;
-    }
+.soyes-newsletter-columns figure.wp-block-image {
+    margin-top: 0;
+    margin-bottom: -80px;
 }
 
 #splash {

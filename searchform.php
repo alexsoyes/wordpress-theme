@@ -31,5 +31,5 @@ $count_posts = wp_count_posts();
                value="<?php echo get_search_query(); ?>" name="s"/>
     </div><!-- .search-input-container -->
     <input type="submit" class="wp-block-button__link search-button"
-           value="<?php echo esc_attr_x( 'Search', 'submit button', 'soyes' ); ?>"/>
+           value="<?php echo esc_attr_x( '🔍 Search', 'submit button', 'soyes' ); ?>"/>
 </form><!-- .search-form -->
