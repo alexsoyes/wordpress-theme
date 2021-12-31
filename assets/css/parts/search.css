@@ -1,3 +1,14 @@
+/**
+ * Search container.
+ */
+.entry-search {
+    background-color: var(--color-primary);
+    padding: 40px 0
+}
+
+/**
+ * Forms.
+ */
 .search-form {
     white-space: nowrap;
     display: flex;
@@ -12,6 +23,7 @@
 .search-input-container {
     border-radius: var(--radius-stronger);
     border: 1px solid var(--color-gray);
+    background-color: var(--color-white);
     color: var(--color-grayer);
     padding: 12px 20px;
     margin-right: 10px;
@@ -35,16 +47,8 @@
 .search-button {
     padding: 15px 60px;
     border-radius: var(--radius-stronger);
-    margin: 0;
-    background-color: var(--color-black);
-    color: var(--color-white);
-    box-shadow: var(--box-shadow-default);
-    font-size: var(--font-size-button);
-    border: none;
-    cursor: pointer;
     display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin: 0;
 }
 
 .search-button:hover {

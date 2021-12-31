@@ -13,6 +13,8 @@
  * if one was passed to get_search_form() in the args array.
  */
 $soyes_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( $args['aria_label'] ) . '"' : '';
+$count_posts = wp_count_posts();
+
 ?>
 
 <form role="search" <?php echo $soyes_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
@@ -23,6 +25,7 @@ $soyes_aria_label = ! empty( $args['aria_label'] ) ? 'aria-label="' . esc_attr( 
              aria-hidden="true" class="search-icon"/>
         <input type="search"
                required
+               placeholder="<?php esc_html_e( sprintf('Search among %d posts...', $count_posts->publish ), 'soyes' ); ?>"
                class="search-input"
                aria-label="<?php _e( 'Search&hellip;', 'soyes' ); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations ?>"
                value="<?php echo get_search_query(); ?>" name="s"/>

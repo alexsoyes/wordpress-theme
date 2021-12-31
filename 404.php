@@ -17,7 +17,7 @@ get_header();
                          class="aligncenter">
                 </div><!-- .wp-block-column -->
                 <div class="wp-block-column">
-                    <h1><?php echo esc_html_e( 'Damned!', 'soyes' ) ?></h1>
+                    <h1><?php esc_html_e( 'Damned!', 'soyes' ) ?></h1>
                     <p><?php esc_html_e( 'That page does not exist (anymore?)!', 'soyes' ); ?></p>
                     <p><?php _e( 'I am tracking <code>404 errors</code> in order to replace them with <code>301 redirections</code> in case of missing posts (which is very rare by the way).', 'soyes' ); ?></p>
                 </div><!-- .wp-block-column -->

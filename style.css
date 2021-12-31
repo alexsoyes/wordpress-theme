@@ -47,7 +47,6 @@ Requires PHP: 7.1
     --radius-default: 5px;
     --radius-strong: 15px;
     --radius-stronger: 30px;
-    --transition-default: 0.5s all;
 
     /* Breakpoints */
     --breakpoint-small: 0;
@@ -121,7 +120,6 @@ a:hover {
 }
 
 button {
-    transition: var(--transition-default);
     cursor: pointer;
 }
 
@@ -138,7 +136,8 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 #header {
-    padding-top: 5px;
+    padding: 5px 0;
+    box-shadow: var(--box-shadow-default);
 }
 
 #header nav {
@@ -159,13 +158,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header nav a {
-    color: var(--color-primary);
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
     font-size: var(--font-size-menu);
     padding-bottom: 2px;
 }
 
 #header nav a:hover {
-    border-bottom: 3px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
 }
 
 #header .header-container {
@@ -204,11 +204,6 @@ h1, h2, h3, h4, h5, h6 {
 
     #header nav li {
         margin: 0 8px;
-    }
-
-    #header nav a {
-        color: var(--color-black);
-        font-weight: var(--font-weight-bold);
     }
 }
 
@@ -298,7 +293,6 @@ a.custom-logo-link:hover {
 
 .footer-navigation-wrapper li a {
     color: var(--color-white);
-    transition: var(--transition-default);
     font-weight: var(--font-weight-bold);
 }
 

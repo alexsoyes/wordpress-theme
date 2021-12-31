@@ -1,42 +1,28 @@
-<div class="post-header" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
-    <div class="post-header-overlay">
-        <div class="entry-content">
-			<?php $category = soyes_get_the_main_category(); ?>
-			<?php if ( $category ) : ?>
-                <div class="entry-category">
+<div class="entry-header">
+    <div class="entry-content">
+        <?php $category = soyes_get_the_main_category(); ?>
+        <?php if ($category) : ?>
+            <div class="entry-category">
             <span>
-            <?php echo esc_html( $category->name ); ?>
+            <?php echo esc_html($category->name); ?>
             </span>
-                </div><!-- .entry-category -->
-			<?php endif; ?>
-
-			<?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
-            <div class="entry-excerpt">
-				<?php the_excerpt(); ?>
-            </div><!-- .entry-excerpt -->
-
-            <div class="entry-meta">
-
-                <div class="entry-date">
+            </div><!-- .entry-category -->
+        <?php endif; ?>
+        <div class="entry-meta">
+            <div class="entry-date">
                     <span>
                     <?php soyes_the_post_modified_date(); ?>
                     </span>
-                </div><!-- .entry-date -->
+            </div><!-- .entry-date -->
+        </div><!-- .entry-meta -->
+        <?php the_title('<h1 class="entry-title default-max-width">', '</h1>'); ?>
+        <div class="entry-excerpt">
+            <?php the_excerpt(); ?>
+        </div><!-- .entry-excerpt -->
+        <?php get_template_part( 'template-parts/elements/author-box' ); ?>
+    </div><!-- .entry-content -->
+</div><!-- .entry-header -->
 
-                <div class="link-comment">
-                    <a href="#community"><?php soyes_the_comment_count(); ?></a>
-                </div><!-- .link-comment -->
-
-            </div><!-- .entry-meta -->
-
-        </div><!-- .entry-content -->
-    </div><!-- .post-header-overlay -->
-
-    <div class="link-share-container">
-        <div class="link-share">
-            <div class="link-share-buttons">
-				<?php get_template_part( 'template-parts/elements/share-icons' ); ?>
-            </div><!-- .link-share-buttons -->
-        </div><!-- .link-share -->
-    </div><!-- .link-share-container -->
+<div class="post-header" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
+    <div class="post-header-overlay"></div>
 </div><!-- .post-header -->

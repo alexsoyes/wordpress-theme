@@ -14,3 +14,10 @@
     background-color: var(--color-primary);
     padding: 20px 0 40px 0;
 }
+
+h1 {
+    text-align: center;
+    color: var(--color-secondary);
+    background-color: var(--color-black);
+    padding: 20px;
+}

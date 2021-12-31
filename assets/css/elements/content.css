@@ -119,10 +119,6 @@ h3, h4, h5, h6 {
 
 h1 {
     font-size: var(--font-size-h1);
-    color: var(--color-secondary);
-    background-color: var(--color-black);
-    text-align: center;
-    padding: 20px;
     position: relative;
     z-index: 10;
 }
@@ -151,12 +147,13 @@ h6 {
  * Format.
  */
 pre:not(.wp-block-code) {
-    font-size: var(--font-size-h5);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-h6);
     line-height: 36px;
     margin: 20px 0 50px 0;
-    padding: 30px;
+    padding: 30px 0 40px 0;
     white-space: normal;
-    color: var(--color-primary);
+    color: var(--color-grayer);
     position: relative;
 }
 
@@ -166,8 +163,9 @@ pre:not(.wp-block-code)::after {
     bottom: 0px;
     left: 30px;
     width: 20px;
-    height: 5px;
-    background-color: var(--color-black);
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
 }
 
 .wp-block-code {
@@ -280,8 +278,8 @@ video {
     }
 
     pre:not(.wp-block-code) {
-        padding: 30px 60px;
-        font-size: var(--font-size-h4);
+        padding: 30px 60px 40px 60px;
+        font-size: var(--font-size-h2);
         margin: 40px 0 60px 0;
     }
 

@@ -1,21 +1,20 @@
 .author {
     text-align: center;
-    margin-top: 150px;
-    background-color: var(--color-primary);
-    color: var(--color-black);
-    padding: 50px 0;
+    font-size: var(--font-size-caption);
+    font-family: var(--font-family-secondary);
+}
+
+.author-container {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 30px;
 }
 
 .author-name {
-    font-size: var(--font-size-h4);
     font-weight: var(--font-weight-bold);
 }
 
 .author-description {
-    margin-top: 20px;
-    font-size: var(--font-size-h6);
-}
-
-.author-image {
-    margin-bottom: 30px;
+    margin-top: 10px;
 }
