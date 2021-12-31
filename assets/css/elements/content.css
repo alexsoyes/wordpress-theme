@@ -7,7 +7,7 @@ figure.wp-block-image {
     text-align: center;
     margin: 30px 0 0 0;
     position: relative;
-    font-size: var(--font-size-caption);
+    font-size: var(--font-size-s);
     font-weight: var(--font-weight-bold);
 }
 
@@ -19,7 +19,7 @@ figure figcaption {
     text-align: center;
     margin-top: 0;
     position: relative;
-    font-size: var(--font-size-caption);
+    font-size: var(--font-size-s);
     background-color: var(--color-lightgray);
     padding: 20px;
     word-break: break-word;
@@ -45,13 +45,13 @@ ol,
 .entry-content ul,
 p {
     line-height: 32px;
-    font-size: var(--font-size-paragraph);
-    margin-bottom: 10px;
+    font-size: var(--font-size-xl);
+    margin: 20px auto;
     letter-spacing: -0.065px;
 }
 
 .comment-content li {
-    font-size: calc(var(--font-size-comment) - 1px);
+    font-size: calc(var(--font-size-m) - 1px);
 }
 
 ul {
@@ -70,18 +70,19 @@ ul {
 }
 
 .entry-content li {
-    font-size: var(--font-size-list);
+    font-size: var(--font-size-l);
     margin: 4px 0;
     color: var(--color-grayer);
 }
 
 .comment-content ul li::before,
 .entry-content ul li::before {
-    color: var(--color-grayer);
     content: '\</>';
     display: inline-block;
-    font-size: calc(var(--font-size-paragraph) - 4px);
     margin-right: 10px;
+    font-size: var(--font-size-m);
+    color: var(--color-gray);
+    font-weight: var(--font-weight-bold);
 }
 
 /**
@@ -110,7 +111,7 @@ i, em {
 
 h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 h3, h4, h5, h6 {
@@ -173,7 +174,7 @@ pre:not(.wp-block-code)::after {
     margin: 30px 0;
     box-shadow: var(--box-shadow-default);
     overflow-x: auto;
-    font-size: var(--font-size-code);
+    font-size: var(--font-size-m);
 }
 
 code {
@@ -183,12 +184,12 @@ code {
     display: inline-block;
 }
 
+ul code,
 p code {
     background-color: var(--color-lightgray);
     color: var(--color-grayer);
     border-radius: 10px;
-    font-size: var(--font-size-code);
-    padding: 0 10px;
+    font-size: var(--font-size-m);
     border: 1px solid var(--color-gray);
 }
 
@@ -209,8 +210,8 @@ blockquote {
 blockquote cite {
     color: #000;
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-caption);
-    line-height: calc(var(--font-size-caption) * 2);
+    font-size: var(--font-size-s);
+    line-height: calc(var(--font-size-s) * 2);
     margin-top: 15px;
     display: block;
 }
@@ -246,12 +247,12 @@ video {
 /**
  * Outside links
  */
-
+.comment-list a[target="_blank"]::after,
 .entry-content li a[target="_blank"]::after,
 .entry-content p a[target="_blank"]::after {
     content: '';
-    width: var(--font-size-list);
-    height: var(--font-size-list);
+    width: var(--font-size-l);
+    height: var(--font-size-l);
     background-image: url("/wp-content/themes/soyes/assets/images/icons/open-outline.svg");
     background-repeat: no-repeat;
     background-size: contain;

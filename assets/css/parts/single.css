@@ -37,7 +37,7 @@
 }
 
 .entry-excerpt p {
-    font-size: var(--font-size-excerpt);
+    font-size: var(--font-size-xl);
     width: 80%;
     margin: 20px auto;
 }
@@ -46,25 +46,18 @@
     text-transform: capitalize;
     padding: 6px 14px;
     border-radius: 16px;
-    font-size: var(--font-size-category);
+    font-size: var(--font-size-s);
     font-weight: var(--font-weight-bold);
-    color: var(--color-black);
     background-color: var(--color-italic);
 }
 
-.entry-category {
-    margin-bottom: 10px;
-}
-
-
 .entry-meta {
-    margin-top: 30px;
-    font-size: var(--font-size-text);
+    font-size: var(--font-size-m);
     color: var(--color-grayer);
 }
 
 .entry-date {
-    font-size: var(--font-size-button);
+    margin-top: 25px;
     padding-bottom: 5px;
 }
 
@@ -114,7 +107,7 @@
     color: var(--color-black);
     border-radius: var(--radius-default);
     padding: 5px 15px;
-    font-size: var(--font-size-button);
+    font-size: var(--font-size-m);
     box-shadow: var(--box-shadow-default);
 }
 
@@ -124,7 +117,7 @@
 
 .entry-content .link-comment a {
     color: var(--color-black);
-    font-size: var(--font-size-menu);
+    font-size: var(--font-size-l);
     font-weight: var(--font-weight-bold);
     border: none;
 }
@@ -133,7 +126,7 @@
  * Yoast FAQ.
  */
 .schema-faq-question {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     padding-top: 60px;
     display: block;
 }
@@ -258,7 +251,7 @@
 }
 
 .social-more {
-    font-size: var(--font-size-caption);
+    font-size: var(--font-size-s);
     margin-top: 15px;
 }
 
@@ -278,7 +271,7 @@
     background-color: transparent;
     color: var(--color-white);
     padding: 5px 20px;
-    font-size: var(--font-size-button);
+    font-size: var(--font-size-m);
     display: flex;
     width: 100%;
     justify-content: center;

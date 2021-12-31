@@ -178,13 +178,13 @@
 
 .wp-block-table td {
     padding: 15px 10px;
-    font-size: var(--font-size-table);
+    font-size: var(--font-size-m);
 }
 
 .wp-block-table figcaption {
     text-align: center;
     padding: 10px 0;
-    font-size: var(--font-size-caption);
+    font-size: var(--font-size-s);
 }
 
 .wp-block-table.is-style-stripes figcaption {

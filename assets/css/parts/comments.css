@@ -38,7 +38,8 @@
 }
 
 .comment-reply-link {
-	background-color: var(--color-secondary);
+	background-color: var(--color-link);
+	font-family: var(--font-family-secondary);
 	color: var(--color-white);
 	padding: 0 15px;
 	border-radius: var(--radius-strong);
@@ -63,12 +64,12 @@
 	line-height: 20px;
 }
 
-.comment-metadata .fn a {
-	color: var(--color-primary);
+.comment-metadata a {
+	color: var(--color-black);
 }
 
 .comment-metadata a:hover {
-	color: var(--color-secondary);
+	color: var(--color-link);
 	border: none;
 }
 
@@ -79,7 +80,7 @@
 
 .comment-metadata time {
 	color: var(--color-grayer);
-	font-size: var(--font-size-caption);
+	font-size: var(--font-size-s);
 }
 
 .comment-link {
@@ -96,7 +97,8 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 0 20px 0;
-	font-size: var(--font-size-caption);
+	font-size: var(--font-size-s);
+	margin: 0 10px 0 65px;
 }
 
 /**
@@ -109,7 +111,7 @@
 
 .depth-1 > .comment-body {
 	box-shadow: var(--box-shadow-default);
-	padding: 20px 20px 10px 20px;
+	padding: 20px 20px 0 20px;
 }
 
 .depth-2 .comment-body {
@@ -117,14 +119,15 @@
 }
 
 .depth-2 > article > .comment-content {
+	margin-top: 20px;
 	background-color: var(--color-lightgray);
-	padding: 10px 30px;
+	padding: 20px 0 0 0;
 }
 
 .comment-content p {
-	font-size: var(--font-size-comment);
+	font-size: var(--font-size-m);
 	line-height: 30px;
-	margin-bottom: 0;
+	margin: 0 65px;
 }
 
 .comment-content blockquote {
@@ -168,7 +171,7 @@
 
 .comment-subscription-form label,
 .comment-form-cookies-consent label {
-	font-size: var(--font-size-label);
+	font-size: var(--font-size-m);
 	cursor: pointer;
 	white-space: break-spaces;
 }
@@ -190,7 +193,7 @@
 	border-radius: var(--radius-default);
 	border: 1px solid var(--color-gray);
 	padding: 10px;
-	font-size: var(--font-size-input);
+	font-size: var(--font-size-m);
 }
 
 @media only screen and (min-width: 992px) {
@@ -235,5 +238,5 @@ input:focus, textarea:focus, select:focus {
 
 .comment-reply-title small {
 	display: block;
-	font-size: var(--font-size-caption);
+	font-size: var(--font-size-s);
 }

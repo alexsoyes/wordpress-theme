@@ -16,7 +16,7 @@
 
 .card-category-title {
     margin-top: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: var(--font-size-h2);
     text-transform: capitalize;
 }
@@ -44,7 +44,7 @@
 
 .card-excerpt {
     color: var(--color-grayer);
-    font-size: var(--font-size-excerpt);
+    font-size: var(--font-size-xl);
 }
 
 .card-category {
@@ -55,7 +55,7 @@
     color: var(--color-black);
     background-color: var(--color-primary);
     padding: 5px 10px;
-    font-size: var(--font-size-category);
+    font-size: var(--font-size-xs);
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-secondary);
     text-transform: capitalize;
@@ -83,7 +83,7 @@
 
 .card-date {
     color: var(--color-grayer);
-    font-size: var(--font-size-caption);
+    font-size: var(--font-size-s);
     background-color: var(--color-lightgray);
     padding: 5px;
 }

@@ -35,7 +35,7 @@
 .search-input {
     border: none;
     width: 90%;
-    font-size: var(--font-size-input);
+    font-size: var(--font-size-m);
     line-height: 1;
 }
 

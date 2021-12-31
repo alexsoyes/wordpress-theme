@@ -28,7 +28,7 @@ Requires PHP: 7.1
     --container-width: calc(100% - (var(--container-padding) * 2));
 
     /* Main colors */
-    --color-primary: #FFF9C4;
+    --color-primary: #fff9e0;
     --color-secondary: #F8BBD0;
 
     /* Colors */
@@ -54,21 +54,12 @@ Requires PHP: 7.1
     --breakpoint-large: 992px;
 
     /* Font sizes */
-    --font-size-menu: 16px;
-    --font-size-category: 10px;
-    --font-size-excerpt: 18px;
-    --font-size-label: 15px;
-    --font-size-code: 14px;
-    --font-size-button: 15px;
-    --font-size-input: 15px;
-    --font-size-paragraph: 18px;
-    --font-size-text: 16px;
-    --font-size-comment: 15px;
-    --font-size-list: 16px;
-    --font-size-list-child: 15px;
-    --font-size-list-number: 13px;
-    --font-size-caption: 13px;
-    --font-size-table: 15px;
+    --font-size-xs: 10px;
+    --font-size-s: 13px;
+    --font-size-m: 15px;
+    --font-size-l: 16px;
+    --font-size-xl: 18px;
+
     --font-size-h0: 44px;
     --font-size-h1: 36px;
     --font-size-h2: 28px;
@@ -78,7 +69,7 @@ Requires PHP: 7.1
     --font-size-h6: 16px;
 
     /* Font Weights */
-    --font-weight-bolder: 800;
+    --font-weight-bolder: 900;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
 
@@ -90,8 +81,8 @@ Requires PHP: 7.1
 @media only screen and (min-width: 992px) {
     :root {
         --container-width: calc(992px - (var(--container-padding) * 2));
-        --font-size-paragraph: 20px;
-        --font-size-list: 18px;
+        --font-size-xl: 20px;
+        --font-size-l: 18px;
         --font-size-h0: 50px;
         --font-size-h1: 42px;
         --font-size-h2: 32px;
@@ -160,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 #header nav a {
     color: var(--color-black);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-menu);
+    font-size: var(--font-size-l);
     padding-bottom: 2px;
 }
 
@@ -334,7 +325,7 @@ a.wp-block-button__link {
     background-color: var(--color-link);
     color: var(--color-white);
     box-shadow: var(--box-shadow-default);
-    font-size: var(--font-size-button);
+    font-size: var(--font-size-m);
     border: none;
     margin: 5px 0;
     cursor: pointer;

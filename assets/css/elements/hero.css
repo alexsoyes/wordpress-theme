@@ -11,12 +11,12 @@ h1 {
 
 p {
     line-height: 26px;
-    font-size: var(--font-size-comment);
+    font-size: var(--font-size-m);
     margin-bottom: 10px;
     letter-spacing: -0.063px;
 }
 
 .entry-text p {
-    font-size: var(--font-size-text);
+    font-size: var(--font-size-l);
     line-height: 20px;
 }

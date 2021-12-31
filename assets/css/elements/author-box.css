@@ -1,6 +1,6 @@
 .author {
     text-align: center;
-    font-size: var(--font-size-caption);
+    font-size: var(--font-size-s);
     font-family: var(--font-family-secondary);
 }
 
@@ -9,6 +9,10 @@
     align-items: center;
     text-align: left;
     margin-top: 30px;
+}
+
+.author-image {
+    margin: 10px 20px;
 }
 
 .author-name {
