@@ -54,14 +54,16 @@ get_header();
         </div><!-- .entry-content -->
 
         <div class="entry-content">
-			<?php
-			if ( have_posts() ) :
-				while ( have_posts() ) :
-					the_post();
-					get_template_part( 'template-parts/elements/card' );
-				endwhile;
-			endif;
-			?>
+            <div class="cards">
+                <?php
+                if ( have_posts() ) :
+                    while ( have_posts() ) :
+                        the_post();
+                        get_template_part( 'template-parts/elements/card' );
+                    endwhile;
+                endif;
+                ?>
+            </div>
         </div><!-- .entry-content -->
 
         <footer class="entry-footer default-max-width">

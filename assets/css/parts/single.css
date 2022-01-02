@@ -133,23 +133,13 @@
 /**
  * Comment.
  */
-.link-comment {
-    background-color: var(--color-white);
-    color: var(--color-black);
-    border-radius: var(--radius-default);
-    padding: 5px 15px;
-    font-size: var(--font-size-m);
-    box-shadow: var(--box-shadow-default);
-}
-
 .link-comment img {
     margin-left: 5px;
 }
 
 .entry-content .link-comment a {
     color: var(--color-black);
-    font-size: var(--font-size-l);
-    font-weight: var(--font-weight-bold);
+    font-style: italic;
     border: none;
 }
 

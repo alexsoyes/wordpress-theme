@@ -18,6 +18,7 @@
 .card-image {
     overflow: hidden;
     height: 280px;
+    background-color: var(--color-primary);
 }
 
 .card-category-title {

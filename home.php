@@ -30,14 +30,13 @@ if (have_posts()) :?>
             <?php
             $categories = get_categories(array(
                 'orderby' => 'name',
-                'order' => 'ASC',
-                'exclude' => array(1)
+                'order' => 'ASC'
             ));
 
             foreach ($categories as $category) {
                 $args = array(
                     'posts_per_page' => -1,
-                    'category_name' => $category->name,
+                    'category' => $category->term_id,
                     'orderby' => 'date',
                     'order' => 'DESC'
                 );
@@ -48,12 +47,10 @@ if (have_posts()) :?>
                 if ($posts_count > 0) {
                     printf('<h2 class="card-category-title">%s (%d)</h2>', $category->name, $posts_count);
                     echo '<div class="cards">';
-
                     foreach ($posts as $post) {
                         setup_postdata($post);
                         get_template_part('template-parts/elements/card');
                     }
-
                     echo '</div>';
                 }
             }

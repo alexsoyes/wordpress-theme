@@ -38,7 +38,7 @@
         <footer class="entry-footer">
             <div id="community" class="entry-social">
 			    <?php get_template_part( 'template-parts/elements/share' ); ?>
-                <a href="#toc" title="<?php esc_html_e( 'Back to top', 'soyes' ); ?>">
+                <a href="#page" title="<?php esc_html_e( 'Back to top', 'soyes' ); ?>">
                     <img src="<?php echo soyes_get_the_image( 'caret-up-outline', 'svg', true, false ) ?>"
                          alt="<?php esc_html_e( 'Back to top', 'soyes' ); ?>" width="30" height="30"
                          aria-hidden="true" class="back-to-top"/>

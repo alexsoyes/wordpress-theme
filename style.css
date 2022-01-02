@@ -240,7 +240,7 @@ figure.wp-block-image {
  */
 .comment-content ul,
 .entry-content ul,
-.page .entry-content div,
+.entry-content .wp-block-jetpack-address div,
 ol,
 p {
     line-height: 32px;
