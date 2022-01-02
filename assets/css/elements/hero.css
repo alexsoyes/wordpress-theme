@@ -17,5 +17,4 @@ p {
 
 .entry-text p {
     font-size: var(--font-size-l);
-    line-height: 20px;
 }

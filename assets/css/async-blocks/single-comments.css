@@ -98,7 +98,6 @@
 	align-items: center;
 	padding: 30px 0 20px 0;
 	font-size: var(--font-size-s);
-	margin: 0 10px 0 65px;
 }
 
 /**
@@ -119,15 +118,14 @@
 }
 
 .depth-2 > article > .comment-content {
+	padding: 5px 20px;
 	margin-top: 20px;
 	background-color: var(--color-lightgray);
-	padding: 20px 0 0 0;
 }
 
 .comment-content p {
 	font-size: var(--font-size-m);
 	line-height: 30px;
-	margin: 20px 65px;
 }
 
 .comment-content blockquote {
@@ -199,6 +197,15 @@
 @media only screen and (min-width: 992px) {
 	.comment-respond {
 		padding: 0 150px;
+	}
+	.comment-content p {
+		margin: 20px 65px;
+	}
+	.comment-actions {
+		margin: 0 10px 0 65px;
+	}
+	.depth-2 > article > .comment-content {
+		padding: 20px 0 0 0;
 	}
 }
 

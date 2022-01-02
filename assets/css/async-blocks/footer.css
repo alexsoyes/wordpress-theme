@@ -2,12 +2,12 @@
  * Footer.
  */
 .site-footer {
+    padding: 40px 0;
     z-index: 20;
     position: relative;
     margin-top: 100px;
     text-align: center;
     background-color: var(--color-primary);
-    padding: 100px 0 40px 0;
     color: var(--color-black);
 }
 
@@ -90,6 +90,9 @@
 }
 
 @media only screen and (min-width: 992px) {
+    .site-footer {
+        padding: 100px 0 40px 0;
+    }
     .soyes-newsletter-container-footer .soyes-newsletter-form {
         width: 100%;
     }

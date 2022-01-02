@@ -1,7 +1,7 @@
 <div class="author entry-content" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
     <div class="author-container wp-block-columns">
         <figure class="author-image">
-            <?php echo get_avatar(get_the_author_meta('ID'), 64); ?>
+            <?php echo get_avatar(get_the_author_meta('ID'), 56); ?>
         </figure>
         <div class="author-meta">
             <div class="author-name">

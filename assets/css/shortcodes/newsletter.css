@@ -23,8 +23,14 @@
 }
 
 .soyes-newsletter-form {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
+}
+
+@media only screen and (max-width: 781px) {
+    .soyes-newsletter-form {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 992px) {

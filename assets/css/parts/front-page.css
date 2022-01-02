@@ -2,11 +2,14 @@
     .soyes-newsletter-columns {
         margin-top: 50px;
     }
+    .soyes-newsletter-columns figure.wp-block-image {
+        margin-bottom: -80px;
+    }
 }
 
 .soyes-newsletter-columns figure.wp-block-image {
     margin-top: 0;
-    margin-bottom: -80px;
+    margin-bottom: -70px;
 }
 
 #splash {

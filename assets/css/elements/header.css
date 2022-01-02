@@ -15,7 +15,8 @@
 }
 
 #header nav ul {
-    padding-left: 0;
+    margin: 0;
+    padding: 20px 0;
 }
 
 #header nav li {
@@ -47,10 +48,6 @@
 }
 
 @media only screen and (max-width: 991px) {
-    #header nav {
-        width: 100%;
-    }
-
     #header .site-logo {
         padding: 20px 0;
     }
@@ -72,10 +69,6 @@
         background-color: var(--color-white);
         text-align: right;
         padding-bottom: 5px;
-    }
-
-    #header nav ul {
-        margin: 20px 0;
     }
 
     #header nav li {

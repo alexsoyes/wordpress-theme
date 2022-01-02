@@ -70,10 +70,10 @@ figure figcaption {
  */
 pre:not(.wp-block-code) {
     font-family: var(--font-family-primary);
-    font-size: var(--font-size-h6);
-    line-height: 46px;
-    margin: 20px 0 50px 0;
-    padding: 30px 0 40px 0;
+    font-size: var(--font-size-h4);
+    line-height: 36px;
+    margin: 10px 0 50px 0;
+    padding: 30px;
     white-space: normal;
     color: var(--color-gray);
     position: relative;
@@ -82,7 +82,7 @@ pre:not(.wp-block-code) {
 pre:not(.wp-block-code)::after {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 30px;
     width: 20px;
     height: 20px;
@@ -104,6 +104,7 @@ code {
     color: var(--color-gray);
     padding: 0 5px;
     display: inline-block;
+    line-height: 25px;
 }
 
 ul kbd,

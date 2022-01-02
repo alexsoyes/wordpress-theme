@@ -20,13 +20,7 @@
 
 .post-header-overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px 0;
-}
-
-@media only screen and (min-width: 992px) {
-    .post-header-overlay {
-        padding: 200px 0;
-    }
+    padding: 200px 0;
 }
 
 .entry-title {
@@ -38,7 +32,7 @@
 
 .entry-excerpt p {
     color: var(--color-gray);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
     width: 80%;
     margin: 20px auto;
 }

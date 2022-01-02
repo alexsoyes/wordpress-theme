@@ -45,7 +45,7 @@ if (have_posts()) :?>
                 $posts_count = count($posts);
 
                 if ($posts_count > 0) {
-                    printf('<h2 class="card-category-title">%s (%d)</h2>', $category->name, $posts_count);
+                    printf('<h2 class="card-category-title">%s [%d]</h2>', $category->name, $posts_count);
                     echo '<div class="cards">';
                     foreach ($posts as $post) {
                         setup_postdata($post);
