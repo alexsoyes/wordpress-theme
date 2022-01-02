@@ -40,7 +40,6 @@
 
 .card-title a {
     color: var(--color-black);
-    border: none;
 }
 
 .entry-content .card-title a:hover {

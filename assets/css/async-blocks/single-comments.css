@@ -50,7 +50,6 @@
 }
 
 .comment-reply-link:hover {
-	border: none;
 	box-shadow: var(--box-shadow-strong);
 }
 
@@ -70,7 +69,6 @@
 
 .comment-metadata a:hover {
 	color: var(--color-link);
-	border: none;
 }
 
 .comment-metadata b,

@@ -70,7 +70,7 @@ figure figcaption {
  */
 pre:not(.wp-block-code) {
     font-family: var(--font-family-primary);
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-h3);
     line-height: 36px;
     margin: 10px 0 50px 0;
     padding: 30px;
@@ -338,7 +338,6 @@ video {
 
 .wp-block-separator.is-style-dots {
     background: none !important;
-    border: none;
     text-align: center;
     max-width: none;
     line-height: 1;

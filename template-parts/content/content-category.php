@@ -9,15 +9,14 @@
 <article>
     <header class="entry-header">
         <div class="entry-content">
-            <div class="entry-return-link">
+            <p class="entry-return-link">
                 <small>
                     <a href="<?php echo get_post_type_archive_link( 'post' ); ?>"
-                       title="<?php esc_html_e( 'Find all posts', 'soyes' ) ?>"
-                       class="wp-block-button__link">
+                       title="<?php esc_html_e( 'Find all posts', 'soyes' ) ?>">
 						<?php esc_html_e( '< Return to blog posts', 'soyes' ) ?>
                     </a>
                 </small>
-            </div><!-- .entry-return-link -->
+            </p><!-- .entry-return-link -->
             <h1><?php single_cat_title(); ?></h1>
             <div class="entry-text">
 				<?php echo wp_kses_post( wpautop( get_the_archive_description() ) ); ?>
@@ -27,15 +26,15 @@
     </header><!-- .entry-header -->
 
     <div class="entry-content">
-		<?php
-		get_search_form();
-
-		while ( have_posts() ) {
-			the_post();
-
-			get_template_part( 'template-parts/elements/card' );
-		}
-		?>
+		<?php get_search_form(); ?>
+        <div class="cards">
+            <?php
+            while ( have_posts() ) {
+                the_post();
+                get_template_part( 'template-parts/elements/card' );
+            }
+            ?>
+        </div><!-- .cards -->
     </div><!-- .entry-content -->
 
     <footer class="entry-footer default-max-width">

@@ -34,7 +34,7 @@
     color: var(--color-gray);
     font-size: var(--font-size-l);
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .entry-category span {
@@ -119,11 +119,6 @@
     }
 }
 
-.entry-content h2 a,
-.entry-content h3 a {
-    border: none;
-}
-
 /**
  * Comment.
  */
@@ -134,7 +129,6 @@
 .entry-content .link-comment a {
     color: var(--color-black);
     font-style: italic;
-    border: none;
 }
 
 /**
@@ -172,12 +166,9 @@
     width: 30px;
     height: 30px;
     position: fixed;
-    bottom: 30px;
+    bottom: 20px;
     right: 30px;
-}
-
-.back-to-top:hover {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 @media only screen and (min-width: 786px) {
