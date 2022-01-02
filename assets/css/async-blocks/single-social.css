@@ -3,9 +3,10 @@
  * Share bottom
  */
 .entry-social {
+    margin-top: 150px;
     padding: 20px;
-    color: var(--color-white);
-    background-color: var(--color-primary);
+    color: var(--color-black);
+    background-color: var(--color-lightgray);
     text-align: center;
     z-index: 20;
     position: relative;
@@ -16,7 +17,7 @@
     margin-bottom: 40px;
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-h2);
-    color: var(--color-primary);
+    color: var(--color-black);
 }
 
 .social-more {
@@ -25,7 +26,8 @@
 }
 
 .social-description {
-    font-size: var(--font-size-h5);
+    font-size: var(--font-size-m);
+    font-family: var(--font-family-secondary);
 }
 
 .social-buttons {
@@ -37,16 +39,16 @@
 }
 
 .social-buttons > button {
-    background-color: transparent;
-    color: var(--color-white);
-    padding: 5px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    padding: 5px 25px;
     font-size: var(--font-size-m);
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    border: 1px solid var(--color-white);
+    border: none;
     border-radius: var(--radius-default);
 }
 

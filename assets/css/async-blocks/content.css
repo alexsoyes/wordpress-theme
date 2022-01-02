@@ -98,6 +98,7 @@ pre:not(.wp-block-code)::after {
     font-size: var(--font-size-m);
 }
 
+kbd,
 code {
     word-break: break-word;
     color: var(--color-gray);
@@ -105,6 +106,8 @@ code {
     display: inline-block;
 }
 
+ul kbd,
+p kbd,
 ul code,
 p code {
     background-color: var(--color-lightgray);

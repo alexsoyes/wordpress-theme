@@ -238,9 +238,10 @@ figure.wp-block-image {
 /**
  * Text.
  */
-ol,
 .comment-content ul,
 .entry-content ul,
+.page .entry-content div,
+ol,
 p {
     line-height: 32px;
     font-size: var(--font-size-xl);

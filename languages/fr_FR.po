@@ -59,7 +59,7 @@ msgstr "Retourner en haut de l'article"
 
 #: classes/class-walker-comment.php:291
 msgid "Comment link #"
-msgstr "Lien vers le com' #"
+msgstr "Lien vers le comentaire"
 
 #: comments.php:71
 msgid "Comments are closed."
