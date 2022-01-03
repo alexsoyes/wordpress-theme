@@ -1,15 +1,15 @@
-# Copyright (C) 2021 Alex so yes
+# Copyright (C) 2022 Alex so yes
 # This file is distributed under the GNU General Public License v3.
 msgid ""
 msgstr ""
-"Project-Id-Version: soyes 0.0.1\n"
+"Project-Id-Version: soyes 0.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/soyes\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-10-16T16:20:00+00:00\n"
+"POT-Creation-Date: 2022-01-03T07:12:40+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: soyes\n"
@@ -105,9 +105,9 @@ msgstr[1] ""
 
 #: comments.php:54
 #: inc/navigation.php:11
-#: search.php:71
-#: template-parts/content/content-category.php:45
-#: template-parts/content/content-post.php:21
+#: search.php:73
+#: template-parts/content/content-category.php:44
+#: template-parts/content/content-post.php:29
 #: template-parts/content/content.php:25
 msgid "Page"
 msgstr ""
@@ -148,31 +148,31 @@ msgstr ""
 msgid "Made with love on the top of WordPress ❤️"
 msgstr ""
 
-#: functions.php:70
+#: functions.php:79
 msgid "Primary menu (header)"
 msgstr ""
 
-#: functions.php:71
+#: functions.php:80
 msgid "Secondary menu (footer)"
 msgstr ""
 
-#: functions.php:72
+#: functions.php:81
 msgid "Social menu"
 msgstr ""
 
-#: functions.php:238
+#: functions.php:231
 msgid "Footer text"
 msgstr ""
 
-#: functions.php:240
+#: functions.php:233
 msgid "Display some basic info about who you are in the footer."
 msgstr ""
 
-#: header.php:33
+#: header.php:29
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:49
+#: header.php:45
 msgid "Primary menu"
 msgstr ""
 
@@ -202,7 +202,7 @@ msgstr ""
 msgid "I want to receive the tips"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:58
+#: inc/shortcodes/newsletter.php:59
 msgid "* Your email address will NEVER be used by someone other than me."
 msgstr ""
 
@@ -244,33 +244,29 @@ msgid "Still not having it?"
 msgstr ""
 
 #. translators: %: Page number.
-#: search.php:74
-#: template-parts/content/content-category.php:48
-#: template-parts/content/content-post.php:24
+#: search.php:76
+#: template-parts/content/content-category.php:47
+#: template-parts/content/content-post.php:32
 #: template-parts/content/content.php:28
 msgid "Page %"
 msgstr ""
 
-#: searchform.php:27
+#: searchform.php:33
 msgid "Search&hellip;"
 msgstr ""
 
-#: searchform.php:31
+#: searchform.php:37
 msgctxt "submit button"
-msgid "Search"
+msgid "🔍 Search"
 msgstr ""
 
-#: template-parts/content/content-category.php:17
+#: template-parts/content/content-category.php:16
 msgid "< Return to blog posts"
 msgstr ""
 
-#: template-parts/content/content-post.php:33
-#: template-parts/content/content-post.php:35
+#: template-parts/content/content-post.php:41
+#: template-parts/content/content-post.php:43
 msgid "Back to top"
-msgstr ""
-
-#: template-parts/elements/author-box.php:9
-msgid "Written by"
 msgstr ""
 
 #: template-parts/elements/share.php:3
@@ -283,4 +279,12 @@ msgstr ""
 
 #: template-parts/elements/share.php:15
 msgid "I do reply to every comment on the blog 😊"
+msgstr ""
+
+#: template-parts/post/post-header.php:30
+msgid "Read the"
+msgstr ""
+
+#: template-parts/post/post-header.php:32
+msgid "Leave a comment ?"
 msgstr ""

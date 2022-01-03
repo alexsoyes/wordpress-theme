@@ -8,14 +8,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2021-10-16 16:21+0000\n"
+"PO-Revision-Date: 2022-01-03 07:14+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Loco-Version: 2.5.3; wp-5.5.1"
 
-#: inc/shortcodes/newsletter.php:58
+#: inc/shortcodes/newsletter.php:59
 msgid "* Your email address will NEVER be used by someone other than me."
 msgstr ""
 "* Ton adresse e-mail ne sera JAMAIS utilisée par une autre personne que moi."
@@ -36,7 +36,7 @@ msgstr ""
 msgid "404"
 msgstr "404"
 
-#: template-parts/content/content-category.php:17
+#: template-parts/content/content-category.php:16
 msgid "< Return to blog posts"
 msgstr "< Retourner à la liste des articles"
 
@@ -52,8 +52,8 @@ msgstr "Alex so yes"
 msgid "Avatar from "
 msgstr "Avatar de"
 
-#: template-parts/content/content-post.php:33
-#: template-parts/content/content-post.php:35
+#: template-parts/content/content-post.php:41
+#: template-parts/content/content-post.php:43
 msgid "Back to top"
 msgstr "Retourner en haut de l'article"
 
@@ -81,7 +81,7 @@ msgstr "Oups !"
 msgid "Did you like this article?"
 msgstr "Tu as aimé cet article ?"
 
-#: functions.php:240
+#: functions.php:233
 msgid "Display some basic info about who you are in the footer."
 msgstr "Affiche des informations dans le pied de page."
 
@@ -101,7 +101,7 @@ msgstr "Lien vers tous les articles"
 msgid "find_all_articles();"
 msgstr "lire_tous_les_articles();"
 
-#: functions.php:238
+#: functions.php:231
 msgid "Footer text"
 msgstr "Texte du pied de page"
 
@@ -157,6 +157,10 @@ msgstr "Dernier commit : <strong>%s</strong>"
 msgid "Leave a comment"
 msgstr "Laisser un commentaire"
 
+#: template-parts/post/post-header.php:32
+msgid "Leave a comment ?"
+msgstr "Laisser un commentaire"
+
 #: footer.php:61
 msgid "Made with love on the top of WordPress ❤️"
 msgstr "Site WordPress fait avec ❤️"
@@ -186,27 +190,31 @@ msgstr "Anciens <span class=\"nav-short\">articles</span>"
 msgid "Older comments"
 msgstr "Anciens commentaires"
 
-#: comments.php:54 inc/navigation.php:11 search.php:71
-#: template-parts/content/content-category.php:45
-#: template-parts/content/content-post.php:21
+#: comments.php:54 inc/navigation.php:11 search.php:73
+#: template-parts/content/content-category.php:44
+#: template-parts/content/content-post.php:29
 #: template-parts/content/content.php:25
 msgid "Page"
 msgstr "Page"
 
 #. translators: %: Page number.
-#: search.php:74 template-parts/content/content-category.php:48
-#: template-parts/content/content-post.php:24
+#: search.php:76 template-parts/content/content-category.php:47
+#: template-parts/content/content-post.php:32
 #: template-parts/content/content.php:28
 msgid "Page %"
 msgstr "Page %"
 
-#: header.php:49
+#: header.php:45
 msgid "Primary menu"
 msgstr "Menu primaire"
 
-#: functions.php:70
+#: functions.php:79
 msgid "Primary menu (header)"
 msgstr "Menu principal (entête)"
+
+#: template-parts/post/post-header.php:30
+msgid "Read the"
+msgstr "Lire les"
 
 #: 404.php:43 search.php:45
 msgid "return \"/\";"
@@ -216,7 +224,7 @@ msgstr "return \"/\";"
 msgid "Return to home"
 msgstr "Retourner sur l'accueil"
 
-#: searchform.php:27
+#: searchform.php:33
 msgid "Search&hellip;"
 msgstr "Rechercher&hellip;"
 
@@ -224,7 +232,7 @@ msgstr "Rechercher&hellip;"
 msgid "Secondary menu"
 msgstr "Menu secondaire"
 
-#: functions.php:71
+#: functions.php:80
 msgid "Secondary menu (footer)"
 msgstr "Menu secondaire (pied de page)"
 
@@ -240,11 +248,11 @@ msgstr "Partager sur LinkedIn"
 msgid "Share on Twitter"
 msgstr "Partager sur Twitter"
 
-#: header.php:33
+#: header.php:29
 msgid "Skip to content"
 msgstr "Aller au contenu"
 
-#: functions.php:72
+#: functions.php:81
 msgid "Social menu"
 msgstr "Menu des réseaux sociaux"
 
@@ -256,10 +264,11 @@ msgstr "soyes"
 msgid "Still not having it?"
 msgstr "Tu n'as toujours pas ton contenu ?"
 
-#: searchform.php:31
+#: searchform.php:37
+#| msgid "Search"
 msgctxt "submit button"
-msgid "Search"
-msgstr "Rechercher"
+msgid "🔍 Search"
+msgstr "🔍 Rechercher"
 
 #: comments.php:80
 msgid "Thank you for sharing your story with us!"
@@ -287,10 +296,6 @@ msgstr[1] "WordPress a trouvé %1$d résultats pour la recherche sur \"%2$s\"."
 #: 404.php:37
 msgid "We will reply shorter than you think!"
 msgstr "Je répondrais plus vite que tu ne le penses !"
-
-#: template-parts/elements/author-box.php:9
-msgid "Written by"
-msgstr "Auteur de l'article"
 
 #: comments.php:82
 msgid "👩‍💻 Leave a Reply 👨‍💻"
