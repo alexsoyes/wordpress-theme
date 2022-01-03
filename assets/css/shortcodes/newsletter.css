@@ -13,9 +13,12 @@
 }
 
 .soyes-newsletter-title span {
-    background-color: var(--color-secondary);
-    padding: 0 10px;
+    color: var(--color-white);
+    background-color: var(--color-link);
     font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-normal);
+    padding: 2px 12px;
+    margin: 5px 5px 0 0;
 }
 
 .soyes-newsletter-desc {

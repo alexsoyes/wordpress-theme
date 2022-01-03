@@ -1,3 +1,8 @@
+.soyes-newsletter-columns figure.wp-block-image {
+    margin-top: 0;
+    margin-bottom: -70px;
+}
+
 @media only screen and (min-width: 992px) {
     .soyes-newsletter-columns {
         margin-top: 50px;
@@ -7,20 +12,15 @@
     }
 }
 
-.soyes-newsletter-columns figure.wp-block-image {
-    margin-top: 0;
-    margin-bottom: -70px;
-}
-
 #splash {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     padding: 20px 0 40px 0;
 }
 
 h1 {
     text-align: center;
     font-family: var(--font-family-primary);
-    color: var(--color-black);
-    background-color: var(--color-secondary);
-    padding: 20px;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
 }

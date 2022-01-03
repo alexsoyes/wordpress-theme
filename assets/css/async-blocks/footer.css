@@ -74,21 +74,19 @@
 }
 
 .footer-navigation-wrapper li a {
-    color: var(--color-link);
+    color: var(--color-black);
+    border-bottom: 2px solid var(--color-black);
     font-weight: var(--font-weight-bold);
 }
 
 .footer-navigation-wrapper li a:hover {
-    border-bottom: 2px solid var(--color-link);
+    color: var(--color-link);
+    border-color: var(--color-link);
 }
 
 /**
  * Newsletter.
  */
-.soyes-newsletter-container-footer .soyes-newsletter-title span {
-    color: var(--color-primary);
-}
-
 @media only screen and (min-width: 992px) {
     .site-footer {
         padding: 100px 0 40px 0;

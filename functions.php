@@ -173,7 +173,6 @@ function soyes_scripts(): void
 
     wp_enqueue_style('soyes-style', get_template_directory_uri() . '/style.css', array(), $version);
     wp_enqueue_style('soyes-style-normalize', get_template_directory_uri() . '/assets/css/normalize.css', array(), $version);
-    wp_enqueue_style('soyes-style-wordpress', get_template_directory_uri() . '/assets/css/wordpress.css', array(), $version);
 
     if (is_user_logged_in() && is_single() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -260,9 +259,7 @@ function soyes_enqueue_async_styles(): void
         $cssToEmbed[] = soyes_build_async_uri('single-social');
     }
 
-    if (
-        is_single() || is_page() || is_404() || is_front_page()
-    ) {
+    if (is_single() || is_page() || is_404() || is_front_page()) {
         $cssToEmbed[] = soyes_build_async_uri('content');
     }
 

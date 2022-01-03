@@ -8,7 +8,7 @@ get_header();
 
 if (have_posts()) :?>
 
-    <article id="page_for_posts">
+    <article>
         <header class="entry-header">
             <div class="entry-content">
                 <h1><?php single_post_title(); ?></h1>
@@ -20,11 +20,7 @@ if (have_posts()) :?>
             </div><!-- .entry-content -->
         </header><!-- .entry-header -->
 
-        <div class="entry-search">
-            <div class="entry-content">
-                <?php get_search_form(); ?>
-            </div><!-- .entry-content -->
-        </div><!-- .entry-search -->
+        <?php get_search_form(); ?>
 
         <div class="entry-content">
             <?php
@@ -60,7 +56,7 @@ if (have_posts()) :?>
         <footer class="entry-footer default-max-width">
             <?php soyes_the_posts_navigation(); ?>
         </footer><!-- .entry-footer -->
-    </article><!-- #page_for_posts -->
+    </article>
 
 <?php
 endif;

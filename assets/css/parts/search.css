@@ -2,9 +2,7 @@
  * Search container.
  */
 .entry-search {
-    background-color: var(--color-lightgray);
     padding: 40px 0;
-    margin-top: 50px;
 }
 
 /**
