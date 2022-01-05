@@ -35,7 +35,6 @@
 
 #header nav li:last-of-type a {
     background-color: var(--color-primary);
-    padding: 5px 8px;
     border-radius: var(--radius-default);
 }
 
@@ -59,6 +58,10 @@
         width: 100%;
         max-width: 100%;
     }
+
+    #header nav li:last-of-type {
+        margin-right: 20px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -69,6 +72,10 @@
     #header nav {
         text-align: right;
         padding-bottom: 5px;
+    }
+
+    #header nav li:last-of-type a {
+        padding: 5px 8px;
     }
 }
 
