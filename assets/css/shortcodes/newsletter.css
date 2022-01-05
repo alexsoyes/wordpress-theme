@@ -15,7 +15,7 @@
 .soyes-newsletter-title span {
     color: var(--color-white);
     background-color: var(--color-link);
-    font-size: var(--font-size-h1);
+    font-size: calc(var(--font-size-h1) + 4px);
     font-weight: var(--font-weight-normal);
     padding: 2px 12px;
     margin: 5px 5px 0 0;
@@ -39,6 +39,10 @@
 @media only screen and (min-width: 992px) {
     .soyes-newsletter-form {
         width: 90%;
+    }
+
+    .soyes-newsletter-title span {
+        font-size: var(--font-size-h1);
     }
 }
 
