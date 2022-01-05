@@ -34,7 +34,7 @@
 }
 
 #header nav li:last-of-type a {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     padding: 5px 8px;
     border-radius: var(--radius-default);
 }

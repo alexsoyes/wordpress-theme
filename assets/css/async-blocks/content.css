@@ -420,6 +420,7 @@ video {
     max-width: none;
     line-height: 1;
     height: auto;
+    border: none;
 }
 
 .wp-block-separator.is-style-dots::before {

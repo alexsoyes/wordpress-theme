@@ -43,7 +43,8 @@
     border-radius: 16px;
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-bold);
-    background-color: var(--color-italic);
+    background-color: var(--color-secondary);
+    color: var(--color-black);
 }
 
 .entry-meta {
