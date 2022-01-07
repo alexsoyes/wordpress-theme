@@ -27,7 +27,7 @@
         <small class="link-comment">
             <a href="#community">
                 <?php if (get_comments_number() > 0): ?>
-	                <?php _e( 'Read the', 'soyes' ) ?><?php soyes_the_comment_count(); ?>
+	                <?php _e( 'Read the', 'soyes' ) ?>&nbsp;<?php soyes_the_comment_count(); ?>
                 <?php else: ?>
                     <?php _e('Leave a comment ?', 'soyes') ?>
                 <?php endif; ?>
