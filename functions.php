@@ -21,7 +21,6 @@ if (defined('WP_DEBUG') && WP_DEBUG === true) {
     $version = wp_get_theme()->get('Version');
 }
 
-
 if (!function_exists('soyes_one_setup')) {
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -277,11 +276,10 @@ add_action('wp_head', 'soyes_enqueue_async_styles');
 
 function soyes_exit_popin(): void
 {
-    ?>
+	?>
     <script id="mcjs">!function (c, h, i, m, p) {
             m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
-        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/987967b6e21378d1da9bd507b/0e4d94564dcbe0a4e9cd5964b.js");</script>
-    <?php
+        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/987967b6e21378d1da9bd507b/2684253fd7b4cc3c3650fde16.js");</script><?php
 }
 
 add_action('wp_footer', 'soyes_exit_popin');

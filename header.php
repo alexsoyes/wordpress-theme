@@ -14,9 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<?php if ( is_single() || is_front_page() || is_page() || is_404() ) : ?>
         <link rel="prefetch"
-              href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/images/icons/open-outline.svg"
-              crossorigin="anonymous"/>
-        <link rel="prefetch"
               href="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>"
               crossorigin="anonymous"/>
 	<?php endif; ?>

@@ -3,6 +3,11 @@
  */
 .entry-search {
     padding: 40px 0;
+    background-color: var(--color-primary);
+}
+
+.search-term {
+    background-color: var(--color-primary);
 }
 
 /**
