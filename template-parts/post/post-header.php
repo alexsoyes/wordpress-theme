@@ -1,42 +1,41 @@
-<div class="post-header" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
-    <div class="post-header-overlay">
-        <div class="entry-content">
-			<?php $category = soyes_get_the_main_category(); ?>
-			<?php if ( $category ) : ?>
+<div class="entry-header">
+    <div class="entry-content">
+        <div class="entry-meta">
+            <?php $category = soyes_get_the_main_category(); ?>
+            <?php if ($category) : ?>
                 <div class="entry-category">
             <span>
-            <?php echo esc_html( $category->name ); ?>
+            <?php echo esc_html($category->name); ?>
             </span>
                 </div><!-- .entry-category -->
-			<?php endif; ?>
+            <?php endif; ?>
+            <div class="entry-date">
+                <span>
+                <?php soyes_the_post_modified_date(); ?>
+                </span>
+            </div><!-- .entry-date -->
+        </div><!-- .entry-meta -->
 
-			<?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
-            <div class="entry-excerpt">
-				<?php the_excerpt(); ?>
-            </div><!-- .entry-excerpt -->
+        <?php the_title('<h1 class="entry-title default-max-width">', '</h1>'); ?>
 
-            <div class="entry-meta">
+        <div class="entry-excerpt">
+            <?php the_excerpt(); ?>
+        </div><!-- .entry-excerpt -->
 
-                <div class="entry-date">
-                    <span>
-                    <?php soyes_the_post_modified_date(); ?>
-                    </span>
-                </div><!-- .entry-date -->
+        <?php get_template_part('template-parts/elements/author-box'); ?>
 
-                <div class="link-comment">
-                    <a href="#community"><?php soyes_the_comment_count(); ?></a>
-                </div><!-- .link-comment -->
+        <small class="link-comment">
+            <a href="#community">
+                <?php if (get_comments_number() > 0): ?>
+	                <?php _e( 'Read the', 'soyes' ) ?>&nbsp;<?php soyes_the_comment_count(); ?>
+                <?php else: ?>
+                    <?php _e('Leave a comment ?', 'soyes') ?>
+                <?php endif; ?>
+            </a>
+        </small><!-- .link-comment -->
+    </div><!-- .entry-content -->
+</div><!-- .entry-header -->
 
-            </div><!-- .entry-meta -->
-
-        </div><!-- .entry-content -->
-    </div><!-- .post-header-overlay -->
-
-    <div class="link-share-container">
-        <div class="link-share">
-            <div class="link-share-buttons">
-				<?php get_template_part( 'template-parts/elements/share-icons' ); ?>
-            </div><!-- .link-share-buttons -->
-        </div><!-- .link-share -->
-    </div><!-- .link-share-container -->
+<div class="post-header" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
+    <div class="post-header-overlay"></div>
 </div><!-- .post-header -->

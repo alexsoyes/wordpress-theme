@@ -1,3 +1,18 @@
+/**
+ * Search container.
+ */
+.entry-search {
+    padding: 40px 0;
+    background-color: var(--color-primary);
+}
+
+.search-term {
+    background-color: var(--color-primary);
+}
+
+/**
+ * Forms.
+ */
 .search-form {
     white-space: nowrap;
     display: flex;
@@ -11,8 +26,10 @@
 
 .search-input-container {
     border-radius: var(--radius-stronger);
-    border: 1px solid var(--color-gray);
-    color: var(--color-grayer);
+    border: none;
+    box-shadow: var(--box-shadow-default);
+    background-color: var(--color-white);
+    color: var(--color-gray);
     padding: 12px 20px;
     margin-right: 10px;
     width: 100%;
@@ -23,7 +40,7 @@
 .search-input {
     border: none;
     width: 90%;
-    font-size: var(--font-size-input);
+    font-size: var(--font-size-m);
     line-height: 1;
 }
 
@@ -34,17 +51,10 @@
 
 .search-button {
     padding: 15px 60px;
+    background-color: var(--color-black);
     border-radius: var(--radius-stronger);
-    margin: 0;
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    box-shadow: var(--box-shadow-default);
-    font-size: var(--font-size-button);
-    border: none;
-    cursor: pointer;
     display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin: 0;
 }
 
 .search-button:hover {

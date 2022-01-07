@@ -12,27 +12,7 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- Preloading fonts -->
-    <link rel="preload"
-          href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-800.woff2"
-          as="font"
-          crossorigin="anonymous"/>
-    <link rel="preload"
-          href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-700.woff2"
-          as="font"
-          crossorigin="anonymous"/>
-    <link rel="preload"
-          href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-regular.woff2"
-          as="font"
-          crossorigin="anonymous"/>
-    <link rel="preload"
-          href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/fonts/open-sans-v27-latin-italic.woff2"
-          as="font"
-          crossorigin="anonymous"/>
 	<?php if ( is_single() || is_front_page() || is_page() || is_404() ) : ?>
-        <link rel="prefetch"
-              href="<?php echo get_home_url( '/' ); ?>/wp-content/themes/soyes/assets/images/icons/open-outline.svg"
-              crossorigin="anonymous"/>
         <link rel="prefetch"
               href="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>"
               crossorigin="anonymous"/>

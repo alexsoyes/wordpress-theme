@@ -35,7 +35,6 @@ add_shortcode(
 			$currentText = wp_strip_all_tags( $headings_text[ $i ] );
 			$currentHref = urlencode( sanitize_title_with_dashes( remove_accents( ( $currentText ) ) ) );
 			$currentH    = $headings_element[ $i ];
-			$previousH   = $headings_element[ $i - 1 ];
 
 			$currentLink = sprintf( "<a href=\"%s\">%s</a>", "#$currentHref", $currentText );
 
@@ -43,6 +42,8 @@ add_shortcode(
 				$output .= sprintf( "\t<li class=\"%s\">%s", "toc_$currentH", $currentLink );
 				continue;
 			}
+
+            $previousH   = $headings_element[ $i - 1 ];
 
 			if ( $currentH > $previousH ) { // the previous title is higher h2 > h3.
 				$output .= "\n<ol class=\"toc_sublist\">\n\t\t<li class=\"toc_$currentH\">\n\t\t$currentLink";

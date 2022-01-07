@@ -13,7 +13,7 @@ function get_the_replaced_heading( ?array $match ): string {
 		/* translators: %s is replace with the title of the block. */
 			__( 'Make a link to: %s', 'soyes' ), wp_strip_all_tags( $match[3] ) ) . "</title><path d='M208 352h-64a96 96 0 010-192h64M304 160h64a96 96 0 010 192h-64M163.29 256h187.42' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='36'/></svg>";
 
-	return "<h$match[1] id=\"$heading_id\"$match[2]><a href=\"#$heading_id\" class=\"toc_ref\">$svg</a>$match[3]</h$match[1]>";
+	return "<h$match[1] id=\"$heading_id\"$match[2]><a href=\"#$heading_id\" class=\"toc_ref\">#</a>$match[3]</h$match[1]>";
 }
 
 function the_content_with_toc( string $content ): string {

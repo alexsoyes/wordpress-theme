@@ -260,7 +260,7 @@ class Soyes_Walker_Comment extends Walker {
 						echo get_avatar( $comment, $args['avatar_size'] );
 					}
 
-					$comment_author = get_comment_author_link( $comment );
+                    $comment_author = get_comment_author( get_comment( $comment ) );
 
 					if ( '0' == $comment->comment_approved && ! $show_pending_links ) {
 						$comment_author = get_comment_author( $comment );

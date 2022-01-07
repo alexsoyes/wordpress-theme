@@ -1,0 +1,74 @@
+
+/**
+ * Share bottom
+ */
+.entry-social {
+    margin-top: 100px;
+    padding: 20px;
+    color: var(--color-black);
+    background-color: var(--color-lightgray);
+    text-align: center;
+    z-index: 20;
+    position: relative;
+}
+
+.social-title {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-h2);
+    color: var(--color-black);
+    border-bottom: 5px solid var(--color-secondary);
+}
+
+.social-more {
+    font-size: var(--font-size-s);
+    margin-top: 15px;
+}
+
+.social-description {
+    font-size: var(--font-size-m);
+    font-family: var(--font-family-secondary);
+    margin-bottom: 50px;
+}
+
+.social-buttons {
+    margin-top: 15px;
+}
+
+.social-buttons > button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+}
+
+.social-buttons > button {
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    padding: 5px 25px;
+    font-size: var(--font-size-m);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: var(--radius-default);
+    text-transform: capitalize;
+}
+
+.social-buttons > button svg {
+    margin-right: 10px;
+    width: 18px;
+}
+
+@media only screen and (min-width: 992px) {
+    .entry-social {
+        padding: 100px 50px;
+    }
+
+    .social-buttons > button {
+        width: auto;
+        display: inline-flex;
+        margin: 10px;
+    }
+}

@@ -8,7 +8,7 @@
     <div class="social-buttons">
 		<?php $socialButtons = soyes_get_social_share(); ?>
 		<?php foreach ( $socialButtons as $button ) : ?>
-            <button <?php echo $button['attr']; ?>><?php echo $button['svg']; ?><?php echo $button['name']; ?></button>
+            <button class="wp-block-button__link" <?php echo $button['attr']; ?>><?php echo $button['svg']; ?><?php echo $button['name']; ?></button>
 		<?php endforeach; ?>
     </div>
     <p class="social-more">

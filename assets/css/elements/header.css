@@ -1,0 +1,84 @@
+/**
+ * Header.
+ */
+#header {
+    box-shadow: var(--box-shadow-default);
+}
+
+#header nav {
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+}
+
+#header nav ul {
+    margin: 0;
+    padding: 20px 0;
+}
+
+#header nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#header nav a {
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-m);
+    padding-bottom: 2px;
+}
+
+#header nav a:hover {
+    border-bottom: 2px solid var(--color-black);
+}
+
+#header nav li:last-of-type a {
+    background-color: var(--color-primary);
+    border-radius: var(--radius-default);
+}
+
+#header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 991px) {
+    #header nav {
+        background-color: var(--color-lightgray);
+    }
+
+    #header .site-logo {
+        padding: 20px 0;
+    }
+
+    #header .header-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #header nav li:last-of-type {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #header {
+        padding: 5px 0;
+    }
+
+    #header nav {
+        text-align: right;
+        padding-bottom: 5px;
+    }
+
+    #header nav li:last-of-type a {
+        padding: 5px 8px;
+    }
+}
+
+a.custom-logo-link:hover {
+    border: none;
+}

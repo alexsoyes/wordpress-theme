@@ -1,0 +1,434 @@
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/**
+ * Images
+ */
+.wp-block-image.aligncenter {
+    text-align: center;
+}
+
+.wp-block-image.alignfull img,
+.wp-block-image.alignwide img {
+    width: 100%;
+}
+
+.wp-block-image .alignleft,
+.wp-block-image .alignright,
+.wp-block-image .aligncenter, .wp-block-image.is-resized {
+    display: table;
+}
+
+.wp-block-image .alignleft > figcaption,
+.wp-block-image .alignright > figcaption,
+.wp-block-image .aligncenter > figcaption, .wp-block-image.is-resized > figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
+.wp-block-image .alignleft {
+    /*rtl:ignore*/
+    float: left;
+    /*rtl:ignore*/
+    margin-left: 0;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.wp-block-image .alignright {
+    /*rtl:ignore*/
+    float: right;
+    /*rtl:ignore*/
+    margin-right: 0;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.wp-block-image .aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Embeds.
+ */
+figure figcaption {
+    word-break: break-word;
+    position: relative;
+    font-size: var(--font-size-m);
+    padding: 10px;
+    text-shadow: var(--color-primary) 1px 0 10px;
+    color: var(--color-gray);
+    font-style: italic;
+}
+
+.wp-block-embed {
+    text-align: center;
+}
+
+/**
+ * Format.
+ */
+pre:not(.wp-block-code) {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-h3);
+    line-height: 36px;
+    margin: 10px 0 50px 0;
+    padding: 30px;
+    white-space: normal;
+    color: var(--color-gray);
+    position: relative;
+}
+
+pre:not(.wp-block-code)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+}
+
+.wp-block-code {
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: var(--box-shadow-default);
+    overflow-x: auto;
+    font-size: var(--font-size-m);
+}
+
+kbd,
+code {
+    word-break: break-word;
+    color: var(--color-gray);
+    padding: 0 5px;
+    display: inline-block;
+    line-height: 25px;
+}
+
+ul kbd,
+p kbd,
+ul code,
+p code {
+    background-color: var(--color-lightgray);
+    color: var(--color-gray);
+    border-radius: 10px;
+    font-size: var(--font-size-m);
+    border: 1px solid var(--color-gray);
+}
+
+/**
+ * Quotes.
+ */
+.entry-content blockquote a {
+    border-bottom: none;
+    color: var(--color-black);
+}
+
+blockquote {
+    color: var(--color-gray);
+    font-style: italic;
+    padding: 40px 30px;
+    margin: 30px 0;
+    background-color: var(--color-lightgray);
+    position: relative;
+}
+
+blockquote cite {
+    color: #000;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-s);
+    line-height: calc(var(--font-size-s) * 2);
+    margin-top: 15px;
+    display: inline-block;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+blockquote::after {
+    position: absolute;
+    content: " ";
+    font-size: 30px;
+    background-image: url('/wp-content/themes/soyes/assets/images/icons/double-quotes-r.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 10px;
+}
+
+/**
+ * Video.
+ */
+iframe,
+video {
+    max-width: 100%
+}
+
+.wp-block-video,
+.wp-block-image {
+    margin: 30px 0;
+    text-align: center;
+}
+
+/**
+ * Outside links
+ */
+.comment-list a[target="_blank"]::after,
+.entry-content li a[target="_blank"]::after,
+.entry-content p a[target="_blank"]::after {
+    content: '';
+    width: var(--font-size-l);
+    height: var(--font-size-l);
+    background-image: url("/wp-content/themes/soyes/assets/images/icons/open-outline.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 5px 5px;
+}
+
+
+/**
+ * Date.
+ */
+.entry-date small {
+    padding: 5px 10px;
+    border: 1px solid var(--color-white);
+}
+
+@media only screen and (min-width: 992px) {
+
+    blockquote {
+        padding: 30px 130px 30px 50px;
+    }
+
+    pre:not(.wp-block-code) {
+        padding: 30px 60px 40px 60px;
+        font-size: var(--font-size-h2);
+        margin: 40px 0 60px 0;
+    }
+
+    pre:not(.wp-block-code)::after {
+        left: 60px;
+    }
+}
+
+/**
+ * Extracted from wordpress/wp-includes/css/dist/block-library/style.css
+ */
+
+/**
+ * Table.
+ */
+.wp-block-table {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: auto;
+}
+
+.wp-block-table table {
+    word-break: keep-all;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.wp-block-table.is-style-stripes {
+    border: 1px solid var(--color-black);
+}
+
+.wp-block-table {
+    box-shadow: var(--box-shadow-default);
+}
+
+.wp-block-table.is-style-stripes th {
+    text-align: center;
+}
+
+.wp-block-table th {
+    padding: 20px 10px;
+}
+
+.wp-block-table:not(.is-style-stripes) th {
+    background-color: var(--color-lightgray);
+}
+
+.wp-block-table:not(.is-style-stripes) td {
+    border-bottom: 1px solid var(--color-lightgray);
+}
+
+.wp-block-table:not(.is-style-stripes) th,
+.wp-block-table:not(.is-style-stripes) td {
+    border-right: 1px solid var(--color-lightgray);
+}
+
+.wp-block-table td {
+    padding: 15px 10px;
+    font-size: var(--font-size-m);
+}
+
+.wp-block-table figcaption {
+    text-align: center;
+    padding: 10px 0;
+    font-size: var(--font-size-s);
+}
+
+.wp-block-table.is-style-stripes figcaption {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.wp-block-table:not(.is-style-stripes) figcaption {
+    background-color: var(--color-lightgray);
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {
+    background-color: var(--color-lightgray);
+}
+
+.wp-block-table table {
+    width: 100%;
+}
+
+.wp-block-table .has-fixed-layout {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.wp-block-table .has-fixed-layout td,
+.wp-block-table .has-fixed-layout th {
+    word-break: break-word;
+}
+
+.wp-block-table.alignleft, .wp-block-table.aligncenter, .wp-block-table.alignright {
+    display: table;
+    width: auto;
+}
+
+.wp-block-table.alignleft td,
+.wp-block-table.alignleft th, .wp-block-table.aligncenter td,
+.wp-block-table.aligncenter th, .wp-block-table.alignright td,
+.wp-block-table.alignright th {
+    word-break: break-word;
+}
+
+.wp-block-table.is-style-stripes {
+    border-spacing: 0;
+    border-collapse: inherit;
+    background-color: transparent;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.wp-block-table.is-style-stripes th,
+.wp-block-table.is-style-stripes td {
+    border-color: transparent;
+}
+
+/**
+ * Separator.
+ */
+.wp-block-separator {
+    margin: 40px 0 50px 0;
+}
+
+.wp-block-separator.is-style-wide {
+    border-bottom-width: 1px;
+}
+
+.wp-block-separator.is-style-dots {
+    background: none !important;
+    text-align: center;
+    max-width: none;
+    line-height: 1;
+    height: auto;
+    border: none;
+}
+
+.wp-block-separator.is-style-dots::before {
+    content: "\00b7 \00b7 \00b7";
+    color: currentColor;
+    font-size: 20px;
+    letter-spacing: 2em;
+    /*rtl:ignore*/
+    padding-left: 2em;
+    font-family: serif;
+}

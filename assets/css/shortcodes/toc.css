@@ -6,17 +6,19 @@
 .entry-content .toc {
     background-color: var(--color-lightgray);
     margin: 50px 0;
-    border-bottom: 10px solid var(--color-tertiary);
+    font-family: var(--font-family-secondary);
 }
 
 .entry-content .toc ol {
-    padding-left: 0px;
+    padding-left: 0;
     counter-reset: item;
 }
 
 .entry-content .toc ol li {
     margin: 5px 0;
     display: block;
+    line-height: 28px;
+    font-size: var(--font-size-s);
 }
 
 .entry-content .toc ol li a {
@@ -29,28 +31,39 @@
     color: var(--color-link);
 }
 
-.entry-content .toc ol li::before {
+.entry-content .toc li::before {
     content: counters(item, ".") " ";
     counter-increment: item;
     color: var(--color-black);
-    margin-right: .5rem;
-    font-size: var(--font-size-list-number);
+    margin-right: var(--font-size-xs);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
 }
+
+@media only screen and (min-width: 992px) {
+    .entry-content .toc {
+        padding: 50px 0;
+    }
+    .entry-content .toc ol li {
+        font-size: var(--font-size-m);
+    }
+}
+
+/** ToC on two levels (h2 + h3) **/
 
 .entry-content .toc_full .toc_2 > a {
     font-weight: var(--font-weight-bold);
 }
 
 .entry-content .toc_full .toc_3 {
-    font-size: var(--font-size-list-child);
+    font-size: var(--font-size-s);
 }
 
-@media only screen and (min-width: 992px) {
-    .entry-content .toc ol {
-        padding-left: 15px;
-    }
+.entry-content .toc_sublist {
+    margin: 10px 20px;
+}
 
-    .entry-content .toc {
-        padding: 50px 0;
-    }
+/** Titles **/
+.entry-content h3 > a:first-of-type {
+    left: -40px;
 }
