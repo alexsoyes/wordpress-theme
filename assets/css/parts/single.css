@@ -14,13 +14,12 @@
     background-blend-mode: multiply;
     background-color: var(--color-box-shadow);
     background-size: cover;
-    background-attachment: fixed;
     color: var(--color-white);
 }
 
 .post-header-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 400px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 800px;
 }
 
 .entry-title {
