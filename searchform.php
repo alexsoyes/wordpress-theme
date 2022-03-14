@@ -28,7 +28,8 @@ $count_posts = wp_count_posts();
                      aria-hidden="true" class="search-icon"/>
                 <input type="search"
                        required
-                       placeholder="<?php esc_html_e(sprintf('Search among %d posts...', $count_posts->publish), 'soyes'); ?>"
+                       placeholder="<?php printf(/* translators: %d: Number of posts. */
+                       esc_html__('Search among %d posts...', 'soyes'), $count_posts->publish); ?>"
                        class="search-input"
                        aria-label="<?php _e('Search&hellip;', 'soyes'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations ?>"
                        value="<?php echo get_search_query(); ?>" name="s"/>

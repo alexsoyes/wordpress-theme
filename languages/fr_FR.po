@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2022-01-03 07:14+0000\n"
+"PO-Revision-Date: 2022-03-14 16:28+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
@@ -81,7 +81,7 @@ msgstr "Oups !"
 msgid "Did you like this article?"
 msgstr "Tu as aimé cet article ?"
 
-#: functions.php:233
+#: functions.php:232
 msgid "Display some basic info about who you are in the footer."
 msgstr "Affiche des informations dans le pied de page."
 
@@ -93,15 +93,15 @@ msgstr ""
 "Chaque début du mois, reçois un conseil unique pour t'<strong>améliorer en "
 "tant que développeur</strong>, gratuitement."
 
-#: 404.php:46 search.php:48 template-parts/content/content-category.php:15
+#: 404.php:46 search.php:49 template-parts/content/content-category.php:15
 msgid "Find all posts"
 msgstr "Lien vers tous les articles"
 
-#: 404.php:48 search.php:50
+#: 404.php:48 search.php:51
 msgid "find_all_articles();"
 msgstr "lire_tous_les_articles();"
 
-#: functions.php:231
+#: functions.php:230
 msgid "Footer text"
 msgstr "Texte du pied de page"
 
@@ -190,7 +190,7 @@ msgstr "Anciens <span class=\"nav-short\">articles</span>"
 msgid "Older comments"
 msgstr "Anciens commentaires"
 
-#: comments.php:54 inc/navigation.php:11 search.php:73
+#: comments.php:54 inc/navigation.php:11 search.php:74
 #: template-parts/content/content-category.php:44
 #: template-parts/content/content-post.php:29
 #: template-parts/content/content.php:25
@@ -198,17 +198,17 @@ msgid "Page"
 msgstr "Page"
 
 #. translators: %: Page number.
-#: search.php:76 template-parts/content/content-category.php:47
+#: search.php:77 template-parts/content/content-category.php:47
 #: template-parts/content/content-post.php:32
 #: template-parts/content/content.php:28
 msgid "Page %"
 msgstr "Page %"
 
-#: header.php:45
+#: header.php:42
 msgid "Primary menu"
 msgstr "Menu primaire"
 
-#: functions.php:79
+#: functions.php:78
 msgid "Primary menu (header)"
 msgstr "Menu principal (entête)"
 
@@ -216,15 +216,20 @@ msgstr "Menu principal (entête)"
 msgid "Read the"
 msgstr "Lire les"
 
-#: 404.php:43 search.php:45
+#: 404.php:43 search.php:46
 msgid "return \"/\";"
 msgstr "return \"/\";"
 
-#: 404.php:41 search.php:43
+#: 404.php:41 search.php:44
 msgid "Return to home"
 msgstr "Retourner sur l'accueil"
 
-#: searchform.php:33
+#. translators: %d: Number of posts.
+#: searchform.php:32
+msgid "Search among %d posts..."
+msgstr "Rechercher parmi les %d articles du blog..."
+
+#: searchform.php:34
 msgid "Search&hellip;"
 msgstr "Rechercher&hellip;"
 
@@ -232,7 +237,7 @@ msgstr "Rechercher&hellip;"
 msgid "Secondary menu"
 msgstr "Menu secondaire"
 
-#: functions.php:80
+#: functions.php:79
 msgid "Secondary menu (footer)"
 msgstr "Menu secondaire (pied de page)"
 
@@ -248,11 +253,11 @@ msgstr "Partager sur LinkedIn"
 msgid "Share on Twitter"
 msgstr "Partager sur Twitter"
 
-#: header.php:29
+#: header.php:26
 msgid "Skip to content"
 msgstr "Aller au contenu"
 
-#: functions.php:81
+#: functions.php:80
 msgid "Social menu"
 msgstr "Menu des réseaux sociaux"
 
@@ -260,11 +265,11 @@ msgstr "Menu des réseaux sociaux"
 msgid "soyes"
 msgstr "soyes"
 
-#: search.php:40
+#: search.php:42
 msgid "Still not having it?"
 msgstr "Tu n'as toujours pas ton contenu ?"
 
-#: searchform.php:37
+#: searchform.php:38
 #| msgid "Search"
 msgctxt "submit button"
 msgid "🔍 Search"
@@ -278,7 +283,7 @@ msgstr "Merci de partager ton histoire avec la communauté !"
 msgid "That page does not exist (anymore?)!"
 msgstr "Cette page n'existe plus (ou n'a jamais existé ?)."
 
-#: search.php:32
+#: search.php:33
 msgid "Wanna try another search? 🍀"
 msgstr "Envie de tenter une autre recherche ? 🍀"
 
