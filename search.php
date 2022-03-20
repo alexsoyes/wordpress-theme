@@ -10,17 +10,18 @@ get_header();
         <header class="entry-content entry-header alignwide">
             <h1>
 				<?php
+                $numberOfPosts = (int)$wp_query->found_posts;
 				printf(
 					esc_html(
 					/* translators: %d: The number of search results. */
 						_n(
-							'We found %1$d result for your search "%2$s".',
-							'We found %1$d results for your search "%2$s".',
-							(int) $wp_query->found_posts,
+							'We found %1$s result for your search "%2$s".',
+							'We found %1$s results for your search "%2$s".',
+                            $numberOfPosts,
 							'soyes'
 						)
 					),
-					'<span class="search-term">' . $wp_query->found_posts . '</span>',
+					'<span class="search-term">' . $numberOfPosts . '</span>',
 					'<span class="search-term">' . esc_html( get_search_query() ) . '</span>'
 				);
 				?>

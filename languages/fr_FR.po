@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2022-03-14 16:28+0000\n"
+"PO-Revision-Date: 2022-03-20 16:42+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
@@ -93,11 +93,11 @@ msgstr ""
 "Chaque début du mois, reçois un conseil unique pour t'<strong>améliorer en "
 "tant que développeur</strong>, gratuitement."
 
-#: 404.php:46 search.php:49 template-parts/content/content-category.php:15
+#: 404.php:46 search.php:50 template-parts/content/content-category.php:15
 msgid "Find all posts"
 msgstr "Lien vers tous les articles"
 
-#: 404.php:48 search.php:51
+#: 404.php:48 search.php:52
 msgid "find_all_articles();"
 msgstr "lire_tous_les_articles();"
 
@@ -190,7 +190,7 @@ msgstr "Anciens <span class=\"nav-short\">articles</span>"
 msgid "Older comments"
 msgstr "Anciens commentaires"
 
-#: comments.php:54 inc/navigation.php:11 search.php:74
+#: comments.php:54 inc/navigation.php:11 search.php:75
 #: template-parts/content/content-category.php:44
 #: template-parts/content/content-post.php:29
 #: template-parts/content/content.php:25
@@ -198,7 +198,7 @@ msgid "Page"
 msgstr "Page"
 
 #. translators: %: Page number.
-#: search.php:77 template-parts/content/content-category.php:47
+#: search.php:78 template-parts/content/content-category.php:47
 #: template-parts/content/content-post.php:32
 #: template-parts/content/content.php:28
 msgid "Page %"
@@ -216,11 +216,11 @@ msgstr "Menu principal (entête)"
 msgid "Read the"
 msgstr "Lire les"
 
-#: 404.php:43 search.php:46
+#: 404.php:43 search.php:47
 msgid "return \"/\";"
 msgstr "return \"/\";"
 
-#: 404.php:41 search.php:44
+#: 404.php:41 search.php:45
 msgid "Return to home"
 msgstr "Retourner sur l'accueil"
 
@@ -265,7 +265,7 @@ msgstr "Menu des réseaux sociaux"
 msgid "soyes"
 msgstr "soyes"
 
-#: search.php:42
+#: search.php:43
 msgid "Still not having it?"
 msgstr "Tu n'as toujours pas ton contenu ?"
 
@@ -283,7 +283,7 @@ msgstr "Merci de partager ton histoire avec la communauté !"
 msgid "That page does not exist (anymore?)!"
 msgstr "Cette page n'existe plus (ou n'a jamais existé ?)."
 
-#: search.php:33
+#: search.php:34
 msgid "Wanna try another search? 🍀"
 msgstr "Envie de tenter une autre recherche ? 🍀"
 
@@ -292,11 +292,13 @@ msgid "Wanna try to search for your post? 🍀"
 msgstr "Rechercher ton contenu 🍀"
 
 #. translators: %d: The number of search results.
-#: search.php:16
-msgid "We found %1$d result for your search \"%2$s\"."
-msgid_plural "We found %1$d results for your search \"%2$s\"."
-msgstr[0] "WordPress a trouvé %1$d résultat pour la recherche sur \"%2$s\"."
-msgstr[1] "WordPress a trouvé %1$d résultats pour la recherche sur \"%2$s\"."
+#: search.php:17
+#| msgid "We found %1$d result for your search \"%2$s\"."
+#| msgid_plural "We found %1$d results for your search \"%2$s\"."
+msgid "We found %1$s result for your search \"%2$s\"."
+msgid_plural "We found %1$s results for your search \"%2$s\"."
+msgstr[0] "WordPress a trouvé %1$s résultat pour la recherche sur \"%2$s\"."
+msgstr[1] "WordPress a trouvé %1$s résultats pour la recherche sur \"%2$s\"."
 
 #: 404.php:37
 msgid "We will reply shorter than you think!"
