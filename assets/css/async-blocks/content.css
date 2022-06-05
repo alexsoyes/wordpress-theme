@@ -201,7 +201,6 @@ p code {
  */
 .entry-content blockquote a {
     border-bottom: none;
-    color: var(--color-black);
 }
 
 blockquote {
