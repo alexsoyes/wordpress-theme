@@ -135,6 +135,10 @@ if (!function_exists('soyes_one_setup')) {
 
         // Gutenberg customization for editor.
         soyes_gutenberg_customization();
+
+        // Remove the wp-container-random and the generated alignments, margins, and flex styles
+        // https://stackoverflow.com/questions/71147452/wordpress-gutenberg-fse-annoying-inline-css
+        remove_filter( 'render_block', 'wp_render_layout_support_flag' );
     }
 }
 add_action('after_setup_theme', 'soyes_one_setup');
