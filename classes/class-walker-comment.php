@@ -267,7 +267,7 @@ class Soyes_Walker_Comment extends Walker {
 					} ?>
 
                     <div class="comment-metadata">
-		                <?php printf( '<h2 class="fn">%s</h2>', $comment_author ); ?>
+		                <?php printf( '<span class="fn">%s</span>', $comment_author ); ?>
 
                         <time datetime="<?php comment_time( 'c' ); ?>">
 			                <?php

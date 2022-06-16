@@ -22,7 +22,7 @@ $soyes_comment_count = get_comments_number();
 	<?php
 	if ( have_comments() ) :
 		?>
-        <h2 class="comments-title">
+        <p class="comments-title">
 			<?php if ( '1' === $soyes_comment_count ) : ?>
 				<?php esc_html_e( '1 comment', 'soyes' ); ?>
 			<?php else : ?>
@@ -34,7 +34,7 @@ $soyes_comment_count = get_comments_number();
 				);
 				?>
 			<?php endif; ?>
-        </h2><!-- .comments-title -->
+        </p><!-- .comments-title -->
 
         <ol class="comment-list">
 			<?php
@@ -78,7 +78,6 @@ $soyes_comment_count = get_comments_number();
 			array(
 				'logged_in_as'         => null,
 				'comment_notes_before' => '<p class="comment-form-note">' . esc_html__( 'Thank you for sharing your story with us!', 'soyes' ) . "</p>",
-				'title_reply'          => esc_html__( 'Leave a comment', 'soyes' ),
 				'title_reply'          => __( '👩‍💻 Leave a Reply 👨‍💻', 'soyes' ),
 				'title_reply_before'   => '<h2 id="reply-title" class="comment-reply-title">',
 				'title_reply_after'    => '</h2>',
