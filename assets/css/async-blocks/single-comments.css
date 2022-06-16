@@ -238,6 +238,7 @@ input:focus, textarea:focus, select:focus {
 
 .comment-reply-title {
 	font-size: var(--font-size-h3);
+	font-weight: bold;
 }
 
 .comment-reply-title small {

@@ -79,8 +79,8 @@ $soyes_comment_count = get_comments_number();
 				'logged_in_as'         => null,
 				'comment_notes_before' => '<p class="comment-form-note">' . esc_html__( 'Thank you for sharing your story with us!', 'soyes' ) . "</p>",
 				'title_reply'          => __( '👩‍💻 Leave a Reply 👨‍💻', 'soyes' ),
-				'title_reply_before'   => '<h2 id="reply-title" class="comment-reply-title">',
-				'title_reply_after'    => '</h2>',
+				'title_reply_before'   => '<p id="reply-title" class="comment-reply-title">',
+				'title_reply_after'    => '</p>',
 				'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="wp-block-button__link %3$s" value="%4$s" />',
 			)
 		);
