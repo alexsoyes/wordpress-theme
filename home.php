@@ -47,7 +47,7 @@ if (have_posts()) :?>
                         setup_postdata($post);
                         get_template_part('template-parts/elements/card');
                     }
-                    echo '</div>';
+                    echo '</div><!-- .cards -->';
                 }
             }
             ?>

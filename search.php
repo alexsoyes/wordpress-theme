@@ -65,7 +65,7 @@ get_header();
 				    endwhile;
 			    endif;
 			    ?>
-            </div>
+            </div><!-- .cards -->
         </div><!-- .entry-content -->
 
         <footer class="entry-footer default-max-width">

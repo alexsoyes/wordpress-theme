@@ -45,7 +45,7 @@ function soyes_newsletter( $atts = array() ): string {
 
         <div class="soyes-newsletter-content">
             <p class="soyes-newsletter-desc">
-			    <?php _e( 'Eech beggining of the month, receive a unique advice to <strong>improve your developer skills</strong>, for free.', 'soyes' ); ?>
+			    <?php _e( 'Each beginning of the month, receive a unique advice to <strong>improve your developer skills</strong>, for free.', 'soyes' ); ?>
             </p><!-- . soyes-newsletter-desc -->
             <form class="soyes-newsletter-form"
                   action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
