@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2022-03-20 16:42+0000\n"
+"PO-Revision-Date: 2022-10-04 07:49+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
@@ -81,13 +81,17 @@ msgstr "Oups !"
 msgid "Did you like this article?"
 msgstr "Tu as aimé cet article ?"
 
-#: functions.php:232
+#: functions.php:236
 msgid "Display some basic info about who you are in the footer."
 msgstr "Affiche des informations dans le pied de page."
 
 #: inc/shortcodes/newsletter.php:48
+#, fuzzy
+#| msgid ""
+#| "Eech beggining of the month, receive a unique advice to <strong>improve "
+#| "your developer skills</strong>, for free."
 msgid ""
-"Eech beggining of the month, receive a unique advice to <strong>improve your "
+"Each beginning of the month, receive a unique advice to <strong>improve your "
 "developer skills</strong>, for free."
 msgstr ""
 "Chaque début du mois, reçois un conseil unique pour t'<strong>améliorer en "
@@ -101,7 +105,7 @@ msgstr "Lien vers tous les articles"
 msgid "find_all_articles();"
 msgstr "lire_tous_les_articles();"
 
-#: functions.php:230
+#: functions.php:234
 msgid "Footer text"
 msgstr "Texte du pied de page"
 
@@ -152,10 +156,6 @@ msgstr "On reste en contact !"
 #: inc/template-functions.php:19
 msgid "Last commit: <strong>%s</strong>"
 msgstr "Dernier commit : <strong>%s</strong>"
-
-#: comments.php:81
-msgid "Leave a comment"
-msgstr "Laisser un commentaire"
 
 #: template-parts/post/post-header.php:32
 msgid "Leave a comment ?"
@@ -304,6 +304,6 @@ msgstr[1] "WordPress a trouvé %1$s résultats pour la recherche sur \"%2$s\"."
 msgid "We will reply shorter than you think!"
 msgstr "Je répondrais plus vite que tu ne le penses !"
 
-#: comments.php:82
+#: comments.php:81
 msgid "👩‍💻 Leave a Reply 👨‍💻"
 msgstr "👩‍💻 Réagir à cet article 👨‍💻"
