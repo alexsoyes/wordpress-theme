@@ -8,29 +8,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2022-10-04 07:49+0000\n"
+"PO-Revision-Date: 2022-10-10 08:25+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Loco-Version: 2.5.3; wp-5.5.1"
 
-#: inc/shortcodes/newsletter.php:59
-msgid "* Your email address will NEVER be used by someone other than me."
+#: inc/shortcodes/newsletter.php:73
+msgid "* Your email stays with me, your privacy matters. 🕵️"
 msgstr ""
-"* Ton adresse e-mail ne sera JAMAIS utilisée par une autre personne que moi."
+"* Ton adresse e-mail reste chez moi. La confidentialité c'est important.  🕵️"
 
 #: comments.php:27 inc/template-functions.php:78
 msgid "1 comment"
 msgstr "1 commentaire"
-
-#: inc/shortcodes/newsletter.php:38
-msgid ""
-"1 unique advice<br>\n"
-"                <span>every month</span>."
-msgstr ""
-"1 conseil unique<br>\n"
-"                <span>1 fois par mois</span>."
 
 #: 404.php:15
 msgid "404"
@@ -39,6 +31,10 @@ msgstr "404"
 #: template-parts/content/content-category.php:16
 msgid "< Return to blog posts"
 msgstr "< Retourner à la liste des articles"
+
+#: inc/shortcodes/newsletter.php:58
+msgid "<span>Each beginning</span> of the week,"
+msgstr "<span>Chaque début de semaine</span>,"
 
 #. Description of the theme
 msgid "A very simple blog for eco friendly bloggers!"
@@ -85,18 +81,6 @@ msgstr "Tu as aimé cet article ?"
 msgid "Display some basic info about who you are in the footer."
 msgstr "Affiche des informations dans le pied de page."
 
-#: inc/shortcodes/newsletter.php:48
-#, fuzzy
-#| msgid ""
-#| "Eech beggining of the month, receive a unique advice to <strong>improve "
-#| "your developer skills</strong>, for free."
-msgid ""
-"Each beginning of the month, receive a unique advice to <strong>improve your "
-"developer skills</strong>, for free."
-msgstr ""
-"Chaque début du mois, reçois un conseil unique pour t'<strong>améliorer en "
-"tant que développeur</strong>, gratuitement."
-
 #: 404.php:46 search.php:50 template-parts/content/content-category.php:15
 msgid "Find all posts"
 msgstr "Lien vers tous les articles"
@@ -135,9 +119,9 @@ msgstr ""
 "Ça m'a pris un long moment pour l'écrire...<br>Si jamais tu l'as trouvé "
 "sympa, n'hésite pas à le partager ❤️"
 
-#: inc/shortcodes/newsletter.php:56
-msgid "I want to receive the tips"
-msgstr "Je m'inscris !"
+#: inc/shortcodes/newsletter.php:59
+msgid "I will share you <span>something I learned</span>."
+msgstr "je te partage <span>une nouvelle astuce</span> de code."
 
 #. translators: %s is replaced with the admin email address.
 #: 404.php:34
@@ -147,6 +131,10 @@ msgid ""
 msgstr ""
 "Si tu es arrivé ici, tu peux m'envoyer un message ici %s afin que je puisse "
 "te renseigner."
+
+#: inc/shortcodes/newsletter.php:69
+msgid "Join the community!"
+msgstr "Rejoindre la communauté !"
 
 #: footer.php:23
 msgid "Keep in touch"
@@ -170,7 +158,7 @@ msgstr "Site WordPress fait avec ❤️"
 msgid "Make a link to: %s"
 msgstr "Faire un lien vers : %s"
 
-#: inc/shortcodes/newsletter.php:53
+#: inc/shortcodes/newsletter.php:66
 msgid "My email address"
 msgstr "Mon adresse e-mail principale"
 
@@ -215,6 +203,10 @@ msgstr "Menu principal (entête)"
 #: template-parts/post/post-header.php:30
 msgid "Read the"
 msgstr "Lire les"
+
+#: inc/shortcodes/newsletter.php:40
+msgid "Receive <span>&lt;la console /&gt;</span>."
+msgstr "Recevoir <span>&lt;la console /&gt;</span>."
 
 #: 404.php:43 search.php:47
 msgid "return \"/\";"
@@ -304,6 +296,49 @@ msgstr[1] "WordPress a trouvé %1$s résultats pour la recherche sur \"%2$s\"."
 msgid "We will reply shorter than you think!"
 msgstr "Je répondrais plus vite que tu ne le penses !"
 
+#: inc/shortcodes/newsletter.php:48
+msgid "✨ Being developer is a passion."
+msgstr "✨ La newsletter des passionné(e)s du code."
+
+#: inc/shortcodes/newsletter.php:61
+msgid ""
+"🎁 <span>Bonus gift</span>: Receive my 5 bonus emails to become a better "
+"software developer."
+msgstr ""
+"🎁 <span>Bonus</span> : Mes 5 emails pour améliorer son code et sa "
+"productivité."
+
 #: comments.php:81
 msgid "👩‍💻 Leave a Reply 👨‍💻"
 msgstr "👩‍💻 Réagir à cet article 👨‍💻"
+
+#: inc/shortcodes/newsletter.php:79
+msgid "🗺️ <strong>3 Roadmaps</strong> to became a better software developer."
+msgstr "🗺️ <strong>3 Roadmaps</strong> pour devenir un(e) meilleur(e) dev"
+
+#: inc/shortcodes/newsletter.php:83
+msgid ""
+"😍 A curated selection of the <strong>best french ressources</strong> for "
+"coding."
+msgstr ""
+"😍 Ma sélection des <strong>meilleures ressources 🇫🇷</strong> sur la "
+"programmation."
+
+#: inc/shortcodes/newsletter.php:81
+msgid "🛠 <strong>3 tools</strong> for developers (that you must use)."
+msgstr ""
+"🛠 <strong>3 outils</strong> pour les développeurs/euses (que tu es obligé(e) "
+"d'utiliser."
+
+#: inc/shortcodes/newsletter.php:82
+msgid ""
+"🧑‍💻 What I think about <strong>software engineers jobs</strong> for the next "
+"year."
+msgstr ""
+"🧑‍💻 Ce que je pense <strong>du métier de développeur</strong> pour les "
+"années à venir..."
+
+#: inc/shortcodes/newsletter.php:80
+msgid "🧠 How I start my day to <strong>increase my productivity</strong>."
+msgstr ""
+"🧠 Comment je gère mes journées pour être <strong>2 x plus productif</strong>."

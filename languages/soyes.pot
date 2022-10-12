@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-10-04T07:46:58+00:00\n"
+"POT-Creation-Date: 2022-10-10T08:16:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: soyes\n"
@@ -180,26 +180,56 @@ msgstr ""
 msgid "Older <span class=\"nav-short\">posts</span>"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:38
-msgid ""
-"1 unique advice<br>\n"
-"                <span>every month</span>."
+#: inc/shortcodes/newsletter.php:40
+msgid "Receive <span>&lt;la console /&gt;</span>."
 msgstr ""
 
 #: inc/shortcodes/newsletter.php:48
-msgid "Each beginning of the month, receive a unique advice to <strong>improve your developer skills</strong>, for free."
+msgid "✨ Being developer is a passion."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:53
-msgid "My email address"
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:56
-msgid "I want to receive the tips"
+#: inc/shortcodes/newsletter.php:58
+msgid "<span>Each beginning</span> of the week,"
 msgstr ""
 
 #: inc/shortcodes/newsletter.php:59
-msgid "* Your email address will NEVER be used by someone other than me."
+msgid "I will share you <span>something I learned</span>."
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:61
+msgid "🎁 <span>Bonus gift</span>: Receive my 5 bonus emails to become a better software developer."
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:66
+msgid "My email address"
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:69
+msgid "Join the community!"
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:73
+msgid "* Your email stays with me, your privacy matters. 🕵️"
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:79
+msgid "🗺️ <strong>3 Roadmaps</strong> to became a better software developer."
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:80
+msgid "🧠 How I start my day to <strong>increase my productivity</strong>."
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:81
+msgid "🛠 <strong>3 tools</strong> for developers (that you must use)."
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:82
+msgid "🧑‍💻 What I think about <strong>software engineers jobs</strong> for the next year."
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:83
+msgid "😍 A curated selection of the <strong>best french ressources</strong> for coding."
 msgstr ""
 
 #. translators: %s is replace with the title of the block.

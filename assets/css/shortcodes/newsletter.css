@@ -21,19 +21,28 @@
     margin: 5px 5px 0 0;
 }
 
-.soyes-newsletter-desc {
-    color: var(--color-gray);
+.soyes-newsletter-fill p span {
+    background-color: var(--color-secondary);
 }
+
+.soyes-newsletter-fill p {
+    margin: 0;
+}
+
+.soyes-newsletter-fill > small:first-of-type {
+    padding: 15px 0;
+    display: block;
+}
+
+.soyes-newsletter-fill > small span {
+    font-weight: bold;
+}
+
 
 .soyes-newsletter-form {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
-}
-
-@media only screen and (max-width: 781px) {
-    .soyes-newsletter-form {
-        flex-direction: column;
-    }
+    flex-direction: column;
 }
 
 @media only screen and (min-width: 992px) {
@@ -69,4 +78,103 @@
     text-align: left;
     margin: 15px 15px 0 0;
     display: block;
+}
+
+.soyes-newsletter-advantages {
+    font-size: var(--font-size-h5);
+}
+
+.soyes-newsletter-advantages ul li {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-h6);
+}
+
+.wp-block-column-66 {
+    flex-basis: 66.66%;
+}
+
+.wp-block-column-33 {
+    flex-basis: 33.33%;
+}
+
+/**
+Cover blocks.
+
+@wordpress/wp-includes/blocks/cover/style-rtl.css
+ */
+.wp-block-cover-image,
+.wp-block-cover {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    min-height: 430px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    /**
+     * Set a default background color for has-background-dim _unless_ it includes another
+     * background-color class (e.g. has-green-background-color). The presence of another
+     * background-color class implies that another style will provide the background color
+     * for the overlay.
+     *
+     * See:
+     *   - Issue with background color specificity: https://github.com/WordPress/gutenberg/issues/26545
+     *   - Issue with alternative fix: https://github.com/WordPress/gutenberg/issues/26545
+     */
+}
+
+.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
+.wp-block-cover-image .has-background-dim:not([class*=-background-color]),
+.wp-block-cover.has-background-dim:not([class*=-background-color]),
+.wp-block-cover .has-background-dim:not([class*=-background-color]) {
+    background-color: var(--color-primary);
+}
+
+.wp-block-cover-image.has-background-dim:not(.has-background-gradient)::before,
+.wp-block-cover-image .wp-block-cover__background,
+.wp-block-cover-image .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim:not(.has-background-gradient)::before,
+.wp-block-cover .wp-block-cover__background,
+.wp-block-cover .wp-block-cover__gradient-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+    width: inherit;
+    max-width: inherit;
+}
+
+.wp-block-cover-image .wp-block-cover__inner-container,
+.wp-block-cover .wp-block-cover__inner-container {
+    width: 100%;
+    z-index: 1;
+}
+
+
+.wp-block-cover-image img.wp-block-cover__image-background,
+.wp-block-cover-image video.wp-block-cover__video-background,
+.wp-block-cover img.wp-block-cover__image-background,
+.wp-block-cover video.wp-block-cover__video-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    -o-object-fit: cover;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
