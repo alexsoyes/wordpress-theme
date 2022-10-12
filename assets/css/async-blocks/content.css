@@ -120,6 +120,7 @@ a img.aligncenter {
 .wp-block-image .alignright {
     /*rtl:ignore*/
     float: right;
+    width: 100%;
     /*rtl:ignore*/
     margin-right: 0;
     margin-left: 1em;
@@ -295,6 +296,10 @@ video {
 
     pre:not(.wp-block-code)::after {
         left: 60px;
+    }
+
+    .wp-block-image .alignright {
+        width: auto;
     }
 }
 
