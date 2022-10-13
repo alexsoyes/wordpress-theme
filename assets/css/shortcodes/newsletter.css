@@ -22,7 +22,9 @@
 }
 
 .soyes-newsletter-fill p span {
-    background-color: var(--color-secondary);
+    background-color: var(--color-white);
+    font-style: italic;
+    padding: 2px 6px;
 }
 
 .soyes-newsletter-fill p {
@@ -53,6 +55,14 @@
     .soyes-newsletter-title span {
         font-size: var(--font-size-h1);
     }
+
+    .wp-block-column-66 {
+        flex-basis: 66.66%;
+    }
+
+    .wp-block-column-33 {
+        flex-basis: 33.33%;
+    }
 }
 
 .soyes-newsletter-form > * {
@@ -80,21 +90,24 @@
     display: block;
 }
 
-.soyes-newsletter-advantages {
+.soyes-newsletter-content {
+    padding: 30px 0;
+}
+
+.soyes-newsletter-advantages p {
+    display: inline-block;
     font-size: var(--font-size-h5);
+    font-weight: bold;
+    margin-bottom: 0;
+    background-color: var(--color-secondary);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .soyes-newsletter-advantages ul li {
-    font-family: var(--font-family-secondary);
     font-size: var(--font-size-h6);
-}
-
-.wp-block-column-66 {
-    flex-basis: 66.66%;
-}
-
-.wp-block-column-33 {
-    flex-basis: 33.33%;
+    color: var(--color-gray);
+    font-family: var(--font-family-secondary);
 }
 
 /**
