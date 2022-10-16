@@ -77,8 +77,8 @@ function soyes_newsletter($atts = array()): string
                         <li><?php _e('🗺️ <strong>3 Roadmaps</strong> to became a better software developer.', 'soyes'); ?></li>
                         <li><?php _e('🧠 How I start my day to <strong>increase my productivity</strong>.', 'soyes'); ?></li>
                         <li><?php _e('🛠 <strong>3 tools</strong> for developers (that you must use).', 'soyes'); ?></li>
-                        <li><?php _e('😍 A curated selection of the <strong>best french ressources</strong> for coding.', 'soyes'); ?></li>
                         <li><?php _e('🧑‍💻 What I think about <strong>software engineers jobs</strong> for the next year.', 'soyes'); ?></li>
+                        <li><?php _e('😍 A curated selection of the <strong>best french ressources</strong> for coding.', 'soyes'); ?></li>
                     </ul><!-- .simple -->
 
                 </div><!-- .soyes-newsletter-advantages -->
