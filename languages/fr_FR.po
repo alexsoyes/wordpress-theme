@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2022-10-16 12:19+0000\n"
+"PO-Revision-Date: 2022-10-16 12:30+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
@@ -208,7 +208,7 @@ msgstr "Lire les"
 
 #: inc/shortcodes/newsletter.php:40
 msgid "Receive <span>&lt;la console /&gt;</span>."
-msgstr "Recevoir <span>&lt;la console /&gt;</span>."
+msgstr "Recevoir <span>&lt;La console /&gt;</span>."
 
 #: 404.php:43 search.php:47
 msgid "return \"/\";"
@@ -306,7 +306,7 @@ msgstr "✨ La newsletter des passionné(e)s du code."
 msgid ""
 "🎁 <span>Bonus gift</span>: Receive my 5 bonus emails to become a better "
 "software developer."
-msgstr "🎁 Recevoir mes 5 emails pour améliorer son code et sa productivité."
+msgstr "🎁 Recevoir mes 5 conseils pour améliorer son code et sa productivité."
 
 #: comments.php:81
 msgid "👩‍💻 Leave a Reply 👨‍💻"
