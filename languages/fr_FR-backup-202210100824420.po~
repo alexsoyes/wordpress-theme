@@ -2,18 +2,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Alex so yes\n"
+"Last-Translator: \n"
 "Language-Team: Français\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2022-10-16 12:30+0000\n"
+"PO-Revision-Date: 2022-10-10 08:24+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Loco-Version: 2.6.2; wp-6.0"
+"X-Loco-Version: 2.5.3; wp-5.5.1"
 
 #: inc/shortcodes/newsletter.php:73
 msgid "* Your email stays with me, your privacy matters. 🕵️"
@@ -34,7 +34,7 @@ msgstr "< Retourner à la liste des articles"
 
 #: inc/shortcodes/newsletter.php:58
 msgid "<span>Each beginning</span> of the week,"
-msgstr "<span>Chaque mardi à 9h</span>,"
+msgstr "<span>Chaque début de semaine</span>,"
 
 #. Description of the theme
 msgid "A very simple blog for eco friendly bloggers!"
@@ -121,9 +121,7 @@ msgstr ""
 
 #: inc/shortcodes/newsletter.php:59
 msgid "I will share you <span>something I learned</span>."
-msgstr ""
-"je te partage <span>une nouvelle astuce</span> ou <span>une nouvelle "
-"histoire</span> de code."
+msgstr "je te partage <span>un truc de dev cool que j'ai appris</span>."
 
 #. translators: %s is replaced with the admin email address.
 #: 404.php:34
@@ -208,7 +206,7 @@ msgstr "Lire les"
 
 #: inc/shortcodes/newsletter.php:40
 msgid "Receive <span>&lt;la console /&gt;</span>."
-msgstr "Recevoir <span>&lt;La console /&gt;</span>."
+msgstr "Recevoir <span>&lt;la console /&gt;</span>."
 
 #: 404.php:43 search.php:47
 msgid "return \"/\";"
@@ -306,7 +304,9 @@ msgstr "✨ La newsletter des passionné(e)s du code."
 msgid ""
 "🎁 <span>Bonus gift</span>: Receive my 5 bonus emails to become a better "
 "software developer."
-msgstr "🎁 Recevoir mes 5 conseils pour améliorer son code et sa productivité."
+msgstr ""
+"🎁 <span>Bonus</span> : Mes 5 emails pour améliorer son code et sa "
+"productivité."
 
 #: comments.php:81
 msgid "👩‍💻 Leave a Reply 👨‍💻"
@@ -314,25 +314,31 @@ msgstr "👩‍💻 Réagir à cet article 👨‍💻"
 
 #: inc/shortcodes/newsletter.php:79
 msgid "🗺️ <strong>3 Roadmaps</strong> to became a better software developer."
-msgstr "🚀 <strong>3 roadmaps</strong> pour exceller en code."
+msgstr "🗺️ <strong>3 Roadmaps</strong> pour devenir un(e) meilleur(e) dev"
 
 #: inc/shortcodes/newsletter.php:83
 msgid ""
 "😍 A curated selection of the <strong>best french ressources</strong> for "
 "coding."
-msgstr "🇫🇷 Mes <strong>16 meilleures ressources</strong> en programmation."
+msgstr ""
+"😍 Ma sélection des <strong>meilleures ressources francophones</strong> sur "
+"la programmation."
 
 #: inc/shortcodes/newsletter.php:81
 msgid "🛠 <strong>3 tools</strong> for developers (that you must use)."
-msgstr "🛠 <strong>3 outils</strong> obligatoires pour progresser."
+msgstr ""
+"🛠 <strong>3 outils</strong> pour les développeurs/euses (que tu es obligé(e) "
+"d'utiliser."
 
 #: inc/shortcodes/newsletter.php:82
 msgid ""
 "🧑‍💻 What I think about <strong>software engineers jobs</strong> for the next "
 "year."
 msgstr ""
-"🧑‍💻 Ce que je pense <strong>du métier de développeur</strong> dans 10 ans."
+"🧑‍💻 Ce que je pense <strong>du métier de développeur</strong> pour les "
+"années à venir..."
 
 #: inc/shortcodes/newsletter.php:80
 msgid "🧠 How I start my day to <strong>increase my productivity</strong>."
-msgstr "🧠 Comment être <strong>2 x plus productif</strong>."
+msgstr ""
+"🧠 Comment je gère mes journées pour être <strong>2 x plus productif</strong>."

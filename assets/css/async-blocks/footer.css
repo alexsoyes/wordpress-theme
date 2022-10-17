@@ -91,12 +91,12 @@
     .site-footer {
         padding: 100px 0 40px 0;
     }
+
     .soyes-newsletter-container-footer .soyes-newsletter-form {
         width: 100%;
     }
 
     .soyes-newsletter-container-footer .soyes-newsletter-content {
-        width: 60%;
         margin: auto;
     }
 }

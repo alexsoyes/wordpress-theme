@@ -254,6 +254,10 @@ p {
     letter-spacing: -0.065px;
 }
 
+.entry-content ul.simple {
+    padding-left: 0;
+}
+
 .comment-content li {
     font-size: calc(var(--font-size-m) - 1px);
 }
@@ -279,8 +283,8 @@ ul {
     color: var(--color-gray);
 }
 
-.comment-content ul li::before,
-.entry-content ul li::before {
+.comment-content ul:not(.simple) li::before,
+.entry-content ul:not(.simple) li::before {
     content: '\</>';
     display: inline-block;
     margin-right: 10px;
