@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v3.
 msgid ""
 msgstr ""
-"Project-Id-Version: soyes 0.3.5\n"
+"Project-Id-Version: soyes 0.3.7b\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/soyes\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-10-10T08:16:44+00:00\n"
+"POT-Creation-Date: 2022-11-20T06:12:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: soyes\n"
@@ -164,11 +164,23 @@ msgstr ""
 msgid "Display some basic info about who you are in the footer."
 msgstr ""
 
-#: header.php:26
+#: header.php:27
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:42
+#: header.php:30
+msgid "New"
+msgstr ""
+
+#: header.php:31
+msgid "Training to become a freelance with <strong>30&percnt; discount!</strong>"
+msgstr ""
+
+#: header.php:36
+msgid "Access ✨"
+msgstr ""
+
+#: header.php:54
 msgid "Primary menu"
 msgstr ""
 
@@ -188,47 +200,47 @@ msgstr ""
 msgid "✨ Being developer is a passion."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:58
+#: inc/shortcodes/newsletter.php:56
 msgid "<span>Each beginning</span> of the week,"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:59
+#: inc/shortcodes/newsletter.php:57
 msgid "I will share you <span>something I learned</span>."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:61
-msgid "🎁 <span>Bonus gift</span>: Receive my 5 bonus emails to become a better software developer."
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:66
+#: inc/shortcodes/newsletter.php:62
 msgid "My email address"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:69
+#: inc/shortcodes/newsletter.php:65
 msgid "Join the community!"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:73
+#: inc/shortcodes/newsletter.php:69
 msgid "* Your email stays with me, your privacy matters. 🕵️"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:79
+#: inc/shortcodes/newsletter.php:74
+msgid "🎁 <span>Bonus gift</span>: Receive my 5 bonus emails to become a better software developer."
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:77
 msgid "🗺️ <strong>3 Roadmaps</strong> to became a better software developer."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:80
+#: inc/shortcodes/newsletter.php:78
 msgid "🧠 How I start my day to <strong>increase my productivity</strong>."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:81
+#: inc/shortcodes/newsletter.php:79
 msgid "🛠 <strong>3 tools</strong> for developers (that you must use)."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:82
+#: inc/shortcodes/newsletter.php:80
 msgid "🧑‍💻 What I think about <strong>software engineers jobs</strong> for the next year."
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:83
+#: inc/shortcodes/newsletter.php:81
 msgid "😍 A curated selection of the <strong>best french ressources</strong> for coding."
 msgstr ""
 

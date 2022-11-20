@@ -13,6 +13,7 @@
 }
 
 .soyes-newsletter-title span {
+    display: inline-block;
     color: var(--color-white);
     background-color: var(--color-link);
     font-size: calc(var(--font-size-h1) + 4px);
