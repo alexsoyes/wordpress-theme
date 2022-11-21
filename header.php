@@ -31,7 +31,7 @@
         <!-- .promo-content -->
         <span class="new-cta">
             <button class="wp-block-button__link"
-                    onclick='window.open("https://bit.ly/3tLbRqc", "_blank")'>
+                    onclick='window.open("https://bit.ly/alexsoyes-formation-freelance", "_blank")'>
                 <?php esc_attr_e('Access ✨', 'soyes'); ?>
             </button>
         </span><!-- .promo-cta -->
