@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2022-11-28 04:39+0000\n"
+"PO-Revision-Date: 2022-11-20 06:13+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
@@ -170,7 +170,7 @@ msgstr "Mon adresse e-mail principale"
 
 #: header.php:30
 msgid "New"
-msgstr "Lancement"
+msgstr "New"
 
 #: inc/navigation.php:17
 msgid "Newer <span class=\"nav-short\">posts</span>"
@@ -290,8 +290,8 @@ msgstr "Cette page n'existe plus (ou n'a jamais existé ?)."
 msgid ""
 "Training to become a freelance with <strong>30&percnt; discount!</strong>"
 msgstr ""
-"<strong>✨ Devenir freelance en 3 mois !</strong> <span>(-30&percnt; avec le "
-"code LANCEMENT)</span>"
+"La formation pour devenir freelance en 3 mois ! (<strong>-30&percnt; avec le "
+"code LANCEMENT</strong>)"
 
 #: search.php:34
 msgid "Wanna try another search? 🍀"
