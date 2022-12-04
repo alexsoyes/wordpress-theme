@@ -27,15 +27,17 @@
 
     <div class="new-banner alignfull">
         <span class="new-icon"><?php esc_attr_e('New', 'soyes'); ?></span><!-- .promo-new -->
-        <span class="new-content"><?php _e('Training to become a freelance with <strong>30&percnt; discount!</strong>', 'soyes'); ?></span>
+        <span class="new-content"
+              onclick='window.open("https://bit.ly/alexsoyes-formation-freelance", "_blank")'>
+            <?php _e('Training to become a freelance with <strong>30&percnt; discount!</strong>', 'soyes'); ?></span>
         <!-- .promo-content -->
         <span class="new-cta">
             <button class="wp-block-button__link"
                     onclick='window.open("https://bit.ly/alexsoyes-formation-freelance", "_blank")'>
                 <?php esc_attr_e('Access ✨', 'soyes'); ?>
-            </button>
-        </span><!-- .promo-cta -->
-    </div><!-- .header-promo -->
+            </button><!-- .wp-block-button__link -->
+        </span><!-- .new-cta -->
+    </div><!-- .new-banner -->
 
     <?php if (!is_front_page()) : ?>
         <header id="header" class="alignfull">

@@ -3,6 +3,7 @@
  */
 #header {
     box-shadow: var(--box-shadow-default);
+    padding-top: 80px;
 }
 
 #header nav {
@@ -81,4 +82,53 @@
 
 a.custom-logo-link:hover {
     border: none;
+}
+
+
+/**
+ * "New" banner.
+ */
+.new-banner {
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    padding: 20px 10px;
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+.new-content {
+    padding: 0 10px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.new-content:hover {
+    text-decoration: underline;
+}
+
+.new-icon {
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: var(--color-primary);
+    font-size: var(--font-size-h5);
+}
+
+.new-cta button.wp-block-button__link {
+    padding: 10px 16px;
+}
+
+@media only screen and (max-width: 991px) {
+    .new-content > span,
+    .new-cta {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .new-banner {
+        padding: 5px 0;
+    }
 }
