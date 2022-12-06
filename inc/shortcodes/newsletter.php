@@ -16,7 +16,7 @@ add_shortcode(
  *
  * @return string
  */
-function soyes_newsletter($atts = array()): string
+function soyes_newsletter(array $atts = []): string
 {
     $container_class = 'soyes-newsletter-container';
 
@@ -38,51 +38,42 @@ function soyes_newsletter($atts = array()): string
             <p class="soyes-newsletter-title">
                 <?php
                 _e(
-                    'Receive <span>&lt;la console /&gt;</span>.',
+                    'Rejoins le <span>top 10%</span> de la Tech.',
                     'soyes'
                 );
                 ?>
             </p><!-- .soyes-newsletter-title -->
 
             <p class="soyes-newsletter-desc">
-                <?php _e('✨ Being developer is a passion.', 'soyes'); ?>
+                <?php _e("Ta dose d’inspiration <strong>tech</strong> et <strong>freelance</strong> et <strong>digital nomad</strong>.", 'soyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
+
         </div><!-- .has-text-align-center -->
+
+        <div class="soyes-newsletter-calendar">
+            <p><?php _e('<strong>Chaque mardi</strong>, on avance ensemble pour level-up ⚡️', 'soyes'); ?></p>
+        </div><!-- .soyes-newsletter-calendar -->
 
         <div class="soyes-newsletter-content">
 
-            <div class="wp-block-columns are-vertically-aligned-center">
-                <div class="wp-block-column wp-block-column-33 soyes-newsletter-fill">
-                    <p><?php _e('<span>Each beginning</span> of the week,', 'soyes'); ?></p>
-                    <p><?php _e('I will share you <span>something I learned</span>.', 'soyes'); ?></p>
+            <div class="soyes-newsletter-fill">
+                <p><?php _e('Rejoins les +1500 membres de <span>&lt;la console /&gt;</span>.', 'soyes'); ?></p>
 
-                    <form class="soyes-newsletter-form"
-                          action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
-                          method="post">
-                        <input name="EMAIL" type="email" placeholder="<? _e('My email address', 'soyes'); ?>" required
-                               aria-label="Adresse e-mail" class="soyes-newsletter-email">
-                        <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
-                               value="<?php _e('Join the community!', 'soyes'); ?>">
-                    </form><!-- .soyes-newsletter-form -->
+                <form class="soyes-newsletter-form wp-block-columns"
+                      action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
+                      method="post">
+                    <input name="EMAIL" type="email" placeholder="<? _e('My email address', 'soyes'); ?>"
+                           required
+                           aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
+                    <input type="submit" class="wp-block-button__link soyes-newsletter-submit wp-block-column"
+                           value="<?php _e('Je veux ma dose 💊', 'soyes'); ?>">
+                </form><!-- .soyes-newsletter-form -->
 
-                    <small class="soyes-newsletter-warn">
-                        <?php _e('* Your email stays with me, your privacy matters. 🕵️', 'soyes'); ?>
-                    </small><!-- .soyes-newsletter-warn -->
-                </div><!-- .soyes-newsletter-fill -->
+                <small class="soyes-newsletter-warn">
+                    <?php _e('Newsletter entièrement gratuite, RGPD friendly.', 'soyes'); ?>
+                </small><!-- .soyes-newsletter-warn -->
+            </div><!-- .soyes-newsletter-fill -->
 
-                <div class="wp-block-column wp-block-column-66 soyes-newsletter-advantages">
-                    <p><?php _e('🎁 <span>Bonus gift</span>: Receive my 5 bonus emails to become a better software developer.', 'soyes'); ?></p>
-
-                    <ul class="simple">
-                        <li><?php _e('🗺️ <strong>3 Roadmaps</strong> to became a better software developer.', 'soyes'); ?></li>
-                        <li><?php _e('🧠 How I start my day to <strong>increase my productivity</strong>.', 'soyes'); ?></li>
-                        <li><?php _e('🛠 <strong>3 tools</strong> for developers (that you must use).', 'soyes'); ?></li>
-                        <li><?php _e('🧑‍💻 What I think about <strong>software engineers jobs</strong> for the next year.', 'soyes'); ?></li>
-                        <li><?php _e('😍 A curated selection of the <strong>best french ressources</strong> for coding.', 'soyes'); ?></li>
-                    </ul><!-- .simple -->
-
-                </div><!-- .soyes-newsletter-advantages -->
-            </div><!-- .wp-block-columns -->
         </div><!-- .soyes-newsletter-content -->
 
     </div><!-- .soyes-newsletter-container -->

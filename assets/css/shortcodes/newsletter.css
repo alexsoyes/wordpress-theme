@@ -10,6 +10,11 @@
     line-height: 1.15;
     font-weight: var(--font-weight-bolder);
     font-size: var(--font-size-h0);
+    font-family: var(--font-family-secondary);
+}
+
+.soyes-newsletter-desc {
+    font-family: var(--font-family-secondary);
 }
 
 .soyes-newsletter-title span {
@@ -17,7 +22,6 @@
     color: var(--color-white);
     background-color: var(--color-link);
     font-size: calc(var(--font-size-h1) + 4px);
-    font-weight: var(--font-weight-normal);
     padding: 2px 12px;
     margin: 5px 5px 0 0;
 }
@@ -43,26 +47,16 @@
 
 
 .soyes-newsletter-form {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+    margin: 10px 0 10px 0;
 }
 
 @media only screen and (min-width: 992px) {
-    .soyes-newsletter-form {
-        width: 90%;
-    }
-
     .soyes-newsletter-title span {
         font-size: var(--font-size-h1);
     }
 
-    .wp-block-column-66 {
-        flex-basis: 66.66%;
-    }
-
-    .wp-block-column-33 {
-        flex-basis: 33.33%;
+    .soyes-newsletter-fill {
+        padding: 0 100px;
     }
 }
 
@@ -70,7 +64,7 @@
     padding: 15px;
 }
 
-.soyes-newsletter-submit {
+.soyes-newsletter-submit.wp-block-column.wp-block-button__link {
     margin: 0;
 }
 
@@ -86,29 +80,23 @@
 
 .soyes-newsletter-warn {
     color: var(--color-gray);
-    text-align: left;
-    margin: 15px 15px 0 0;
-    display: block;
+    text-align: center;
 }
 
-.soyes-newsletter-content {
+.soyes-newsletter-calendar {
     padding: 30px 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.soyes-newsletter-advantages p {
-    display: inline-block;
+.soyes-newsletter-calendar > p {
+    display: inline;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--color-secondary);
+}
+
+.soyes-newsletter-fill p {
     font-size: var(--font-size-h5);
-    font-weight: bold;
-    margin-bottom: 0;
-    background-color: var(--color-secondary);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.soyes-newsletter-advantages ul li {
-    font-size: var(--font-size-h6);
-    color: var(--color-gray);
-    font-family: var(--font-family-secondary);
 }
 
 /**
