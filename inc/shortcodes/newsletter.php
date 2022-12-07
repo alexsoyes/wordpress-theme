@@ -16,7 +16,7 @@ add_shortcode(
  *
  * @return string
  */
-function soyes_newsletter(array $atts = []): string
+function soyes_newsletter($atts = []): string
 {
     $container_class = 'soyes-newsletter-container';
 
@@ -45,13 +45,13 @@ function soyes_newsletter(array $atts = []): string
             </p><!-- .soyes-newsletter-title -->
 
             <p class="soyes-newsletter-desc">
-                <?php _e("Ta dose d’inspiration <strong>tech</strong> et <strong>freelance</strong> et <strong>digital nomad</strong>.", 'soyes'); ?>
+                <?php _e("Ta dose d’inspiration <strong>code</strong>, <strong>freelance</strong> et <strong>digital nomad</strong>.", 'soyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
 
         </div><!-- .has-text-align-center -->
 
         <div class="soyes-newsletter-calendar">
-            <p><?php _e('<strong>Chaque mardi</strong>, on avance ensemble pour level-up ⚡️', 'soyes'); ?></p>
+            <p><?php _e('<strong>Chaque mardi</strong>, on level-up ensemble 🚀️', 'soyes'); ?></p>
         </div><!-- .soyes-newsletter-calendar -->
 
         <div class="soyes-newsletter-content">

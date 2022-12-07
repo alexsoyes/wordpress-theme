@@ -138,7 +138,7 @@ if (!function_exists('soyes_one_setup')) {
 
         // Remove the wp-container-random and the generated alignments, margins, and flex styles
         // https://stackoverflow.com/questions/71147452/wordpress-gutenberg-fse-annoying-inline-css
-        remove_filter( 'render_block', 'wp_render_layout_support_flag' );
+        remove_filter('render_block', 'wp_render_layout_support_flag');
     }
 }
 add_action('after_setup_theme', 'soyes_one_setup');
@@ -277,13 +277,14 @@ function soyes_enqueue_async_styles(): void
 
 add_action('wp_head', 'soyes_enqueue_async_styles');
 
-
 function soyes_exit_popin(): void
 {
-	?>
-    <script id="mcjs">!function (c, h, i, m, p) {
-            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
-        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/987967b6e21378d1da9bd507b/2684253fd7b4cc3c3650fde16.js");</script><?php
+    if (!is_front_page()):
+        ?>
+        <script id="mcjs">!function (c, h, i, m, p) {
+                m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+            }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/987967b6e21378d1da9bd507b/2684253fd7b4cc3c3650fde16.js");</script><?php
+    endif;
 }
 
 add_action('wp_footer', 'soyes_exit_popin');
