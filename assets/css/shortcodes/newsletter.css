@@ -91,8 +91,10 @@
 
 .soyes-newsletter-calendar > p {
     display: inline;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--color-secondary);
+    font-size: var(--font-size-h5);
+    background-color: var(--color-white);
+    padding: 7px 10px;
+    border-radius: 2px;
 }
 
 .soyes-newsletter-fill p {

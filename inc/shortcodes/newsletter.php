@@ -38,42 +38,38 @@ function soyes_newsletter($atts = []): string
             <p class="soyes-newsletter-title">
                 <?php
                 _e(
-                    'Rejoins le <span>top 10%</span> de la Tech.',
+                    '<span>&lt;La console/&gt;</span>',
                     'soyes'
                 );
                 ?>
             </p><!-- .soyes-newsletter-title -->
 
             <p class="soyes-newsletter-desc">
-                <?php _e("Ta dose d’inspiration <strong>code</strong>, <strong>freelance</strong> et <strong>digital nomad</strong>.", 'soyes'); ?>
+                <strong><?php _e("💌 La newsletter des devs et des freelances.", 'soyes'); ?></strong>
             </p><!-- . soyes-newsletter-desc -->
 
         </div><!-- .has-text-align-center -->
 
         <div class="soyes-newsletter-calendar">
-            <p><?php _e('<strong>Chaque mardi</strong>, on level-up ensemble 🚀️', 'soyes'); ?></p>
+            <p><?php _e('✅ 1 astuce / semaine pour améliorer sa vie de tech.', 'soyes'); ?></p>
         </div><!-- .soyes-newsletter-calendar -->
 
         <div class="soyes-newsletter-content">
-
             <div class="soyes-newsletter-fill">
-                <p><?php _e('Rejoins les +1500 membres de <span>&lt;la console /&gt;</span>.', 'soyes'); ?></p>
-
                 <form class="soyes-newsletter-form wp-block-columns"
                       action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
                       method="post">
-                    <input name="EMAIL" type="email" placeholder="<? _e('My email address', 'soyes'); ?>"
+                    <input name="EMAIL" type="email" placeholder="<? _e('Rejoindre +1500 membres', 'soyes'); ?>"
                            required
                            aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
                     <input type="submit" class="wp-block-button__link soyes-newsletter-submit wp-block-column"
-                           value="<?php _e('Je veux ma dose 💊', 'soyes'); ?>">
+                           value="<?php _e('Je veux level-up 🚀', 'soyes'); ?>">
                 </form><!-- .soyes-newsletter-form -->
 
                 <small class="soyes-newsletter-warn">
                     <?php _e('Newsletter entièrement gratuite, RGPD friendly.', 'soyes'); ?>
                 </small><!-- .soyes-newsletter-warn -->
             </div><!-- .soyes-newsletter-fill -->
-
         </div><!-- .soyes-newsletter-content -->
 
     </div><!-- .soyes-newsletter-container -->

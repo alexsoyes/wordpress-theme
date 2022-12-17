@@ -26,16 +26,14 @@
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'soyes'); ?></a>
 
     <div class="new-banner alignfull">
-        <span class="new-icon"><?php esc_attr_e('New', 'soyes'); ?></span><!-- .promo-new -->
-        <span class="new-content"><?php _e('Training to become a freelance with <strong>30&percnt; discount!</strong>', 'soyes'); ?></span>
-        <!-- .promo-content -->
+        <span class="new-content"><?php _e('Deviens <strong>freelance en 3 mois</strong> avec 1 action à réaliser chaque jour.', 'soyes'); ?></span>
         <span class="new-cta">
             <button class="wp-block-button__link"
                     onclick='window.open("https://bit.ly/alexsoyes-formation-freelance", "_blank")'>
-                <?php esc_attr_e('Access ✨', 'soyes'); ?>
-            </button>
-        </span><!-- .promo-cta -->
-    </div><!-- .header-promo -->
+                <?php esc_attr_e('Le programme ⚡️', 'soyes'); ?>
+            </button><!-- .wp-block-button__link -->
+        </span><!-- .new-cta -->
+    </div><!-- .new-banner -->
 
     <?php if (!is_front_page()) : ?>
         <header id="header" class="alignfull">
