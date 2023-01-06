@@ -310,4 +310,4 @@ function soyes_hotjar(): void
     <?php
 }
 
-add_action('wp_footer', 'soyes_hotjar');
+add_action('wp_head', 'soyes_hotjar');
