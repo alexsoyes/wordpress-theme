@@ -83,20 +83,6 @@
     text-align: center;
 }
 
-.soyes-newsletter-calendar {
-    padding: 30px 0;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.soyes-newsletter-calendar > p {
-    display: inline;
-    font-size: var(--font-size-h5);
-    background-color: var(--color-white);
-    padding: 7px 10px;
-    border-radius: 2px;
-}
-
 .soyes-newsletter-fill p {
     font-size: var(--font-size-h5);
 }

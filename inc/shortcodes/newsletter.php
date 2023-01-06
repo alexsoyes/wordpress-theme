@@ -38,21 +38,18 @@ function soyes_newsletter($atts = []): string
             <p class="soyes-newsletter-title">
                 <?php
                 _e(
-                    '<span>&lt;La console/&gt;</span>',
+                    'Chaque semaine,<br><span>1 conseil pour mieux coder</span>.',
                     'soyes'
                 );
                 ?>
             </p><!-- .soyes-newsletter-title -->
 
             <p class="soyes-newsletter-desc">
-                <strong><?php _e("💌 La newsletter des devs et des freelances.", 'soyes'); ?></strong>
+                <strong><?php _e("💌 La console : La newsletter des devs.", 'soyes'); ?></strong>
             </p><!-- . soyes-newsletter-desc -->
 
         </div><!-- .has-text-align-center -->
 
-        <div class="soyes-newsletter-calendar">
-            <p><?php _e('✅ 1 astuce / semaine pour améliorer sa vie de tech.', 'soyes'); ?></p>
-        </div><!-- .soyes-newsletter-calendar -->
 
         <div class="soyes-newsletter-content">
             <div class="soyes-newsletter-fill">
@@ -63,7 +60,7 @@ function soyes_newsletter($atts = []): string
                            required
                            aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
                     <input type="submit" class="wp-block-button__link soyes-newsletter-submit wp-block-column"
-                           value="<?php _e('Je veux level-up 🚀', 'soyes'); ?>">
+                           value="<?php _e('Je m’abonne 🚀', 'soyes'); ?>">
                 </form><!-- .soyes-newsletter-form -->
 
                 <small class="soyes-newsletter-warn">
