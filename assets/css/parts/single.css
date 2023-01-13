@@ -5,6 +5,7 @@
     text-align: center;
     margin: 50px 0;
 }
+
 .post-header {
     margin-bottom: 40px;
     z-index: 20;
@@ -91,29 +92,33 @@
 /**
  * Toc on titles.
  */
-.entry-content h2,
-.entry-content h3 {
+.toc-title-container {
     position: relative;
 }
 
 .toc_ref {
     display: none;
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: -40px;
+    font-size: var(--font-size-h2);
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 1100px) {
-    .entry-content .toc_ref {
+    .toc-title-container .toc_ref {
         display: block;
         color: var(--color-gray);
         opacity: 0.2;
+    }
+
+    .toc-title-h2 .toc_ref {
         padding-bottom: 4px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .entry-content .toc_ref:hover {
+    .toc-title-container .toc_ref:hover {
         color: var(--color-black);
         opacity: 1;
     }
