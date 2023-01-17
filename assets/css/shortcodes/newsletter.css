@@ -9,7 +9,7 @@
     padding-bottom: 0;
     line-height: 1.15;
     font-weight: var(--font-weight-bolder);
-    font-size: var(--font-size-h0);
+    font-size: var(--font-size-h1);
     font-family: var(--font-family-secondary);
 }
 
@@ -18,10 +18,11 @@
 }
 
 .soyes-newsletter-title span {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-h0);
     display: inline-block;
     color: var(--color-white);
     background-color: var(--color-link);
-    font-size: calc(var(--font-size-h1) + 4px);
     padding: 2px 12px;
     margin: 5px 5px 0 0;
 }
