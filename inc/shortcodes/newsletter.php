@@ -38,14 +38,14 @@ function soyes_newsletter($atts = []): string
             <p class="soyes-newsletter-title">
                 <?php
                 _e(
-                    '1 action chaque semaine<br><span>pour rejoindre le top 10 % des devs</span>.',
+                    '🚀 La console : La newsletter <span>#code</span> et <span>#freelance</span>',
                     'soyes'
                 );
                 ?>
             </p><!-- .soyes-newsletter-title -->
 
             <p class="soyes-newsletter-desc">
-                <strong><?php _e("🚀 La console, la newsletter 100 % dev, freelance et digital nomad.", 'soyes'); ?></strong>
+                <strong><?php _e("✅ 1 action à réaliser chaque lundi pour décrocher le job de tes rêves ou devenir freelance.", 'soyes'); ?></strong>
             </p><!-- . soyes-newsletter-desc -->
         </div><!-- .has-text-align-center -->
 

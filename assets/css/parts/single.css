@@ -24,8 +24,6 @@
 }
 
 .entry-title {
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-bolder);
     margin-bottom: 0;
     padding-top: 0;
 }
@@ -174,12 +172,17 @@
  * Back to the top.
  */
 .back-to-top {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     bottom: 20px;
     right: 30px;
-    opacity: 0.6;
+    opacity: 0.8;
+    padding: 2px;
+    vertical-align: center;
+    font-size: var(--font-size-h4);
+    background: var(--color-secondary);
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 786px) {
