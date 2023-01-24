@@ -26,11 +26,11 @@
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'soyes'); ?></a>
 
     <div class="new-banner alignfull">
-        <span class="new-content"><?php _e('<strong>La formation devenir freelance 🚀</strong> : 3 mois pour trouver des clients et vendre !', 'soyes'); ?></span>
+        <span class="new-content"><?php _e('<strong>Formation devenir freelance 🚀</strong> 3 mois pour trouver des clients et vivre de sa passion.', 'soyes'); ?></span>
         <span class="new-cta">
             <button class="wp-block-button__link"
                     onclick='window.open("https://bit.ly/alexsoyes-formation-freelance", "_blank")'>
-                <?php esc_attr_e('Le programme ⚡️', 'soyes'); ?>
+                <?php esc_attr_e('Voir le programme ⚡️', 'soyes'); ?>
             </button><!-- .wp-block-button__link -->
         </span><!-- .new-cta -->
     </div><!-- .new-banner -->
