@@ -184,6 +184,10 @@ function soyes_scripts(): void
     if (is_single()) {
         wp_enqueue_style('soyes-style-single', get_template_directory_uri() . '/assets/css/parts/single.css', array(), $version);
         wp_enqueue_script('soyes-script-share', get_template_directory_uri() . '/assets/js/share.js', array(), $version, true);
+
+        // toc
+        wp_enqueue_style('soyes-style-toc-theme', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.css', array(), $version);
+        wp_enqueue_script('soyes-script-toc', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.min.js', array(), $version, true);
     }
 
     if (!is_front_page()) {
@@ -213,12 +217,6 @@ function soyes_scripts(): void
 
     // included everywhere because is in footer.
     wp_enqueue_style('soyes-style-shortcode-newsletter', get_template_directory_uri() . '/assets/css/shortcodes/newsletter.css', array(), $version);
-
-    if ($post) {
-        if (is_single() && has_shortcode($post->post_content, 'soyes_toc')) {
-            wp_enqueue_style('soyes-style-shortcode-toc', get_template_directory_uri() . '/assets/css/shortcodes/toc.css', array(), $version);
-        }
-    }
 
     wp_deregister_style('wp-block-library');
     wp_deregister_script('wp-block-library');
@@ -311,3 +309,4 @@ function soyes_hotjar(): void
 }
 
 add_action('wp_head', 'soyes_hotjar');
+
