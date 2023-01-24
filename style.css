@@ -28,7 +28,7 @@ Requires PHP: 7.1
     --container-width: calc(100% - (var(--container-padding) * 2));
 
     /* Main colors */
-    --color-primary: #FFD9C0;
+    --color-primary: #fff9e0;
     --color-secondary: #BD9DE1;
 
     /* Colors */
@@ -36,7 +36,7 @@ Requires PHP: 7.1
     --color-black: #000;
     --color-lightgray: #FAFAFA;
     --color-gray: #37474F;
-    --color-link: #A179D9;
+    --color-link: #0060df;
     --color-box-shadow: rgba(0, 0, 0, 0.1);
     --color-italic: var(--color-primary);
 

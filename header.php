@@ -26,7 +26,7 @@
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'soyes'); ?></a>
 
     <div class="new-banner alignfull">
-        <span class="new-content"><?php _e('Formation <strong>freelance en 3 mois</strong> : Trouve des clients et vends au meilleur prix.', 'soyes'); ?></span>
+        <span class="new-content"><?php _e('<strong>La formation devenir freelance 🚀</strong> : 3 mois pour trouver des clients et vendre !', 'soyes'); ?></span>
         <span class="new-cta">
             <button class="wp-block-button__link"
                     onclick='window.open("https://bit.ly/alexsoyes-formation-freelance", "_blank")'>
