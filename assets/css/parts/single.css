@@ -155,6 +155,19 @@
 }
 
 /**
+ * Breadcrumbs
+ */
+#breadcrumbs {
+    background-color: var(--color-lightgray);
+    font-size: var(--font-size-m);
+    color: var(--color-gray);
+    margin-bottom: 40px;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 20px 10px;
+}
+
+/**
  * Call to action
  */
 .call-to-action {
