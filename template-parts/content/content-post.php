@@ -27,8 +27,11 @@
             if (has_shortcode($post->post_content, 'soyes_toc')): ?>
             </div><!-- .wp-block-column -->
                 <div class="wp-block-column" style="flex-basis: 33.33%; position: relative">
-                    <input type="checkbox" id="toc" class="toc-input">
-                    <label class="toc-icon" for="toc">☰</label>
+                    <div class="banner-cta">
+                        <?php get_template_part( 'template-parts/elements/banner-cta' ); ?>
+                    </div><!-- .banner-cta -->
+                    <input type="checkbox" id="toc-button" class="toc-input">
+                    <label class="toc-icon" for="toc-button">☰</label>
                     <div id="column-toc" class="toc-bot"></div>
                 </div><!-- .wp-block-column -->
             </div><!-- .wp-block-columns -->

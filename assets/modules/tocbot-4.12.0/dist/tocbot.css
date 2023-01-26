@@ -1,9 +1,17 @@
+#column-toc {
+    background-color: var(--color-primary);
+    box-shadow: var(--box-shadow-default);
+}
+
 .toc-bot {
     overflow-y: auto;
     transition: all 300ms ease-in-out;
     font-family: var(--font-family-secondary);
     transform: translateX(100%);
-    right: 0
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 0;
 }
 
 .toc-bot > .toc-list {
@@ -64,27 +72,6 @@ a.toc-link {
     background-color: var(--color-secondary)
 }
 
-#column-toc {
-    position: fixed;
-    z-index: 100;
-    background-color: var(--color-primary);
-    box-shadow: var(--box-shadow-default);
-    top: 0;
-}
-
-body {
-    background-color: #FFF
-}
-
-.toc-input {
-    display: none
-}
-
-.toc-bot {
-    width: 100%;
-    transform: translateX(0)
-}
-
 .toc-icon {
     position: fixed;
     bottom: 100px;
@@ -95,13 +82,17 @@ body {
     cursor: pointer;
 }
 
-#toc:checked ~ .toc-bot {
-    box-shadow: 0 0 5px #c8c8c8;
+.toc-input {
+    display: none
+}
+
+#toc-button:checked ~ .toc-bot {
+    box-shadow: var(--box-shadow-strong);
     transform: translateX(0)
 }
 
 @media only screen and (max-width: 781px) {
-    #column-toc {
+    .toc-bot {
         height: 100%;
         width: 70%;
     }
@@ -134,8 +125,28 @@ body {
         margin-right: 280px
     }
 
-    #column-toc {
+    .toc-bot {
         position: sticky;
         top: 20px;
     }
+}
+
+/**
+ * Above the toc
+ */
+.banner-cta {
+    margin-bottom: 20px;
+}
+
+.banner-cta .new-content {
+    display: block;
+}
+.banner-cta .new-banner {
+    border-radius: 10px;
+}
+
+.banner-cta .new-content strong,
+.banner-cta .new-cta {
+    display: block;
+    padding: 10px 0;
 }

@@ -342,8 +342,8 @@ tocbot.init({
 const isMobile = window.matchMedia('(max-width: 781px)');
 
 if (isMobile.matches) {
-    const menu = document.querySelector('#column-toc');
-    const menuDisplay = document.getElementById('toc');
+    const menu = document.getElementById('column-toc');
+    const menuDisplay = document.getElementById('toc-button');
 
     document.body.addEventListener('click', function (event) {
         // if clicked on menu, take no action
