@@ -10,6 +10,7 @@ require 'inc/performance.php';
 require 'inc/gutenberg.php';
 require 'inc/navigation.php';
 require 'inc/table-of-contents.php';
+require 'inc/call-to-action-in-content.php';
 require 'inc/shortcodes/toc.php';
 require 'inc/shortcodes/newsletter.php';
 require 'classes/class-walker-comment.php';
@@ -318,3 +319,11 @@ function soyes_hotjar(): void
 }
 
 add_action('wp_head', 'soyes_hotjar');
+
+
+function soyes_load_template_part(string $template_name): string
+{
+    ob_start();
+    get_template_part($template_name);
+    return ob_get_clean();
+}
