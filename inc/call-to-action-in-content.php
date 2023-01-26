@@ -17,10 +17,9 @@ function add_call_to_action_to_content(string $content): string
             $content,
         );
 
-
         $content = str_replace(
             $matches[0][$numberOfCTAToAdd * 2],
-            sprintf('<div class="call-to-action banner-cta">%s</div>%s', soyes_load_template_part('template-parts/elements/banner-cta'), $matches[0][$numberOfCTAToAdd]),
+            sprintf('<div class="call-to-action banner-cta">%s</div>%s', soyes_load_template_part('template-parts/elements/banner-cta'), $matches[0][$numberOfCTAToAdd * 2]),
             $content,
         );
     }

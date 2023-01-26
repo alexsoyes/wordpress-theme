@@ -342,21 +342,25 @@ tocbot.init({
 const isMobile = window.matchMedia('(max-width: 781px)');
 
 if (isMobile.matches) {
-    const menu = document.getElementById('column-toc');
     const menuButton = document.getElementById('toc-button');
 
-    document.body.addEventListener('click', function (event) {
-        // if clicked on menu, take no action
-        if (event.target.id === 'toc' || event.target.id === '') return;
-
-        // if click outside of opened toc and target is not the hamburger menu...
-        if (!menuButton.contains(event.target) && !menu.contains(event.target)) {
-            menuButton.checked = false;
+    document.querySelectorAll('a.toc-link').forEach(function (link) {
+        if (!hasSiblingWithClass(link, 'is-collapsible')) {
+            link.addEventListener('click', function () {
+                setTimeout(function () {
+                    document.getElementById('toc-bot-container').classList.toggle('sticky');
+                }, 300);
+            });
         }
     });
+
 
     menuButton.addEventListener('click', function () {
         document.getElementById('toc-bot-container').classList.toggle('sticky');
     });
 
+}
+
+function hasSiblingWithClass(e, className) {
+    return e.parentNode && (e.parentNode.firstElementChild.classList.contains(className) || e.parentNode.lastElementChild.classList.contains(className))
 }
