@@ -35,14 +35,14 @@
     margin: 10px auto;
 }
 
-.entry-category span {
+.entry-category a {
     text-transform: capitalize;
     padding: 6px 14px;
     border-radius: 16px;
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-bold);
-    background-color: var(--color-secondary);
-    color: var(--color-black);
+    background-color: var(--color-gray);
+    color: var(--color-white);
 }
 
 .entry-meta {
@@ -77,6 +77,10 @@
 
 .author-image {
     margin: 10px 20px;
+}
+
+.author-image img {
+    border-radius: 50%;
 }
 
 .author-name {

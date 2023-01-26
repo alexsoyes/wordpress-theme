@@ -4,9 +4,7 @@
             <?php $category = soyes_get_the_main_category(); ?>
             <?php if ($category) : ?>
                 <div class="entry-category">
-            <span>
-            <?php echo esc_html($category->name); ?>
-            </span>
+                    <a href="<?php echo get_category_link($category->term_id); ?>"><?php echo esc_html($category->name); ?></a>
                 </div><!-- .entry-category -->
             <?php endif; ?>
             <div class="entry-date">
@@ -27,7 +25,7 @@
         <small class="link-comment">
             <a href="#community">
                 <?php if (get_comments_number() > 0): ?>
-	                <?php _e( 'Read the', 'soyes' ) ?>&nbsp;<?php soyes_the_comment_count(); ?>
+                    <?php _e('Read the', 'soyes') ?>&nbsp;<?php soyes_the_comment_count(); ?>
                 <?php else: ?>
                     <?php _e('Leave a comment ?', 'soyes') ?>
                 <?php endif; ?>
