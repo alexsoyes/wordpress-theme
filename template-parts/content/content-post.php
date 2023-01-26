@@ -22,13 +22,13 @@
 
         <div class="entry-content">
             <div class="wp-block-columns is-column-reversed-on-mobile">
-                <div class="wp-block-column" id="column-content">
+                <div class="wp-block-column" id="column-content" style="flex-basis: 66.66%;">
                     <?php the_content(); ?>
                 </div><!-- .wp-block-column -->
-                <div class="wp-block-column is-relative">
+                <div class="wp-block-column is-relative" style="flex-basis: 33.33%;">
                     <input type="checkbox" id="toc" class="toc-input">
                     <label class="toc-icon" for="toc">☰</label>
-                    <div id="column-toc" class="toc toc-right"></div>
+                    <div id="column-toc" class="toc"></div>
                 </div><!-- .wp-block-column -->
             </div><!-- .wp-block-columns -->
             <?php
@@ -48,9 +48,8 @@
                 <?php get_template_part('template-parts/elements/share'); ?>
                 <a href="#page" title="<?php esc_html_e('Back to top', 'soyes'); ?>">
                     <span class="back-to-top">☝️</span><!-- .back-to-top -->
-                </a>
-
-            </div>
+                </a><!-- #page -->
+            </div><!-- #community -->
         </footer><!-- .entry-footer -->
 
     </article><!-- #post-<?php the_ID(); ?> -->

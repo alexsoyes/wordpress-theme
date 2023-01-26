@@ -187,7 +187,7 @@ function soyes_scripts(): void
 
         // toc
         wp_enqueue_style('soyes-style-toc-theme', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.css', array(), $version);
-        wp_enqueue_script('soyes-script-toc', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.min.js', array(), $version, true);
+        wp_enqueue_script('soyes-script-toc', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.js', array(), $version, true);
     }
 
     if (!is_front_page()) {
