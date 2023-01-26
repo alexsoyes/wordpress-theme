@@ -157,20 +157,21 @@ pre:not(.wp-block-code) {
     font-family: var(--font-family-primary);
     font-size: var(--font-size-h3);
     line-height: 36px;
-    margin: 10px 0 50px 0;
-    padding: 30px;
+    margin: 0px 0 50px 0;
+    padding: 30px 30px 50px 30px;
     white-space: normal;
     color: var(--color-gray);
+    background-color: var(--color-lightgray);
     position: relative;
 }
 
 pre:not(.wp-block-code)::after {
     content: '';
     position: absolute;
-    bottom: 0;
     left: 30px;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
+    bottom: 20px;
     border-radius: 50%;
     background-color: var(--color-secondary);
 }
@@ -286,16 +287,6 @@ video {
 
     blockquote {
         padding: 30px 80px 30px 50px;
-    }
-
-    pre:not(.wp-block-code) {
-        padding: 30px 60px 40px 30px;
-        font-size: var(--font-size-h3);
-        margin: 40px 0 60px 0;
-    }
-
-    pre:not(.wp-block-code)::after {
-        left: 30px;
     }
 
     .wp-block-image .alignright {
