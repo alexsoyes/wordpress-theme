@@ -72,10 +72,11 @@
                 </div><!-- .toc-button -->
             </div><!-- #community -->
         </footer><!-- .entry-footer -->
-
     </article><!-- #post-<?php the_ID(); ?> -->
 
 <?php
+
+echo do_shortcode('[soyes_newsletter]');
 
 if (comments_open() || get_comments_number()) {
     comments_template();
