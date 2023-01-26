@@ -70,6 +70,11 @@ add_shortcode(
 
 		$output .= "\n</ol></div>";
 
+        // separate the rest of the content in two columns after main toc
+		$output .= '
+            <div class="wp-block-columns is-column-reversed-on-mobile">
+                <div class="wp-block-column" id="column-content" style="flex-basis: 66.66%;">';
+
 		return wp_kses_post( $output );
 	}
 );

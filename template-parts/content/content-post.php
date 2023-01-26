@@ -21,16 +21,18 @@
         </div><!-- .entry-share -->
 
         <div class="entry-content">
-            <div class="wp-block-columns is-column-reversed-on-mobile">
-                <div class="wp-block-column" id="column-content" style="flex-basis: 66.66%;">
-                    <?php the_content(); ?>
-                </div><!-- .wp-block-column -->
+            <?php the_content(); ?>
+            <?php
+            global $post;
+            if (has_shortcode($post->post_content, 'soyes_toc')): ?>
+            </div><!-- .wp-block-column -->
                 <div class="wp-block-column is-relative" style="flex-basis: 33.33%;">
                     <input type="checkbox" id="toc" class="toc-input">
                     <label class="toc-icon" for="toc">☰</label>
                     <div id="column-toc" class="toc"></div>
                 </div><!-- .wp-block-column -->
             </div><!-- .wp-block-columns -->
+            <?php endif; ?>
             <?php
             wp_link_pages(
                 array(
