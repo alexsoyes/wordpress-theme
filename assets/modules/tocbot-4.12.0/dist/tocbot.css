@@ -19,6 +19,8 @@
 .toc > .toc-list li .is-collapsible li {
     font-size: var(--font-size-s);
     color: var(--color-gray);
+    list-style: decimal;
+    margin-left: 10px;
 }
 
 .toc-list {

@@ -342,13 +342,14 @@ tocbot.init({
 const isMobile = window.matchMedia('(max-width: 781px)');
 
 if (isMobile.matches) {
-    console.log('dedzdz');
     const menu = document.querySelector('#column-toc');
     const menuDisplay = document.getElementById('toc');
 
     document.body.addEventListener('click', function (event) {
+        // if clicked on menu, take no action
         if (event.target.id === 'toc' || event.target.id === '') return;
 
+        // if click outside of opened toc and target is not the hamburger menu...
         if (!menuDisplay.contains(event.target) && !menu.contains(event.target)) {
             menuDisplay.checked = false;
         }
