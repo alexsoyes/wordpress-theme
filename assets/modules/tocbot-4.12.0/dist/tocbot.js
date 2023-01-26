@@ -355,7 +355,8 @@ if (isMobile.matches) {
     });
 
 
-    menuButton.addEventListener('click', function () {
+    menuButton.addEventListener('click', function (event) {
+        document.getElementById('toc-nav-menu').classList.toggle('open');
         document.getElementById('toc-bot-container').classList.toggle('sticky');
     });
 
