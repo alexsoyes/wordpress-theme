@@ -348,6 +348,7 @@ if (isMobile.matches) {
         if (!hasSiblingWithClass(link, 'is-collapsible')) {
             link.addEventListener('click', function () {
                 setTimeout(function () {
+                    document.getElementById('toc-nav-menu').classList.toggle('open');
                     document.getElementById('toc-bot-container').classList.toggle('sticky');
                 }, 300);
             });

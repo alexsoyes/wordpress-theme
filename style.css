@@ -112,6 +112,7 @@ button {
     cursor: pointer;
 }
 
+a:focus,
 input:focus {
     outline: none;
 }
