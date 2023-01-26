@@ -27,7 +27,7 @@
 }
 
 a.toc-link {
-    color: currentColor;
+    color: var(--color-black);
     height: 100%
 }
 
@@ -46,7 +46,7 @@ a.toc-link {
 }
 
 .toc-link::before {
-    background-color: #EEE;
+    background-color: var(--color-lightgray);
     content: ' ';
     display: inline-block;
     height: inherit;
@@ -63,7 +63,8 @@ a.toc-link {
 #column-toc {
     position: fixed;
     z-index: 100;
-    background-color: var(--color-lightgray);
+    background-color: var(--color-primary);
+    box-shadow: var(--box-shadow-default);
     top: 0;
 }
 
@@ -82,11 +83,6 @@ body {
 .toc {
     width: 100%;
     transform: translateX(0)
-}
-
-
-a.toc-link {
-    text-decoration: none
 }
 
 .toc-icon {
@@ -112,6 +108,7 @@ a.toc-link {
 @media only screen and (max-width: 781px) {
     #column-toc {
         height: 100%;
+        width: 70%;
     }
 
     .toc > .toc-list {
