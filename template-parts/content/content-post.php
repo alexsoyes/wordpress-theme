@@ -26,10 +26,10 @@
             global $post;
             if (has_shortcode($post->post_content, 'soyes_toc')): ?>
             </div><!-- .wp-block-column -->
-                <div class="wp-block-column is-relative" style="flex-basis: 33.33%;">
+                <div class="wp-block-column" style="flex-basis: 33.33%; position: relative">
                     <input type="checkbox" id="toc" class="toc-input">
                     <label class="toc-icon" for="toc">☰</label>
-                    <div id="column-toc" class="toc"></div>
+                    <div id="column-toc" class="toc-bot"></div>
                 </div><!-- .wp-block-column -->
             </div><!-- .wp-block-columns -->
             <?php endif; ?>
