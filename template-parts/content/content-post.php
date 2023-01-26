@@ -5,7 +5,6 @@
  */
 
 ?>
-
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <header class="entry-header">
@@ -76,7 +75,33 @@
 
 <?php
 
-echo do_shortcode('[soyes_newsletter]');
+printf('<div class="entry-newsletter">%s</div>', do_shortcode('[soyes_newsletter]'));
+
+$category = soyes_get_the_main_category();
+$posts = get_posts([
+    'category' => $category->cat_ID,
+    'post__not_in' => [get_the_ID()],
+]);
+
+echo '<div class="entry-content entry-related" style="background-color: var(--color-primary)">';
+printf('<h2 class="entry-title">%s %s</h2>', esc_html__('Va encore plus loin dans : ', 'soyes'), $category->name);
+echo '<div class="wp-block-columns">';
+
+foreach ($posts as $index => $post) {
+    if (0 !== $index && 0 === ($index % 3)) {
+        echo '</div><!-- .wp-block-columns --><div class="wp-block-columns">';
+    }
+
+    setup_postdata($post);
+    echo '<div class="wp-block-column">';
+    get_template_part('template-parts/elements/card');
+    echo '</div><!-- .wp-block-column -->';
+}
+
+echo '</div><!-- .wp-block-columns -->';
+echo '</div><!-- .entry-content -->';
+
+wp_reset_postdata();
 
 if (comments_open() || get_comments_number()) {
     comments_template();
