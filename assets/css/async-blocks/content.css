@@ -289,13 +289,13 @@ video {
     }
 
     pre:not(.wp-block-code) {
-        padding: 30px 60px 40px 60px;
-        font-size: var(--font-size-h2);
+        padding: 30px 60px 40px 30px;
+        font-size: var(--font-size-h3);
         margin: 40px 0 60px 0;
     }
 
     pre:not(.wp-block-code)::after {
-        left: 60px;
+        left: 30px;
     }
 
     .wp-block-image .alignright {

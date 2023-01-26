@@ -315,6 +315,7 @@ ul {
 .comment-content ul,
 .entry-content ul {
     margin: 20px 0;
+    padding-left: 15px;
 }
 
 .entry-content li {

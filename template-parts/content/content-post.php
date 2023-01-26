@@ -27,12 +27,12 @@
             if (has_shortcode($post->post_content, 'soyes_toc')): ?>
             </div><!-- .wp-block-column -->
                 <div class="wp-block-column" style="flex-basis: 33.33%; position: relative">
-                    <div class="banner-cta">
-                        <?php get_template_part( 'template-parts/elements/banner-cta' ); ?>
-                    </div><!-- .banner-cta -->
-                    <input type="checkbox" id="toc-button" class="toc-input">
-                    <label class="toc-icon" for="toc-button">☰</label>
-                    <div id="column-toc" class="toc-bot"></div>
+                    <div class="toc-bot-container" id="toc-bot-container">
+                        <div class="banner-cta">
+                            <?php get_template_part( 'template-parts/elements/banner-cta' ); ?>
+                        </div><!-- .banner-cta -->
+                        <div id="column-toc" class="toc-bot"></div>
+                    </div><!-- .toc-bot-container -->
                 </div><!-- .wp-block-column -->
             </div><!-- .wp-block-columns -->
             <?php endif; ?>
@@ -54,6 +54,10 @@
                 <a href="#page" title="<?php esc_html_e('Back to top', 'soyes'); ?>">
                     <span class="back-to-top">☝️</span><!-- .back-to-top -->
                 </a><!-- #page -->
+                <div class="toc-bot-button-container">
+                    <input type="checkbox" id="toc-button" class="toc-input">
+                    <label class="toc-icon" for="toc-button">☰</label>
+                </div><!-- .toc-button -->
             </div><!-- #community -->
         </footer><!-- .entry-footer -->
 

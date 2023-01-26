@@ -1,17 +1,14 @@
-#column-toc {
-    background-color: var(--color-primary);
-    box-shadow: var(--box-shadow-default);
-}
 
-.toc-bot {
+.toc-bot-container {
     overflow-y: auto;
     transition: all 300ms ease-in-out;
     font-family: var(--font-family-secondary);
     transform: translateX(100%);
     position: fixed;
-    z-index: 100;
+    z-index: 20;
     right: 0;
     top: 0;
+    background-color: var(--color-lightgray);
 }
 
 .toc-bot > .toc-list {
@@ -24,6 +21,7 @@
     font-size: var(--font-size-m);
     list-style: none;
     color: var(--color-black);
+    line-height: var(--font-size-h2);
 }
 
 .toc-bot > .toc-list li .is-collapsible li {
@@ -76,7 +74,6 @@ a.toc-link {
     position: fixed;
     bottom: 100px;
     right: 25px;
-    z-index: 110;
     font-size: var(--font-size-h0);
     color: var(--color-secondary);
     cursor: pointer;
@@ -86,15 +83,20 @@ a.toc-link {
     display: none
 }
 
-#toc-button:checked ~ .toc-bot {
+.toc-bot-container.sticky {
     box-shadow: var(--box-shadow-strong);
     transform: translateX(0)
 }
 
+#toc-button {
+    z-index: 30;
+}
+
 @media only screen and (max-width: 781px) {
-    .toc-bot {
+    .toc-bot-container {
         height: 100%;
         width: 70%;
+        background-color: var(--color-lightgray);
     }
 
     .toc-bot > .toc-list {
@@ -103,9 +105,17 @@ a.toc-link {
 }
 
 @media only screen and (min-width: 782px) {
-    .toc-bot {
+
+    .banner-cta {
+        margin-bottom: 20px;
+    }
+
+    .toc-bot-container {
         transform: translateX(0);
-        right: calc((100% - 48rem - 4rem) / 2)
+        right: calc((100% - 48rem - 4rem) / 2);
+        position: sticky;
+        top: 20px;
+        height: 100vh;
     }
 
     .toc-icon {
@@ -124,25 +134,14 @@ a.toc-link {
         margin-left: 0;
         margin-right: 280px
     }
-
-    .toc-bot {
-        position: sticky;
-        top: 20px;
-    }
 }
 
 /**
  * Above the toc
  */
-.banner-cta {
-    margin-bottom: 20px;
-}
 
 .banner-cta .new-content {
     display: block;
-}
-.banner-cta .new-banner {
-    border-radius: 10px;
 }
 
 .banner-cta .new-content strong,

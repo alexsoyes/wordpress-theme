@@ -343,15 +343,20 @@ const isMobile = window.matchMedia('(max-width: 781px)');
 
 if (isMobile.matches) {
     const menu = document.getElementById('column-toc');
-    const menuDisplay = document.getElementById('toc-button');
+    const menuButton = document.getElementById('toc-button');
 
     document.body.addEventListener('click', function (event) {
         // if clicked on menu, take no action
         if (event.target.id === 'toc' || event.target.id === '') return;
 
         // if click outside of opened toc and target is not the hamburger menu...
-        if (!menuDisplay.contains(event.target) && !menu.contains(event.target)) {
-            menuDisplay.checked = false;
+        if (!menuButton.contains(event.target) && !menu.contains(event.target)) {
+            menuButton.checked = false;
         }
     });
+
+    menuButton.addEventListener('click', function () {
+        document.getElementById('toc-bot-container').classList.toggle('sticky');
+    });
+
 }
