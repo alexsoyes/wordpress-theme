@@ -221,7 +221,7 @@
  */
 .entry-related .entry-title {
     text-align: center;
-    color: var(--color-secondary);
+    color: var(--color-black);
     padding: 60px 0 30px 0;
     font-size: var(--font-size-h1);
 }

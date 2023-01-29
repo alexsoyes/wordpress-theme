@@ -20,7 +20,7 @@
 .soyes-newsletter-title span {
     display: inline-block;
     color: var(--color-primary);
-    background-color: var(--color-secondary);
+    background-color: var(--color-black);
     padding: 2px 12px;
     margin: 5px 5px 0 0;
 }
