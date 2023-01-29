@@ -202,6 +202,7 @@ function soyes_scripts(): void
 
     if (!is_front_page()) {
         wp_enqueue_style('soyes-style-header', get_template_directory_uri() . '/assets/css/elements/header.css', array(), $version);
+        wp_enqueue_script('soyes-script-popup', get_template_directory_uri() . '/assets/modules/exit-intent/popup.js', array(), $version, true);
     }
 
     if (is_front_page()) {
@@ -264,6 +265,7 @@ function soyes_enqueue_async_styles(): void
 {
     $cssToEmbed = [];
     $cssToEmbed[] = soyes_build_async_uri('footer');
+    $cssToEmbed[] = soyes_build_async_uri('popup');
 
     if (is_single()) {
         $cssToEmbed[] = soyes_build_async_uri('single-comments');
