@@ -285,19 +285,6 @@ function soyes_enqueue_async_styles(): void
 
 add_action('wp_head', 'soyes_enqueue_async_styles');
 
-function soyes_exit_popin(): void
-{
-    if (!is_front_page()):
-        ?>
-        <script id="mcjs">!function (c, h, i, m, p) {
-                m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
-            }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/987967b6e21378d1da9bd507b/2684253fd7b4cc3c3650fde16.js");</script><?php
-    endif;
-}
-
-add_action('wp_footer', 'soyes_exit_popin');
-
-
 function soyes_hotjar(): void
 {
     ?>
@@ -330,7 +317,7 @@ function soyes_load_template_part(string $template_name): string
 
 function set_https_for_gravatars($url, $id_or_email, $args)
 {
-    return set_url_scheme($url, 'https');;
+    return set_url_scheme($url, 'https');
 }
 
 add_filter('get_avatar_url', 'set_https_for_gravatars', 10, 3);
