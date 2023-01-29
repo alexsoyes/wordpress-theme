@@ -69,11 +69,19 @@
 
 
 <aside class="exit-intent-popup">
-    <div class="newsletter">
-        <b>Want to get updates to your mailbox? 📬</b>
-        <p>Subscribe to our newsletter!</p>
-        <input type="email" placeholder="Your email address" class="email"/>
-        <button class="submit">Receive Newsletter</button>
+    <div class="popup">
+        <img src="http://localhost:8080/wp-content/themes/soyes/assets/images/logo-only.svg" alt="Alex so yes"
+             class="soyes-newsletter-icon" width="30" height="30">
+        <p class="popup-title"><?php _e('Le guide gratuit pour améliorer son code et sa productivité. 🧑‍💻', 'soyes'); ?></p>
+        <p class="popup-description"><?php _e('💌 + 1 action à réaliser chaque semaine', 'soyes'); ?></p>
+        <form class="soyes-newsletter-form"
+              action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
+              method="post">
+            <input name="EMAIL" type="email" placeholder="Mon adresse e-mail principale" required=""
+                   aria-label="Adresse e-mail" class="soyes-newsletter-email">
+            <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
+                   value="Recevoir le guide 🚀">
+        </form>
         <span class="close">x</span>
     </div>
 </aside>

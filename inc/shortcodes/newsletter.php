@@ -54,11 +54,11 @@ function soyes_newsletter($atts = []): string
                 <form class="soyes-newsletter-form wp-block-columns"
                       action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
                       method="post">
-                    <input name="EMAIL" type="email" placeholder="<? _e('Mon adresse e-mail principale', 'soyes'); ?>"
+                    <input name="EMAIL" type="email" placeholder="<? _e('Adresse e-mail', 'soyes'); ?>"
                            required
                            aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
                     <input type="submit" class="wp-block-button__link soyes-newsletter-submit wp-block-column"
-                           value="<?php _e("Je rejoins les + 1500 membres", 'soyes'); ?>">
+                           value="<?php _e("Rejoindre + 1500 membres", 'soyes'); ?>">
                 </form><!-- .soyes-newsletter-form -->
 
                 <small class="soyes-newsletter-warn">
