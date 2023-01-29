@@ -327,3 +327,10 @@ function soyes_load_template_part(string $template_name): string
     get_template_part($template_name);
     return ob_get_clean();
 }
+
+function set_https_for_gravatars($url, $id_or_email, $args)
+{
+    return set_url_scheme($url, 'https');;
+}
+
+add_filter('get_avatar_url', 'set_https_for_gravatars', 10, 3);
