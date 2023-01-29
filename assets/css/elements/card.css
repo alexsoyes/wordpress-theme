@@ -71,7 +71,6 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: 8px;
-    height: 51px;
 }
 
 .card-comments {
@@ -102,17 +101,5 @@
 
     .blog .card-content {
         padding: 0 20px 20px 20px;
-    }
-
-    .blog .card-image {
-        height: 280px;
-    }
-
-    .blog .card-excerpt {
-        height: 80px;
-    }
-
-    .blog .card-title {
-        height: 50px;
     }
 }
