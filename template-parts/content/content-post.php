@@ -81,6 +81,7 @@ $category = soyes_get_the_main_category();
 $posts = get_posts([
     'category' => $category->cat_ID,
     'post__not_in' => [get_the_ID()],
+    'posts_per_page' => 100,
 ]);
 
 echo '<div class="entry-content entry-related" style="background-color: var(--color-primary)">';

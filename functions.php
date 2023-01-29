@@ -115,16 +115,6 @@ if (!function_exists('soyes_one_setup')) {
             )
         );
 
-        add_filter(
-            'get_custom_logo_image_attributes',
-            function (array $custom_logo_attr) use ($logo_width, $logo_height) {
-                $custom_logo_attr['width'] = $logo_width;
-                $custom_logo_attr['height'] = $logo_height;
-
-                return $custom_logo_attr;
-            }
-        );
-
         // Add theme support for selective refresh for widgets.
         add_theme_support('customize-selective-refresh-widgets');
 

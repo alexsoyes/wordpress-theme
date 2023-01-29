@@ -1,4 +1,3 @@
-
 /**
  * Share bottom
  */
@@ -20,11 +19,6 @@
     font-size: var(--font-size-h2);
     color: var(--color-black);
     border-bottom: 5px solid var(--color-secondary);
-}
-
-.social-more {
-    font-size: var(--font-size-s);
-    margin-top: 15px;
 }
 
 .social-description {

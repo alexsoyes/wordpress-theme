@@ -68,10 +68,12 @@
 <?php wp_footer(); ?>
 
 
-<aside class="exit-intent-popup">
+<aside class="exit-intent-popup" style="display: none;">
     <div class="popup">
-        <img src="http://localhost:8080/wp-content/themes/soyes/assets/images/logo-only.svg" alt="Alex so yes"
-             class="soyes-newsletter-icon" width="30" height="30">
+        <img src="<?php echo soyes_get_the_image('logo-only', 'svg', false, false); ?>"
+             alt="<?php echo get_bloginfo('name'); ?>"
+             class="soyes-newsletter-icon"
+             width="30" height="30">
         <p class="popup-title"><?php _e('Le guide gratuit pour améliorer son code et sa productivité. 🧑‍💻', 'soyes'); ?></p>
         <p class="popup-description"><?php _e('💌 + 1 action à réaliser chaque semaine', 'soyes'); ?></p>
         <form class="soyes-newsletter-form"
