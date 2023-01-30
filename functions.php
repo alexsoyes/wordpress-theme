@@ -13,6 +13,7 @@ require 'inc/table-of-contents.php';
 require 'inc/call-to-action-in-content.php';
 require 'inc/shortcodes/toc.php';
 require 'inc/shortcodes/newsletter.php';
+require 'inc/shortcodes/search-widget.php';
 require 'classes/class-walker-comment.php';
 require 'classes/class-walker-menu-social.php';
 
@@ -196,6 +197,7 @@ function soyes_scripts(): void
     }
 
     if (is_front_page()) {
+        wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
         wp_enqueue_style('soyes-style-front-page', get_template_directory_uri() . '/assets/css/parts/front-page.css', array(), $version);
     }
 
@@ -313,3 +315,5 @@ function set_https_for_gravatars($url, $id_or_email, $args)
 }
 
 add_filter('get_avatar_url', 'set_https_for_gravatars', 10, 3);
+
+
