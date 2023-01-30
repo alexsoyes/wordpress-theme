@@ -19,24 +19,13 @@ function get_the_replaced_heading(?array $match): string
 
 function the_content_with_toc(string $content): string
 {
-    if (is_single() && in_the_loop() && is_main_query()) {
+    $unique_headings_number = '2,3';
 
-        preg_match_all('#\"toc_(\d)\"#', $content, $toc_headers);
-
-        $unique_headings_number = implode(',', array_unique($toc_headers[1]));
-
-        if (!$unique_headings_number) {
-            $unique_headings_number = '2,3';
-        }
-
-        return preg_replace_callback(
-            '#<h([' . $unique_headings_number . '])(.*?)>(.*?)<\/h\1>|<!--nextpage-->#',
-            'get_the_replaced_heading',
-            $content
-        );
-    }
-
-    return $content;
+    return preg_replace_callback(
+        '#<h([' . $unique_headings_number . '])(.*?)>(.*?)<\/h\1>|<!--nextpage-->#',
+        'get_the_replaced_heading',
+        $content
+    );
 }
 
 add_filter('the_content', 'the_content_with_toc', 100);
