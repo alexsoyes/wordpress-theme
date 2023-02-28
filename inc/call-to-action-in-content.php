@@ -2,7 +2,7 @@
 
 function add_call_to_action_to_content(string $content): string
 {
-    if (is_single() && in_the_loop() && is_main_query()) {
+    if (is_single() && in_the_loop() && is_main_query() && !is_singular('conseil')) {
 
         // get every h2 html tag from the content
         $matches = [];

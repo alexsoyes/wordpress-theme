@@ -16,24 +16,30 @@
 
         <?php the_title('<h1 class="entry-title default-max-width">', '</h1>'); ?>
 
-        <div class="entry-excerpt">
-            <?php the_excerpt(); ?>
-        </div><!-- .entry-excerpt -->
 
-        <?php get_template_part('template-parts/elements/author-box'); ?>
+        <?php if (!is_singular('conseil')): ?>
+            <div class="entry-excerpt">
+                <?php the_excerpt(); ?>
+            </div><!-- .entry-excerpt -->
 
-        <small class="link-comment">
-            <a href="#community">
-                <?php if (get_comments_number() > 0): ?>
-                    <?php _e('Read the', 'soyes') ?>&nbsp;<?php soyes_the_comment_count(); ?>
-                <?php else: ?>
-                    <?php _e('Leave a comment ?', 'soyes') ?>
-                <?php endif; ?>
-            </a>
-        </small><!-- .link-comment -->
+            <?php get_template_part('template-parts/elements/author-box'); ?>
+
+            <small class="link-comment">
+                <a href="#community">
+                    <?php if (get_comments_number() > 0): ?>
+                        <?php _e('Read the', 'soyes') ?>&nbsp;<?php soyes_the_comment_count(); ?>
+                    <?php else: ?>
+                        <?php _e('Leave a comment ?', 'soyes') ?>
+                    <?php endif; ?>
+                </a>
+            </small><!-- .link-comment -->
+        <?php endif; ?>
     </div><!-- .entry-content -->
 </div><!-- .entry-header -->
 
-<div class="post-header" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
-    <div class="post-header-overlay"></div>
-</div><!-- .post-header -->
+
+<?php if (!is_singular('conseil')): ?>
+    <div class="post-header" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
+        <div class="post-header-overlay"></div>
+    </div><!-- .post-header -->
+<?php endif; ?>

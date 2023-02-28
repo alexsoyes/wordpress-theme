@@ -4,6 +4,7 @@
  * Functions and definitions
  */
 
+require 'inc/custom-post-types.php';
 require 'inc/template-functions.php';
 require 'inc/post-order.php';
 require 'inc/performance.php';
@@ -199,6 +200,14 @@ function soyes_scripts(): void
     if (is_front_page()) {
         wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
         wp_enqueue_style('soyes-style-front-page', get_template_directory_uri() . '/assets/css/parts/front-page.css', array(), $version);
+    }
+
+    if (is_singular('conseil')) {
+        wp_enqueue_style('soyes-style-cpt-conseil', get_template_directory_uri() . '/assets/css/parts/cpt-conseils.css', array(), $version);
+    }
+
+    if (is_post_type_archive('conseil')) {
+        wp_enqueue_style('soyes-style-element-hero', get_template_directory_uri() . '/assets/css/elements/hero.css', array(), $version);
     }
 
     if (is_404()) {
