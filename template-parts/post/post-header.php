@@ -14,8 +14,11 @@
             </div><!-- .entry-date -->
         </div><!-- .entry-meta -->
 
-        <?php the_title('<h1 class="entry-title default-max-width">', '</h1>'); ?>
+        <div class="entry-reading-time">
+            <?php soyes_the_reading_time(); ?>
+        </div>
 
+        <?php the_title('<h1 class="entry-title default-max-width">', '</h1>'); ?>
 
         <?php if (!is_singular('conseil')): ?>
             <div class="entry-excerpt">

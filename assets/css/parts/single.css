@@ -55,9 +55,26 @@
     padding-bottom: 5px;
 }
 
-@media only screen and (min-width: 992px) {
-
+.entry-reading-time {
+    margin: 10px 0;
+    background-color: var(--color-primary);
 }
+
+.entry-reading-time p {
+    margin: 0;
+}
+
+
+.entry-reading-time .estimated-read {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-m);
+    padding-bottom: 0;
+}
+
+.entry-reading-time .estimated-warn {
+    font-size: var(--font-size-s);
+}
+
 
 /**
  * Author.
