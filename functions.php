@@ -288,29 +288,6 @@ function soyes_enqueue_async_styles(): void
 
 add_action('wp_head', 'soyes_enqueue_async_styles');
 
-function soyes_hotjar(): void
-{
-    ?>
-    <!-- Hotjar Tracking Code for https://alexsoyes.com -->
-    <script>
-        (function (h, o, t, j, a, r) {
-            h.hj = h.hj || function () {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {hjid: 3310556, hjsv: 6};
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
-    <?php
-}
-
-add_action('wp_head', 'soyes_hotjar');
-
-
 function soyes_load_template_part(string $template_name): string
 {
     ob_start();
