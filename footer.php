@@ -75,18 +75,31 @@
              class="soyes-newsletter-icon"
              width="30" height="30">
         <p class="popup-title"><?php _e('Le guide gratuit pour améliorer son code et sa productivité. 🧑‍💻', 'soyes'); ?></p>
-        <p class="popup-description"><?php _e('💌 + 1 action à réaliser chaque semaine', 'soyes'); ?></p>
+        <ul>
+            <li>🧑‍💻 3 roadmaps pour exceller en code</li>
+            <li>🚀 Faire x2 sur sa productivité</li>
+            <li>🔮Le futur du métier de développeur</li>
+            <li>🎁Mes meilleures ressources de dev</li>
+        </ul>
+        <p class="popup-description"><?php _e('💌 + 1 conseil dev / semaine', 'soyes'); ?></p>
         <form class="soyes-newsletter-form"
-              action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
+              action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
               method="post">
-            <input name="EMAIL" type="email" placeholder="Mon adresse e-mail principale" required=""
+            <!-- Lead magnet -->
+            <input type="hidden" name="timezone" value="">
+            <input type="hidden" name="is_desktop" value="">
+            <input type="hidden" name="entity_id" value="4354526b-8920-4f87-bcbe-bb5e459cc262">
+            <input type="hidden" name="remote_url_id" value="7544150775c5a7686eb38d3b08f48e08e000ad4">
+            <input type="hidden" name="remote_source" value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
+            <input name="email" type="email" placeholder="<?php _e('Adresse e-mail', 'soyes'); ?>"
+                   required
                    aria-label="Adresse e-mail" class="soyes-newsletter-email">
             <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
-                   value="Recevoir le guide 🚀">
-        </form>
+                   value="Recevoir le guide">
+        </form><!-- .soyes-newsletter-form -->
         <span class="close">x</span>
-    </div>
-</aside>
+    </div><!-- .popup -->
+</aside><!-- .exit-intent-popup -->
 
 </body>
 </html>

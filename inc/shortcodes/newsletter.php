@@ -52,15 +52,21 @@ function soyes_newsletter($atts = []): string
         <div class="soyes-newsletter-content">
             <div class="soyes-newsletter-fill">
                 <form class="soyes-newsletter-form wp-block-columns"
-                      action="https://alexsoyes.us8.list-manage.com/subscribe/post?u=987967b6e21378d1da9bd507b&amp;id=1984a69e0e"
+                      action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
                       method="post">
-                    <input name="EMAIL" type="email" placeholder="<? _e('Adresse e-mail', 'soyes'); ?>"
+                    <!-- La console -->
+                    <input type="hidden" name="timezone" value="">
+                    <input type="hidden" name="is_desktop" value="">
+                    <input type="hidden" name="entity_id" value="a769bf99-cd52-48e6-8c7a-c91599dbe9d7">
+                    <input type="hidden" name="remote_url_id" value="75519704189a08e194836cbb389b0de6dc60bed">
+                    <input type="hidden" name="remote_source" value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
+                    <input name="email" type="email" placeholder="<?php _e('Adresse e-mail', 'soyes'); ?>"
                            required
                            aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
-                    <input type="submit" class="wp-block-button__link soyes-newsletter-submit wp-block-column"
+                    <input type="submit"
+                           class="wp-block-button__link soyes-newsletter-submit wp-block-column"
                            value="<?php _e("Rejoindre + 1500 membres", 'soyes'); ?>">
                 </form><!-- .soyes-newsletter-form -->
-
                 <small class="soyes-newsletter-warn">
                     <?php _e('Newsletter entièrement gratuite, RGPD friendly.', 'soyes'); ?>
                 </small><!-- .soyes-newsletter-warn -->
