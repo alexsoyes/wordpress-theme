@@ -1,5 +1,0 @@
-.entry-return-link a {
-    color: var(--color-link);
-    border-bottom: dotted 1px solid var(--color-link);
-    font-weight: var(--font-weight-bold);
-}

@@ -11,7 +11,8 @@
 
             <p class="entry-return-link">
                 <small>
-                    <a href="<?php echo get_post_type_archive_link('conseil'); ?>"
+                    <a class="wp-block-button__link"
+                       href="<?php echo get_post_type_archive_link('conseil'); ?>"
                        title="<?php esc_html_e('Tous les conseils', 'soyes') ?>">
                         <?php esc_html_e('👈 La liste de tous les conseils', 'soyes') ?>
                     </a>

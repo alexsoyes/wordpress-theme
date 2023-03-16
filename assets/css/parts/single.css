@@ -57,11 +57,13 @@
 
 .entry-reading-time {
     margin: 10px 0;
-    background-color: var(--color-primary);
 }
 
 .entry-reading-time p {
+    background-color: var(--color-primary);
     margin: 0;
+    display: inline-block;
+    padding: 0 10px;
 }
 
 

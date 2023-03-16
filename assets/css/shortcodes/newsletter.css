@@ -1,5 +1,8 @@
 .soyes-newsletter-container {
     margin-top: 20px;
+    text-align: center;
+    background-color: var(--color-primary);
+    padding-top: 20px;
 }
 
 .soyes-newsletter-title {
@@ -7,7 +10,7 @@
     margin-bottom: 0;
     padding-top: 20px;
     padding-bottom: 0;
-    line-height: 1.5;
+    line-height: 1.6;
     font-weight: var(--font-weight-bolder);
     font-size: var(--font-size-h1);
     font-family: var(--font-family-secondary);

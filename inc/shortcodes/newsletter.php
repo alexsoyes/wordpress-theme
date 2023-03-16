@@ -29,7 +29,7 @@ function soyes_newsletter($atts = []): string
     ob_start();
     ?>
     <div class="<?php echo esc_html($container_class); ?>">
-        <div class="has-text-align-center">
+        <div>
             <img src="<?php echo soyes_get_the_image('logo-only', 'svg', false, false); ?>"
                  alt="<?php echo get_bloginfo('name'); ?>"
                  class="soyes-newsletter-icon"
@@ -38,7 +38,7 @@ function soyes_newsletter($atts = []): string
             <p class="soyes-newsletter-title">
                 <?php
                 _e(
-                    '<span>🚀 La console</span><br><br>La newsletter <em>#code</em> et <em>#freelance</em>.',
+                    '<span>🚀 La console</span><br>La newsletter <em>#code</em> et <em>#freelance</em>.',
                     'soyes'
                 );
                 ?>
@@ -47,7 +47,7 @@ function soyes_newsletter($atts = []): string
             <p class="soyes-newsletter-desc">
                 <strong><?php _e("✅ 1 astuce dev, chaque semaine", 'alexsoyes'); ?></strong> <?php _e("pour décrocher le job de tes rêves ou devenir freelance.", 'soyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
-        </div><!-- .has-text-align-center -->
+        </div>
 
         <div class="soyes-newsletter-content">
             <div class="soyes-newsletter-fill">

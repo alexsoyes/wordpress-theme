@@ -14,16 +14,13 @@
                 <p>
                     <?php _e('Chaque semaine je partage 1 conseil avec 1 action à réaliser pour devenir meilleur(e) dev.', 'soyes') ?>
                 </p>
-                <p>
-                    👉
-                    <?php _e('Pour recevoir les conseils dans ta boîte mail, inscris-toi à ', 'soyes'); ?>
-                    <a href="<?php echo get_site_url(); ?>" title="<?php _e("S'inscrire sur la console", 'soyes'); ?>">
-                        La console
-                    </a>.
-                </p>
             </div><!-- .entry-text -->
         </div><!-- .entry-content -->
     </header><!-- .entry-header -->
+
+    <div class="entry-content">
+        <?php echo do_shortcode('[soyes_newsletter]'); ?>
+    </div>
 
     <div class="entry-content">
         <div class="cards">

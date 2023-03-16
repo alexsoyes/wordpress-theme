@@ -202,10 +202,6 @@ function soyes_scripts(): void
         wp_enqueue_style('soyes-style-front-page', get_template_directory_uri() . '/assets/css/parts/front-page.css', array(), $version);
     }
 
-    if (is_singular('conseil')) {
-        wp_enqueue_style('soyes-style-cpt-conseil', get_template_directory_uri() . '/assets/css/parts/cpt-conseils.css', array(), $version);
-    }
-
     if (is_post_type_archive('conseil')) {
         wp_enqueue_style('soyes-style-element-hero', get_template_directory_uri() . '/assets/css/elements/hero.css', array(), $version);
     }

@@ -12,7 +12,7 @@ function register_conseil_post_type()
         'edit_item' => "Modifier le conseil",
         'new_item' => 'Nouveau conseil',
         'all_items' => 'Tous les conseils',
-        'view_item' => "Voir le consein",
+        'view_item' => "Voir le conseil",
         'search_items' => 'Rechercher des conseils',
         'not_found' => 'Aucun conseil trouvé',
         'not_found_in_trash' => 'Aucun conseil trouvé dans la corbeille',
