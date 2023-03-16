@@ -10,23 +10,31 @@ try {
     $param_is_desktop = $_POST['is_desktop'];
     $param_timezone = $_POST['timezone'];
     $param_entity_id = $_POST['entity_id'];
+    $param_popup_id = null;
 
-    // url params
-    $param_remote_source = $_POST['remote_source'];
-    $param_remote_url_id = $_POST['remote_url_id'];
+    // endpoint is given since this is a popup
+    if (array_key_exists('remote_url', $_POST)) {
+        $endpoint = $_POST['remote_url'];
+        $param_popup_id = $_POST['popup_id'];
+    } else {
+        // build endpoint with url params (from basic forms)
+        $param_remote_source = $_POST['remote_source'];
+        $param_remote_url_id = $_POST['remote_url_id'];
 
-    $endpoint = sprintf(
-        "https://learn.alexsoyes.com/public/%s/show?hostname=%s?source=%s",
-        $param_remote_url_id,
-        'learn.alexsoyes.com',
-        $param_remote_source,
-    );
+        $endpoint = sprintf(
+            "https://learn.alexsoyes.com/public/%s/show?hostname=%s?source=%s",
+            $param_remote_url_id,
+            'learn.alexsoyes.com',
+            $param_remote_source,
+        );
+    }
+
     $data = [
         "optin" => [
             "fields" => ["email" => $param_email],
             "timeZone" => $param_timezone,
             "isDesktop" => $param_is_desktop,
-            "popupId" => null,
+            "popupId" => $param_popup_id,
         ]
     ];
 

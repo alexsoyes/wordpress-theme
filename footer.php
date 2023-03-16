@@ -74,30 +74,36 @@
              alt="<?php echo get_bloginfo('name'); ?>"
              class="soyes-newsletter-icon"
              width="30" height="30">
-        <p class="popup-title"><?php _e('Le guide gratuit pour améliorer son code et sa productivité. 🧑‍💻', 'soyes'); ?></p>
-        <ul>
-            <li>🧑‍💻 3 roadmaps pour exceller en code</li>
-            <li>🚀 Faire x2 sur sa productivité</li>
-            <li>🔮Le futur du métier de développeur</li>
-            <li>🎁Mes meilleures ressources de dev</li>
-        </ul>
-        <p class="popup-description"><?php _e('💌 + 1 conseil dev / semaine', 'soyes'); ?></p>
+        <p class="popup-title"><?php _e('Formation gratuite 🚀', 'soyes'); ?>
+            <strong><?php _e('Deviens dev freelance', 'soyes'); ?></strong>
+        </p>
+
+        <p class="popup-description"><?php _e('Trouve des clients et facture entre 400€ et 600€ la journée.', 'soyes'); ?></p>
+        <p>(sans prendre de risque)</p>
         <form class="soyes-newsletter-form"
               action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
               method="post">
             <!-- Lead magnet -->
             <input type="hidden" name="timezone" value="">
             <input type="hidden" name="is_desktop" value="">
-            <input type="hidden" name="entity_id" value="4354526b-8920-4f87-bcbe-bb5e459cc262">
-            <input type="hidden" name="remote_url_id" value="7544150775c5a7686eb38d3b08f48e08e000ad4">
+            <input type="hidden" name="remote_url" value="https://learn.alexsoyes.com/cours-devenir-freelance-6f2f4b3a">
+            <input type="hidden" name="entity_id" value="f085b46a-726c-4016-9683-619c00a9f644">
+            <input type="hidden" name="popup_id" value="a90192fa-68c7-45b6-8cd3-70c3215251c7">
             <input type="hidden" name="remote_source" value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
             <input name="email" type="email" placeholder="<?php _e('Adresse e-mail', 'soyes'); ?>"
                    required
                    aria-label="Adresse e-mail" class="soyes-newsletter-email">
             <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
-                   value="Recevoir le guide">
+                   value="Recevoir gratuitement">
         </form><!-- .soyes-newsletter-form -->
         <span class="close">x</span>
+        <p class="popup-end">
+            <small>
+                <a href="https://alexsoyes.com" target="_blank">
+                    <?php _e('Tu recevras 1 email / jour pendant 5 jours, puis ma newsletter "La console".', 'soyes'); ?>
+                </a>
+            </small>
+        </p>
     </div><!-- .popup -->
 </aside><!-- .exit-intent-popup -->
 
