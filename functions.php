@@ -227,6 +227,8 @@ function soyes_scripts(): void
 
     wp_enqueue_script('soyes-script-newsletter', get_template_directory_uri() . '/assets/js/newsletter.js', array(), $version, true);
 
+    wp_enqueue_script('soyes-script-gtm', get_template_directory_uri() . '/assets/js/gtm.js', array(), $version, true);
+
     // included everywhere because is in footer.
     wp_enqueue_style('soyes-style-shortcode-newsletter', get_template_directory_uri() . '/assets/css/shortcodes/newsletter.css', array(), $version);
 
