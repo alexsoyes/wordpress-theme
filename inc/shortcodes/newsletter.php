@@ -38,7 +38,7 @@ function soyes_newsletter($atts = []): string
             <p class="soyes-newsletter-title">
                 <?php
                 _e(
-                    '<span>🚀 La console</span> : La newsletter <em>#code</em> et <em>#freelance</em>.',
+                    '<span>🚀 La console</span><br><br>La newsletter <em>#code</em> et <em>#freelance</em>.',
                     'soyes'
                 );
                 ?>
