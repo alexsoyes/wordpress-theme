@@ -177,6 +177,7 @@ function soyes_scripts(): void
     if (is_single()) {
         wp_enqueue_style('soyes-style-single', get_template_directory_uri() . '/assets/css/parts/single.css', array(), $version);
         wp_enqueue_script('soyes-script-share', get_template_directory_uri() . '/assets/js/share.js', array(), $version, true);
+        wp_enqueue_script('soyes-script-toc', get_template_directory_uri() . '/assets/js/toc.js', array(), $version, true);
         wp_enqueue_style('soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version);
     }
 
@@ -299,5 +300,3 @@ function set_https_for_gravatars($url, $id_or_email, $args)
 }
 
 add_filter('get_avatar_url', 'set_https_for_gravatars', 10, 3);
-
-
