@@ -1,23 +1,14 @@
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .card {
-    margin: 20px 0;
+    width: 100%;
+    margin: 20px 0 40px 0;
     box-shadow: var(--box-shadow-default);
     border-radius: var(--radius-stronger);
-    display: inline-block;
-    vertical-align: top;
-    overflow: hidden;
-    white-space: normal;
+    display: flex;
     position: relative;
 }
 
 .card-image {
-    overflow: hidden;
-    background-color: var(--color-lightgray);
+    max-width: 300px;
 }
 
 .card-category-title {
@@ -28,14 +19,13 @@
 
 .card-content {
     color: var(--color-black);
-    background-color: var(--color-white);
-    padding: 0 20px 20px 20px;
+    padding: 20px 30px;
 }
 
 .card-title {
-    font-size: var(--font-size-h3);
-    margin-bottom: 5px;
+    font-size: var(--font-size-h4);
     padding-top: 0;
+    margin: 0;
 }
 
 .card-title a {
@@ -46,15 +36,13 @@
     color: var(--color-link);
 }
 
-.card-excerpt {
+.card-excerpt p {
     color: var(--color-gray);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
+    margin: 15px 0;
 }
 
 .card-category {
-    position: absolute;
-    right: 20px;
-    top: 20px;
     border-radius: var(--radius-stronger);
     color: var(--color-black);
     background-color: var(--color-primary);
@@ -63,6 +51,9 @@
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-secondary);
     text-transform: capitalize;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .card-metadata {
@@ -73,19 +64,6 @@
     padding-top: 8px;
 }
 
-.card-comments {
-    color: var(--color-black);
-    background-color: var(--color-white);
-    font-weight: var(--font-weight-bold);
-    padding: 10px;
-    font-size: var(--font-size-h5);
-}
-
-.card-comments img {
-    margin-left: 5px;
-    float: right;
-}
-
 .card-date {
     color: var(--color-gray);
     font-size: var(--font-size-s);
@@ -93,13 +71,8 @@
     padding: 5px;
 }
 
-@media only screen and (min-width: 992px) {
-    .blog .card {
-        width: 420px;
-        margin: 30px 0;
-    }
-
-    .blog .card-content {
-        padding: 0 20px 20px 20px;
+@media only screen and (max-width: 991px) {
+    .card {
+        flex-direction: column;
     }
 }

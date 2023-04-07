@@ -199,8 +199,8 @@ function soyes_scripts(): void
     }
 
     if (is_front_page()) {
-        wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
         wp_enqueue_style('soyes-style-front-page', get_template_directory_uri() . '/assets/css/parts/front-page.css', array(), $version);
+        wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
     }
 
     if (is_post_type_archive('conseil')) {
@@ -212,14 +212,13 @@ function soyes_scripts(): void
         wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
     }
 
-    if (is_home() || is_category() || is_search()) {
-        wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
+    if (is_home() || is_category() || is_search() || is_page_template('page-category.php')) {
         wp_enqueue_style('soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version);
         wp_enqueue_style('soyes-style-element-hero', get_template_directory_uri() . '/assets/css/elements/hero.css', array(), $version);
     }
 
-    if (is_category()) {
-        wp_enqueue_style('soyes-style-element-categories', get_template_directory_uri() . '/assets/css/elements/categories.css', array(), $version);
+    if (is_home()) {
+        wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
     }
 
     wp_enqueue_script('soyes-script-newsletter', get_template_directory_uri() . '/assets/js/newsletter.js', array(), $version, true);

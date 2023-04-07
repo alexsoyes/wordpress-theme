@@ -6,7 +6,6 @@
 
 list ($thumbnail_url, $thumbnail_width, $thumbnail_height) = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
 $category = soyes_get_the_main_category();
-$comments_count = get_comments_number();
 ?>
 
 <div class="card">
@@ -16,14 +15,6 @@ $comments_count = get_comments_number();
                  height="<?php echo $thumbnail_height; ?>">
         <?php endif; ?>
     </div><!-- .card-image -->
-
-    <?php if ($category) : ?>
-        <div class="card-category">
-            <span>
-            <?php echo esc_html($category->name); ?>
-            </span>
-        </div><!-- .card-category -->
-    <?php endif; ?>
 
     <div class="card-content">
 
@@ -42,10 +33,12 @@ $comments_count = get_comments_number();
                 <?php soyes_the_post_modified_date(); ?>
             </div><!-- .card-date -->
 
-            <?php if ($comments_count) : ?>
-                <div class="card-comments">
-                    <?php echo soyes_the_popularity(); ?>
-                </div><!-- .card-comments -->
+            <?php if ($category) : ?>
+                <div class="card-category">
+            <span>
+            <?php echo esc_html($category->name); ?>
+            </span>
+                </div><!-- .card-category -->
             <?php endif; ?>
         </div><!-- .card-metadata -->
 

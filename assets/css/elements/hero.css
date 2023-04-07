@@ -4,13 +4,17 @@
     margin-bottom: 0;
 }
 
+.page-template-page-category .entry-header {
+    padding-bottom: 0;
+}
+
 h1 {
     margin: 0;
 }
 
 p {
     line-height: 26px;
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-l);
     margin-bottom: 10px;
     letter-spacing: -0.063px;
 }
