@@ -31,7 +31,7 @@ const exit = e => {
     if (shouldExit) {
         document.querySelector('.exit-intent-popup').classList.remove('visible');
 
-        setCookie('exitIntentShown', true, 30, '/');
+        setCookie('exitIntentShown', true, 14, '/');
     }
 };
 
