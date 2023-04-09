@@ -229,13 +229,6 @@
 }
 
 /**
- * Newsletter
- */
-.entry-newsletter {
-    margin: 60px 0;
-}
-
-/**
  * Related posts.
  */
 .entry-related .entry-title {
@@ -243,11 +236,6 @@
     color: var(--color-black);
     padding: 60px 0 30px 0;
     font-size: var(--font-size-h1);
-}
-
-.entry-related .card-title {
-    margin-top: 0;
-    padding-top: 20px;
 }
 
 /**

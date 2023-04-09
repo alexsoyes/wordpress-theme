@@ -75,7 +75,7 @@
 
 <?php
 
-printf('<div class="entry-newsletter">%s</div>', do_shortcode('[soyes_newsletter]'));
+echo do_shortcode('[soyes_newsletter]');
 
 $category = soyes_get_the_main_category();
 $posts = get_posts([
@@ -84,23 +84,15 @@ $posts = get_posts([
     'posts_per_page' => 100,
 ]);
 
-echo '<div class="entry-content entry-related" style="background-color: var(--color-primary)">';
+echo '<div class="entry-content entry-related">';
 printf('<h2 class="entry-title">%s %s</h2>', esc_html__('Va encore plus loin dans : ', 'soyes'), $category->name);
-echo '<div class="wp-block-columns">';
 
 foreach ($posts as $index => $post) {
-    if (0 !== $index && 0 === ($index % 3)) {
-        echo '</div><!-- .wp-block-columns --><div class="wp-block-columns">';
-    }
-
     setup_postdata($post);
-    echo '<div class="wp-block-column">';
     get_template_part('template-parts/elements/card');
-    echo '</div><!-- .wp-block-column -->';
 }
 
-echo '</div><!-- .wp-block-columns -->';
-echo '</div><!-- .entry-content -->';
+echo '</div><!-- .entry-related -->';
 
 wp_reset_postdata();
 

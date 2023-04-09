@@ -9,6 +9,7 @@
 
 .card-image {
     max-width: 300px;
+    border-radius: var(--radius-stronger);
 }
 
 .card-category-title {
