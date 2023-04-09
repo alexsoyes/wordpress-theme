@@ -2,14 +2,8 @@
     width: 100%;
     margin: 20px 0 40px 0;
     box-shadow: var(--box-shadow-default);
-    border-radius: var(--radius-stronger);
     display: flex;
     position: relative;
-}
-
-.card-image {
-    max-width: 300px;
-    border-radius: var(--radius-stronger);
 }
 
 .card-category-title {
@@ -75,5 +69,11 @@
 @media only screen and (max-width: 991px) {
     .card {
         flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-image img {
+        max-width: 300px;
     }
 }
