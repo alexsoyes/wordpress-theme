@@ -26,7 +26,7 @@ function register_conseil_post_type()
         'has_archive' => true,
         'rewrite' => array('slug' => 'conseil'),
         'menu_icon' => 'dashicons-lightbulb',
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields', 'page-attributes', 'comments'),
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields', 'page-attributes'),
     ));
 }
 
