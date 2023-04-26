@@ -45,7 +45,7 @@ function soyes_newsletter($atts = []): string
             </p><!-- .soyes-newsletter-title -->
 
             <p class="soyes-newsletter-desc">
-                <strong><?php _e("Je partage chaque semaine 1 nouveau truc de dev que j'ai appris.", 'alexsoyes'); ?></strong> <?php _e("pour décrocher le job de tes rêves ou devenir freelance.", 'soyes'); ?>
+                <?php _e("Je partage chaque semaine 1 nouveau truc de dev que j'ai appris.", 'alexsoyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
         </div>
 
@@ -61,7 +61,7 @@ function soyes_newsletter($atts = []): string
                            value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
                     <input type="hidden" name="utm_content"
                            value="🚀-la-console-la-newsletter-code-et-freelance-je-partage-chaque-semaine-1-nouveau-truc-de-dev-que-jai-apprisrejoindre-1500-membres-jarrive">
-                    <input type="hidden" name="timezone"
+                    <input type="hidden" name="utm_campaign"
                            value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'newsletter-homepage'; ?>">
 
                     <!-- La console -->

@@ -93,7 +93,7 @@
                    value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
             <input type="hidden" name="utm_content"
                    value="guide-notion-pour-faire-decoller-sa-carriere-de-dev-🧑‍💻-3-roadmaps-pour-maitriser-le-front-ou-le-back-🚀-les-astuces-pour-2x-sa-productivite-🔮-comment-les-ias-vont-changer-le-code-✅-mes-20-meilleures-ressources-de-dev-adresse-e-mail-x-💌-apprendre-1-chose-par-semaine-sur-le-code-avec-ma-newsletter-la-console">
-            <input type="hidden" name="timezone"
+            <input type="hidden" name="utm_campaign"
                    value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'lead-magnet'; ?>">
 
             <!-- Lead magnet -->
