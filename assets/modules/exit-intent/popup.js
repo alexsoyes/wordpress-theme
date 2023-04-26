@@ -54,3 +54,7 @@ if ('true' !== getCookie('exitIntentShown')) {
         document.querySelector('.exit-intent-popup').addEventListener('click', exit);
     }, 0);
 }
+
+if (window.location.href.indexOf('inscription-confirmee') > -1) {
+    setCookie('exitIntentShown', true, 14, '/');
+}

@@ -74,18 +74,28 @@
              alt="<?php echo get_bloginfo('name'); ?>"
              class="soyes-newsletter-icon"
              width="30" height="30">
-        <p class="popup-title"><?php _e('Guide gratuit des supers devs 👇', 'soyes'); ?></p>
+        <p class="popup-title"><?php _e('Guide Notion pour faire décoller sa carrière de dev', 'soyes'); ?></p>
         <div class="entry-content">
             <ul class="simple">
-                <li>🧑‍💻 3 roadmaps pour devenir un super dev</li>
-                <li>🚀 Les astuces pour doubler sa productivité</li>
-                <li>🔮 Pourquoi les IAs vont changer le code</li>
-                <li>✅ Les meilleures ressources de dev</li>
+                <li>🧑‍💻 3 roadmaps pour maîtriser le front ou le back</li>
+                <li>🚀 Les astuces pour 2x sa productivité</li>
+                <li>🔮 Comment les IAs vont changer le code</li>
+                <li>✅ Mes +20 meilleures ressources de dev</li>
             </ul>
         </div><!-- .entry-content -->
         <form class="soyes-newsletter-form"
               action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
               method="post">
+            <!-- UTM -->
+            <input type="hidden" name="utm_source"
+                   value="<?php echo array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog'; ?>">
+            <input type="hidden" name="utm_medium"
+                   value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
+            <input type="hidden" name="utm_content"
+                   value="guide-notion-pour-faire-decoller-sa-carriere-de-dev-🧑‍💻-3-roadmaps-pour-maitriser-le-front-ou-le-back-🚀-les-astuces-pour-2x-sa-productivite-🔮-comment-les-ias-vont-changer-le-code-✅-mes-20-meilleures-ressources-de-dev-adresse-e-mail-x-💌-apprendre-1-chose-par-semaine-sur-le-code-avec-ma-newsletter-la-console">
+            <input type="hidden" name="timezone"
+                   value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'lead-magnet'; ?>">
+
             <!-- Lead magnet -->
             <input type="hidden" name="timezone" value="">
             <input type="hidden" name="is_desktop" value="">
@@ -101,10 +111,11 @@
         <span class="close">x</span>
         <p class="popup-end">
             <small>
-                💌 + 1 conseil dev / semaine via
+                💌 S'inscrire également à
                 <a href="https://alexsoyes.com" target="_blank">
                     <?php _e('ma newsletter "La console".', 'soyes'); ?>
                 </a>
+                pour apprendre 1 chose par semaine sur le code.
             </small>
         </p>
     </div><!-- .popup -->

@@ -5,6 +5,12 @@ define('WP_USE_THEMES', false); // Don't load theme support functionality
 require('../../../../wp-load.php');
 
 try {
+    // utm tracking
+    $param_utm_source = array_key_exists('utm_source', $_POST) ? $_POST['utm_source'] : false;
+    $param_utm_medium = array_key_exists('utm_medium', $_POST) ? $_POST['utm_medium'] : false;
+    $param_utm_content = array_key_exists('utm_content', $_POST) ? $_POST['utm_content'] : false;
+    $param_utm_campaign = array_key_exists('utm_campaign', $_POST) ? $_POST['utm_campaign'] : false;
+
     // form params
     $param_email = $_POST['email'];
     $param_is_desktop = $_POST['is_desktop'];
@@ -51,7 +57,22 @@ try {
     $response = wp_remote_post($endpoint, $options);
 
     if (!is_wp_error($response)) {
-        wp_redirect('https://alexsoyes.com/inscription-confirmee/');
+
+        if (strlen("$param_utm_source$param_utm_medium$param_utm_content$param_utm_campaign") > 1) {
+
+            $utm_params = [
+                'utm_source' => $param_utm_source,
+                'utm_medium' => $param_utm_medium,
+                'utm_content' => $param_utm_content,
+                'utm_campaign' => $param_utm_campaign,
+            ];
+            $redirect_url = add_query_arg($utm_params, 'https://alexsoyes.com/inscription-confirmee');
+
+            wp_redirect($redirect_url);
+
+        } else {
+            wp_redirect('https://alexsoyes.com/inscription-confirmee/');
+        }
     } else {
         wp_redirect("https://learn.alexsoyes.com/newsletter-la-console?email=$param_email");
     }
