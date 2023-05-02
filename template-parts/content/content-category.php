@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Blog main page.
+ * Category page listing posts.
  */
 
 ?>
 
-<article>
+<article data-clarity-region="category">
     <header class="entry-header">
         <div class="entry-content">
             <?php get_template_part('template-parts/elements/return-home'); ?>

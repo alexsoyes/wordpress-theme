@@ -8,7 +8,7 @@ get_header();
 
 if (have_posts()) :?>
 
-    <article>
+    <article data-clarity-region="blog">
         <header class="entry-header">
             <div class="entry-content">
                 <h1><?php single_post_title(); ?></h1>

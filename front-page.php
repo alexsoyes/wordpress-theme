@@ -6,12 +6,12 @@
 
 get_header();
 
-if ( have_posts() ): ?>
+if (have_posts()): ?>
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-clarity-region="homepage">
 
         <div class="entry-content">
-			<?php the_content(); ?>
+            <?php the_content(); ?>
         </div><!-- .entry-content -->
 
     </article><!-- #post-<?php the_ID(); ?> -->

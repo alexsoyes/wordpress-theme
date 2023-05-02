@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Blog main page.
+ * Display page content as category, used for "formation" page.
  */
 
 ?>

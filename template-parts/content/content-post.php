@@ -5,7 +5,7 @@
  */
 
 ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-clarity-region="article">
 
         <header class="entry-header">
             <?php get_template_part('template-parts/post/post-header'); ?>
