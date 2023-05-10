@@ -1,7 +1,7 @@
 /*
 Theme Name: soyes
 Description: A very simple blog for eco friendly bloggers!
-Version: 0.6.2
+Version: 0.7.0
 Author: Alex so yes
 Theme URI: https://alexsoyes.com
 Author URI: https://alexsoyes.com
@@ -29,7 +29,7 @@ Requires PHP: 7.1
 
     /* Main colors */
     --color-primary: #fff9e0;
-    --color-secondary: #BD9DE1;
+    --color-secondary: #F48FB1;
 
     /* Colors */
     --color-white: #fff;
@@ -162,10 +162,6 @@ img {
     font-family: var(--font-family-secondary);
 }
 
-.new-content strong {
-    font-size: var(--font-size-l);
-}
-
 .new-icon {
     padding: 5px;
     font-weight: bold;
@@ -177,12 +173,11 @@ img {
 
 .new-cta span {
     cursor: pointer;
-    color: var(--color-white);
-    background: var(--color-black);
-    padding: 4px 8px;
-    border-radius: var(--radius-strong);
+    color: var(--color-black);
+    border-bottom: 2px solid var(--color-black);
     white-space: nowrap;
     display: inline-block;
+    font-weight: var(--font-weight-bold);
     margin: 5px;
 }
 
@@ -196,7 +191,7 @@ img {
 .wp-block-button__link,
 .entry-content a.wp-block-button__link,
 a.wp-block-button__link {
-    background-color: var(--color-black);
+    background-color: var(--color-link);
     color: var(--color-white);
     box-shadow: var(--box-shadow-default);
     font-size: var(--font-size-m);
@@ -212,8 +207,9 @@ a.wp-block-button__link {
 
 .entry-content .wp-block-button__link:hover {
     box-shadow: var(--box-shadow-strong);
-    background-color: var(--color-link);
-    color: var(--color-white);
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
 }
 
 .wp-block-buttons.aligncenter {

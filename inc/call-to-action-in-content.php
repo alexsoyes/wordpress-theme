@@ -7,20 +7,61 @@ function add_call_to_action_to_content(string $content): string
         $matches = [];
         preg_match_all('/<h2.*?>(.*?)<\/h2>/s', $content, $matches);
 
-        // two CTA per page
-        $numberOfCTAToAdd = count($matches[0]) / 3;
+        $ctasToAdd = [
+            'newsletter-cta',
+            'free-lesson-freelance',
+            'course-copilot',
+            'course-freelance',
+            'free-lesson-ai',
+        ];
 
-        $content = str_replace(
-            $matches[0][$numberOfCTAToAdd],
-            sprintf('<aside class="call-to-action banner-cta">%s</aside>%s', soyes_load_template_part('template-parts/elements/banner-cta'), $matches[0][$numberOfCTAToAdd]),
-            $content,
-        );
+        // 5 CTA per page
+        $numberOfH2InPage = count($matches[0]);
+        $numberOfCTAsToAdd = count($ctasToAdd);
 
-        $content = str_replace(
-            $matches[0][$numberOfCTAToAdd * 2],
-            sprintf('<aside class="call-to-action banner-cta">%s</aside>%s', soyes_load_template_part('template-parts/elements/banner-cta'), $matches[0][$numberOfCTAToAdd * 2]),
-            $content,
-        );
+        // only add the first and last one if there is not enought h2
+        if ($numberOfH2InPage <= $numberOfCTAsToAdd) {
+            $content = str_replace(
+                $matches[0][0],
+                sprintf(
+                    '<aside class="call-to-action course-cta">%s</aside>%s',
+                    soyes_load_template_part('template-parts/cta/newsletter-cta'),
+                    $matches[0][0]
+                ),
+                $content,
+            );
+
+            $content = str_replace(
+                $matches[0][$numberOfH2InPage - 1],
+                sprintf(
+                    '<aside class="call-to-action course-cta">%s</aside>%s',
+                    soyes_load_template_part('template-parts/cta/' . $ctasToAdd[(rand(1, count($ctasToAdd) - 1))]),
+                    $matches[0][$numberOfH2InPage - 1]
+                ),
+                $content,
+            );
+
+            return $content;
+        }
+
+        // add CTA before every h2
+        $displayCTAEveryXH2 = floor($numberOfH2InPage / $numberOfCTAsToAdd);
+
+        for ($i = 0; ($i < $numberOfCTAsToAdd && $i < $numberOfH2InPage); $i++) {
+            $template_part = soyes_load_template_part('template-parts/cta/' . $ctasToAdd[$i]);
+
+            $template_part = str_replace('h3', 'div', $template_part);
+
+            $content = str_replace(
+                $matches[0][$i * $displayCTAEveryXH2],
+                sprintf(
+                    '<aside class="call-to-action course-cta">%s</aside>%s',
+                    $template_part,
+                    $matches[0][$i * $displayCTAEveryXH2]
+                ),
+                $content,
+            );
+        }
     }
 
     return $content;

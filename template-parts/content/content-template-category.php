@@ -17,6 +17,26 @@
     <div class="entry-content">
         <div class="cards">
             <?php the_content(); ?>
+
+            <h2>Mini-cours gratuits ✅</h2>
+
+            <p>
+                Une séquence 5 emails par jour pendant 1 semaine pour maîtriser un sujet (100% gratuit).
+            </p>
+
+            <?php get_template_part('template-parts/cta/free-lesson-ai'); ?>
+            <?php get_template_part('template-parts/cta/free-lesson-freelance'); ?>
+
+            <h2>Formations payantes 💰</h2>
+
+            <p>
+                Mes formations payantes (et très qualitatives) pour aller beaucoup plus loin avec des exemples de
+                comment passer à l'action.
+            </p>
+
+            <?php get_template_part('template-parts/cta/course-copilot'); ?>
+            <?php get_template_part('template-parts/cta/course-freelance'); ?>
+
         </div><!-- .cards -->
     </div><!-- .entry-content -->
 

@@ -4,6 +4,13 @@
     padding: 50px 0;
 }
 
+@media only screen and (max-width: 991px) {
+    .soyes-newsletter-container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
 .soyes-newsletter-title {
     margin-top: 0;
     margin-bottom: 0;
@@ -57,12 +64,14 @@
     }
 }
 
-.soyes-newsletter-form > * {
-    padding: 15px;
+@media only screen and (min-width: 782px) {
+    .soyes-newsletter-submit.wp-block-column.wp-block-button__link {
+        margin: 0 32px 0 0;
+    }
 }
 
-.soyes-newsletter-submit.wp-block-column.wp-block-button__link {
-    margin: 0;
+.soyes-newsletter-form > * {
+    padding: 15px;
 }
 
 .soyes-newsletter-email {
@@ -141,6 +150,7 @@ Cover blocks.
 .wp-block-cover .wp-block-cover__inner-container {
     width: 100%;
     z-index: 1;
+    max-width: 100%;
 }
 
 

@@ -19,7 +19,7 @@
             </div><!-- .link-share -->
         </div><!-- .entry-share -->
 
-        <div class="entry-content">
+        <div class="entry-content entry-post">
             <?php
             // show yoast seo breadcrumb
             if (function_exists('yoast_breadcrumb')) {
@@ -34,7 +34,7 @@
         <div class="wp-block-column" style="flex-basis: 33.33%; position: relative">
             <div class="toc-bot-container" id="toc-bot-container">
                 <div class="banner-cta">
-                    <?php get_template_part('template-parts/elements/banner-cta'); ?>
+                    <?php get_template_part('template-parts/elements/widget-cta'); ?>
                 </div><!-- .banner-cta -->
                 <div id="column-toc" class="toc-bot"></div>
             </div><!-- .toc-bot-container -->
@@ -75,7 +75,7 @@
 
 <?php
 
-echo do_shortcode('[soyes_newsletter]');
+printf('<div class="wp-block-cover__inner-container">%s</div>', do_shortcode('[soyes_newsletter]'));
 
 $category = soyes_get_the_main_category();
 $posts = get_posts([

@@ -19,6 +19,9 @@
 
 .card-title {
     font-size: var(--font-size-h4);
+    line-height: 1.5;
+    font-weight: var(--font-weight-bolder);
+    font-family: var(--font-family-secondary);
     padding-top: 0;
     margin: 0;
 }
@@ -27,7 +30,7 @@
     color: var(--color-black);
 }
 
-.entry-content .card-title a:hover {
+.entry-post .card-title a:hover {
     color: var(--color-link);
 }
 

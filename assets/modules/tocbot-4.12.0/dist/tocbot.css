@@ -117,7 +117,7 @@ a.toc-link {
         transform: translateX(0);
         right: calc((100% - 48rem - 4rem) / 2);
         position: sticky;
-        top: 20px;
+        top: 0px;
         height: 100vh;
     }
 
@@ -145,6 +145,10 @@ a.toc-link {
 
 .banner-cta .new-content {
     display: block;
+}
+
+.banner-cta .new-content strong {
+    font-size: var(--font-size-h5);
 }
 
 .banner-cta .new-content strong,

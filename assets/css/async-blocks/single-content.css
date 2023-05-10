@@ -1,0 +1,234 @@
+/**
+ * Toc on titles.
+ */
+.toc-title-container {
+    position: relative;
+}
+
+.toc_ref {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    font-size: var(--font-size-h2);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1100px) {
+    .toc-title-container .toc_ref {
+        display: block;
+        color: var(--color-gray);
+        opacity: 0.2;
+    }
+
+    .toc-title-h2 .toc_ref {
+        padding-bottom: 4px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .toc-title-container .toc_ref:hover {
+        color: var(--color-black);
+        opacity: 1;
+    }
+}
+
+/**
+ * Comment.
+ */
+.link-comment img {
+    margin-left: 5px;
+}
+
+.entry-content .link-comment a {
+    color: var(--color-black);
+    font-style: italic;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.entry-content .link-comment a:hover {
+    font-weight: bold;
+}
+
+/**
+ * Yoast FAQ.
+ */
+.schema-faq-question {
+    font-size: var(--font-size-h4);
+    padding-top: 60px;
+    display: block;
+}
+
+.schema-faq-answer br {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/**
+ * Breadcrumbs
+ */
+#breadcrumbs {
+    background-color: var(--color-lightgray);
+    font-size: var(--font-size-m);
+    color: var(--color-gray);
+    margin-bottom: 40px;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 15px;
+}
+
+#breadcrumbs > span > span {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/**
+ * Embed.
+ */
+.wp-block-embed.is-type-video {
+    width: auto;
+    margin: 0;
+}
+
+.is-provider-youtube iframe {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 786px) {
+    .is-provider-youtube iframe {
+        height: 500px;
+    }
+}
+
+/**
+ * Back to the top.
+ */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: var(--font-size-h1);
+}
+
+/**
+ * Related posts.
+ */
+.entry-related .entry-title {
+    text-align: center;
+    color: var(--color-black);
+    padding: 60px 0 30px 0;
+    font-size: var(--font-size-h1);
+}
+
+/**
+ * Sticky share.
+ */
+.entry-share {
+    display: none;
+    z-index: 10;
+}
+
+@media only screen and (min-width: 1200px) {
+    .entry-share {
+        display: block;
+        max-width: var(--container-max-width);
+        margin: 0 auto;
+    }
+}
+
+.link-share {
+    top: 230px;
+    position: fixed;
+    white-space: nowrap;
+    margin: 50px 0 30px 0;
+    font-weight: var(--font-weight-bold);
+}
+
+.link-share-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-share-buttons .social-icons {
+    display: inline-flex;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: var(--radius-strong);
+}
+
+.link-share-buttons .social-icons button {
+    margin: 10px 0;
+    opacity: 0.6;
+}
+
+.link-share-buttons .social-icons button:hover {
+    opacity: 1;
+}
+
+.link-share button {
+    background: transparent;
+    border: none;
+}
+
+.link-share img {
+    margin: 0 3px;
+}
+
+.link-share svg:hover {
+    fill: var(--color-black);
+}
+
+
+/**
+ * Call to action
+ */
+.call-to-action {
+    box-shadow: var(--box-shadow-strong);
+    margin: 60px auto 30px auto;
+    border-radius: var(--radius-default);
+    max-width: 450px;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .entry-content .soyes-newsletter-fill {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .entry-content .card-content {
+        padding: 20px;
+    }
+}
+
+/**
+ * Card for single posts
+ */
+
+.entry-post .soyes-newsletter-submit.wp-block-column.wp-block-button__link,
+.entry-post .soyes-newsletter-form > * {
+    margin: 0;
+}
+
+.entry-post .soyes-newsletter-form {
+    flex-direction: column;
+}
+
+.entry-post .card {
+    display: block;
+    text-align: center;
+    opacity: 0.7;
+    transition: 1s all;
+}
+
+.entry-post .card:hover {
+    opacity: 1;
+}
+
+.entry-post .card-image img {
+    max-width: 100%;
+}

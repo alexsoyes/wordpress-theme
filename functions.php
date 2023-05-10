@@ -269,6 +269,7 @@ function soyes_enqueue_async_styles(): void
     if (is_single()) {
         $cssToEmbed[] = soyes_build_async_uri('single-comments');
         $cssToEmbed[] = soyes_build_async_uri('single-social');
+        $cssToEmbed[] = soyes_build_async_uri('single-content');
     }
 
     if (is_single() || is_page() || is_404() || is_front_page()) {

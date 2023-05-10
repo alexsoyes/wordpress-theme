@@ -22,9 +22,9 @@
     transform: translate(-50%, -50%);
     border-radius: 2px;
     box-shadow: 0 4px 10px #21212180;
-    background: #fcba28;
+    background: var(--color-white);
     max-width: 400px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .popup .popup-title {
@@ -61,8 +61,8 @@
     top: -10px;
     right: -10px;
     background: #000;
-    color: #fcba28;
-    border: 2px solid #fcba28;
+    color: var(--color-link);
+    border: 2px solid var(--color-link);
     height: 36px;
     width: 36px;
     line-height: 9px;
