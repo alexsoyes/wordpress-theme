@@ -185,10 +185,6 @@ function soyes_scripts(): void
 
     if ($post) {
         if (is_single() && has_shortcode($post->post_content, 'soyes_toc')) {
-            wp_enqueue_style('soyes-style-shortcode-toc', get_template_directory_uri() . '/assets/css/shortcodes/toc.css', array(), $version);
-
-            wp_enqueue_style('soyes-style-toc-theme', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.css', array(), $version);
-            wp_enqueue_style('soyes-style-toc-theme', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.css', array(), $version);
             wp_enqueue_script('soyes-script-tocbot', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.js', array(), $version, true);
         }
     }
@@ -270,6 +266,8 @@ function soyes_enqueue_async_styles(): void
         $cssToEmbed[] = soyes_build_async_uri('single-comments');
         $cssToEmbed[] = soyes_build_async_uri('single-social');
         $cssToEmbed[] = soyes_build_async_uri('single-content');
+        $cssToEmbed[] = soyes_build_async_uri('toc');
+        $cssToEmbed[] = soyes_build_async_uri('tocbot');
     }
 
     if (is_single() || is_page() || is_404() || is_front_page()) {
