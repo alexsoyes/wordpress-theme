@@ -13,7 +13,7 @@ $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
         <?php if (is_page_template('page-category.php')): ?>
             <h2 class="card-title">
                 <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation
-                    développeur freelance</a>
+                    premium développeur freelance</a>
             </h2><!-- .card-title -->
         <?php else: ?>
             <div class="entry-category"><span>Formation</span></div>
@@ -25,7 +25,7 @@ $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
         </div><!-- .card-excerpt -->
 
         <div class="new-cta">
-            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">J'ai envie d'en savoir plus 🚀</span>
+            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">Je veux devenir dev freelance 🚀</span>
         </div><!-- .new-cta -->
 
     </div>

@@ -1,5 +1,5 @@
 <?php
-$link = "https://alexsoyes.systeme.io/coder-avec-intelligence-artificielle";
+$link = "https://learn.alexsoyes.com/coder-avec-intelligence-artificielle";
 ?>
 
 <div class="card">
@@ -26,7 +26,7 @@ $link = "https://alexsoyes.systeme.io/coder-avec-intelligence-artificielle";
         </div><!-- .card-excerpt -->
 
         <div class="new-cta">
-            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">J'ai envie d'en savoir plus 🚀</span>
+            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">Je veux coder avec l'IA 🤖</span>
         </div><!-- .new-cta -->
 
     </div>

@@ -12,7 +12,7 @@ $link = "https://learn.alexsoyes.com/formation-github-copilot";
 
         <?php if (is_page_template('page-category.php')): ?>
             <h2 class="card-title">
-                <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation
+                <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation premium
                     GitHub Copilot</a>
             </h2><!-- .card-title -->
         <?php else: ?>
@@ -25,7 +25,7 @@ $link = "https://learn.alexsoyes.com/formation-github-copilot";
         </div><!-- .card-excerpt -->
 
         <div class="new-cta">
-            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">J'ai envie d'en savoir plus 🚀</span>
+            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">Je veux coder plus rapidement ⚡️</span>
         </div><!-- .new-cta -->
 
     </div><!-- .card-content -->

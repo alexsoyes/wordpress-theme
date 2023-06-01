@@ -21,11 +21,12 @@ $link = "https://learn.alexsoyes.com/cours-devenir-freelance-6f2f4b3a";
         <?php endif; ?>
 
         <div class="card-excerpt">
-            <p>Comment surmonter la peur de se lancer en tant que dev freelance et trouver des clients.</p>
+            <p>Comment surmonter la peur de se lancer en tant que dev freelance et trouver des clients. (Sans prendre de
+                risque)</p>
         </div><!-- .card-excerpt -->
 
         <div class="new-cta">
-            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">J'ai envie d'en savoir plus 🚀</span>
+            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">Je veux me lancer en freelance 🎉</span>
         </div><!-- .new-cta -->
 
     </div>
