@@ -10,7 +10,6 @@
     <header class="entry-header">
         <div class="entry-content">
             <?php get_template_part('template-parts/elements/return-home'); ?>
-            <h1><?php single_cat_title(); ?></h1>
             <div class="entry-text">
                 <?php echo wp_kses_post(wpautop(get_the_archive_description())); ?>
             </div><!-- .entry-text -->
