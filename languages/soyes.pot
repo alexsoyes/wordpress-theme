@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-06-01T13:08:21+00:00\n"
+"POT-Creation-Date: 2023-06-01T20:21:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: soyes\n"
@@ -31,29 +31,25 @@ msgstr ""
 msgid "Alex so yes"
 msgstr ""
 
-#: 404.php:15
+#: 404.php:12
 msgid "Damned!"
 msgstr ""
 
-#: 404.php:16
+#: 404.php:13
 msgid "I am tracking <code>404 errors</code> in order to replace them with <code>301 redirections</code> in case of missing posts (which is very rare by the way)."
 msgstr ""
 
 #. translators: %s is replaced with the admin email address.
-#: 404.php:22
+#: 404.php:19
 msgid "If you arrived here, please send a kindly message to %s with the post you were looking for."
 msgstr ""
 
-#: 404.php:26
-msgid "404"
-msgstr ""
-
-#: 404.php:32
+#: 404.php:24
 msgid "Wanna try to search for your post? 🍀"
 msgstr ""
 
-#: 404.php:37
-msgid "I never remove any content from the blog."
+#: 404.php:32
+msgid "404"
 msgstr ""
 
 #: classes/class-walker-comment.php:291
@@ -80,10 +76,10 @@ msgstr[1] ""
 
 #: comments.php:54
 #: inc/navigation.php:11
-#: search.php:65
+#: search.php:56
 #: template-parts/content/content-category.php:34
 #: template-parts/content/content-conseil.php:40
-#: template-parts/content/content-post.php:47
+#: template-parts/content/content-post.php:65
 #: template-parts/content/content-template-category.php:93
 #: template-parts/content/content.php:25
 msgid "Page"
@@ -145,11 +141,11 @@ msgstr ""
 msgid "Social menu"
 msgstr ""
 
-#: functions.php:238
+#: functions.php:235
 msgid "Footer text"
 msgstr ""
 
-#: functions.php:240
+#: functions.php:237
 msgid "Display some basic info about who you are in the footer."
 msgstr ""
 
@@ -185,11 +181,6 @@ msgstr ""
 msgid "Newsletter entièrement gratuite, RGPD friendly."
 msgstr ""
 
-#. translators: %s is replace with the title of the block.
-#: inc/table-of-contents.php:15
-msgid "Make a link to: %s"
-msgstr ""
-
 #. translators: %s is replaced with the lastly updated date from current post.
 #: inc/template-functions.php:21
 msgid "Last commit: <strong>%s</strong>"
@@ -222,15 +213,15 @@ msgid_plural "We found %1$s results for your search \"%2$s\"."
 msgstr[0] ""
 msgstr[1] ""
 
-#: search.php:34
+#: search.php:36
 msgid "Wanna try another search? 🍀"
 msgstr ""
 
 #. translators: %: Page number.
-#: search.php:68
+#: search.php:59
 #: template-parts/content/content-category.php:37
 #: template-parts/content/content-conseil.php:43
-#: template-parts/content/content-post.php:50
+#: template-parts/content/content-post.php:68
 #: template-parts/content/content-template-category.php:96
 #: template-parts/content/content.php:28
 msgid "Page %"
@@ -258,12 +249,16 @@ msgstr ""
 msgid "Chaque semaine je partage 1 conseil avec 1 action à réaliser pour devenir meilleur(e) dev."
 msgstr ""
 
-#: template-parts/content/content-post.php:59
-msgid "Back to top"
+#: template-parts/content/content-post.php:40
+msgid "More content:"
 msgstr ""
 
-#: template-parts/content/content-post.php:88
-msgid "Va encore plus loin dans : "
+#: template-parts/content/content-post.php:41
+msgid "If you want to read more on the subject."
+msgstr ""
+
+#: template-parts/content/content-post.php:77
+msgid "Back to top"
 msgstr ""
 
 #: template-parts/content/content-simple.php:16

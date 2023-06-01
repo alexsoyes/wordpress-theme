@@ -28,6 +28,24 @@
             ?>
             <?php the_content(); ?>
             <?php
+            $category = soyes_get_the_main_category();
+            $posts = get_posts([
+                'category' => $category->cat_ID,
+                'post__not_in' => [get_the_ID()],
+                'posts_per_page' => 100,
+                'orderby' => 'title',
+                'order' => 'ASC',
+            ]);
+
+            printf('<h2>%s</h2>', esc_html__('More content:', 'soyes'));
+            printf('<p>%s</p>', esc_html__('If you want to read more on the subject.', 'soyes'));
+            echo '<ul>';
+            foreach ($posts as $index => $post) {
+                printf('<li><a href="%s">%s</a></li>', get_permalink($post->ID), $post->post_title);
+            }
+            echo '</ul>';
+            ?>
+            <?php
             global $post;
             if (has_shortcode($post->post_content, 'soyes_toc')): ?>
         </div><!-- .wp-block-column -->
