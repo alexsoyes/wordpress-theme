@@ -75,27 +75,6 @@
 
 <?php
 
-printf('<div class="wp-block-cover__inner-container">%s</div>', do_shortcode('[soyes_newsletter]'));
-
-$category = soyes_get_the_main_category();
-$posts = get_posts([
-    'category' => $category->cat_ID,
-    'post__not_in' => [get_the_ID()],
-    'posts_per_page' => 100,
-]);
-
-echo '<div class="entry-content entry-related">';
-printf('<h2 class="entry-title">%s %s</h2>', esc_html__('Va encore plus loin dans : ', 'soyes'), $category->name);
-
-foreach ($posts as $index => $post) {
-    setup_postdata($post);
-    get_template_part('template-parts/elements/card');
-}
-
-echo '</div><!-- .entry-related -->';
-
-wp_reset_postdata();
-
 if (comments_open() || get_comments_number()) {
     comments_template();
 }
