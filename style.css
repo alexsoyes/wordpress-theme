@@ -199,7 +199,8 @@ a.wp-block-button__link {
     margin: 5px 0;
     cursor: pointer;
     display: inline-block;
-    padding: 16px 30px;
+    padding: 20px 40px;
+    line-height: var(--font-size-xl);
     border-radius: 3px;
     text-transform: uppercase;
     letter-spacing: 1px;

@@ -47,13 +47,11 @@ const mouseEvent = e => {
     }
 };
 
-if ('true' !== getCookie('exitIntentShown')) {
-    setTimeout(() => {
-        document.addEventListener('mouseout', mouseEvent);
-        document.addEventListener('keydown', exit);
-        document.querySelector('.exit-intent-popup').addEventListener('click', exit);
-    }, 0);
-}
+setTimeout(() => {
+    document.addEventListener('mouseout', mouseEvent);
+    document.addEventListener('keydown', exit);
+    document.querySelector('.exit-intent-popup').addEventListener('click', exit);
+}, 0);
 
 if (window.location.href.indexOf('inscription-confirmee') > -1) {
     setCookie('exitIntentShown', true, 14, '/');

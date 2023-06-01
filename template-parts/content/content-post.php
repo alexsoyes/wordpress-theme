@@ -37,7 +37,7 @@
                 'order' => 'ASC',
             ]);
 
-            printf('<h2>%s</h2>', esc_html__('More content:', 'soyes'));
+            printf('<h2 id="more-content-from-category">%s</h2>', esc_html__('More content:', 'soyes'));
             printf('<p>%s</p>', esc_html__('If you want to read more on the subject.', 'soyes'));
             echo '<ul>';
             foreach ($posts as $index => $post) {

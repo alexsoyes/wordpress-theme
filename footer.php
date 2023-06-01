@@ -70,18 +70,16 @@
 
 <aside class="exit-intent-popup" style="display: none;">
     <div class="popup">
-        <img src="<?php echo soyes_get_the_image('logo-only', 'svg', false, false); ?>"
-             alt="<?php echo get_bloginfo('name'); ?>"
-             class="soyes-newsletter-icon"
-             width="30" height="30">
-        <p class="popup-title"><?php _e('Guide Notion pour les devs', 'soyes'); ?></p>
+        <p class="h2 popup-title has-text-align-center"><?php _e('Guide Notion des devs', 'soyes'); ?></p>
         <div class="entry-content">
-            <ul class="simple">
-                <li>🧑‍💻 3 roadmaps pour maîtriser le front ou le back</li>
-                <li>🚀 Les astuces pour 2x sa productivité</li>
-                <li>🔮 Comment les IAs vont changer le code</li>
-                <li>✅ Mes +20 meilleures ressources de dev</li>
-            </ul>
+            <div class="alignwide">
+                <ul class="simple">
+                    <li>🧑‍💻 3 roadmaps pour maîtriser le front ou le back</li>
+                    <li>🚀 Les astuces pour 2x sa productivité</li>
+                    <li>🔮 Comment les IAs vont changer le code</li>
+                    <li>✅ Mes +20 meilleures ressources de dev</li>
+                </ul>
+            </div>
         </div><!-- .entry-content -->
         <form class="soyes-newsletter-form"
               action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
