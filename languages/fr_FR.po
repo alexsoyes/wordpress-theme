@@ -223,8 +223,8 @@ msgid "return \"/\";"
 msgstr "return \"/\";"
 
 #: 404.php:41 search.php:45
-msgid "Return to home"
-msgstr "Retourner sur l'accueil"
+msgid "Web development : See more"
+msgstr "Développement Web : En savoir plus"
 
 #. translators: %d: Number of posts.
 #: searchform.php:32

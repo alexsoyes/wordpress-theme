@@ -38,7 +38,7 @@ get_header();
 
             <div>
                 <a href="<?php echo get_home_url('/') ?>"
-                   title="<?php esc_html_e('Return to home', 'soyes') ?>"
+                   title="<?php esc_html_e('Web development : See more', 'soyes') ?>"
                    class="wp-block-button__link">
                     <?php esc_html_e('return "/";', 'soyes') ?>
                 </a>

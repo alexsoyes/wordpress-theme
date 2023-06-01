@@ -1,15 +1,15 @@
-# Copyright (C) 2022 Alex so yes
+# Copyright (C) 2023 Alex so yes
 # This file is distributed under the GNU General Public License v3.
 msgid ""
 msgstr ""
-"Project-Id-Version: soyes 0.3.7b\n"
+"Project-Id-Version: soyes 0.7.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/soyes\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-11-20T06:12:49+00:00\n"
+"POT-Creation-Date: 2023-06-01T08:02:36+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: soyes\n"
@@ -62,7 +62,9 @@ msgstr ""
 
 #: 404.php:41
 #: search.php:45
-msgid "Return to home"
+#: template-parts/elements/return-home.php:4
+#: template-parts/elements/return-home.php:5
+msgid "Web development : See more"
 msgstr ""
 
 #: 404.php:43
@@ -72,7 +74,6 @@ msgstr ""
 
 #: 404.php:46
 #: search.php:50
-#: template-parts/content/content-category.php:15
 msgid "Find all posts"
 msgstr ""
 
@@ -90,13 +91,13 @@ msgid "Avatar from "
 msgstr ""
 
 #: comments.php:27
-#: inc/template-functions.php:78
+#: inc/template-functions.php:83
 msgid "1 comment"
 msgstr ""
 
 #. translators: %s: Comment count number.
 #: comments.php:32
-#: inc/template-functions.php:82
+#: inc/template-functions.php:87
 msgctxt "Comments title"
 msgid "%s comment"
 msgid_plural "%s comments"
@@ -106,8 +107,10 @@ msgstr[1] ""
 #: comments.php:54
 #: inc/navigation.php:11
 #: search.php:75
-#: template-parts/content/content-category.php:44
-#: template-parts/content/content-post.php:29
+#: template-parts/content/content-category.php:34
+#: template-parts/content/content-conseil.php:40
+#: template-parts/content/content-post.php:47
+#: template-parts/content/content-template-category.php:47
 #: template-parts/content/content.php:25
 msgid "Page"
 msgstr ""
@@ -144,43 +147,43 @@ msgstr ""
 msgid "Made with love on the top of WordPress ❤️"
 msgstr ""
 
-#: functions.php:78
+#: footer.php:77
+msgid "Guide Notion pour les devs"
+msgstr ""
+
+#: footer.php:105
+msgid "Adresse e-mail"
+msgstr ""
+
+#: footer.php:116
+msgid "ma newsletter \"La console\"."
+msgstr ""
+
+#: functions.php:81
 msgid "Primary menu (header)"
 msgstr ""
 
-#: functions.php:79
+#: functions.php:82
 msgid "Secondary menu (footer)"
 msgstr ""
 
-#: functions.php:80
+#: functions.php:83
 msgid "Social menu"
 msgstr ""
 
-#: functions.php:234
+#: functions.php:238
 msgid "Footer text"
 msgstr ""
 
-#: functions.php:236
+#: functions.php:240
 msgid "Display some basic info about who you are in the footer."
 msgstr ""
 
-#: header.php:27
+#: header.php:32
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:30
-msgid "New"
-msgstr ""
-
-#: header.php:31
-msgid "Training to become a freelance with <strong>30&percnt; discount!</strong>"
-msgstr ""
-
-#: header.php:36
-msgid "Access ✨"
-msgstr ""
-
-#: header.php:54
+#: header.php:49
 msgid "Primary menu"
 msgstr ""
 
@@ -193,77 +196,49 @@ msgid "Older <span class=\"nav-short\">posts</span>"
 msgstr ""
 
 #: inc/shortcodes/newsletter.php:40
-msgid "Receive <span>&lt;la console /&gt;</span>."
+msgid "Newsletter <span>🚀 La console</span>"
 msgstr ""
 
-#: inc/shortcodes/newsletter.php:48
-msgid "✨ Being developer is a passion."
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:56
-msgid "<span>Each beginning</span> of the week,"
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:57
-msgid "I will share you <span>something I learned</span>."
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:62
-msgid "My email address"
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:65
-msgid "Join the community!"
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:69
-msgid "* Your email stays with me, your privacy matters. 🕵️"
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:74
-msgid "🎁 <span>Bonus gift</span>: Receive my 5 bonus emails to become a better software developer."
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:77
-msgid "🗺️ <strong>3 Roadmaps</strong> to became a better software developer."
+#: inc/shortcodes/newsletter.php:73
+msgid "Rejoindre + 1500 membres"
 msgstr ""
 
 #: inc/shortcodes/newsletter.php:78
-msgid "🧠 How I start my day to <strong>increase my productivity</strong>."
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:79
-msgid "🛠 <strong>3 tools</strong> for developers (that you must use)."
-msgstr ""
-
-#: inc/shortcodes/newsletter.php:80
-msgid "🧑‍💻 What I think about <strong>software engineers jobs</strong> for the next year."
+msgid "Recevoir le prochain 📩"
 msgstr ""
 
 #: inc/shortcodes/newsletter.php:81
-msgid "😍 A curated selection of the <strong>best french ressources</strong> for coding."
+msgid "Newsletter entièrement gratuite, RGPD friendly."
 msgstr ""
 
 #. translators: %s is replace with the title of the block.
-#: inc/table-of-contents.php:14
+#: inc/table-of-contents.php:15
 msgid "Make a link to: %s"
 msgstr ""
 
 #. translators: %s is replaced with the lastly updated date from current post.
-#: inc/template-functions.php:19
+#: inc/template-functions.php:21
 msgid "Last commit: <strong>%s</strong>"
 msgstr ""
 
-#: inc/template-functions.php:27
+#: inc/template-functions.php:30
 msgid "Share on Twitter"
 msgstr ""
 
-#: inc/template-functions.php:28
+#: inc/template-functions.php:31
 msgid "Share on LinkedIn"
 msgstr ""
 
-#: inc/template-functions.php:29
+#: inc/template-functions.php:32
 msgid "Share on Facebook"
+msgstr ""
+
+#: inc/template-functions.php:126
+msgid "Temps de lecture estimé : "
+msgstr ""
+
+#: inc/template-functions.php:134
+msgid "Cet guide gratuit est long... Pense à le mettre en favoris pour revenir dessus ⭐️"
 msgstr ""
 
 #. translators: %d: The number of search results.
@@ -283,8 +258,10 @@ msgstr ""
 
 #. translators: %: Page number.
 #: search.php:78
-#: template-parts/content/content-category.php:47
-#: template-parts/content/content-post.php:32
+#: template-parts/content/content-category.php:37
+#: template-parts/content/content-conseil.php:43
+#: template-parts/content/content-post.php:50
+#: template-parts/content/content-template-category.php:50
 #: template-parts/content/content.php:28
 msgid "Page %"
 msgstr ""
@@ -303,13 +280,38 @@ msgctxt "submit button"
 msgid "🔍 Search"
 msgstr ""
 
-#: template-parts/content/content-category.php:16
-msgid "< Return to blog posts"
+#: template-parts/content/content-conseil.php:12
+msgid "Les conseils de dev"
 msgstr ""
 
-#: template-parts/content/content-post.php:41
-#: template-parts/content/content-post.php:43
+#: template-parts/content/content-conseil.php:15
+msgid "Chaque semaine je partage 1 conseil avec 1 action à réaliser pour devenir meilleur(e) dev."
+msgstr ""
+
+#: template-parts/content/content-post.php:59
 msgid "Back to top"
+msgstr ""
+
+#: template-parts/content/content-post.php:88
+msgid "Va encore plus loin dans : "
+msgstr ""
+
+#: template-parts/content/content-simple.php:16
+#: template-parts/content/content-simple.php:49
+msgid "Tous les conseils"
+msgstr ""
+
+#: template-parts/content/content-simple.php:17
+#: template-parts/content/content-simple.php:50
+msgid "👈 La liste de tous les conseils"
+msgstr ""
+
+#: template-parts/cta/banner-cta.php:3
+msgid "<strong>Devenir Développeur Freelance en 2023 :</strong> 5 jours pour se lancer"
+msgstr ""
+
+#: template-parts/cta/banner-cta.php:7
+msgid "Accès gratuit 🚀"
 msgstr ""
 
 #: template-parts/elements/share.php:3
@@ -320,14 +322,18 @@ msgstr ""
 msgid "I took a long time to make this article,<br>if you want to share it, it will make my day! ❤️"
 msgstr ""
 
-#: template-parts/elements/share.php:15
-msgid "I do reply to every comment on the blog 😊"
+#: template-parts/elements/widget-cta.php:3
+msgid "<strong>Coder 30% plus vite</strong> en apprenant à utiliser l'IA"
 msgstr ""
 
-#: template-parts/post/post-header.php:30
+#: template-parts/elements/widget-cta.php:7
+msgid "Le programme 🚀"
+msgstr ""
+
+#: template-parts/post/post-header.php:33
 msgid "Read the"
 msgstr ""
 
-#: template-parts/post/post-header.php:32
+#: template-parts/post/post-header.php:35
 msgid "Leave a comment ?"
 msgstr ""
