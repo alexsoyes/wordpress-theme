@@ -29,33 +29,24 @@ get_header();
         </header><!-- .entry-header -->
 
 
-        <?php if (!have_posts()) : ?>
-            <div class="entry-content">
+        <div class="entry-content">
+            <?php get_search_form(); ?>
+
+            <?php if (!have_posts()) : ?>
                 <h2><?php esc_html_e('Wanna try another search? 🍀', 'soyes'); ?></h2>
-            </div><!-- .entry-content -->
-        <?php endif; ?>
-
-        <?php get_search_form(); ?>
-
-        <?php if (!have_posts()) : ?>
-            <div class="entry-content">
                 <div>
                     <?php get_template_part('template-parts/elements/return-categories'); ?>
                 </div>
-            </div><!-- .entry-content -->
-        <?php endif; ?>
-
-        <div class="entry-content">
-            <div class="cards">
-                <?php
-                if (have_posts()) :
+            <?php else: ?>
+                <div class="cards">
+                    <?php
                     while (have_posts()) :
                         the_post();
                         get_template_part('template-parts/elements/card');
                     endwhile;
-                endif;
-                ?>
-            </div><!-- .cards -->
+                    ?>
+                </div><!-- .cards -->
+            <?php endif; ?>
         </div><!-- .entry-content -->
 
         <footer class="entry-footer default-max-width">

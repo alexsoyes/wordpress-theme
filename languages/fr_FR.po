@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2023-06-01 13:13+0000\n"
+"PO-Revision-Date: 2023-06-01 17:29+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
@@ -304,7 +304,7 @@ msgstr ""
 
 #: search.php:34
 msgid "Wanna try another search? 🍀"
-msgstr "Envie de tenter une autre recherche ? 🍀"
+msgstr "Parcourir les catégories du site :"
 
 #: 404.php:32
 msgid "Wanna try to search for your post? 🍀"
