@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
-"PO-Revision-Date: 2023-06-01 17:29+0000\n"
+"PO-Revision-Date: 2023-06-01 20:00+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: soyes\n"
 "Language: fr_FR\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: comments.php:27 inc/template-functions.php:83
 msgid "1 comment"
-msgstr "1 commentaire"
+msgstr "1 réaction 🎉"
 
 #: 404.php:26
 msgid "404"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: classes/class-walker-comment.php:291
 msgid "Comment link #"
-msgstr "Lien vers le comentaire"
+msgstr "Lien vers la réaction"
 
 #: comments.php:71
 msgid "Comments are closed."
@@ -82,7 +82,7 @@ msgstr "Les commentaires sont fermés."
 msgctxt "Comments title"
 msgid "%s comment"
 msgid_plural "%s comments"
-msgstr[0] "%s commentaire"
+msgstr[0] "%s réactions 🎉"
 msgstr[1] "%s commentaires"
 
 #: 404.php:15
@@ -157,7 +157,7 @@ msgstr ""
 
 #: template-parts/post/post-header.php:35
 msgid "Leave a comment ?"
-msgstr "Laisser un commentaire"
+msgstr "Donner ton avis ou réagir à ce contenu ?"
 
 #: template-parts/content/content-conseil.php:12
 msgid "Les conseils de dev"

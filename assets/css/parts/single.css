@@ -94,7 +94,7 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .author-image {
@@ -123,11 +123,7 @@
 
 .entry-content .link-comment a {
     color: var(--color-black);
-    font-style: italic;
-    padding-bottom: 2px;
-    border-bottom: 2px solid var(--color-secondary);
-}
-
-.entry-content .link-comment a:hover {
-    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid var(--color-black);
+    border-radius: var(--radius-default);
 }
