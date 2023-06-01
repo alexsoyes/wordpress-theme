@@ -2,7 +2,7 @@
  * Search container.
  */
 .entry-search {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .search-term {
@@ -24,7 +24,7 @@
 }
 
 .search-input-container {
-    border-radius: var(--radius-stronger);
+    border-radius: var(--radius-default);
     border: none;
     box-shadow: var(--box-shadow-default);
     background-color: var(--color-white);
@@ -49,9 +49,9 @@
 }
 
 .search-button {
-    padding: 15px 60px;
+    padding: 15px 20px;
     background-color: var(--color-black);
-    border-radius: var(--radius-stronger);
+    border-radius: var(--radius-default);
     display: inline-block;
     margin: 0;
 }

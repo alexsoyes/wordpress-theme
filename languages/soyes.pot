@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v3.
 msgid ""
 msgstr ""
-"Project-Id-Version: soyes 0.7.1\n"
+"Project-Id-Version: soyes 0.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/soyes\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-06-01T08:02:36+00:00\n"
+"POT-Creation-Date: 2023-06-01T13:08:21+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: soyes\n"
@@ -32,54 +32,28 @@ msgid "Alex so yes"
 msgstr ""
 
 #: 404.php:15
-msgid "404"
-msgstr ""
-
-#: 404.php:20
 msgid "Damned!"
 msgstr ""
 
-#: 404.php:21
-msgid "That page does not exist (anymore?)!"
-msgstr ""
-
-#: 404.php:22
+#: 404.php:16
 msgid "I am tracking <code>404 errors</code> in order to replace them with <code>301 redirections</code> in case of missing posts (which is very rare by the way)."
 msgstr ""
 
-#: 404.php:26
-msgid "Wanna try to search for your post? 🍀"
-msgstr ""
-
 #. translators: %s is replaced with the admin email address.
-#: 404.php:34
+#: 404.php:22
 msgid "If you arrived here, please send a kindly message to %s with the post you were looking for."
 msgstr ""
 
+#: 404.php:26
+msgid "404"
+msgstr ""
+
+#: 404.php:32
+msgid "Wanna try to search for your post? 🍀"
+msgstr ""
+
 #: 404.php:37
-msgid "We will reply shorter than you think!"
-msgstr ""
-
-#: 404.php:41
-#: search.php:45
-#: template-parts/elements/return-home.php:4
-#: template-parts/elements/return-home.php:5
-msgid "Web development : See more"
-msgstr ""
-
-#: 404.php:43
-#: search.php:47
-msgid "return \"/\";"
-msgstr ""
-
-#: 404.php:46
-#: search.php:50
-msgid "Find all posts"
-msgstr ""
-
-#: 404.php:48
-#: search.php:52
-msgid "find_all_articles();"
+msgid "I never remove any content from the blog."
 msgstr ""
 
 #: classes/class-walker-comment.php:291
@@ -106,11 +80,11 @@ msgstr[1] ""
 
 #: comments.php:54
 #: inc/navigation.php:11
-#: search.php:75
+#: search.php:65
 #: template-parts/content/content-category.php:34
 #: template-parts/content/content-conseil.php:40
 #: template-parts/content/content-post.php:47
-#: template-parts/content/content-template-category.php:47
+#: template-parts/content/content-template-category.php:93
 #: template-parts/content/content.php:25
 msgid "Page"
 msgstr ""
@@ -252,30 +226,26 @@ msgstr[1] ""
 msgid "Wanna try another search? 🍀"
 msgstr ""
 
-#: search.php:43
-msgid "Still not having it?"
-msgstr ""
-
 #. translators: %: Page number.
-#: search.php:78
+#: search.php:68
 #: template-parts/content/content-category.php:37
 #: template-parts/content/content-conseil.php:43
 #: template-parts/content/content-post.php:50
-#: template-parts/content/content-template-category.php:50
+#: template-parts/content/content-template-category.php:96
 #: template-parts/content/content.php:28
 msgid "Page %"
 msgstr ""
 
 #. translators: %d: Number of posts.
-#: searchform.php:32
+#: searchform.php:31
 msgid "Search among %d posts..."
 msgstr ""
 
-#: searchform.php:34
+#: searchform.php:33
 msgid "Search&hellip;"
 msgstr ""
 
-#: searchform.php:38
+#: searchform.php:37
 msgctxt "submit button"
 msgid "🔍 Search"
 msgstr ""
@@ -312,6 +282,11 @@ msgstr ""
 
 #: template-parts/cta/banner-cta.php:7
 msgid "Accès gratuit 🚀"
+msgstr ""
+
+#: template-parts/elements/return-home.php:4
+#: template-parts/elements/return-home.php:5
+msgid "Web development : See more"
 msgstr ""
 
 #: template-parts/elements/share.php:3

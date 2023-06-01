@@ -40,17 +40,7 @@ get_header();
         <?php if (!have_posts()) : ?>
             <div class="entry-content">
                 <div>
-                    <h2><?php esc_html_e('Still not having it?', 'soyes'); ?></h2>
-                    <a href="<?php echo get_home_url('/'); ?>"
-                       title="<?php esc_html_e('Web development : See more', 'soyes'); ?>"
-                       class="wp-block-button__link">
-                        <?php esc_html_e('return "/";', 'soyes'); ?>
-                    </a>
-                    <a href="<?php echo get_post_type_archive_link('post'); ?>"
-                       title="<?php esc_html_e('Find all posts', 'soyes'); ?>"
-                       class="wp-block-button__link">
-                        <?php esc_html_e('find_all_articles();', 'soyes'); ?>
-                    </a>
+                    <?php get_template_part('template-parts/elements/return-categories'); ?>
                 </div>
             </div><!-- .entry-content -->
         <?php endif; ?>

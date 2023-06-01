@@ -18,24 +18,22 @@ $count_posts = wp_count_posts();
 ?>
 
 <div class="entry-search">
-    <div class="entry-content">
-        <form role="search" <?php echo $soyes_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
-              method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-            <div class="search-input-container">
-                <img src="<?php echo soyes_get_the_image('search-outline', 'svg', true, false); ?>" width="15"
-                     height="15"
-                     alt="🔎"
-                     aria-hidden="true" class="search-icon"/>
-                <input type="search"
-                       required
-                       placeholder="<?php printf(/* translators: %d: Number of posts. */
-                           esc_html__('Search among %d posts...', 'soyes'), $count_posts->publish); ?>"
-                       class="search-input"
-                       aria-label="<?php _e('Search&hellip;', 'soyes'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations ?>"
-                       value="<?php echo get_search_query(); ?>" name="s"/>
-            </div><!-- .search-input-container -->
-            <input type="submit" class="wp-block-button__link search-button"
-                   value="<?php echo esc_attr_x('🔍 Search', 'submit button', 'soyes'); ?>"/>
-        </form><!-- .search-form -->
-    </div><!-- .entry-content -->
+    <form role="search" <?php echo $soyes_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above. ?>
+          method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+        <div class="search-input-container">
+            <img src="<?php echo soyes_get_the_image('search-outline', 'svg', true, false); ?>" width="15"
+                 height="15"
+                 alt="🔎"
+                 aria-hidden="true" class="search-icon"/>
+            <input type="search"
+                   required
+                   placeholder="<?php printf(/* translators: %d: Number of posts. */
+                       esc_html__('Search among %d posts...', 'soyes'), $count_posts->publish); ?>"
+                   class="search-input"
+                   aria-label="<?php _e('Search&hellip;', 'soyes'); // phpcs:ignore: WordPress.Security.EscapeOutput.UnsafePrintingFunction -- core trusts translations ?>"
+                   value="<?php echo get_search_query(); ?>" name="s"/>
+        </div><!-- .search-input-container -->
+        <input type="submit" class="wp-block-button__link search-button"
+               value="<?php echo esc_attr_x('🔍 Search', 'submit button', 'soyes'); ?>"/>
+    </form><!-- .search-form -->
 </div><!-- .entry-search -->
