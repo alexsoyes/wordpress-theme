@@ -95,6 +95,10 @@ a.toc-link {
     z-index: 30;
 }
 
+#column-toc {
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 781px) {
     .toc-bot-container {
         height: 100%;
