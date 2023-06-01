@@ -11,10 +11,10 @@ $link = "https://learn.alexsoyes.com/cours-devenir-freelance-6f2f4b3a";
     <div class="card-content">
 
         <?php if (is_page_template('page-category.php')): ?>
-            <h3 class="card-title">
+            <h2 class="card-title">
                 <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Devenir dev freelance en 2023 (en toute
                     sécurité)</a>
-            </h3><!-- .card-title -->
+            </h2><!-- .card-title -->
         <?php else: ?>
             <div class="entry-category"><span>Cours gratuit</span></div>
             <div class="card-title">Devenir dev freelance en 2023 (en toute sécurité)</div>

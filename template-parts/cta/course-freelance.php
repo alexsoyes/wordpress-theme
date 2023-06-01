@@ -11,10 +11,10 @@ $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
     <div class="card-content">
 
         <?php if (is_page_template('page-category.php')): ?>
-            <h3 class="card-title">
+            <h2 class="card-title">
                 <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation
                     développeur freelance</a>
-            </h3><!-- .card-title -->
+            </h2><!-- .card-title -->
         <?php else: ?>
             <div class="entry-category"><span>Formation</span></div>
             <div class="card-title">Formation développeur freelance</div>

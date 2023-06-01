@@ -30,7 +30,7 @@
     color: var(--color-black);
 }
 
-.entry-post .card-title a:hover {
+.card-title a:hover {
     color: var(--color-link);
 }
 

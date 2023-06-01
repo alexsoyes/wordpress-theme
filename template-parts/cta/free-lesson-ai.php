@@ -12,10 +12,10 @@ $link = "https://alexsoyes.systeme.io/coder-avec-intelligence-artificielle";
     <div class="card-content">
 
         <?php if (is_page_template('page-category.php')): ?>
-            <h3 class="card-title">
+            <h2 class="card-title">
                 <a target="_blank" href="<?php echo $link; ?>"
                    rel="noopener">Maitriser l'IA pour coder 2x plus rapidement</a>
-            </h3><!-- .card-title -->
+            </h2><!-- .card-title -->
         <?php else: ?>
             <div class="entry-category"><span>Cours gratuit</span></div>
             <div class="card-title">Maitriser l'IA pour coder 2x plus rapidement</div>

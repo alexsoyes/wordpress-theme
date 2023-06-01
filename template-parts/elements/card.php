@@ -18,9 +18,9 @@ $category = soyes_get_the_main_category();
 
     <div class="card-content">
 
-        <h3 class="card-title">
+        <h2 class="card-title">
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </h3><!-- .card-title -->
+        </h2><!-- .card-title -->
 
         <?php if (has_excerpt()): ?>
             <div class="card-excerpt">
