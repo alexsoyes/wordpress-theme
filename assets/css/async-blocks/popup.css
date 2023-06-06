@@ -27,11 +27,10 @@
     padding: 20px;
 }
 
-.popup-title {
+.popup .popup-title {
     padding-bottom: 0;
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-bolder);
-    font-family: var(--font-family-secondary);
     line-height: 1.5;
     margin: 0;
 }
@@ -69,15 +68,4 @@
     line-height: 9px;
     text-align: center;
     padding: 10px;
-}
-
-@media only screen and (max-width: 781px) {
-    .popup {
-        width: 90%;
-    }
-
-    .popup .entry-content ul {
-        margin-left: 0;
-        margin-right: 0;
-    }
 }

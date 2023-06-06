@@ -50,6 +50,9 @@
 
 .search-button {
     padding: 15px 20px;
+    background-color: var(--color-black);
+    border-radius: var(--radius-default);
+    display: inline-block;
     margin: 0;
 }
 

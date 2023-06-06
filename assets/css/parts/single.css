@@ -127,13 +127,3 @@
     border: 2px solid var(--color-black);
     border-radius: var(--radius-default);
 }
-
-@media only screen and (max-width: 781px) {
-    .single .wp-block-columns {
-        flex-wrap: wrap !important;
-    }
-
-    .single .wp-block-column {
-        flex-basis: 100% !important;
-    }
-}
