@@ -480,11 +480,7 @@ i, em {
     /* Above WP toolbar. */
 }
 
-/**
- * Mailchimp
- */
-@media only screen and (max-width: 768px) {
-    .mc-banner {
-        display: none !important;
-    }
+.has-text-align-center {
+    text-align: center;
 }
+

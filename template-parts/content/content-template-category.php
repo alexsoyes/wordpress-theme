@@ -9,7 +9,12 @@
 <article>
     <header class="entry-header">
         <div class="entry-content">
-            <?php get_template_part('template-parts/elements/return-home'); ?>
+            <?php
+            // show yoast seo breadcrumb
+            if (function_exists('yoast_breadcrumb')) {
+                yoast_breadcrumb('<p class="has-text-align-center">', '</p>');
+            }
+            ?>
             <h1><?php the_title(); ?></h1>
         </div><!-- .entry-content -->
     </header><!-- .entry-header -->

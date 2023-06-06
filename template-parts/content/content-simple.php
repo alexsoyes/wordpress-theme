@@ -40,7 +40,7 @@
         <?php the_content(); ?>
     </div><!-- .entry-content -->
 
-    <footer class="entry-footer" style="text-align: center;">
+    <footer class="entry-footer has-text-align-center">
         <div class="entry-content">
             <p class="entry-return-link">
                 <small>

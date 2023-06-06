@@ -9,7 +9,12 @@
 <article data-clarity-region="category">
     <header class="entry-header">
         <div class="entry-content">
-            <?php get_template_part('template-parts/elements/return-home'); ?>
+            <?php
+            // show yoast seo breadcrumb
+            if (function_exists('yoast_breadcrumb')) {
+                yoast_breadcrumb('<p class="has-text-align-center">', '</p>');
+            }
+            ?>
             <div class="entry-text">
                 <?php echo wp_kses_post(wpautop(get_the_archive_description())); ?>
             </div><!-- .entry-text -->
