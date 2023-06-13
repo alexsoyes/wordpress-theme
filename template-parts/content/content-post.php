@@ -55,7 +55,9 @@
                     <?php get_template_part('template-parts/elements/widget-cta'); ?>
                 </div><!-- .banner-cta -->
                 <div id="column-toc" class="toc-bot"></div>
-                <?php get_template_part('template-parts/cta/button-cta-c'); ?>
+                <div class="column-toc-cta">
+                    <?php get_template_part('template-parts/cta/button-cta-c'); ?>
+                </div><!-- .column-toc-cta -->
             </div><!-- .toc-bot-container -->
         </div><!-- .wp-block-column -->
         </div><!-- .wp-block-columns -->

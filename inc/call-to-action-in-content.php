@@ -10,17 +10,19 @@ function add_call_to_action_to_content(string $content): string
         $ctasToAdd = [
             'newsletter-cta',
             'free-lesson-freelance',
+            'button-cta-a',
             'course-copilot',
             'course-freelance',
+            'button-cta-b',
             'free-lesson-ai',
         ];
 
-        // 5 CTA per page
+        // 7 CTA per page
         $numberOfH2InPage = count($matches[0]);
         $numberOfCTAsToAdd = count($ctasToAdd);
 
         // only add the first and last one if there is not enought h2
-        if ($numberOfH2InPage <= $numberOfCTAsToAdd) {
+        if ($numberOfH2InPage < $numberOfCTAsToAdd) {
             $content = str_replace(
                 $matches[0][0],
                 sprintf(

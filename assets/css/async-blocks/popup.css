@@ -23,16 +23,36 @@
     border-radius: 2px;
     box-shadow: 0 4px 10px #21212180;
     background: var(--color-white);
-    max-width: 400px;
-    padding: 20px;
+    max-width: 600px;
+    border: 3px solid var(--color-link);
 }
 
-.popup .popup-title {
+.popup .wp-block-columns {
+    margin-bottom: -4px;
+}
+
+.popup-header {
+    margin-top: 10px;
+}
+
+.popup-header > * {
+    display: inline-block;
+}
+
+.popup-content {
+    padding: 32px 32px 32px 0;
+}
+
+.popup-more-content {
+    font-size: 15px;
+}
+
+.popup-title {
+    margin: 0px 0px 0px 10px;
     padding-bottom: 0;
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-bolder);
     line-height: 1.5;
-    margin: 0;
 }
 
 .popup-description {
@@ -60,9 +80,10 @@
     position: absolute;
     top: -10px;
     right: -10px;
-    background: #000;
-    color: var(--color-link);
-    border: 2px solid var(--color-link);
+    background: var(--color-link);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    font-weight: var(--font-weight-bolder);
     height: 36px;
     width: 36px;
     line-height: 9px;

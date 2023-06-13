@@ -111,6 +111,10 @@ a.toc-link {
     }
 }
 
+.column-toc-cta {
+    margin-top: 5px;
+}
+
 @media only screen and (min-width: 782px) {
 
     .banner-cta {

@@ -70,54 +70,66 @@
 
 <aside class="exit-intent-popup" style="display: none;">
     <div class="popup">
-        <img src="<?php echo soyes_get_the_image('logo-only', 'svg', false, false); ?>"
-             alt="<?php echo get_bloginfo('name'); ?>"
-             class="soyes-newsletter-icon"
-             width="30" height="30">
-        <p class="popup-title"><?php _e('Guide Notion pour les devs', 'soyes'); ?></p>
-        <div class="entry-content">
-            <ul class="simple">
-                <li>🧑‍💻 3 roadmaps pour maîtriser le front ou le back</li>
-                <li>🚀 Les astuces pour 2x sa productivité</li>
-                <li>🔮 Comment les IAs vont changer le code</li>
-                <li>✅ Mes +20 meilleures ressources de dev</li>
-            </ul>
-        </div><!-- .entry-content -->
-        <form class="soyes-newsletter-form"
-              action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
-              method="post">
-            <!-- UTM -->
-            <input type="hidden" name="utm_source"
-                   value="<?php echo array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog'; ?>">
-            <input type="hidden" name="utm_medium"
-                   value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
-            <input type="hidden" name="utm_content"
-                   value="guide-notion-pour-les-devs-🧑‍💻-3-roadmaps-pour-maitriser-le-front-ou-le-back-🚀-les-astuces-pour-2x-sa-productivite-🔮-comment-les-ias-vont-changer-le-code-✅-mes-20-meilleures-ressources-de-dev-adresse-e-mail-x-💌-apprendre-1-chose-par-semaine-sur-le-code-avec-ma-newsletter-la-console">
-            <input type="hidden" name="utm_campaign"
-                   value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'lead-magnet'; ?>">
+        <div class="wp-block-columns">
+            <div class="wp-block-column">
+                <img src="https://alexsoyes.com/wp-content/uploads/2022/10/alex-web2day-608x912.jpg"
+                     alt="Coder avec la console">
 
-            <!-- Lead magnet -->
-            <input type="hidden" name="timezone" value="">
-            <input type="hidden" name="is_desktop" value="">
-            <input type="hidden" name="entity_id" value="4354526b-8920-4f87-bcbe-bb5e459cc262">
-            <input type="hidden" name="remote_url_id" value="7544150775c5a7686eb38d3b08f48e08e000ad4">
-            <input type="hidden" name="remote_source" value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
-            <input name="email" type="email" placeholder="<?php _e('Adresse e-mail', 'soyes'); ?>"
-                   required
-                   aria-label="Adresse e-mail" class="soyes-newsletter-email">
-            <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
-                   value="Recevoir le lien">
-        </form><!-- .soyes-newsletter-form -->
+            </div>
+
+            <div class="wp-block-column">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <img src="<?php echo soyes_get_the_image('logo-only', 'svg', false, false); ?>"
+                             alt="<?php echo get_bloginfo('name'); ?>"
+                             class="soyes-newsletter-icon"
+                             width="30" height="30">
+
+                        <p class="popup-title"><?php _e('La console', 'soyes'); ?></p>
+                    </div>
+                    <p>
+                        <strong>
+                            <?php _e("💌 1 e-mail de code exclusif", "soyes"); ?>
+                        </strong>
+                    </p>
+                    <p class="popup-more-content">
+                        <?php _e("Chaque semaine, je partage une nouvelle chose que j'ai apprise dans ma newsletter gratuite.", 'soyes'); ?>
+                    </p>
+                    <form class="soyes-newsletter-form"
+                          action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
+                          method="post">
+                        <!-- UTM -->
+                        <input type="hidden" name="utm_source"
+                               value="<?php echo array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog'; ?>">
+                        <input type="hidden" name="utm_medium"
+                               value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
+                        <input type="hidden" name="utm_content"
+                               value="💌-1-e-mail-de-code-exclusif-chaque-semaine-je-partage-une-nouvelle-chose-que-jai-apprise-dans-ma-newsletter-gratuite">
+                        <input type="hidden" name="utm_campaign"
+                               value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'lead-magnet'; ?>">
+
+                        <!-- Popin -->
+                        <input type="hidden" name="timezone" value="">
+                        <input type="hidden" name="is_desktop" value="">
+                        <input type="hidden" name="entity_id" value="4354526b-8920-4f87-bcbe-bb5e459cc262">
+                        <input type="hidden" name="remote_url_id" value="7544150775c5a7686eb38d3b08f48e08e000ad4">
+                        <input type="hidden" name="remote_source"
+                               value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
+                        <input name="email" type="email" placeholder="<?php _e('Adresse e-mail', 'soyes'); ?>"
+                               required
+                               aria-label="Adresse e-mail" class="soyes-newsletter-email">
+                        <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
+                               value="Level-up mon code 🚀">
+                    </form><!-- .soyes-newsletter-form -->
+                    <p class="popup-end">
+                        <small>
+                            <?php _e('Tu peux te désinscrire à tout moment.', 'soyes'); ?>
+                        </small>
+                    </p><!-- .popup-end -->
+                </div><!-- .entry-content -->
+            </div>
+        </div><!-- .wp-block-columns -->
         <span class="close">x</span>
-        <p class="popup-end">
-            <small>
-                💌 S'inscrire également à
-                <a href="https://alexsoyes.com" target="_blank">
-                    <?php _e('ma newsletter "La console".', 'soyes'); ?>
-                </a>
-                pour apprendre 1 chose par semaine sur le code.
-            </small>
-        </p>
     </div><!-- .popup -->
 </aside><!-- .exit-intent-popup -->
 

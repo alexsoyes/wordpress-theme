@@ -32,7 +32,6 @@ function soyes_newsletter($atts = []): string
         <div>
             <img src="<?php echo soyes_get_the_image('logo-only', 'svg', false, false); ?>"
                  alt="<?php echo get_bloginfo('name'); ?>"
-                 class="soyes-newsletter-icon"
                  width="50" height="50">
 
             <p class="soyes-newsletter-title">
@@ -45,7 +44,7 @@ function soyes_newsletter($atts = []): string
             </p><!-- .soyes-newsletter-title -->
 
             <p class="soyes-newsletter-desc">
-                <?php _e("📩 Chaque lundi, je partage <strong>1 nouveau truc de développeur</strong> que j'ai appris cette semaine.", 'alexsoyes'); ?>
+                <?php _e("📩 Chaque semaine, je partage <strong>1 nouveau truc de développeur</strong> que j'ai appris cette semaine.", 'alexsoyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
         </div>
 

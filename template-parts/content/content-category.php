@@ -33,6 +33,14 @@
     </div><!-- .entry-content -->
 
     <footer class="entry-footer default-max-width">
+        <div class="entry-content">
+            <?php
+            $category_id = get_queried_object()->term_id;
+            $term_meta = get_option("taxonomy_term_$category_id");
+
+            echo wp_kses_post(wpautop($term_meta['extra_category_description']));
+            ?>
+        </div>
         <?php
         wp_link_pages(
             array(
