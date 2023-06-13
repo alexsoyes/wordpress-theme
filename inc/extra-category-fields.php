@@ -1,44 +1,28 @@
 <?php
 
-function extra_category_fields($tag)
+function display_category_extra_field($tag)
 {
-    $t_id = $tag->term_id;
-    $term_meta = get_option("taxonomy_term_$t_id");
+    $content = get_term_meta($tag->term_id, 'category_extra_field', true);
     ?>
     <tr class="form-field">
-        <th scope="row" valign="top"><label for="extra_category_description"><?php _e('Extra Description'); ?></label>
-        </th>
+        <th scope="row" valign="top"><label for="category_extra_field">Category Extra Field</label></th>
         <td>
-            <?php
-            $content = esc_attr($term_meta['extra_category_description'] ?? '');
-            $editor_id = 'term_meta[extra_category_description]';
-            wp_editor($content, $editor_id);
-            ?>
-            <br/>
-            <span class="description"><?php _e('Enter additional category description'); ?></span>
+            <?php wp_editor($content, 'category_extra_field', array('textarea_rows' => 5)); ?>
+            <p class="description">Enter the extra field content for this category.</p>
         </td>
     </tr>
     <?php
 }
 
-add_action('edit_category_form_fields', 'extra_category_fields', 10, 2);
+add_action('category_edit_form_fields', 'display_category_extra_field');
+add_action('category_add_form_fields', 'display_category_extra_field');
 
-
-// Save extra taxonomy fields callback function.
-function save_extra_category_fields($term_id)
+function save_category_extra_field($term_id)
 {
-    if (isset($_POST['term_meta'])) {
-        $t_id = $term_id;
-        $term_meta = get_option("taxonomy_term_$t_id");
-        $cat_keys = array_keys($_POST['term_meta']);
-        foreach ($cat_keys as $key) {
-            if (isset($_POST['term_meta'][$key])) {
-                $term_meta[$key] = $_POST['term_meta'][$key];
-            }
-        }
-        //save the option array
-        update_option("taxonomy_term_$t_id", $term_meta);
+    if (isset($_POST['category_extra_field'])) {
+        update_term_meta($term_id, 'category_extra_field', $_POST['category_extra_field']);
     }
 }
 
-add_action('edited_category', 'save_extra_category_fields', 10, 2);
+add_action('edited_category', 'save_category_extra_field');
+add_action('create_category', 'save_category_extra_field');

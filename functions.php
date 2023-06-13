@@ -4,6 +4,7 @@
  * Functions and definitions
  */
 
+require 'inc/extra-category-fields.php';
 require 'inc/custom-post-types.php';
 require 'inc/template-functions.php';
 require 'inc/post-order.php';
