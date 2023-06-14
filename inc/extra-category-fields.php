@@ -7,7 +7,7 @@ function display_category_extra_field($tag)
     <tr class="form-field">
         <th scope="row" valign="top"><label for="category_extra_field">Category Extra Field</label></th>
         <td>
-            <?php wp_editor($content, 'category_extra_field', array('textarea_rows' => 5)); ?>
+            <?php wp_editor($content, 'category_extra_field', array('textarea_rows' => 15)); ?>
             <p class="description">Enter the extra field content for this category.</p>
         </td>
     </tr>

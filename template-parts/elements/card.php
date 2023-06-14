@@ -4,20 +4,14 @@
  * Linking to post.
  */
 
-list ($thumbnail_url, $thumbnail_width, $thumbnail_height) = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
+list ($thumbnail_url) = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
 $category = soyes_get_the_main_category();
 ?>
 
-<div class="card">
-    <div class="card-image">
-        <?php if ($thumbnail_url): ?>
-            <img src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(); ?>" width="<?php echo $thumbnail_width; ?>"
-                 height="<?php echo $thumbnail_height; ?>">
-        <?php endif; ?>
-    </div><!-- .card-image -->
+<div class="card" id="<?php echo urlencode(sanitize_title_with_dashes(remove_accents((the_title())))); ?>">
+    <div class="card-image" style="background-image: url('<?php echo $thumbnail_url; ?>')"></div><!-- .card-image -->
 
     <div class="card-content">
-
         <h2 class="card-title">
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h2><!-- .card-title -->
@@ -41,6 +35,5 @@ $category = soyes_get_the_main_category();
                 </div><!-- .card-category -->
             <?php endif; ?>
         </div><!-- .card-metadata -->
-
     </div><!-- .card-content -->
 </div><!-- .card -->

@@ -50,15 +50,7 @@
             if (has_shortcode($post->post_content, 'soyes_toc')): ?>
         </div><!-- .wp-block-column -->
         <div class="wp-block-column" style="flex-basis: 33.33%; position: relative">
-            <div class="toc-bot-container" id="toc-bot-container">
-                <div class="banner-cta">
-                    <?php get_template_part('template-parts/elements/widget-cta'); ?>
-                </div><!-- .banner-cta -->
-                <div id="column-toc" class="toc-bot"></div>
-                <div class="column-toc-cta">
-                    <?php get_template_part('template-parts/cta/button-cta-c'); ?>
-                </div><!-- .column-toc-cta -->
-            </div><!-- .toc-bot-container -->
+            <?php get_template_part('template-parts/elements/toc'); ?>
         </div><!-- .wp-block-column -->
         </div><!-- .wp-block-columns -->
         <?php endif; ?>

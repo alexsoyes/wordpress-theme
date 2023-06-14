@@ -183,7 +183,7 @@ function soyes_scripts(): void
 
     global $post;
 
-    if ($post && is_single()) {
+    if ($post && is_single() || is_category()) {
         wp_enqueue_script('soyes-script-tocbot', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.js', array(), $version, true);
     }
 
@@ -260,7 +260,7 @@ function soyes_enqueue_async_styles(): void
     $cssToEmbed[] = soyes_build_async_uri('footer');
     $cssToEmbed[] = soyes_build_async_uri('popup');
 
-    if (is_single()) {
+    if (is_single() || is_category()) {
         $cssToEmbed[] = soyes_build_async_uri('single-comments');
         $cssToEmbed[] = soyes_build_async_uri('single-social');
         $cssToEmbed[] = soyes_build_async_uri('single-content');

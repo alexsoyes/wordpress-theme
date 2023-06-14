@@ -22,14 +22,21 @@
     </header><!-- .entry-header -->
 
     <div class="entry-content">
-        <div class="cards">
-            <?php
-            while (have_posts()) {
-                the_post();
-                get_template_part('template-parts/elements/card');
-            }
-            ?>
-        </div><!-- .cards -->
+        <div class="wp-block-columns">
+            <div class="wp-block-column" style="flex-basis: 66.66%; position: relative">
+                <div class="cards" id="column-content">
+                    <?php
+                    while (have_posts()) {
+                        the_post();
+                        get_template_part('template-parts/elements/card');
+                    }
+                    ?>
+                </div><!-- .cards -->
+            </div><!-- .wp-block-column -->
+            <div class="wp-block-column" style="flex-basis: 33.33%; position: relative">
+                <?php get_template_part('template-parts/elements/toc'); ?>
+            </div><!-- .wp-block-column -->
+        </div><!-- .wp-block-columns -->
     </div><!-- .entry-content -->
 
     <footer class="entry-footer default-max-width">
