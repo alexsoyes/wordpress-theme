@@ -5,7 +5,6 @@
  */
 
 list ($thumbnail_url) = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
-$category = soyes_get_the_main_category();
 ?>
 
 <div class="card wp-block-columns">
@@ -27,14 +26,6 @@ $category = soyes_get_the_main_category();
             <div class="card-date">
                 <?php soyes_the_post_modified_date(); ?>
             </div><!-- .card-date -->
-
-            <?php if ($category) : ?>
-                <div class="card-category">
-            <span>
-            <?php echo esc_html($category->name); ?>
-            </span>
-                </div><!-- .card-category -->
-            <?php endif; ?>
         </div><!-- .card-metadata -->
     </div><!-- .card-content -->
 </div><!-- .card -->

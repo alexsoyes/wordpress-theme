@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.card.wp-block-columns > .wp-block-column:not(:first-child) {
+    margin-left: 0;
+}
+
 .card-content {
     flex-basis: 66.66%;
     color: var(--color-black);
@@ -44,20 +48,6 @@
 .card-excerpt p {
     font-size: var(--font-size-m);
     margin: 15px 0;
-}
-
-.card-category {
-    border-radius: var(--radius-stronger);
-    color: var(--color-black);
-    background-color: var(--color-primary);
-    padding: 5px 10px;
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-bold);
-    font-family: var(--font-family-secondary);
-    text-transform: capitalize;
-    position: absolute;
-    top: 10px;
-    left: 10px;
 }
 
 .card-metadata {
