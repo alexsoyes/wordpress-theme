@@ -13,9 +13,12 @@
     padding: 20px 30px;
 }
 
+.card-image.no-img {
+    width: 450px;
+}
+
 .card-image {
     flex-basis: 33.33%;
-    width: 450px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,12 +76,11 @@
 }
 
 @media only screen and (max-width: 991px) {
-    .card-image {
+    .card-image.no-img {
         height: 300px;
     }
 
     .card {
-        width: 80%;
         margin: 20px auto 40px auto;
     }
 }

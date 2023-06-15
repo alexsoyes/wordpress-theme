@@ -92,8 +92,9 @@ a.toc-link {
     transform: translateX(0)
 }
 
-#toc-button {
+.toc-bot-button-container {
     z-index: 30;
+    position: relative;
 }
 
 #column-toc {
@@ -102,12 +103,11 @@ a.toc-link {
 
 @media only screen and (max-width: 781px) {
 
-    .category .wp-block-columns {
+    .category .entry-content > .wp-block-columns {
         flex-wrap: wrap;
     }
 
-    .category .wp-block-columns
-    .wp-block-column {
+    .category .entry-content > .wp-block-columns > .wp-block-column {
         flex-basis: 100% !important;
         flex-grow: 1;
     }

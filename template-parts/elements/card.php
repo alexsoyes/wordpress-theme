@@ -8,13 +8,12 @@ list ($thumbnail_url) = wp_get_attachment_image_src(get_post_thumbnail_id(), 'me
 $category = soyes_get_the_main_category();
 ?>
 
-<div class="card" class="wp-block-columns"
-     id="<?php echo urlencode(sanitize_title_with_dashes(remove_accents((the_title())))); ?>">
-    <div class="card-image wp-block-column" style="background-image: url('<?php echo $thumbnail_url; ?>')"></div>
+<div class="card wp-block-columns">
+    <div class="card-image no-img wp-block-column" style="background-image: url('<?php echo $thumbnail_url; ?>')"></div>
     <!-- .card-image -->
 
     <div class="card-content wp-block-column">
-        <h2 class="card-title">
+        <h2 class="card-title" id="<?php echo urlencode(sanitize_title_with_dashes(remove_accents((the_title())))); ?>">
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h2><!-- .card-title -->
 
