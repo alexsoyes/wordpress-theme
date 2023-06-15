@@ -59,5 +59,6 @@
             )
         );
         ?>
+        <?php get_template_part('template-parts/elements/toc-menu'); ?>
     </footer><!-- .entry-footer -->
 </article>

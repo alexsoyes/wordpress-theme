@@ -264,7 +264,6 @@ function soyes_enqueue_async_styles(): void
         $cssToEmbed[] = soyes_build_async_uri('single-comments');
         $cssToEmbed[] = soyes_build_async_uri('single-social');
         $cssToEmbed[] = soyes_build_async_uri('single-content');
-        $cssToEmbed[] = soyes_build_async_uri('toc');
         $cssToEmbed[] = soyes_build_async_uri('tocbot');
     }
 

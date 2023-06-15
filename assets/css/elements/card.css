@@ -7,12 +7,14 @@
 }
 
 .card-content {
+    flex-basis: 66.66%;
     color: var(--color-black);
     font-size: var(--font-size-s);
     padding: 20px 30px;
 }
 
 .card-image {
+    flex-basis: 33.33%;
     width: 450px;
     background-position: center;
     background-size: cover;
@@ -71,7 +73,12 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .card-image {
+        height: 300px;
+    }
+
     .card {
-        flex-direction: column;
+        width: 80%;
+        margin: 20px auto 40px auto;
     }
 }

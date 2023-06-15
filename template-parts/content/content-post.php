@@ -69,19 +69,12 @@
         <footer class="entry-footer">
             <div id="community" class="entry-social">
                 <?php get_template_part('template-parts/elements/share'); ?>
-                <a href="#page" title="<?php esc_html_e('Back to top', 'soyes'); ?>">
-                    <span class="back-to-top">☝️</span><!-- .back-to-top -->
-                </a><!-- #page -->
-                <div class="toc-bot-button-container">
-                    <input type="checkbox" id="toc-button" class="toc-input">
-                    <label class="toc-icon" for="toc-button">
-                        <span id="toc-nav-menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </label>
-                </div><!-- .toc-button -->
+                <div class="sticky-buttons">
+                    <a href="#page" title="<?php esc_html_e('Back to top', 'soyes'); ?>">
+                        <span class="back-to-top">☝️</span><!-- .back-to-top -->
+                    </a><!-- #page -->
+                    <?php get_template_part('template-parts/elements/toc-menu'); ?>
+                </div><!-- .sticky-buttons -->
             </div><!-- #community -->
         </footer><!-- .entry-footer -->
     </article><!-- #post-<?php the_ID(); ?> -->

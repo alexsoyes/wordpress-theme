@@ -59,6 +59,11 @@
     font-size: var(--font-size-h1);
 }
 
+.sticky-buttons {
+    z-index: 30;
+    position: relative;
+}
+
 /**
  * Related posts.
  */

@@ -7,7 +7,6 @@
     color: var(--color-black);
     background-color: var(--color-lightgray);
     text-align: center;
-    z-index: 20;
     position: relative;
 }
 
