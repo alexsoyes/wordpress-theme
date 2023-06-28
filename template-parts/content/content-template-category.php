@@ -23,19 +23,6 @@
         <div class="cards">
             <?php the_content(); ?>
 
-            <h2>Formations gratuites pour les développeurs</h2>
-
-            <p>
-                <strong>Une séquence 5 emails par jour pendant 1 semaine</strong> pour maîtriser un sujet (100%
-                gratuit).
-            </p>
-            <p>✅ Je partage avec toi les techniques que j'apprends chaque semaine pour devenir meilleur dev.</p>
-            <p><em>C'est totalement gratuit et tu peux te désinscrire quand tu veux (ton mail reste en France).</em></p>
-            <p>Si jamais tu as des questions, je réponds à tout le monde par e-mail !</p>
-
-            <?php get_template_part('template-parts/cta/free-lesson-ai'); ?>
-            <?php get_template_part('template-parts/cta/free-lesson-freelance'); ?>
-
             <h2>Formations payantes pour les développeurs</h2>
 
             <p>
@@ -52,8 +39,34 @@
             <p>Là où mon contenu payant fait la différence, c'est que je te dis exactement quoi faire (avec des actions
                 concrètes) et que je te fais gagner un max de temps en te donnant un plan.</p>
 
-            <?php get_template_part('template-parts/cta/course-copilot'); ?>
-            <?php get_template_part('template-parts/cta/course-freelance'); ?>
+            <div class="wp-block-columns">
+                <div class="wp-block-column">
+                    <?php get_template_part('template-parts/cta/course-freelance'); ?>
+                </div><!-- .wp-block-column -->
+                <div class="wp-block-column">
+                    <?php get_template_part('template-parts/cta/course-copilot'); ?>
+                </div><!-- .wp-block-column -->
+            </div><!-- .wp-block-columns -->
+
+            <h2>Formations gratuites pour les développeurs</h2>
+
+            <p>
+                <strong>Une séquence 5 emails par jour pendant 1 semaine</strong> pour maîtriser un sujet (100%
+                gratuit).
+            </p>
+            <p>✅ Je partage avec toi les techniques que j'apprends chaque semaine pour devenir meilleur dev.</p>
+            <p><em>C'est totalement gratuit et tu peux te désinscrire quand tu veux (ton mail reste en France).</em></p>
+            <p>Si jamais tu as des questions, je réponds à tout le monde par e-mail !</p>
+
+            <div class="wp-block-columns">
+                <div class="wp-block-column">
+                    <?php get_template_part('template-parts/cta/free-lesson-ai'); ?>
+                </div><!-- .wp-block-column -->
+                <div class="wp-block-column">
+                    <?php get_template_part('template-parts/cta/free-lesson-freelance'); ?>
+                </div><!-- .wp-block-column -->
+            </div><!-- .wp-block-columns -->
+
 
             <h2>Pourquoi se former en dev ?</h2>
 
@@ -89,6 +102,27 @@
                 </li>
             </ul>
         </div><!-- .cards -->
+
+        <!-- wp:heading -->
+        <h2 class="wp-block-heading">Les guides gratuits pour devenir meilleur développeur</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:list -->
+        <ul><!-- wp:list-item -->
+            <li><a href="https://alexsoyes.com/commencer-programmation/">Développeur junior : Avoir des bases solides
+                    pour coder</a></li>
+            <!-- /wp:list-item -->
+
+            <!-- wp:list-item -->
+            <li><a href="https://alexsoyes.com/meilleur-developpeur/">Développeur intermédiaire : Progresser en code
+                    avec des outils et des techniques simples</a></li>
+            <!-- /wp:list-item -->
+
+            <!-- wp:list-item -->
+            <li><a href="https://alexsoyes.com/carriere/">Développeur senior : Rejoindre le top des meilleurs
+                    développeurs</a></li>
+            <!-- /wp:list-item --></ul>
+        <!-- /wp:list -->
     </div><!-- .entry-content -->
 
     <footer class="entry-footer default-max-width">

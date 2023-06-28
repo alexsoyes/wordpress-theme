@@ -12,7 +12,7 @@ $link = "https://learn.alexsoyes.com/formation-github-copilot";
 
         <?php if (is_page_template('page-category.php')): ?>
             <h2 class="card-title">
-                <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation premium
+                <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation
                     GitHub Copilot</a>
             </h2><!-- .card-title -->
         <?php else: ?>
@@ -24,9 +24,9 @@ $link = "https://learn.alexsoyes.com/formation-github-copilot";
             <p>8 vidéos sur GitHub Copilot pour coder 30% + vite avec une IA et gagner 2h de ton temps par jour.</p>
         </div><!-- .card-excerpt -->
 
-        <div class="new-cta">
+        <div class="wp-block-button__link">
             <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">Je veux coder plus rapidement ⚡️</span>
-        </div><!-- .new-cta -->
+        </div><!-- .wp-block-button__link -->
 
     </div><!-- .card-content -->
 </div>

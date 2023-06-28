@@ -25,9 +25,9 @@ $link = "https://learn.alexsoyes.com/cours-devenir-freelance-6f2f4b3a";
                 risque)</p>
         </div><!-- .card-excerpt -->
 
-        <div class="new-cta">
+        <div class="wp-block-button__link">
             <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">Je veux me lancer en freelance 🎉</span>
-        </div><!-- .new-cta -->
+        </div><!-- .wp-block-button__link -->
 
     </div>
 </div>
