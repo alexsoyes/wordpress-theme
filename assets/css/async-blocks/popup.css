@@ -24,7 +24,7 @@
     box-shadow: 0 4px 10px #21212180;
     background: var(--color-white);
     border: 3px solid var(--color-link);
-    width: 70%;
+    width: 100%;
 }
 
 .popup .wp-block-columns {
@@ -44,6 +44,12 @@
     padding: 20px;
 }
 
+@media only screen and (max-width: 991px) {
+    .popup img {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 786px) {
 
     .popup {
@@ -59,10 +65,18 @@
     font-size: 15px;
 }
 
+.popup .soyes-newsletter-submit {
+    font-size: var(--font-size-xs);
+}
+
+.popup ol li {
+    font-size: var(--font-size-m);
+}
+
 .popup-title {
     margin: 0px 0px 0px 10px;
     padding-bottom: 0;
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h3);
     font-weight: var(--font-weight-bolder);
     line-height: 1.5;
 }

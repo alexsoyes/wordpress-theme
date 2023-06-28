@@ -73,28 +73,23 @@
         <div class="wp-block-columns">
             <div class="wp-block-column">
                 <img src="https://alexsoyes.com/wp-content/uploads/2022/10/alex-web2day-608x912.jpg"
-                     alt="Coder avec la console">
-
+                     alt="Coder avec la console"
+                     class="popin-alex">
             </div>
 
             <div class="wp-block-column">
                 <div class="popup-content">
                     <div class="popup-header">
-                        <img src="<?php echo soyes_get_the_image('logo-only', 'svg', false, false); ?>"
-                             alt="<?php echo get_bloginfo('name'); ?>"
-                             class="soyes-newsletter-icon"
-                             width="30" height="30">
-
-                        <p class="popup-title"><?php _e('La console', 'soyes'); ?></p>
+                        <p class="popup-title"><?php _e('Formations gratuites pour les devs', 'soyes'); ?></p>
                     </div>
-                    <p>
-                        <strong>
-                            <?php _e("💌 1 e-mail de code exclusif", "soyes"); ?>
-                        </strong>
-                    </p>
-                    <p class="popup-more-content">
-                        <?php _e("Chaque semaine, je partage une nouvelle chose que j'ai apprise dans ma newsletter gratuite.", 'soyes'); ?>
-                    </p>
+                    <ol class="entry-content">
+                        <li>
+                            <?php _e("Devenir freelance (sans risque) 🚀", 'soyes'); ?>
+                        </li>
+                        <li>
+                            <?php _e("Coder plus rapidement avec l'IA ⚡️", 'soyes'); ?>
+                        </li>
+                    </ol>
                     <form class="soyes-newsletter-form"
                           action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
                           method="post">
@@ -104,7 +99,7 @@
                         <input type="hidden" name="utm_medium"
                                value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
                         <input type="hidden" name="utm_content"
-                               value="💌-1-e-mail-de-code-exclusif-chaque-semaine-je-partage-une-nouvelle-chose-que-jai-apprise-dans-ma-newsletter-gratuite">
+                               value="formations-gratuites-dev">
                         <input type="hidden" name="utm_campaign"
                                value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'lead-magnet'; ?>">
 
@@ -115,12 +110,17 @@
                         <input type="hidden" name="remote_url_id" value="7544150775c5a7686eb38d3b08f48e08e000ad4">
                         <input type="hidden" name="remote_source"
                                value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
-                        <input name="email" type="email" placeholder="<?php _e('Adresse e-mail', 'soyes'); ?>"
+                        <input name="email" type="email" placeholder="<?php _e('Ton meilleur e-mail', 'soyes'); ?>"
                                required
                                aria-label="Adresse e-mail" class="soyes-newsletter-email">
                         <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
-                               value="Level-up mon code 🚀">
+                               value="Récupérer gratuitement 👆">
                     </form><!-- .soyes-newsletter-form -->
+                    <p class="popup-more-content">
+                        <strong>
+                            <?php _e('️Reçois aussi 1 astuce de dev par semaine via ma newsletter "La console"', 'soyes'); ?>
+                        </strong>
+                    </p>
                     <p class="popup-end">
                         <small>
                             <?php _e('Tu peux te désinscrire à tout moment.', 'soyes'); ?>

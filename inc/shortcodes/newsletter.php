@@ -44,7 +44,7 @@ function soyes_newsletter($atts = []): string
             </p><!-- .soyes-newsletter-title -->
 
             <p class="soyes-newsletter-desc">
-                <?php _e("📩 Chaque semaine, je partage <strong>1 nouveau truc de développeur</strong> que j'ai appris cette semaine.", 'alexsoyes'); ?>
+                <?php _e("☀️ Chaque lundi matin, je partage <strong>1 nouveau truc de code</strong>.", 'alexsoyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
         </div>
 
@@ -59,7 +59,7 @@ function soyes_newsletter($atts = []): string
                     <input type="hidden" name="utm_medium"
                            value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
                     <input type="hidden" name="utm_content"
-                           value="🚀-la-console-la-newsletter-code-et-freelance-je-partage-chaque-semaine-1-nouveau-truc-de-developpeur-que-jai-appris-cette-semaine-rejoindre-1500-membres-recevoir-le-prochain">
+                           value="🚀-la-console-la-newsletter-code-et-freelance-chaque-lundi-matin-je-partage-1-nouveau-truc-de-code-appris-la-semaine-derniere-pour-devenir-meilleur-dev-1800-membres-rejoindre-la-console">
                     <input type="hidden" name="utm_campaign"
                            value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'newsletter-homepage'; ?>">
 
@@ -69,15 +69,15 @@ function soyes_newsletter($atts = []): string
                     <input type="hidden" name="entity_id" value="a769bf99-cd52-48e6-8c7a-c91599dbe9d7">
                     <input type="hidden" name="remote_url_id" value="75519704189a08e194836cbb389b0de6dc60bed">
                     <input type="hidden" name="remote_source" value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
-                    <input name="email" type="email" placeholder="<?php _e('Rejoindre + 1500 membres', 'soyes'); ?>"
+                    <input name="email" type="email" placeholder="<?php _e('Mon meilleur e-mail', 'soyes'); ?>"
                            required
                            aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
                     <input type="submit"
                            class="wp-block-button__link soyes-newsletter-submit wp-block-column"
-                           value="<?php _e("Recevoir le prochain 📩", 'soyes'); ?>">
+                           value="<?php _e("Rejoindre + 2100 devs 🔥", 'soyes'); ?>">
                 </form><!-- .soyes-newsletter-form -->
                 <small class="soyes-newsletter-warn">
-                    <?php _e('Newsletter entièrement gratuite, RGPD friendly.', 'soyes'); ?>
+                    <?php _e('Newsletter gratuite + RGPD friendly 🌱', 'soyes'); ?>
                 </small><!-- .soyes-newsletter-warn -->
             </div><!-- .soyes-newsletter-fill -->
         </div><!-- .soyes-newsletter-content -->
