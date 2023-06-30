@@ -59,8 +59,7 @@ msgstr "Retourner en haut de l'article"
 
 #: inc/template-functions.php:134
 msgid ""
-"Cet guide gratuit est long... Pense à le mettre en favoris pour revenir "
-"dessus ⭐️"
+"Ce guide gratuit est long... Pense à le mettre en favoris pour revenir dessus ⭐️"
 msgstr ""
 
 #: template-parts/content/content-conseil.php:15

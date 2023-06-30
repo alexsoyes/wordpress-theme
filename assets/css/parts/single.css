@@ -77,7 +77,13 @@
 }
 
 .entry-reading-time .estimated-warn {
-    font-size: var(--font-size-s);
+    margin-top: 20px;
+    font-size: var(--font-size-m);
+    font-weight: bold;
+}
+
+.entry-reading-time .estimated-warn span {
+    border-bottom: 3px solid var(--color-secondary);
 }
 
 

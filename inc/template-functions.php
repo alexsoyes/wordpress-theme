@@ -130,8 +130,8 @@ function soyes_the_reading_time(): void
 
     if ($reading_time >= 20) {
         $estimated_read_time .= sprintf(
-            '<p class="estimated-warn">%s</p>',
-            __('Cet guide gratuit est long... Pense à le mettre en favoris pour revenir dessus ⭐️', 'soyes')
+            '<div class="estimated-warn"><span>%s</span></div>',
+            __('Cet article est SUPER long ! Pense à le mettre en favoris ⭐️', 'soyes')
         );
     }
 
