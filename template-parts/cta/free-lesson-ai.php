@@ -25,9 +25,9 @@ $link = "https://learn.alexsoyes.com/coder-avec-intelligence-artificielle";
             <p>Comment coder avec l'IA au quotidien pour devenir un développeur plus productif.</p>
         </div><!-- .card-excerpt -->
 
-        <div class="wp-block-button__link">
-            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">Je veux coder avec l'IA 🤖</span>
-        </div><!-- .wp-block-button__link -->
+        <button class="wp-block-button__link" onclick="window.open(&quot;<?php echo $link; ?>&quot;)">
+            <span>Je veux coder avec l'IA 🤖</span>
+        </button><!-- .wp-block-button__link -->
 
     </div>
 </div>

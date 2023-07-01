@@ -23,9 +23,9 @@ $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
             <p>Deviens développeur freelance sans prendre de risque, facture entre 400€ et 600€ la journée.</p>
         </div><!-- .card-excerpt -->
 
-        <div class="wp-block-button__link">
-            <span onclick="window.open(&quot;<?php echo $link; ?>&quot;)">Je veux devenir dev freelance 🚀</span>
-        </div><!-- .wp-block-button__link -->
+        <button class="wp-block-button__link" onclick="window.open(&quot;<?php echo $link; ?>&quot;)">
+            <span>Je veux devenir dev freelance 🚀</span>
+        </button><!-- .wp-block-button__link -->
 
     </div>
 </div>
