@@ -70,6 +70,22 @@
     }
 }
 
+
+@media only screen and (min-width: 992px) {
+    body:not(.home) .soyes-newsletter-fill {
+        padding: 0 50px;
+    }
+}
+
+body:not(.home) .soyes-newsletter-submit.wp-block-column.wp-block-button__link,
+body:not(.home) .soyes-newsletter-form > * {
+    margin: 0;
+}
+
+body:not(.home) .soyes-newsletter-form {
+    flex-direction: column;
+}
+
 .soyes-newsletter-form > * {
     padding: 15px;
 }

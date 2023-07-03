@@ -143,13 +143,6 @@
     max-width: 450px;
 }
 
-
-@media only screen and (min-width: 992px) {
-    .entry-content .soyes-newsletter-fill {
-        padding: 0 50px;
-    }
-}
-
 @media only screen and (max-width: 991px) {
     .entry-content .card-content {
         padding: 20px;
@@ -159,15 +152,6 @@
 /**
  * Card for single posts
  */
-
-.entry-post .soyes-newsletter-submit.wp-block-column.wp-block-button__link,
-.entry-post .soyes-newsletter-form > * {
-    margin: 0;
-}
-
-.entry-post .soyes-newsletter-form {
-    flex-direction: column;
-}
 
 .entry-post .card {
     display: block;
