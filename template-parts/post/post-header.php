@@ -15,7 +15,7 @@
         </div><!-- .entry-meta -->
 
         <div class="entry-reading-time">
-            <?php soyes_the_reading_time(); ?>
+            <?php if (!is_singular('conseil')) soyes_the_reading_time(); ?>
         </div>
 
         <?php the_title('<h1 class="entry-title default-max-width">', '</h1>'); ?>
