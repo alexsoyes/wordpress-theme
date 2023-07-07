@@ -2,21 +2,19 @@
 $link = "https://learn.alexsoyes.com/formation-github-copilot";
 ?>
 
-<div class="card">
-    <div class="card-image">
+<div class="card wp-block-columns">
+    <div class="card-image wp-block-column">
         <img src="https://alexsoyes.com/wp-content/uploads/2023/04/formation_copilot.jpg"
              alt="Formation GitHub Copilot" width="450" height="300">
     </div><!-- .card-image -->
 
-    <div class="card-content">
-
+    <div class="card-content wp-block-column">
         <?php if (is_page_template('page-category.php')): ?>
             <h2 class="card-title">
                 <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation
                     GitHub Copilot</a>
             </h2><!-- .card-title -->
         <?php else: ?>
-            <div class="entry-category"><span>Formation</span></div>
             <div class="card-title">Formation GitHub Copilot</div>
         <?php endif; ?>
 
@@ -27,6 +25,5 @@ $link = "https://learn.alexsoyes.com/formation-github-copilot";
         <button class="wp-block-button__link" onclick="window.open(&quot;<?php echo $link; ?>&quot;)">
             <span>Je veux coder plus rapidement ⚡️</span>
         </button><!-- .wp-block-button__link -->
-
     </div><!-- .card-content -->
-</div>
+</div><!-- .card -->

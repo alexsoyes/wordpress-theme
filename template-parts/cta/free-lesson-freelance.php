@@ -2,13 +2,13 @@
 $link = "https://learn.alexsoyes.com/cours-devenir-freelance-6f2f4b3a";
 ?>
 
-<div class="card">
-    <div class="card-image">
+<div class="card wp-block-columns">
+    <div class="card-image wp-block-column">
         <img src="https://alexsoyes.com/wp-content/uploads/2020/09/devenir-developpeur-freelance.jpg"
              alt="Formation gratuite pour devenir développeur freelance" width="450" height="300">
     </div><!-- .card-image -->
 
-    <div class="card-content">
+    <div class="card-content wp-block-column">
 
         <?php if (is_page_template('page-category.php')): ?>
             <h2 class="card-title">

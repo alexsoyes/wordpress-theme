@@ -2,20 +2,19 @@
 $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
 ?>
 
-<div class="card">
-    <div class="card-image">
+<div class="card wp-block-columns">
+    <div class="card-image wp-block-column">
         <img src="https://alexsoyes.com/wp-content/uploads/2023/04/formation_freelance.jpg"
              alt="Formation développeur freelance" width="450" height="300">
     </div><!-- .card-image -->
 
-    <div class="card-content">
+    <div class="card-content wp-block-column">
 
         <?php if (is_page_template('page-category.php')): ?>
             <h2 class="card-title">
                 <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation développeur freelance</a>
             </h2><!-- .card-title -->
         <?php else: ?>
-            <div class="entry-category"><span>Formation</span></div>
             <div class="card-title">Formation développeur freelance</div>
         <?php endif; ?>
 

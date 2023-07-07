@@ -15,6 +15,7 @@ require 'inc/table-of-contents.php';
 require 'inc/call-to-action-in-content.php';
 require 'inc/shortcodes/toc.php';
 require 'inc/shortcodes/newsletter.php';
+require 'inc/shortcodes/courses.php';
 require 'inc/shortcodes/search-widget.php';
 require 'classes/class-walker-comment.php';
 require 'classes/class-walker-menu-social.php';
@@ -182,8 +183,13 @@ function soyes_scripts(): void
         wp_enqueue_style('soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version);
     }
 
-
     global $post;
+    if ($post &&
+        (has_shortcode($post->post_content, 'soyes_course_freelance') ||
+            (has_shortcode($post->post_content, 'soyes_course_copilot')))
+    ) {
+        wp_enqueue_style('soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version);
+    }
 
     if ($post && is_single() || is_category()) {
         wp_enqueue_script('soyes-script-tocbot', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.js', array(), $version, true);
@@ -261,10 +267,19 @@ function soyes_enqueue_async_styles(): void
     $cssToEmbed[] = soyes_build_async_uri('footer');
     $cssToEmbed[] = soyes_build_async_uri('popup');
 
+    global $post;
+    if ($post &&
+        (has_shortcode($post->post_content, 'soyes_course_freelance') ||
+            (has_shortcode($post->post_content, 'soyes_course_copilot')))
+    ) {
+        $cssToEmbed[] = soyes_build_async_uri('content-card');
+    }
+
     if (is_single() || is_category()) {
         $cssToEmbed[] = soyes_build_async_uri('single-comments');
         $cssToEmbed[] = soyes_build_async_uri('single-social');
         $cssToEmbed[] = soyes_build_async_uri('single-content');
+        $cssToEmbed[] = soyes_build_async_uri('content-card');
         $cssToEmbed[] = soyes_build_async_uri('tocbot');
     }
 
