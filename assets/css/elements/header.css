@@ -32,13 +32,14 @@
     padding-bottom: 2px;
 }
 
-#header nav a:hover {
-    border-bottom: 2px solid var(--color-black);
+#header nav li a:hover {
+    opacity: 0.7;
 }
 
 #header nav li:last-of-type a {
-    background-color: var(--color-primary);
-    border-radius: var(--radius-default);
+    color: var(--color-white);
+    background-color: var(--color-link);
+    border: 2px solid var(--color-black);
 }
 
 #header .header-container {
