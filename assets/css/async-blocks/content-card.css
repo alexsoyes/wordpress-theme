@@ -27,8 +27,6 @@
     max-width: 450px;
 }
 
-@media only screen and (max-width: 991px) {
-    .entry-content .card-content {
-        padding: 20px;
-    }
+.entry-content .card-content {
+    padding: 20px;
 }

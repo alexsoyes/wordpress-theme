@@ -2,13 +2,13 @@
 $link = "https://learn.alexsoyes.com/formation-github-copilot";
 ?>
 
-<div class="card wp-block-columns">
-    <div class="card-image wp-block-column">
+<div class="card">
+    <div class="card-image">
         <img src="https://alexsoyes.com/wp-content/uploads/2023/04/formation_copilot.jpg"
              alt="Formation GitHub Copilot" width="450" height="300">
     </div><!-- .card-image -->
 
-    <div class="card-content wp-block-column">
+    <div class="card-content">
         <?php if (is_page_template('page-category.php')): ?>
             <h2 class="card-title">
                 <a target="_blank" href="<?php echo $link; ?>" rel="noopener">Formation

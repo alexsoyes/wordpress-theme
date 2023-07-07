@@ -1,31 +1,31 @@
 .wp-block-column > .card {
+    display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card {
     width: 100%;
     margin: 20px 0 40px 0;
     box-shadow: var(--box-shadow-default);
-    display: flex;
-    position: relative;
 }
 
 .card.wp-block-columns > .wp-block-column:not(:first-child) {
     margin-left: 0;
 }
 
-.card-content {
+.wp-block-column > .card .card-content {
     flex-basis: 66.66%;
     color: var(--color-black);
     font-size: var(--font-size-s);
     padding: 20px 30px;
 }
 
-.card-image.no-img {
+.wp-block-column > .card .card-image.no-img {
     width: 450px;
 }
 
-.card-image {
+.wp-block-column > .card .card-image {
     flex-basis: 33.33%;
     background-position: center;
     background-size: cover;

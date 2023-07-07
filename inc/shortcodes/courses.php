@@ -3,7 +3,7 @@
 add_shortcode(
     'soyes_course_freelance',
     function ($atts = array()) {
-        printf(
+        return sprintf(
             '<aside class="call-to-action course-cta">%s</aside>',
             soyes_load_template_part('template-parts/cta/course-freelance')
         );
@@ -13,7 +13,7 @@ add_shortcode(
 add_shortcode(
     'soyes_course_copilot',
     function ($atts = array()) {
-        printf(
+        return sprintf(
             '<aside class="call-to-action course-cta">%s</aside>',
             soyes_load_template_part('template-parts/cta/course-copilot')
         );

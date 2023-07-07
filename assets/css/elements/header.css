@@ -64,6 +64,10 @@
         padding-bottom: 5px;
     }
 
+    #header nav a {
+        font-size: var(--font-size-l);
+    }
+
     #header nav li:last-of-type a {
         padding: 5px 8px;
     }
