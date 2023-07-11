@@ -98,10 +98,8 @@
                                value="<?php echo array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog'; ?>">
                         <input type="hidden" name="utm_medium"
                                value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
-                        <input type="hidden" name="utm_content"
-                               value="formations-gratuites-dev">
                         <input type="hidden" name="utm_campaign"
-                               value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'lead-magnet'; ?>">
+                               value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'newsletter-lead-magnet'; ?>">
 
                         <!-- Popin -->
                         <input type="hidden" name="timezone" value="">

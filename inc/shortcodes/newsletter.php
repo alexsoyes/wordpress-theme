@@ -18,6 +18,8 @@ add_shortcode(
  */
 function soyes_newsletter($atts = []): string
 {
+    $campaign = is_array($atts) && array_key_exists('campaign', $atts) ? $atts['campaign'] : 'newsletter-homepage';
+
     $container_class = 'soyes-newsletter-container';
 
     $additional_class = is_array($atts) && array_key_exists('class', $atts) ? $atts['class'] : false;
@@ -58,10 +60,8 @@ function soyes_newsletter($atts = []): string
                            value="<?php echo array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog'; ?>">
                     <input type="hidden" name="utm_medium"
                            value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
-                    <input type="hidden" name="utm_content"
-                           value="🚀-la-console-la-newsletter-code-et-freelance-chaque-lundi-matin-je-partage-1-nouveau-truc-de-code-appris-la-semaine-derniere-pour-devenir-meilleur-dev-2100-membres-rejoindre-la-console">
                     <input type="hidden" name="utm_campaign"
-                           value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'newsletter-homepage'; ?>">
+                           value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : $campaign; ?>">
 
                     <!-- La console -->
                     <input type="hidden" name="timezone" value="">
