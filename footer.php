@@ -72,22 +72,28 @@
     <div class="popup">
         <div class="wp-block-columns">
             <div class="wp-block-column">
-                <img src="https://alexsoyes.com/wp-content/uploads/2022/10/alex-web2day-608x912.jpg"
-                     alt="Coder avec la console"
-                     class="popin-alex">
-            </div>
-
-            <div class="wp-block-column">
                 <div class="popup-content">
                     <div class="popup-header">
-                        <p class="popup-title"><?php _e('Formations gratuites pour les devs', 'soyes'); ?></p>
+                        <p class="popup-title"><?php _e('Comment devenir meilleur en code ?', 'soyes'); ?></p>
                     </div>
-                    <ol class="entry-content">
+                    <div class="popup-more-content">
+                        <p>
+                            <strong>
+                                <?php _e('📩 1 astuce de code / semaine via ma newsletter "La console".', 'soyes'); ?>
+                            </strong>
+                        </p>
+                        <p>
+                            <em>
+                                <?php _e('🎁 Bonus, 2 cours offerts.', 'soyes'); ?>
+                            </em>
+                        </p>
+                    </div><!-- .popup-more-content -->
+                    <ol>
                         <li>
-                            <?php _e("Devenir freelance (sans risque) 🚀", 'soyes'); ?>
+                            <?php _e("Devenir développeur freelance (sans risque) 🚀", 'soyes'); ?>
                         </li>
                         <li>
-                            <?php _e("Coder plus rapidement avec l'IA ⚡️", 'soyes'); ?>
+                            <?php _e("Coder 30% plus rapidement avec l'IA ⚡️", 'soyes'); ?>
                         </li>
                     </ol>
                     <form class="soyes-newsletter-form"
@@ -112,16 +118,11 @@
                                required
                                aria-label="Adresse e-mail" class="soyes-newsletter-email">
                         <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
-                               value="Récupérer gratuitement 👆">
+                               value="M'inscrire maintenant">
                     </form><!-- .soyes-newsletter-form -->
-                    <p class="popup-more-content">
-                        <strong>
-                            <?php _e('️Reçois aussi 1 astuce de dev par semaine via ma newsletter "La console"', 'soyes'); ?>
-                        </strong>
-                    </p>
                     <p class="popup-end">
                         <small>
-                            <?php _e('Tu peux te désinscrire à tout moment.', 'soyes'); ?>
+                            <?php _e('RGPD friendly 🌱 - Désinscription à tout moment', 'soyes'); ?>
                         </small>
                     </p><!-- .popup-end -->
                 </div><!-- .entry-content -->
