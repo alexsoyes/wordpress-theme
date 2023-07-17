@@ -102,9 +102,9 @@ function soyes_the_comment_count(bool $shouldDisplayText = true): void
 
 $count_posts = wp_count_posts();
 
-function soyes_get_analytics_params(?string $campaign): array
+function soyes_get_analytics_params(?string $campaign = null): array
 {
-    $campaign = $campaign || (array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : false);
+    $campaign = $campaign ?? (array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : false);
 
     return [
         'utm_source' => array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog',
