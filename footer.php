@@ -97,23 +97,11 @@
                         </li>
                     </ol>
                     <form class="soyes-newsletter-form"
-                          action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
+                          action="<?php echo soyes_form_action('newsletter-lead-magnet'); ?>"
                           method="post">
-                        <!-- UTM -->
-                        <input type="hidden" name="utm_source"
-                               value="<?php echo array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog'; ?>">
-                        <input type="hidden" name="utm_medium"
-                               value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
-                        <input type="hidden" name="utm_campaign"
-                               value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : 'newsletter-lead-magnet'; ?>">
-
-                        <!-- Popin -->
-                        <input type="hidden" name="timezone" value="">
-                        <input type="hidden" name="is_desktop" value="">
-                        <input type="hidden" name="entity_id" value="4354526b-8920-4f87-bcbe-bb5e459cc262">
-                        <input type="hidden" name="remote_url_id" value="7544150775c5a7686eb38d3b08f48e08e000ad4">
-                        <input type="hidden" name="remote_source"
-                               value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
+                        <input type="hidden" name="type" value="newsletter-lead-magnet">
+                        <input type="hidden" name="timezone">
+                        <input type="hidden" name="is_desktop">
                         <input name="email" type="email" placeholder="<?php _e('Ton meilleur e-mail', 'soyes'); ?>"
                                required
                                aria-label="Adresse e-mail" class="soyes-newsletter-email">

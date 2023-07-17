@@ -102,18 +102,24 @@ function soyes_the_comment_count(bool $shouldDisplayText = true): void
 
 $count_posts = wp_count_posts();
 
-function soyes_the_popularity(): string
+function soyes_get_analytics_params(?string $campaign): array
 {
-    global $count_posts;
-    $soyes_comment_count = get_comments_number();
+    $campaign = $campaign || (array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : false);
 
-    $times = $soyes_comment_count * 10 / $count_posts->publish;
+    return [
+        'utm_source' => array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog',
+        'utm_medium' => array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm',
+        'utm_content' => array_key_exists('utm_content', $_GET) ? $_GET['utm_content'] : false,
+        'utm_campaign' => $campaign,
+    ];
+}
 
-    if ($times >= 5) {
-        $times = 5;
-    }
-
-    return str_repeat('🔥', $times);
+function soyes_form_action(string $type): string
+{
+    return add_query_arg(
+        soyes_get_analytics_params($type),
+        get_template_directory_uri() . "/custom/newsletter-relay.php"
+    );
 }
 
 function soyes_the_reading_time(): void

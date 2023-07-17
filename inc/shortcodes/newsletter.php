@@ -18,7 +18,7 @@ add_shortcode(
  */
 function soyes_newsletter($atts = []): string
 {
-    $campaign = is_array($atts) && array_key_exists('campaign', $atts) ? $atts['campaign'] : 'newsletter-homepage';
+    $type = is_array($atts) && array_key_exists('campaign', $atts) ? $atts['campaign'] : 'newsletter-homepage';
 
     $container_class = 'soyes-newsletter-container';
 
@@ -53,22 +53,10 @@ function soyes_newsletter($atts = []): string
         <div class="soyes-newsletter-content">
             <div class="soyes-newsletter-fill">
                 <form class="soyes-newsletter-form wp-block-columns"
-                      action="<?php echo get_template_directory_uri(); ?>/custom/newsletter-relay.php"
+                      action="<?php echo soyes_form_action($type); ?>"
                       method="post">
-                    <!-- UTM -->
-                    <input type="hidden" name="utm_source"
-                           value="<?php echo array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog'; ?>">
-                    <input type="hidden" name="utm_medium"
-                           value="<?php echo array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm'; ?>">
-                    <input type="hidden" name="utm_campaign"
-                           value="<?php echo array_key_exists('utm_campaign', $_GET) ? $_GET['utm_campaign'] : $campaign; ?>">
-
-                    <!-- La console -->
-                    <input type="hidden" name="timezone" value="">
-                    <input type="hidden" name="is_desktop" value="">
-                    <input type="hidden" name="entity_id" value="a769bf99-cd52-48e6-8c7a-c91599dbe9d7">
-                    <input type="hidden" name="remote_url_id" value="75519704189a08e194836cbb389b0de6dc60bed">
-                    <input type="hidden" name="remote_source" value="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>">
+                    <input type="hidden" name="timezone">
+                    <input type="hidden" name="is_desktop">
                     <input name="email" type="email" placeholder="<?php _e('Mon meilleur e-mail', 'soyes'); ?>"
                            required
                            aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
