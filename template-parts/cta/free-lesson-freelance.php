@@ -40,7 +40,7 @@
                        required
                        aria-label="Adresse e-mail" class="soyes-newsletter-email">
                 <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
-                       value="Recevoir la formation">
+                       value="Recevoir">
             </form><!-- .soyes-newsletter-form -->
 
             <small>

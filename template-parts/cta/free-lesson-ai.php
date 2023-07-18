@@ -6,7 +6,7 @@
                  height="300">
         </div><!-- .card-image -->
 
-        <div class="card-content wp-block-column">
+        <div class="card-content">
 
             <div class="card-tag">
                 <span>🎁 Formation gratuite</span>
@@ -41,7 +41,7 @@
                            required
                            aria-label="Adresse e-mail" class="soyes-newsletter-email">
                     <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
-                           value="Recevoir la formation">
+                           value="Recevoir">
                 </form><!-- .soyes-newsletter-form -->
 
                 <small>

@@ -21,7 +21,6 @@
  * Call to action
  */
 .call-to-action {
-    box-shadow: var(--box-shadow-strong);
     margin: 60px auto 30px auto;
     border-radius: var(--radius-default);
     max-width: 450px;

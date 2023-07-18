@@ -8,6 +8,7 @@
     width: 100%;
     margin: 20px 0 40px 0;
     box-shadow: var(--box-shadow-default);
+    background-color: var(--color-white);
 }
 
 .card.wp-block-columns > .wp-block-column:not(:first-child) {

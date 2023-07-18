@@ -87,16 +87,17 @@
 
         <ul>
             <li><a href="https://alexsoyes.com">Lire tous les articles du blog</a> (Gratuit)</li>
-            <li><a href="<?php $link = "https://learn.alexsoyes.com/cours-devenir-freelance-6f2f4b3a";
+            <li><a target="_blank" href="<?php $link = "https://learn.alexsoyes.com/cours-devenir-freelance-6f2f4b3a";
                 echo $link; ?>">Formation gratuite développeur freelance</a>
             </li>
-            <li><a href="<?php $link = "https://learn.alexsoyes.com/coder-avec-intelligence-artificielle";
-                echo $link; ?>">Formation gratuite pour coder avec l'IA</a>
+            <li><a target="_blank"
+                   href="<?php $link = "https://learn.alexsoyes.com/coder-avec-intelligence-artificielle";
+                   echo $link; ?>">Formation gratuite pour coder avec l'IA</a>
             </li>
-            <li><a href="<?php $link = "https://learn.alexsoyes.com/formation-github-copilot";
+            <li><a target="_blank" href="<?php $link = "https://learn.alexsoyes.com/formation-github-copilot";
                 echo $link; ?>">Formation GitHub Copilot</a> (Payant)
             </li>
-            <li><a href="<?php $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
+            <li><a target="_blank" href="<?php $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
                 echo $link; ?>">Formation développeur freelance</a> (Payant)
             </li>
         </ul>

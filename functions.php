@@ -185,8 +185,12 @@ function soyes_scripts(): void
 
     global $post;
     if ($post &&
-        (has_shortcode($post->post_content, 'soyes_course_freelance') ||
-            (has_shortcode($post->post_content, 'soyes_course_copilot')))
+        (
+            has_shortcode($post->post_content, 'soyes_course_freelance') ||
+            has_shortcode($post->post_content, 'soyes_free_lesson_freelance') ||
+            has_shortcode($post->post_content, 'soyes_free_lesson_ai') ||
+            has_shortcode($post->post_content, 'soyes_course_copilot')
+        )
     ) {
         wp_enqueue_style('soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version);
     }

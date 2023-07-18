@@ -19,3 +19,18 @@ add_shortcode(
         );
     }
 );
+
+
+add_shortcode(
+    'soyes_free_lesson_freelance',
+    function ($atts = array()) {
+        return soyes_load_template_part('template-parts/cta/free-lesson-freelance');
+    }
+);
+
+add_shortcode(
+    'soyes_free_lesson_ai',
+    function ($atts = array()) {
+        return soyes_load_template_part('template-parts/cta/free-lesson-ai');
+    }
+);
