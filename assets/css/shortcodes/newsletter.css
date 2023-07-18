@@ -84,6 +84,7 @@ body:not(.home) main .soyes-newsletter-form > * {
 
 body:not(.home) main .soyes-newsletter-form {
     flex-direction: column;
+    display: flex;
 }
 
 .soyes-newsletter-form > * {

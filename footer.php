@@ -100,9 +100,10 @@
                           action="<?php echo soyes_form_action('newsletter-lead-magnet'); ?>"
                           method="post">
                         <input type="hidden" name="type" value="newsletter-lead-magnet">
+                        <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
                         <input type="hidden" name="timezone">
                         <input type="hidden" name="is_desktop">
-                        <input name="email" type="email" placeholder="<?php _e('Ton meilleur e-mail', 'soyes'); ?>"
+                        <input name="email" type="email" placeholder="<?php _e('Mon adresse e-mail', 'soyes'); ?>"
                                required
                                aria-label="Adresse e-mail" class="soyes-newsletter-email">
                         <input type="submit" class="wp-block-button__link soyes-newsletter-submit"

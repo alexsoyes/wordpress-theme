@@ -56,6 +56,7 @@ function soyes_newsletter($atts = []): string
                       action="<?php echo soyes_form_action($type); ?>"
                       method="post">
                     <input type="hidden" name="type" value="<?php echo $type; ?>">
+                    <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
                     <input type="hidden" name="timezone">
                     <input type="hidden" name="is_desktop">
                     <input name="email" type="email" placeholder="<?php _e('Mon meilleur e-mail', 'soyes'); ?>"

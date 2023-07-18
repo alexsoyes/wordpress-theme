@@ -41,6 +41,16 @@
     margin: 0;
 }
 
+.card-tag {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 5px 15px;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: var(--radius-strong);
+    font-size: var(--font-size-m);
+}
+
 .card-title a {
     color: var(--color-black);
 }
@@ -50,8 +60,13 @@
 }
 
 .card-excerpt p {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-l);
     margin: 15px 0;
+}
+
+.card-excerpt ul li {
+    font-size: var(--font-size-l);
+    margin: 0;
 }
 
 .card-metadata {

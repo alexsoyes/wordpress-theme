@@ -74,6 +74,11 @@ function soyes_get_the_social_icon(string $socialName): string
     return soyes_get_the_image($socialName, 'svg', true, true);
 }
 
+function soyes_the_current_uri(): void
+{
+    echo esc_url(strtok($_SERVER['REQUEST_URI'], '?'));
+}
+
 function soyes_the_comment_count(bool $shouldDisplayText = true): void
 {
     $soyes_comment_count = get_comments_number();
