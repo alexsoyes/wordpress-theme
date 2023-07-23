@@ -137,8 +137,8 @@ a.toc-link {
         transform: translateX(0);
         right: calc((100% - 48rem - 4rem) / 2);
         position: sticky;
-        top: 0px;
-        height: 100vh;
+        top: 75px;
+        max-height: calc(100vh - 75px);
     }
 
     .toc-icon {

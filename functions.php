@@ -16,6 +16,7 @@ require 'inc/call-to-action-in-content.php';
 require 'inc/shortcodes/toc.php';
 require 'inc/shortcodes/newsletter.php';
 require 'inc/shortcodes/courses.php';
+require 'inc/shortcodes/testimonials.php';
 require 'inc/shortcodes/search-widget.php';
 require 'classes/class-walker-comment.php';
 require 'classes/class-walker-menu-social.php';
@@ -187,12 +188,18 @@ function soyes_scripts(): void
     if ($post &&
         (
             has_shortcode($post->post_content, 'soyes_course_freelance') ||
-            has_shortcode($post->post_content, 'soyes_free_lesson_freelance') ||
-            has_shortcode($post->post_content, 'soyes_free_lesson_ai') ||
             has_shortcode($post->post_content, 'soyes_course_copilot')
         )
     ) {
         wp_enqueue_style('soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version);
+    }
+
+    if ($post &&
+        (
+        has_shortcode($post->post_content, 'soyes_testimonials')
+        )
+    ) {
+        wp_enqueue_style('soyes-style-shortcode-testimonial', get_template_directory_uri() . '/assets/css/shortcodes/testimonials.css', array(), $version);
     }
 
     if ($post && is_single() || is_category()) {
@@ -256,10 +263,10 @@ function soyes_sidebar(): void
 add_action('widgets_init', 'soyes_sidebar');
 
 
-function soyes_build_async_uri(string $handle): string
+function soyes_build_async_uri(string $handle, string $folder = 'async-blocks'): string
 {
     global $version;
-    return sprintf("%s/wp-content/themes/soyes/assets/css/async-blocks/%s.css?v=%s", get_site_url(), $handle, $version);
+    return sprintf("%s/wp-content/themes/soyes/assets/css/%s/%s.css?v=%s", get_site_url(), $folder, $handle, $version);
 }
 
 /**
@@ -277,6 +284,14 @@ function soyes_enqueue_async_styles(): void
             (has_shortcode($post->post_content, 'soyes_course_copilot')))
     ) {
         $cssToEmbed[] = soyes_build_async_uri('content-card');
+    }
+    if ($post &&
+        (
+            has_shortcode($post->post_content, 'soyes_free_lesson_freelance') ||
+            has_shortcode($post->post_content, 'soyes_free_lesson_ai')
+        )
+    ) {
+        $cssToEmbed[] = soyes_build_async_uri('card', 'elements');
     }
 
     if (is_single() || is_category()) {
