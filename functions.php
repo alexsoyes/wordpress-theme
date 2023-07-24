@@ -285,6 +285,9 @@ function soyes_enqueue_async_styles(): void
     ) {
         $cssToEmbed[] = soyes_build_async_uri('content-card');
     }
+    if ($post && is_single() && has_shortcode($post->post_content, 'soyes_toc')) {
+        $cssToEmbed[] = soyes_build_async_uri('main-toc');
+    }
     if ($post &&
         (
             has_shortcode($post->post_content, 'soyes_free_lesson_freelance') ||
