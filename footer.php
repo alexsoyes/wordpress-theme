@@ -14,9 +14,7 @@
 <footer id="colophon" class="site-footer">
 
     <?php if (is_active_sidebar('sidebar-footer-about')) : ?>
-        <div class="entry-content">
-            <?php dynamic_sidebar('sidebar-footer-about'); ?>
-        </div><!-- .entry-content -->
+        <?php dynamic_sidebar('sidebar-footer-about'); ?>
     <?php endif; ?>
 
     <div class="follow-me">

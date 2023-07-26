@@ -1,7 +1,7 @@
 .soyes-newsletter-container {
     text-align: center;
-    background-color: var(--color-primary);
     padding: 30px;
+    background-color: var(--color-lightgray);
 }
 
 @media only screen and (max-width: 991px) {
@@ -19,7 +19,7 @@
     line-height: 1.6;
     font-weight: var(--font-weight-bolder);
     font-size: var(--font-size-h1);
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-family-primary);
 }
 
 .soyes-newsletter-desc {
@@ -28,8 +28,8 @@
 
 .soyes-newsletter-title span {
     display: inline-block;
-    color: var(--color-primary);
-    background-color: var(--color-black);
+    color: var(--color-white);
+    background-color: var(--color-primary);
     padding: 2px 12px;
     margin: 5px 5px 0 0;
 }
@@ -144,7 +144,7 @@ Cover blocks.
 .wp-block-cover-image .has-background-dim:not([class*=-background-color]),
 .wp-block-cover.has-background-dim:not([class*=-background-color]),
 .wp-block-cover .has-background-dim:not([class*=-background-color]) {
-    background-color: var(--color-primary);
+    background-color: var(--color-lightgray);
 }
 
 .wp-block-cover-image.has-background-dim:not(.has-background-gradient)::before,

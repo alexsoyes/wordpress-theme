@@ -39,7 +39,7 @@
                 <input name="email" type="email" placeholder="<?php _e('Mon adresse e-mail', 'soyes'); ?>"
                        required
                        aria-label="Adresse e-mail" class="soyes-newsletter-email">
-                <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
+                <input type="submit" class="wp-block-button__link actionable soyes-newsletter-submit"
                        value="Recevoir">
             </form><!-- .soyes-newsletter-form -->
 

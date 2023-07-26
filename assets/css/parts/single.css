@@ -64,7 +64,7 @@
 }
 
 .entry-reading-time p {
-    background-color: var(--color-primary);
+    color: var(--color-gray);
     margin: 0;
     display: inline-block;
     padding: 0 10px;
@@ -83,7 +83,8 @@
 }
 
 .entry-reading-time .estimated-warn span {
-    border-bottom: 3px solid var(--color-secondary);
+    background-color: var(--color-italic);
+    padding: 5px;
 }
 
 

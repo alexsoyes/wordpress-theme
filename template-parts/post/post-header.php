@@ -16,7 +16,7 @@
 
         <div class="entry-reading-time">
             <?php if (!is_singular('conseil')) soyes_the_reading_time(); ?>
-        </div>
+        </div><!-- .entry-reading-time -->
 
         <?php the_title('<h1 class="entry-title default-max-width">', '</h1>'); ?>
 
@@ -27,15 +27,15 @@
 
             <?php get_template_part('template-parts/elements/author-box'); ?>
 
-            <small class="link-comment">
-                <a href="#community">
+            <div>
+                <a class="wp-block-button__link" href="#community">
                     <?php if (get_comments_number() > 0): ?>
                         <?php _e('Read the', 'soyes') ?>&nbsp;<?php soyes_the_comment_count(); ?>
                     <?php else: ?>
                         <?php _e('Leave a comment ?', 'soyes') ?>
                     <?php endif; ?>
-                </a>
-            </small><!-- .link-comment -->
+                </a><!-- .wp-block-button__link-->
+            </div>
         <?php endif; ?>
     </div><!-- .entry-content -->
 </div><!-- .entry-header -->

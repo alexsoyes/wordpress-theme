@@ -37,9 +37,7 @@
 }
 
 .comment-reply-link {
-    background-color: var(--color-link);
     font-family: var(--font-family-secondary);
-    color: var(--color-white);
     padding: 0 15px;
     border-radius: var(--radius-strong);
     display: inline-flex;

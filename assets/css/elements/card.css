@@ -44,12 +44,13 @@
 
 .card-tag {
     display: inline-block;
-    margin: 10px auto;
-    padding: 5px 15px;
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    border-radius: var(--radius-strong);
+    margin: 10px auto 15px auto;
+    color: var(--color-primary);
     font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bolder);
+    font-family: var(--font-family-secondary);
+    border-bottom: 4px dashed var(--color-secondary);
+    padding-bottom: 5px;
 }
 
 .card-title a {

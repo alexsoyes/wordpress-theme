@@ -137,7 +137,7 @@ figure figcaption {
     position: relative;
     font-size: var(--font-size-m);
     padding: 10px 0px;
-    text-shadow: var(--color-primary) 1px 0 10px;
+    text-shadow: var(--color-gray) 1px 0 1px;
     color: var(--color-gray);
     font-style: italic;
 }

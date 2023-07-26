@@ -1,7 +1,7 @@
 /*
 Theme Name: soyes
 Description: A very simple blog for eco friendly bloggers!
-Version: 0.8.3
+Version: 0.8.5
 Author: Alex so yes
 Theme URI: https://alexsoyes.com
 Author URI: https://alexsoyes.com
@@ -28,17 +28,18 @@ Requires PHP: 7.1
     --container-width: calc(100% - (var(--container-padding) * 2));
 
     /* Main colors */
-    --color-primary: #fff9e0;
-    --color-secondary: #F48FB1;
+    --color-primary: #6562E8;
+    --color-secondary: #C9C8F2;
+    --color-tertiary: var(--color-black);
 
     /* Colors */
+    --color-italic: #fff9e0;
     --color-white: #fff;
-    --color-black: #000;
     --color-lightgray: #FAFAFA;
-    --color-gray: #37474F;
-    --color-link: #0060df;
     --color-box-shadow: rgba(0, 0, 0, 0.1);
-    --color-italic: var(--color-primary);
+    --color-black: #000;
+    --color-link: var(--color-black);
+    --color-gray: #37474F;
 
     /* Elements */
     --box-shadow-default: 0 1px 6px 0 var(--color-box-shadow); /* 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12); */
@@ -191,7 +192,7 @@ img {
 .wp-block-button__link,
 .entry-content a.wp-block-button__link,
 a.wp-block-button__link {
-    background-color: var(--color-link);
+    background-color: var(--color-tertiary);
     color: var(--color-white);
     box-shadow: var(--box-shadow-default);
     font-size: var(--font-size-m);
@@ -204,11 +205,20 @@ a.wp-block-button__link {
     letter-spacing: 1px;
 }
 
+.wp-block-button__link.actionable {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.wp-block-button__link.actionable:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
 .entry-content .wp-block-button__link:hover {
     box-shadow: var(--box-shadow-strong);
     background-color: var(--color-primary);
-    color: var(--color-black);
-    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
 }
 
 .wp-block-buttons.aligncenter {
@@ -338,13 +348,13 @@ i, em {
 .entry-content ul a,
 .entry-content p a {
     color: var(--color-link);
-    padding-bottom: 2px;
-    border-bottom: 1px solid var(--color-link);
+    padding-bottom: 3px;
+    border-bottom: 2px dashed var(--color-link);
 }
 
 .entry-content a:hover {
-    color: var(--color-black);
-    border-color: var(--color-black);
+    color: var(--color-primary);
+    border-color: var(--color-secondary);
 }
 
 /**

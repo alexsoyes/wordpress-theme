@@ -30,16 +30,13 @@
     margin-top: 15px;
 }
 
-.social-buttons > button:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-black);
-}
-
 .social-buttons > button {
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
     color: var(--color-black);
+    font-weight: var(--font-weight-bold);
     padding: 5px 25px;
     font-size: var(--font-size-m);
+    font-family: var(--font-family-secondary);
     display: flex;
     width: 100%;
     justify-content: center;

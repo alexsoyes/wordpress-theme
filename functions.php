@@ -254,7 +254,7 @@ function soyes_sidebar(): void
             'name' => __('Footer text', 'soyes'),
             'id' => 'sidebar-footer-about',
             'description' => __('Display some basic info about who you are in the footer.', 'soyes'),
-            'before_widget' => '<div>',
+            'before_widget' => '<div class="entry-content">',
             'after_widget' => '</div>',
         )
     );

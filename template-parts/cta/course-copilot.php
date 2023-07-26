@@ -22,7 +22,7 @@ $link = "https://learn.alexsoyes.com/formation-github-copilot";
             <p>8 vidéos sur GitHub Copilot pour coder 30% + vite avec une IA et gagner 2h de ton temps par jour.</p>
         </div><!-- .card-excerpt -->
 
-        <button class="wp-block-button__link" onclick="window.open(&quot;<?php echo $link; ?>&quot;)">
+        <button class="wp-block-button__link actionable" onclick="window.open(&quot;<?php echo $link; ?>&quot;)">
             <span>Je veux coder plus rapidement ⚡️</span>
         </button><!-- .wp-block-button__link -->
     </div><!-- .card-content -->

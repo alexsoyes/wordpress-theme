@@ -97,12 +97,7 @@ function soyes_the_comment_count(bool $shouldDisplayText = true): void
         echo esc_html(number_format_i18n($soyes_comment_count));
     }
 
-    printf(
-        '<img src="%s" alt="%s" width="15" height="15" %s />',
-        soyes_get_the_image('chatbox-outline', 'svg', true, false),
-        __('Comments'),
-        $shouldDisplayText ? 'aria-hidden="true"' : ""
-    );
+    echo " 💬";
 }
 
 $count_posts = wp_count_posts();
