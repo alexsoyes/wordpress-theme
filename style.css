@@ -353,8 +353,8 @@ i, em {
 }
 
 .entry-content a:hover {
-    color: var(--color-primary);
-    border-color: var(--color-secondary);
+    color: var(--color-primary) !important;
+    border-bottom: 2px dashed var(--color-secondary) !important;
 }
 
 /**

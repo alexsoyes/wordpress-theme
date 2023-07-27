@@ -66,11 +66,6 @@
     color: var(--color-black);
 }
 
-.entry-content .toc ol li a:hover {
-    border-bottom: 1px solid var(--color-link);
-    color: var(--color-link);
-}
-
 .entry-content .toc li::before {
     content: counters(item, ".") " ";
     counter-increment: item;
