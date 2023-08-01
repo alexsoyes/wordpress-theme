@@ -218,7 +218,7 @@ a.wp-block-button__link {
 .entry-content .wp-block-button__link:hover {
     box-shadow: var(--box-shadow-strong);
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 
 .wp-block-buttons.aligncenter {
