@@ -5,10 +5,8 @@ add_shortcode(
     function ($atts = array()) {
         ob_start();
         ?>
-
         <div class="wp-block-columns">
-
-            <div class="wp-block-column testimonial">
+            <div class="wp-block-column testimonial" data-link="https://www.linkedin.com/in/melvyn-malherbe/">
                 <div class="wp-block-columns">
                     <div class="wp-block-column testimonial-container-picture">
                         <img src="/wp-content/themes/soyes/assets/images/testimonials/melvyn.jpeg"
@@ -22,15 +20,14 @@ add_shortcode(
                         <p class="testimonial-title">Melvyn MALHERBE</p>
                         <small class="testimonial-subtitle">Développeur web, fondateur de Codeline</small>
                         <p class="testimonial-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nibh ac massa aliquet.
-                        </p>
+                            Une des meilleures newsletters francophone qui parle technique sans parler de trucs bateau
+                            qu'on retrouve partout !</p>
                         <span class="testimonial-link" onclick=""></span>
                     </div><!-- .wp-block-column -->
                 </div><!-- .wp-block-columns -->
-
             </div><!-- .wp-block-column -->
 
-            <div class="wp-block-column testimonial">
+            <div class="wp-block-column testimonial" data-link="https://www.linkedin.com/in/nathan-lemoine-dev/">
                 <div class="wp-block-columns">
                     <div class="wp-block-column testimonial-container-picture">
                         <img src="/wp-content/themes/soyes/assets/images/testimonials/nathan.jpeg"
@@ -47,13 +44,11 @@ add_shortcode(
                             Chaque échange vocal avec toi est une énorme source d'inspiration et un gros apport de
                             connaissance.<br>Merci beaucoup.
                         </p>
-                        <span class="testimonial-link" onclick=""></span>
                     </div><!-- .wp-block-column -->
                 </div><!-- .wp-block-columns -->
             </div><!-- .wp-block-column -->
 
-
-            <div class="wp-block-column testimonial">
+            <div class="wp-block-column testimonial" data-link="https://www.linkedin.com/in/loriane-l-hostis/">
                 <div class="wp-block-columns">
                     <div class="wp-block-column testimonial-container-picture">
                         <img src="/wp-content/themes/soyes/assets/images/testimonials/loriane.jpeg"
@@ -70,7 +65,6 @@ add_shortcode(
                             Je suis impressionnée par toute l'énergie que tu dégages à travers ce blog, par le
                             contenu qui est super interessant et bien présenté.
                         </p>
-                        <span class="testimonial-link" onclick=""></span>
                     </div><!-- .wp-block-column -->
                 </div><!-- .wp-block-columns -->
             </div><!-- .wp-block-column -->

@@ -211,8 +211,8 @@ function soyes_scripts(): void
     }
 
     if (is_front_page()) {
+        wp_enqueue_script('soyes-script-testimonials', get_template_directory_uri() . '/assets/js/testimonials.js', array(), $version, true);
         wp_enqueue_style('soyes-style-front-page', get_template_directory_uri() . '/assets/css/parts/front-page.css', array(), $version);
-        wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
     }
 
     if (is_post_type_archive('conseil')) {

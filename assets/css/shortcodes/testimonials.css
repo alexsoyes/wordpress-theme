@@ -1,4 +1,9 @@
 
+.testimonial:hover > div {
+    box-shadow: var(--box-shadow-default);
+    cursor: pointer;
+}
+
 .testimonial-container-picture {
     flex-basis: 25%;
     position: relative;
@@ -53,6 +58,7 @@
 .testimonial-content {
     font-size: var(--font-size-s);
     line-height: 1.8;
+    padding-right: 5px;
 }
 
 .testimonial-content::after {
