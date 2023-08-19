@@ -202,6 +202,8 @@ function soyes_scripts(): void
         wp_enqueue_style('soyes-style-shortcode-testimonial', get_template_directory_uri() . '/assets/css/shortcodes/testimonials.css', array(), $version);
     }
 
+    wp_enqueue_script('google-script-recaptcha', 'https://www.google.com/recaptcha/api.js?render=6LdgxOgkAAAAACxwa9O5V32POHoZ9yoUJtCTrjGX', array(), $version, true);
+
     if ($post && is_single() || is_category()) {
         wp_enqueue_script('soyes-script-tocbot', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.js', array(), $version, true);
     }
@@ -240,6 +242,7 @@ function soyes_scripts(): void
     // included everywhere because is in footer.
     wp_enqueue_style('soyes-style-shortcode-newsletter', get_template_directory_uri() . '/assets/css/shortcodes/newsletter.css', array(), $version);
 
+    wp_dequeue_style('global-styles');
     wp_deregister_style('wp-block-library');
     wp_deregister_script('wp-block-library');
     wp_deregister_script('wp-embed');

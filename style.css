@@ -195,7 +195,8 @@ a.wp-block-button__link {
     background-color: var(--color-tertiary);
     color: var(--color-white);
     box-shadow: var(--box-shadow-default);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
+    line-height: var(--font-size-xl);
     border: none;
     cursor: pointer;
     display: inline-block;
