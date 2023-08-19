@@ -85,6 +85,7 @@
 .popup-end {
     text-align: center;
     color: var(--color-gray);
+    padding: 10px 0px;
 }
 
 .popup form > * {

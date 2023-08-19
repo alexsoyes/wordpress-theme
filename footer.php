@@ -72,28 +72,36 @@
             <div class="wp-block-column">
                 <div class="popup-content">
                     <div class="popup-header">
-                        <p class="popup-title"><?php _e('Comment devenir meilleur en code ?', 'soyes'); ?></p>
+                        <p class="popup-title"><?php _e('🎁 2 cours gratuits pour les devs', 'soyes'); ?></p>
                     </div>
-                    <div class="popup-more-content">
+                    <div class="popup-more-content has-text-align-center">
                         <p>
-                            <strong>
-                                <?php _e('📩 1 astuce de code / semaine via ma newsletter "La console".', 'soyes'); ?>
-                            </strong>
+                            <?php _e('Dans "La console", je partage 1 astuce de code par semaine.', 'soyes'); ?>
                         </p>
                         <p>
                             <em>
-                                <?php _e('🎁 Bonus, 2 cours offerts.', 'soyes'); ?>
+                                Choisir ton cours gratuit 👇
                             </em>
                         </p>
                     </div><!-- .popup-more-content -->
-                    <ol>
-                        <li>
-                            <?php _e("Devenir développeur freelance (sans risque) 🚀", 'soyes'); ?>
-                        </li>
-                        <li>
-                            <?php _e("Coder 30% plus rapidement avec l'IA ⚡️", 'soyes'); ?>
-                        </li>
-                    </ol>
+                    <div class="wp-block-columns">
+                        <div class="wp-block-column has-text-align-center">
+                            <p class="has-text-align-center has-large-font-size">🚀</p>
+                            <p class="has-medium-font-size">
+                                <strong>
+                                    <?php _e("Devenir développeur freelance (sans risque)", 'soyes'); ?>
+                                </strong>
+                            </p>
+                        </div>
+                        <div class="wp-block-column has-text-align-center">
+                            <p class="has-text-align-center has-large-font-size">🤖</p>
+                            <p class="has-medium-font-size">
+                                <strong>
+                                    <?php _e("Coder 30% plus rapidement avec l'IA️", 'soyes'); ?>
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
                     <form class="soyes-newsletter-form"
                           action="<?php echo soyes_form_action('newsletter-lead-magnet'); ?>"
                           method="post">
@@ -107,11 +115,11 @@
                         <input type="submit" class="wp-block-button__link soyes-newsletter-submit"
                                value="M'inscrire maintenant">
                     </form><!-- .soyes-newsletter-form -->
-                    <p class="popup-end">
+                    <div class="popup-end">
                         <small>
                             <?php _e('RGPD friendly 🌱 - Désinscription à tout moment', 'soyes'); ?>
                         </small>
-                    </p><!-- .popup-end -->
+                    </div><!-- .popup-end -->
                 </div><!-- .entry-content -->
             </div>
         </div><!-- .wp-block-columns -->
