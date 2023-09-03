@@ -113,9 +113,10 @@ a.toc-link {
     }
 
     .toc-bot-container {
-        height: 100%;
+        height: calc(100% - 58px);
         width: 70%;
         background-color: var(--color-lightgray);
+        top: 58px;
     }
 
     .toc-bot > .toc-list {
