@@ -1,3 +1,3 @@
 <?php
 
-echo do_shortcode('[soyes_newsletter campaign="newsletter-in-content"]');
+echo do_shortcode('[soyes_newsletter type="newsletter_in_content"]');

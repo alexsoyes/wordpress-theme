@@ -1,3 +1,7 @@
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
 .soyes-newsletter-container {
     text-align: center;
     padding: 30px;
@@ -63,6 +67,10 @@
     .soyes-newsletter-fill {
         padding: 0 100px;
     }
+
+    .exit-intent-popup .soyes-newsletter-fill {
+        padding: 0 20px 40px 20px;
+    }
 }
 
 @media only screen and (min-width: 782px) {
@@ -88,7 +96,8 @@ body:not(.home) main .soyes-newsletter-form {
     display: flex;
 }
 
-.soyes-newsletter-form > * {
+.soyes-newsletter-form > input[type="submit"],
+.soyes-newsletter-form > input[type="email"] {
     padding: 15px;
 }
 

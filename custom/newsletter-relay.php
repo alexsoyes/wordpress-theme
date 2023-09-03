@@ -52,12 +52,15 @@ function get_endpoint_params(
             $popup_id = null;
             $endpoint = 'https://learn.alexsoyes.com/coder-avec-intelligence-artificielle';
             break;
-        case 'newsletter-homepage':
+        case 'newsletter_homepage':
+        case 'newsletter_conseil':
+        case 'newsletter_footer':
+        case 'newsletter_in_content':
             $entity_id = '4354526b-8920-4f87-bcbe-bb5e459cc262';
             $popup_id = '75519704189a08e194836cbb389b0de6dc60bed';
             $endpoint = "https://learn.alexsoyes.com/public/$popup_id/show";
             break;
-        case 'newsletter-lead-magnet':
+        case 'newsletter_lead_magnet':
             $entity_id = 'a769bf99-cd52-48e6-8c7a-c91599dbe9d7';
             $popup_id = '7544150775c5a7686eb38d3b08f48e08e000ad4';
             $endpoint = "https://learn.alexsoyes.com/public/$popup_id/show";
@@ -73,28 +76,61 @@ function get_endpoint_params(
     ];
 }
 
+function verify_captcha($token): string
+{
+    if (!defined('RECAPTCHA_SECRET')) {
+        return 'no-secret';
+    }
+
+    $recaptchaSecret = RECAPTCHA_SECRET;
+
+    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$token");
+    $responseKeys = json_decode($response, true);
+
+    if (intval($responseKeys["success"]) !== 1) {
+        return $responseKeys["error-codes"][0];
+    }
+
+    return true;
+}
+
+$redirect_url = $_POST['remote_source'] . '?message=no-recaptcha';
+
 try {
-    $param_type = $_POST['type'];
-    $params_form = get_endpoint_params($param_type);
+    $recaptcha_response =
+        array_key_exists('g-recaptcha-response', $_POST) ?
+            sanitize_text_field($_POST['g-recaptcha-response']) :
+            false;
 
-    $response = post_form(
-        $params_form['popup_id'],
-        $params_form['entity_id'],
-        $params_form['endpoint'],
-    );
+    if ($recaptcha_response) {
+        $is_recaptcha_valid = verify_captcha($recaptcha_response);
 
-    if (is_wp_error($response)) {
-        throw new Error('Error while posting form to System.io');
+        if ($is_recaptcha_valid != true) {
+            $redirect_url = $_POST['remote_source'] . '?message=error-recaptcha-' . $is_recaptcha_valid;
+        } else {
+            $param_type = $_POST['type'];
+            $params_form = get_endpoint_params($param_type);
+
+            $response = post_form(
+                $params_form['popup_id'],
+                $params_form['entity_id'],
+                $params_form['endpoint'],
+            );
+
+            if (is_wp_error($response)) {
+                $redirect_url = $_POST['remote_source'] . '?message=error-sio';
+            } else {
+                $redirect_url = 'https://alexsoyes.com/inscription-confirmee/';
+                $params_analytics = soyes_get_analytics_params();
+
+                if (!empty($params_analytics)) {
+                    $redirect_url = add_query_arg($params_analytics, 'https://alexsoyes.com/inscription-confirmee');
+                }
+            }
+        }
     }
 
-    $redirect_url = 'https://alexsoyes.com/inscription-confirmee/';
-    $params_analytics = soyes_get_analytics_params();
-
-    if (!empty($params_analytics)) {
-        $redirect_url = add_query_arg($params_analytics, 'https://alexsoyes.com/inscription-confirmee');
-    }
-
-    wp_redirect($redirect_url);
+    wp_redirect($redirect_url, 301);
 
 } catch (Exception $e) {
     wp_redirect(sprintf("https://learn.alexsoyes.com/newsletter-la-console?email=%s", $params_form['email']));

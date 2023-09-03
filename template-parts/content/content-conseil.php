@@ -19,7 +19,7 @@
     </header><!-- .entry-header -->
 
     <div class="entry-content">
-        <?php echo do_shortcode('[soyes_newsletter]'); ?>
+        <?php echo do_shortcode('[soyes_newsletter type="newsletter_conseil"]'); ?>
     </div>
 
     <div class="entry-content">
