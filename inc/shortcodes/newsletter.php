@@ -26,7 +26,8 @@ function has_newsletter_type_callback($atts): bool
             'newsletter_in_content',
             'newsletter_lead_magnet',
             'newsletter_footer',
-            'newsletter_conseil'
+            'newsletter_conseil',
+            'newsletter_page',
         ]);
 }
 

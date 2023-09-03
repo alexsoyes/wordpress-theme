@@ -56,6 +56,7 @@ function get_endpoint_params(
         case 'newsletter_conseil':
         case 'newsletter_footer':
         case 'newsletter_in_content':
+        case 'newsletter_page':
             $entity_id = '4354526b-8920-4f87-bcbe-bb5e459cc262';
             $popup_id = '75519704189a08e194836cbb389b0de6dc60bed';
             $endpoint = "https://learn.alexsoyes.com/public/$popup_id/show";
