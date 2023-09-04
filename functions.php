@@ -234,9 +234,7 @@ function soyes_scripts(): void
     if (is_home() || is_search()) {
         wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
     }
-
-    wp_enqueue_script('soyes-script-newsletter', get_template_directory_uri() . '/assets/js/newsletter.js', array(), $version, true);
-
+    
     wp_enqueue_script('soyes-script-gtm', get_template_directory_uri() . '/assets/js/gtm.js', array(), $version, true);
 
     // included everywhere because is in footer.
