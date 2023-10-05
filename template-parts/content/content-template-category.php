@@ -22,6 +22,26 @@
     <div class="entry-content">
         <?php the_content(); ?>
 
+        <h2>Formations gratuites pour les développeurs</h2>
+
+        <p>
+            <strong>Une séquence 5 emails par jour pendant 1 semaine</strong> pour maîtriser un sujet (100%
+            gratuit).
+        </p>
+        <p>✅ Je partage avec toi les techniques que j'apprends chaque semaine pour devenir meilleur dev.</p>
+        <p><em>C'est totalement gratuit et tu peux te désinscrire quand tu veux (ton mail reste en France).</em></p>
+        <p>Si jamais tu as des questions, je réponds à tout le monde par e-mail !</p>
+
+
+        <div class="wp-block-columns">
+            <div class="wp-block-column">
+                <?php get_template_part('template-parts/cta/free-lesson-freelance'); ?>
+            </div><!-- .wp-block-column -->
+            <div class="wp-block-column">
+                <?php get_template_part('template-parts/cta/free-lesson-ai'); ?>
+            </div><!-- .wp-block-column -->
+        </div><!-- .wp-block-columns -->
+
         <h2>Formations payantes pour les développeurs</h2>
 
         <p>
@@ -37,25 +57,6 @@
         </ul>
         <p>Là où mon contenu payant fait la différence, c'est que je te dis exactement quoi faire (avec des actions
             concrètes) et que je te fais gagner un max de temps en te donnant un plan.</p>
-
-        <div class="wp-block-columns">
-            <div class="wp-block-column">
-                <?php get_template_part('template-parts/cta/free-lesson-freelance'); ?>
-            </div><!-- .wp-block-column -->
-            <div class="wp-block-column">
-                <?php get_template_part('template-parts/cta/free-lesson-ai'); ?>
-            </div><!-- .wp-block-column -->
-        </div><!-- .wp-block-columns -->
-
-        <h2>Formations gratuites pour les développeurs</h2>
-
-        <p>
-            <strong>Une séquence 5 emails par jour pendant 1 semaine</strong> pour maîtriser un sujet (100%
-            gratuit).
-        </p>
-        <p>✅ Je partage avec toi les techniques que j'apprends chaque semaine pour devenir meilleur dev.</p>
-        <p><em>C'est totalement gratuit et tu peux te désinscrire quand tu veux (ton mail reste en France).</em></p>
-        <p>Si jamais tu as des questions, je réponds à tout le monde par e-mail !</p>
 
         <div class="wp-block-columns">
             <div class="wp-block-column">
