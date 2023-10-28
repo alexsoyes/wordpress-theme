@@ -70,15 +70,12 @@
     <div class="popup">
         <div class="popup-content">
             <div class="popup-header">
-                <p class="popup-title"><?php _e('🎁 2 cours gratuits pour les devs', 'soyes'); ?></p>
+                <p class="popup-title"><?php _e('🎁 2 bonus gratuits réservés aux devs', 'soyes'); ?></p>
             </div>
             <div class="popup-more-content has-text-align-center">
                 <p>
-                    <?php _e('Dans "La console", je partage 1 astuce de code par semaine.', 'soyes'); ?>
-                </p>
-                <p>
                     <em>
-                        Choisir ton cours gratuit 👇
+                        <?php _e('Dans ma newsletter "La console", je partage 1 astuce de code par semaine pour s\'améliorer en dev.', 'soyes'); ?>
                     </em>
                 </p>
             </div><!-- .popup-more-content -->
@@ -87,7 +84,7 @@
                     <p class="has-text-align-center has-large-font-size">🚀</p>
                     <p class="has-medium-font-size">
                         <strong>
-                            <?php _e("Devenir développeur freelance (sans risque)", 'soyes'); ?>
+                            <?php _e("La formation gratuite pour devenir dev freelance", 'soyes'); ?>
                         </strong>
                     </p>
                 </div>
@@ -95,7 +92,7 @@
                     <p class="has-text-align-center has-large-font-size">🤖</p>
                     <p class="has-medium-font-size">
                         <strong>
-                            <?php _e("Coder 30% plus rapidement avec l'IA️", 'soyes'); ?>
+                            <?php _e('Un accès à la conférence "Coder avec l\'IA"', 'soyes'); ?>
                         </strong>
                     </p>
                 </div>
