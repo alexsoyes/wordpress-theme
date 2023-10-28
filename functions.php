@@ -185,12 +185,7 @@ function soyes_scripts(): void
     }
 
     global $post;
-    if ($post &&
-        (
-            has_shortcode($post->post_content, 'soyes_course_freelance') ||
-            has_shortcode($post->post_content, 'soyes_course_copilot')
-        )
-    ) {
+    if ($post && (has_shortcode($post->post_content, 'soyes_course_freelance'))) {
         wp_enqueue_style('soyes-style-element-card', get_template_directory_uri() . '/assets/css/elements/card.css', array(), $version);
     }
 
@@ -234,7 +229,7 @@ function soyes_scripts(): void
     if (is_home() || is_search()) {
         wp_enqueue_style('soyes-style-search', get_template_directory_uri() . '/assets/css/parts/search.css', array(), $version);
     }
-    
+
     wp_enqueue_script('soyes-script-gtm', get_template_directory_uri() . '/assets/js/gtm.js', array(), $version, true);
 
     // included everywhere because is in footer.
@@ -282,8 +277,7 @@ function soyes_enqueue_async_styles(): void
 
     global $post;
     if ($post &&
-        (has_shortcode($post->post_content, 'soyes_course_freelance') ||
-            (has_shortcode($post->post_content, 'soyes_course_copilot')))
+        (has_shortcode($post->post_content, 'soyes_course_freelance'))
     ) {
         $cssToEmbed[] = soyes_build_async_uri('content-card');
     }

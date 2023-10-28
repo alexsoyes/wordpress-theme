@@ -1,7 +1,7 @@
 /*
 Theme Name: soyes
 Description: A very simple blog for eco friendly bloggers!
-Version: 0.8.5
+Version: 0.8.6
 Author: Alex so yes
 Theme URI: https://alexsoyes.com
 Author URI: https://alexsoyes.com
@@ -28,14 +28,14 @@ Requires PHP: 7.1
     --container-width: calc(100% - (var(--container-padding) * 2));
 
     /* Main colors */
-    --color-primary: #6562E8;
-    --color-secondary: #C9C8F2;
-    --color-tertiary: var(--color-black);
+    --color-primary: #4E4EF9;
+    --color-secondary: #DD5475;
+    --color-tertiary: #020244;
 
     /* Colors */
     --color-italic: #fff9e0;
     --color-white: #fff;
-    --color-lightgray: #FAFAFA;
+    --color-lightgray: #EEF2FF;
     --color-box-shadow: rgba(0, 0, 0, 0.1);
     --color-black: #000;
     --color-link: var(--color-black);

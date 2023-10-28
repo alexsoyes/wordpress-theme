@@ -1,54 +1,48 @@
+<?php $link = "https://learn.alexsoyes.com/conference-coder-avec-ia?utm_source=blog&utm_campaign=free-lesson-ai"; ?>
 <div class="card wp-block-columns">
     <div class="card-image wp-block-column">
         <div class="card-image">
-            <img src="https://alexsoyes.com/wp-content/uploads/2023/05/chatgpt-openai-scaled.jpg"
-                 alt="Formation gratuite pour maitriser l'intelligence artificielle en tant que developpeur" width="450"
+            <img src="https://alexsoyes.com/wp-content/uploads/2023/10/conference-coder-ia.jpg"
+                 alt="Conférence en ligne 100% gratuite - Coder avec l'IA en 2023" width="450"
                  height="300">
         </div><!-- .card-image -->
 
         <div class="card-content">
 
             <div class="card-tag">
-                <span>🎁 Formation gratuite</span>
+                <span>🎁 Conférence en ligne 1h</span>
             </div><!-- .card-tag -->
 
             <?php if (is_page_template('page-category.php')): ?>
-                <h2 class="card-title">Coder 2x plus rapidement</h2>
+                <h2 class="card-title">Conférence exclusive "Coder avec l'IA"</h2>
             <?php else: ?>
-            <div class="card-title">Coder 2x plus rapidement</div>
+            <div class="card-title">Conférence exclusive "Coder avec l'IA"</div>
             <?php endif; ?><!-- .card-title -->
 
             <div class="card-excerpt">
-                <p>Comment coder avec l'IA au quotidien pour devenir plus productif.</p>
-                <strong>Programme</strong>
+                <p>Comment gagner 4h par jour avec L’IA en tant que développeur.</p>
+                <strong>Mercredi 08 novembre à 20h30</strong>
+                <p>
+                    <em>La 1ʳᵉ conférence de France pour les devs sur l'IA.</em>
+                </p>
                 <ul class="simple">
-                    <li>🔮 Pourquoi tout va changer d'ici 5 ans</li>
-                    <li>⚙️ Optimiser VSCode : Extensions + config</li>
-                    <li>🤖 GPT-4 - Les prompts qui fonctionnent</li>
-                    <li>🔥️ La liste des outils pour rester compétitif</li>
-                    <li>🧠 Où trouver les meilleures infos sur l'IA</li>
+                    <li>🔮 Pourquoi les devs doivent miser sur l'IA dès 2024</li>
+                    <li>🤖 La méthode pour coder plus vite avec l'IA</li>
+                    <li>🔥️ Les 2 outils à impérativement utiliser au quotidien</li>
+                    <li>🧠 Comment l'IA va diviser ton temps de dev par 2</li>
                 </ul>
             </div><!-- .card-excerpt -->
+            <div class="soyes-newsletter-form has-text-align-center">
+                <button class="wp-block-button__link actionable"
+                        onclick="window.open(&quot;<?php echo $link; ?>&quot;)">
+                    <span>Inscription gratuite</span>
+                </button><!-- .wp-block-button__link -->
+            </div>
             <div class="has-text-align-center">
-                <form class="soyes-newsletter-form"
-                      action="<?php echo soyes_form_action('free-lesson-ai'); ?>"
-                      method="post">
-                    <input type="hidden" name="type" value="free-lesson-ai">
-                    <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
-                    <input type="hidden" name="timezone">
-                    <input type="hidden" name="is_desktop">
-                    <input name="email" type="email" placeholder="<?php _e('Mon adresse e-mail', 'soyes'); ?>"
-                           required
-                           aria-label="Adresse e-mail" class="soyes-newsletter-email">
-                    <input type="submit" class="wp-block-button__link actionable soyes-newsletter-submit"
-                           value="Recevoir">
-                </form><!-- .soyes-newsletter-form -->
-
                 <small>
-                    <?php _e('RGPD friendly 🌱 - Désinscription à tout moment', 'soyes'); ?>
+                    Aucun replay à prévoir.
                 </small>
             </div>
-
         </div>
     </div>
 </div>

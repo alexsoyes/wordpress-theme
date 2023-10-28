@@ -42,11 +42,10 @@
             </div><!-- .wp-block-column -->
         </div><!-- .wp-block-columns -->
 
-        <h2>Formations payantes pour les développeurs</h2>
+        <h2>Formation payante pour les développeurs</h2>
 
         <p>
-            Mes formations payantes (et très qualitatives) pour aller beaucoup plus loin avec des exemples de
-            comment passer à l'action.
+            Ma formation payante pour devenir développeur freelance en 6 mois, le plan de A à Z.
         </p>
         <p>
             ✅ Savoir quoi faire pour s'améliorer dans un domaine prend du temps.
@@ -63,7 +62,6 @@
                 <?php get_template_part('template-parts/cta/course-freelance'); ?>
             </div><!-- .wp-block-column -->
             <div class="wp-block-column">
-                <?php get_template_part('template-parts/cta/course-copilot'); ?>
             </div><!-- .wp-block-column -->
         </div><!-- .wp-block-columns -->
 
@@ -94,9 +92,6 @@
             <li><a target="_blank"
                    href="<?php $link = "https://learn.alexsoyes.com/coder-avec-intelligence-artificielle";
                    echo $link; ?>">Formation gratuite pour coder avec l'IA</a>
-            </li>
-            <li><a target="_blank" href="<?php $link = "https://learn.alexsoyes.com/formation-github-copilot";
-                echo $link; ?>">Formation GitHub Copilot</a> (Payant)
             </li>
             <li><a target="_blank" href="<?php $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
                 echo $link; ?>">Formation développeur freelance</a> (Payant)

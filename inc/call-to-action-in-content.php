@@ -11,7 +11,6 @@ function add_call_to_action_to_content(string $content): string
             'newsletter-cta',
             'free-lesson-freelance',
             'button-cta-a',
-            'course-copilot',
             'course-freelance',
             'button-cta-b',
             'free-lesson-ai',

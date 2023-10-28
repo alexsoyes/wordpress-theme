@@ -9,11 +9,15 @@ function post_form(?string $popup_id, string $entity_id, string $endpoint): arra
     $email = $_POST['email'];
     $is_desktop = $_POST['is_desktop'];
     $timezone = $_POST['timezone'];
+    $fields = ["email" => $email];
+    if (array_key_exists('first_name', $_POST)) {
+        $fields['first_name'] = $_POST['first_name'];
+    }
 
     $data = [
         "optin" => [
             "entityId" => $entity_id,
-            "fields" => ["email" => $email],
+            "fields" => $fields,
             "isDesktop" => $is_desktop,
             "popupId" => $popup_id,
             "timeZone" => $timezone,
