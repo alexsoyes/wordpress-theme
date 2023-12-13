@@ -90,8 +90,8 @@
                 echo $link; ?>">Formation gratuite développeur freelance</a>
             </li>
             <li><a target="_blank"
-                   href="<?php $link = "https://learn.alexsoyes.com/coder-avec-intelligence-artificielle";
-                   echo $link; ?>">Formation gratuite pour coder avec l'IA</a>
+                   href="<?php $link = "https://learn.alexsoyes.com/conference-coder-avec-ia?utm_source=blog&utm_campaign=bottom-links";
+                   echo $link; ?>">Conférence en ligne gratuite "Coder avec l'IA"</a>
             </li>
             <li><a target="_blank" href="<?php $link = "https://learn.alexsoyes.com/formation-developpeur-freelance";
                 echo $link; ?>">Formation développeur freelance</a> (Payant)

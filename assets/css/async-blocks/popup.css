@@ -54,6 +54,11 @@
 
 .popup-more-content {
     font-size: var(--font-size-m);
+    padding: 24px;
+}
+
+.popup-more-content img {
+    padding: 24px 0;
 }
 
 .popup .soyes-newsletter-submit {

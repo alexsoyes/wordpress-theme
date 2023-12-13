@@ -70,35 +70,23 @@
     <div class="popup">
         <div class="popup-content">
             <div class="popup-header">
-                <p class="popup-title"><?php _e('🎁 2 bonus gratuits réservés aux devs', 'soyes'); ?></p>
+                <p class="popup-title"><?php _e('🎁 Masterclass gratuite "Coder avec l\'IA"', 'soyes'); ?></p>
             </div>
             <div class="popup-more-content has-text-align-center">
                 <p>
-                    <em>
-                        <?php _e('Dans ma newsletter "La console", je partage 1 astuce de code par semaine pour s\'améliorer en dev.', 'soyes'); ?>
-                    </em>
+                    <?php _e('<strong>+ 1h de vidéo</strong> sur comment utiliser au mieux l\'IA,<br><em>en tant que développeur</em>.', 'soyes'); ?>
                 </p>
+
+                <img src="https://alexsoyes.com/wp-content/uploads/2023/12/capture-ecran-webinar-coder-avec-ia.png"
+                     alt="Replay de la conférence gratuite pour coder avec l'IA">
+
+                <a href="https://learn.alexsoyes.com/conference-coder-avec-ia-replay?utm_source=blog&utm_campaign=card"
+                   target="_blank"
+                   class="wp-block-button__link soyes-newsletter-submit wp-block-column">
+                    Recevoir gratuitement la masterclass️
+                </a>
             </div><!-- .popup-more-content -->
-            <div class="wp-block-columns">
-                <div class="wp-block-column has-text-align-center">
-                    <p class="has-text-align-center has-large-font-size">🚀</p>
-                    <p class="has-medium-font-size">
-                        <strong>
-                            <?php _e("La formation gratuite pour devenir dev freelance", 'soyes'); ?>
-                        </strong>
-                    </p>
-                </div>
-                <div class="wp-block-column has-text-align-center">
-                    <p class="has-text-align-center has-large-font-size">🤖</p>
-                    <p class="has-medium-font-size">
-                        <strong>
-                            <?php _e('Un accès à la conférence "Coder avec l\'IA"', 'soyes'); ?>
-                        </strong>
-                    </p>
-                </div>
-            </div>
         </div><!-- .entry-content -->
-        <?php echo do_shortcode('[soyes_newsletter_form type="newsletter_lead_magnet"]'); ?>
         <span class="close">x</span>
     </div><!-- .popup -->
 </aside><!-- .exit-intent-popup -->

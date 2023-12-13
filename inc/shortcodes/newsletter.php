@@ -51,7 +51,7 @@ function soyes_newsletter_form($atts = []): string
                 <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
                 <input type="hidden" name="timezone">
                 <input type="hidden" name="is_desktop">
-                <input name="email" type="email" placeholder="<?php _e('Mon meilleur e-mail', 'soyes'); ?>"
+                <input name="email" type="email" placeholder="<?php _e('Ton meilleur e-mail', 'soyes'); ?>"
                        required
                        aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
                 <input type="submit"
@@ -59,7 +59,7 @@ function soyes_newsletter_form($atts = []): string
                        value="<?php _e("Rejoindre + 3000 devs 🔥", 'soyes'); ?>">
             </form><!-- .soyes-newsletter-form -->
             <small class="soyes-newsletter-warn">
-                <?php _e('Newsletter gratuite + RGPD friendly 🌱', 'soyes'); ?>
+                <?php _e('100% gratuit et respecte ta vie privée 🌱', 'soyes'); ?>
             </small><!-- .soyes-newsletter-warn -->
         </div><!-- .soyes-newsletter-fill -->
     </div><!-- .soyes-newsletter-content -->
@@ -101,7 +101,7 @@ function soyes_newsletter($atts = []): string
                 ?>
             </p><!-- .soyes-newsletter-title -->
             <p class="soyes-newsletter-desc">
-                <?php _e("☀️ Chaque lundi matin, je partage <strong>1 nouveau truc de code</strong>.", 'alexsoyes'); ?>
+                <?php _e("<strong>Les aventures d'un dev qui s'améliore chaque semaine,</strong><br><em>tous les lundis dans ta boîte mail</em>.", 'alexsoyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
         </div>
         <?php echo do_shortcode('[soyes_newsletter_form type="' . $type . '"]'); ?>
