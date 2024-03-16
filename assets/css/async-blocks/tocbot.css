@@ -5,7 +5,6 @@ h3:focus {
 .toc-bot-container {
     overflow-y: auto;
     transition: all 300ms ease-in-out;
-    font-family: var(--font-family-secondary);
     transform: translateX(100%);
     position: fixed;
     z-index: 20;

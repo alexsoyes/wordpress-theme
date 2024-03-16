@@ -70,17 +70,16 @@
 }
 
 .popup-title {
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-family-primary);
     text-align: center;
     margin: 0px 0px 0px 10px;
     padding-bottom: 0;
     font-size: var(--font-size-h4);
     font-weight: var(--font-weight-bolder);
-    line-height: 1.5;
+    line-height: var(--line-height-l);
 }
 
 .popup-description {
-    font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-h5);
     padding: 10px 0;

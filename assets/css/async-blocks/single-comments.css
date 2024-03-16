@@ -37,7 +37,6 @@
 }
 
 .comment-reply-link {
-    font-family: var(--font-family-secondary);
     padding: 0 15px;
     border-radius: var(--radius-strong);
     display: inline-flex;
@@ -57,7 +56,7 @@
 }
 
 .comment-metadata {
-    line-height: 20px;
+    line-height: var(--line-height-m);
 }
 
 .comment-metadata a {
@@ -120,7 +119,7 @@
 
 .comment-content p {
     font-size: var(--font-size-m);
-    line-height: 30px;
+    line-height: var(--line-height-m);
 }
 
 .comment-content blockquote {

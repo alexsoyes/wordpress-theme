@@ -35,9 +35,9 @@
 
 .card-title {
     font-size: var(--font-size-h4);
-    line-height: 1.5;
+    line-height: var(--line-height-l);
     font-weight: var(--font-weight-bolder);
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-family-primary);
     padding-top: 0;
     margin: 0;
 }
@@ -48,7 +48,6 @@
     color: var(--color-primary);
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-bolder);
-    font-family: var(--font-family-secondary);
     border-bottom: 4px dashed var(--color-secondary);
     padding-bottom: 5px;
 }

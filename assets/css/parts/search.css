@@ -40,7 +40,6 @@
     border: none;
     width: 90%;
     font-size: var(--font-size-m);
-    line-height: 1;
 }
 
 .search-input-container:hover, .search-input-container:focus {

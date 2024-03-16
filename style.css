@@ -38,7 +38,7 @@ Requires PHP: 7.1
     --color-lightgray: #EEF2FF;
     --color-box-shadow: rgba(0, 0, 0, 0.1);
     --color-black: #000;
-    --color-link: var(--color-black);
+    --color-link: var(--color-primary);
     --color-gray: #37474F;
 
     /* Elements */
@@ -58,25 +58,31 @@ Requires PHP: 7.1
     --font-weight-bold: 700;
     --font-weight-normal: 400;
 
+    --line-height-xl: 1.8;
+    --line-height-l: 1.6;
+    --line-height-m: 1.4;
+    --line-height-s: 1.2;
+    --line-height-xs: 1;
+
     /* Fonts */
-    --font-family-primary: source-serif, "Times New Roman", Times, serif;
-    --font-family-secondary: khyber, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-family-primary: "Rokkitt", source-serif, "Times New Roman", Times, serif;
+    --font-family-secondary: "Noto Sans", khyber, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
     /* Font sizes */
     --font-size-xs: 10px;
-    --font-size-s: 13px;
+    --font-size-s: 12px;
     --font-size-m: 14px;
     --font-size-l: 16px;
     --font-size-xl: 18px;
 
     /* Font sizes for titles */
-    --font-size-h0: 40px;
-    --font-size-h1: 28px;
-    --font-size-h2: 24px;
-    --font-size-h3: 22px;
-    --font-size-h4: 20px;
-    --font-size-h5: 18px;
-    --font-size-h6: 16px;
+    --font-size-h0: 44px;
+    --font-size-h1: 40px;
+    --font-size-h2: 36px;
+    --font-size-h3: 32px;
+    --font-size-h4: 28px;
+    --font-size-h5: 24px;
+    --font-size-h6: 20px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -102,7 +108,7 @@ Requires PHP: 7.1
  * Global.
  */
 html {
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family-secondary);
 }
 
 a {
@@ -160,8 +166,6 @@ img {
 
 .new-content {
     font-size: var(--font-size-m);
-    line-height: 1.4;
-    font-family: var(--font-family-secondary);
 }
 
 .new-icon {
@@ -233,9 +237,9 @@ a.wp-block-button__link {
 h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0;
     padding-top: 40px;
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-family-primary);
     font-weight: var(--font-weight-bolder);
-    line-height: 1.5;
+    line-height: var(--line-height-m);
 }
 
 h1 {
@@ -292,8 +296,8 @@ figure.wp-block-image {
 .entry-content .wp-block-jetpack-address div,
 ol,
 p {
-    line-height: 32px;
-    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+    font-size: var(--font-size-l);
     margin: 20px auto;
     letter-spacing: -0.065px;
 }
@@ -352,14 +356,14 @@ i, em {
 .entry-content p a {
     color: var(--color-link);
     padding-bottom: 3px;
-    border-bottom: 2px dashed var(--color-link);
+    border-bottom: 1px dotted var(--color-gray);
     cursor: pointer;
 }
 
 .qcd:hover,
 .entry-content a:hover {
     color: var(--color-primary) !important;
-    border-bottom: 2px dashed var(--color-secondary) !important;
+    border-bottom: 1px solid var(--color-primary) !important;
 }
 
 /**

@@ -96,7 +96,7 @@
     const urlParams = new URLSearchParams(window.location.search);
 
     if (urlParams.get('message')) {
-        alert("ReCatcha a planté :'(, désolé pour ça. Contacte-moi sur hello@alexsoyes.com et je t'ajouterai ! 🙏");
+        alert("ReCaptcha a planté :'(, désolé pour ça. Contacte-moi sur hello@alexsoyes.com et je t'ajouterai ! 🙏");
     }
 
     const forms = document.querySelectorAll('.soyes-newsletter-form');

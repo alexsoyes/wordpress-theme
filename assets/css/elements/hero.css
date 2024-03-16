@@ -13,7 +13,7 @@ h1 {
 }
 
 p {
-    line-height: 26px;
+    line-height: var(--line-height-m);
     font-size: var(--font-size-l);
     margin-bottom: 10px;
     letter-spacing: -0.063px;

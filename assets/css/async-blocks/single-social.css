@@ -22,7 +22,6 @@
 
 .social-description {
     font-size: var(--font-size-m);
-    font-family: var(--font-family-secondary);
     margin-bottom: 50px;
 }
 
@@ -36,7 +35,6 @@
     font-weight: var(--font-weight-bold);
     padding: 5px 25px;
     font-size: var(--font-size-m);
-    font-family: var(--font-family-secondary);
     display: flex;
     width: 100%;
     justify-content: center;

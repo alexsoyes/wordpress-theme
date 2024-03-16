@@ -17,6 +17,10 @@
               href="<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))); ?>"
               crossorigin="anonymous">
     <?php endif; ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rokkitt:wght@700&display=swap"
+          rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
