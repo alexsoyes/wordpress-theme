@@ -8,17 +8,6 @@
     padding-bottom: 0;
 }
 
-h1 {
-    margin: 0;
-}
-
 p {
-    line-height: var(--line-height-m);
-    font-size: var(--font-size-l);
     margin-bottom: 10px;
-    letter-spacing: -0.063px;
-}
-
-.entry-text p {
-    font-size: var(--font-size-l);
 }

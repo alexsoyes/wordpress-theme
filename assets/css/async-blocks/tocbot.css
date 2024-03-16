@@ -20,10 +20,10 @@ h3:focus {
 }
 
 .toc-bot > .toc-list li {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
+    color: var(--color-gray);
     list-style: none;
-    color: var(--color-black);
-    line-height: var(--font-size-h2);
+    line-height: var(--line-height-xl);
 }
 
 .toc-bot > .toc-list li .is-collapsible li {

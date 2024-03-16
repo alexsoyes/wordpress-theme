@@ -28,4 +28,5 @@
 
 .entry-content .card-content {
     padding: 20px;
+    font-size: var(--font-size-m);
 }

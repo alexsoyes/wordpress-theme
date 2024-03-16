@@ -32,14 +32,14 @@
 
 .testimonial-title,
 .testimonial-subtitle {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
     margin: 0 0 2px 0;
 }
 
 .testimonial-tag {
     background-color: var(--color-black);
     color: var(--color-white);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-xxs);
     padding: 5px 8px;
     border-radius: var(--radius-strong);
     margin: 5px 0 0 0;

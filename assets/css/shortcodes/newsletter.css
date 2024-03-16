@@ -34,6 +34,11 @@
     margin: 5px 5px 0 0;
 }
 
+.soyes-newsletter-desc {
+    line-height: var(--line-height-xxl);
+    font-size: var(--font-size-m);
+}
+
 .soyes-newsletter-fill p span {
     background-color: var(--color-white);
     font-style: italic;

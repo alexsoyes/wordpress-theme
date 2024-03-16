@@ -58,6 +58,7 @@ Requires PHP: 7.1
     --font-weight-bold: 700;
     --font-weight-normal: 400;
 
+    --line-height-xxl: 2;
     --line-height-xl: 1.8;
     --line-height-l: 1.6;
     --line-height-m: 1.4;
@@ -69,9 +70,10 @@ Requires PHP: 7.1
     --font-family-secondary: "Noto Sans", khyber, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
     /* Font sizes */
+    --font-size-xxs: 8px;
     --font-size-xs: 10px;
     --font-size-s: 12px;
-    --font-size-m: 14px;
+    --font-size-m: 15px;
     --font-size-l: 16px;
     --font-size-xl: 18px;
 
@@ -160,7 +162,8 @@ img {
 .new-banner {
     text-align: center;
     padding: 10px;
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+    color: var(--color-white);
     z-index: 100;
 }
 
@@ -179,12 +182,12 @@ img {
 
 .new-cta span {
     cursor: pointer;
-    color: var(--color-black);
-    border-bottom: 2px solid var(--color-black);
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
     white-space: nowrap;
     display: inline-block;
     font-weight: var(--font-weight-bold);
-    margin: 5px;
+    margin: 20px 5px;
 }
 
 /**
@@ -197,6 +200,7 @@ img {
 .wp-block-button__link,
 .entry-content a.wp-block-button__link,
 a.wp-block-button__link {
+    font-family: var(--font-family-primary);
     background-color: var(--color-tertiary);
     color: var(--color-white);
     box-shadow: var(--box-shadow-default);
@@ -211,18 +215,7 @@ a.wp-block-button__link {
     letter-spacing: 1px;
 }
 
-.wp-block-button__link.actionable {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-.wp-block-button__link.actionable:hover {
-    background-color: var(--color-black);
-    color: var(--color-white);
-}
-
 .entry-content .wp-block-button__link:hover {
-    box-shadow: var(--box-shadow-strong);
     background-color: var(--color-primary);
     color: var(--color-white) !important;
 }
@@ -331,7 +324,7 @@ ul {
 }
 
 .entry-content li {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
     margin: 4px 0;
     color: var(--color-gray);
 }
@@ -363,7 +356,6 @@ i, em {
 .qcd:hover,
 .entry-content a:hover {
     color: var(--color-primary) !important;
-    border-bottom: 1px solid var(--color-primary) !important;
 }
 
 /**
