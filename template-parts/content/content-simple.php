@@ -16,7 +16,7 @@
             }
             ?>
         </div>
-        <p><?php printf(__('<a href="%s">Cette newsletter</a> est envoyée chaque lundi matin à 10h 📧', 'soyes'), 'https://alexsoyes.com/newsletter'); ?></p>
+        <p><?php printf(__('<a href="%s">Cette newsletter</a> est envoyée chaque lundi matin à 10h 📧', 'soyes'), 'https://alexsoyes.com/newsletter/'); ?></p>
         <?php get_template_part('template-parts/post/post-header'); ?>
     </header><!-- .entry-header -->
 

@@ -41,6 +41,7 @@
                 <?php
                 wp_nav_menu(
                     array(
+                        'walker' => new SoYes_Walker_Nav_Menu_JS_Links(),
                         'theme_location' => 'secondary',
                         'items_wrap' => '%3$s',
                         'container' => false,
@@ -95,7 +96,7 @@
     const urlParams = new URLSearchParams(window.location.search);
 
     if (urlParams.get('message')) {
-        alert("Erreur ! Je viens juste de mettre en place le filtre antispam et ça a planté.... Merci de me contacter à hello@alexsoyes.com 🙏");
+        alert("ReCatcha a planté :'(, désolé pour ça. Contacte-moi sur hello@alexsoyes.com et je t'ajouterai ! 🙏");
     }
 
     const forms = document.querySelectorAll('.soyes-newsletter-form');

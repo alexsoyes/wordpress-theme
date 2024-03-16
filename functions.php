@@ -20,6 +20,7 @@ require 'inc/shortcodes/testimonials.php';
 require 'inc/shortcodes/search-widget.php';
 require 'classes/class-walker-comment.php';
 require 'classes/class-walker-menu-social.php';
+require 'classes/class-walker-menu-js-links.php';
 
 if (defined('WP_DEBUG') && WP_DEBUG === true) {
     $version = time();
@@ -205,6 +206,7 @@ function soyes_scripts(): void
 
     if (!is_front_page()) {
         wp_enqueue_script('soyes-script-popup', get_template_directory_uri() . '/assets/modules/exit-intent/popup.js', array(), $version, true);
+        wp_enqueue_script('soyes-script-js-links', get_template_directory_uri() . '/assets/js/js-links.js', array(), $version, true);
     }
 
     if (is_front_page()) {
