@@ -6,7 +6,9 @@
 }
 
 .search-term {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 4px 8px;
 }
 
 /**

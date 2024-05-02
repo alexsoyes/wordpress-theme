@@ -58,6 +58,9 @@
     font-weight: bold;
 }
 
+.soyes-newsletter-form.inline {
+    flex-direction: column;
+}
 
 .soyes-newsletter-form {
     margin: 10px 0 10px 0;

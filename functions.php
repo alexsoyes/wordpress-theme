@@ -288,7 +288,7 @@ function soyes_enqueue_async_styles(): void
     }
     if ($post &&
         (
-            has_shortcode($post->post_content, 'soyes_free_lesson_freelance') ||
+            has_shortcode($post->post_content, 'soyes_free_resources_ai') ||
             has_shortcode($post->post_content, 'soyes_free_lesson_ai')
         )
     ) {

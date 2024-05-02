@@ -108,7 +108,7 @@ function soyes_get_analytics_params(?string $campaign = null): array
 
     return [
         'utm_source' => array_key_exists('utm_source', $_GET) ? $_GET['utm_source'] : 'blog',
-        'utm_medium' => array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'cpm',
+        'utm_medium' => array_key_exists('utm_medium', $_GET) ? $_GET['utm_medium'] : 'popin',
         'utm_content' => array_key_exists('utm_content', $_GET) ? $_GET['utm_content'] : false,
         'utm_campaign' => $campaign,
     ];

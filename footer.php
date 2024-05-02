@@ -66,29 +66,47 @@
 
 <?php wp_footer(); ?>
 
+<?php
+$url = "https://learn.alexsoyes.com/ressources-ia?utm_source=blog&utm_medium=popin&utm_campaign=5-ressources-ia&utm_terms=ia";
+?>
 
 <aside class="exit-intent-popup" style="display: none;">
     <div class="popup">
         <div class="popup-content">
-            <div class="popup-header">
-                <p class="popup-title"><?php _e('🎁 Masterclass gratuite "Coder avec l\'IA"', 'soyes'); ?></p>
-            </div>
-            <div class="popup-more-content has-text-align-center">
-                <p>
-                    <?php _e('<strong>+ 1h de vidéo</strong> sur comment utiliser au mieux l\'IA,<br><em>en tant que développeur</em>.', 'soyes'); ?>
+            <div class="popup-more-content">
+
+                <img src="https://alexsoyes.com/wp-content/uploads/2024/05/5-resources-ia.png"
+                     alt="Ressources IA gratuites pour les développeurs">
+
+                <div class="popup-header">
+                    <p class="popup-title"><?php _e('J\'ai passé 9 mois à coder avec l\'ia...', 'soyes'); ?></p>
+                </div>
+                <p class="has-text-align-center">
+                    Pour créer <em>+30 prompts testés, 2 GPTs personnalisés, Accès Discord, une liste de +50 outils d'IA
+                        pour
+                        devs...</em>
                 </p>
 
-                <img src="https://alexsoyes.com/wp-content/uploads/2023/12/capture-ecran-webinar-coder-avec-ia.png"
-                     alt="Replay de la conférence gratuite pour coder avec l'IA">
+                <small>Je te partage tout ça dans un mail unique :</small>
 
-                <a href="https://learn.alexsoyes.com/conference-coder-avec-ia-replay?utm_source=blog&utm_campaign=card"
-                   target="_blank"
-                   class="wp-block-button__link soyes-newsletter-submit wp-block-column">
-                    Recevoir gratuitement la masterclass️
-                </a>
+                <div class="has-text-align-center">
+                    <form class="soyes-newsletter-form inline"
+                          action="<?php echo soyes_form_action('free-resources-ai'); ?>"
+                          method="post">
+                        <input type="hidden" name="type" value="free-resources-ai">
+                        <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
+                        <input type="hidden" name="timezone">
+                        <input type="hidden" name="is_desktop">
+                        <input name="email" type="email" placeholder="<?php _e('Mon adresse e-mail', 'soyes'); ?>"
+                               required
+                               aria-label="Adresse e-mail" class="soyes-newsletter-email">
+                        <input type="submit" class="wp-block-button__link actionable soyes-newsletter-submit"
+                               value="Recevoir maintenant">
+                    </form><!-- .soyes-newsletter-form -->
+                </div>
             </div><!-- .popup-more-content -->
         </div><!-- .entry-content -->
-        <span class="close">x</span>
+        <span class="close">X</span>
     </div><!-- .popup -->
 </aside><!-- .exit-intent-popup -->
 
@@ -96,18 +114,24 @@
     const urlParams = new URLSearchParams(window.location.search);
 
     if (urlParams.get('message')) {
-        alert("ReCaptcha a planté :'(, désolé pour ça. Contacte-moi sur hello@alexsoyes.com et je t'ajouterai ! 🙏");
+        alert("Ton e-mail est détecté comme SPAM, hello@alexsoyes.com pour plus d'infos.");
     }
-
-    const forms = document.querySelectorAll('.soyes-newsletter-form');
 
     /**
      * Loaded by URL script.
      */
     function initRecaptcha() {
+        const forms = document.querySelectorAll('form.soyes-newsletter-form');
+
         grecaptcha.ready(function () {
             grecaptcha.execute('6LdgxOgkAAAAACxwa9O5V32POHoZ9yoUJtCTrjGX', {action: 'submit'}).then(function (token) {
+                const hiddenField = document.createElement('input');
 
+                hiddenField.setAttribute('type', 'hidden');
+                hiddenField.setAttribute('name', 'g-recaptcha-response');
+                hiddenField.setAttribute('value', token);
+
+                console.log(forms);
                 for (let i = 0; i < forms.length; i++) {
                     const form = forms[i];
 
@@ -117,10 +141,6 @@
                     isDesktop.value = !window.matchMedia('(max-width: 781px)').matches;
                     timezone.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-                    const hiddenField = document.createElement('input');
-                    hiddenField.setAttribute('type', 'hidden');
-                    hiddenField.setAttribute('name', 'g-recaptcha-response');
-                    hiddenField.setAttribute('value', token);
                     form.appendChild(hiddenField);
                 }
             });

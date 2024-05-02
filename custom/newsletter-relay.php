@@ -46,6 +46,11 @@ function get_endpoint_params(
     string $form_type): array
 {
     switch ($form_type) {
+        case 'free-resources-ai':
+            $entity_id = 'cc4e001a-bcbb-4b7e-beb7-f087f21e87fb';
+            $popup_id = null; // '17281358a431d04543c7d19ea97be4004e6ac2bd';
+            $endpoint = 'https://learn.alexsoyes.com/public/17281358a431d04543c7d19ea97be4004e6ac2bd/show';
+            break;
         case 'free-lesson-freelance':
             $entity_id = 'f085b46a-726c-4016-9683-619c00a9f644';
             $popup_id = 'a90192fa-68c7-45b6-8cd3-70c3215251c7';

@@ -1,7 +1,7 @@
 /*
 Theme Name: soyes
 Description: A very simple blog for eco friendly bloggers!
-Version: 0.9.0
+Version: 0.9.1
 Author: Alex so yes
 Theme URI: https://alexsoyes.com
 Author URI: https://alexsoyes.com
@@ -162,8 +162,8 @@ img {
 .new-banner {
     text-align: center;
     padding: 10px;
-    background-color: var(--color-tertiary);
-    color: var(--color-white);
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
     z-index: 100;
 }
 
@@ -181,12 +181,15 @@ img {
 }
 
 .new-cta span {
+    font-size: var(--font-size-m);
     cursor: pointer;
-    color: var(--color-secondary);
-    border-bottom: 2px solid var(--color-secondary);
     white-space: nowrap;
     display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-white);
     font-weight: var(--font-weight-bold);
+    border-bottom: 2px solid var(--color-tertiary);
     margin: 20px 5px;
 }
 
@@ -201,7 +204,7 @@ img {
 .entry-content a.wp-block-button__link,
 a.wp-block-button__link {
     font-family: var(--font-family-primary);
-    background-color: var(--color-tertiary);
+    background-color: var(--color-primary);
     color: var(--color-white);
     box-shadow: var(--box-shadow-default);
     font-size: var(--font-size-s);
@@ -216,8 +219,8 @@ a.wp-block-button__link {
 }
 
 .entry-content .wp-block-button__link:hover {
-    background-color: var(--color-primary);
     color: var(--color-white) !important;
+    background-color: var(--color-tertiary);
 }
 
 .wp-block-buttons.aligncenter {

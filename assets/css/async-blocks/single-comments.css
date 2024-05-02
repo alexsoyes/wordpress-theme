@@ -119,7 +119,7 @@
 
 .comment-content p {
     font-size: var(--font-size-m);
-    line-height: var(--line-height-m);
+    line-height: var(--line-height-xl);
 }
 
 .comment-content blockquote {
