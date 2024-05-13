@@ -3,9 +3,6 @@
  */
 #header {
     background-color: var(--color-white);
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 #header nav {

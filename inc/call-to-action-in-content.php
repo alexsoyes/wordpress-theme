@@ -10,8 +10,9 @@ function add_call_to_action_to_content(string $content): string
         $ctasToAdd = [
             'newsletter-cta',
             'button-cta-a',
-            'button-cta-b',
             'free-lesson-ai',
+            'button-cta-b',
+            'free-resources-ai',
         ];
 
         // 7 CTA per page
