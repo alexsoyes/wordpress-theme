@@ -1,0 +1,334 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Alex so yes\n"
+"Language-Team: Français\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-09-02T11:25:13+00:00\n"
+"PO-Revision-Date: 2023-06-01 20:00+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: soyes\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Loco-Version: 2.6.2; wp-6.0"
+
+#: comments.php:27 inc/template-functions.php:83
+msgid "1 comment"
+msgstr "1 réaction 🎉"
+
+#: 404.php:26
+msgid "404"
+msgstr "404"
+
+#: template-parts/elements/widget-cta.php:3
+msgid "<strong>Coder 30% plus vite</strong> en apprenant à utiliser l'IA"
+msgstr ""
+
+#: template-parts/cta/banner-cta.php:3
+msgid ""
+"<strong>Devenir Développeur Freelance en 2023 :</strong> 5 jours pour se "
+"lancer"
+msgstr ""
+
+#. Description of the theme
+msgid "A very simple blog for eco friendly bloggers!"
+msgstr "Un blog super simple fait par un bloggeur écolo !"
+
+#: template-parts/cta/banner-cta.php:7
+msgid "Accès gratuit 🚀"
+msgstr ""
+
+#: footer.php:105
+msgid "Adresse e-mail"
+msgstr ""
+
+#. Author of the theme
+msgid "Alex so yes"
+msgstr "Alex so yes"
+
+#: classes/class-walker-comment.php:501
+msgid "Avatar from "
+msgstr "Avatar de"
+
+#: template-parts/content/content-post.php:59
+msgid "Back to top"
+msgstr "Retourner en haut de l'article"
+
+#: inc/template-functions.php:134
+msgid ""
+"Cet guide gratuit est long... Pense à le mettre en favoris pour revenir "
+"dessus ⭐️"
+msgstr ""
+
+#: template-parts/content/content-conseil.php:15
+msgid ""
+"Chaque semaine je partage 1 conseil avec 1 action à réaliser pour devenir "
+"meilleur(e) dev."
+msgstr ""
+
+#: classes/class-walker-comment.php:291
+msgid "Comment link #"
+msgstr "Lien vers la réaction"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#. translators: %s: Comment count number.
+#: comments.php:32 inc/template-functions.php:87
+msgctxt "Comments title"
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s réactions 🎉"
+msgstr[1] "%s commentaires"
+
+#: 404.php:15
+msgid "Damned!"
+msgstr "Bang, une 404 💥"
+
+#: template-parts/elements/share.php:3
+msgid "Did you like this article?"
+msgstr "Tu as aimé cet article ?"
+
+#: functions.php:240
+msgid "Display some basic info about who you are in the footer."
+msgstr "Affiche des informations dans le pied de page."
+
+#: functions.php:238
+msgid "Footer text"
+msgstr "Texte du pied de page"
+
+#: footer.php:77
+msgid "Guide Notion pour les devs"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+msgid "https://alexsoyes.com"
+msgstr "https://alexsoyes.com"
+
+#: 404.php:16
+msgid ""
+"I am tracking <code>404 errors</code> in order to replace them with <code>"
+"301 redirections</code> in case of missing posts (which is very rare by the "
+"way)."
+msgstr ""
+"Je traque les <code>codes 404</code> pour les remplacer avec des <code>"
+"redirections 301</code> si jamais un contenu a été déplacé."
+
+#: 404.php:37
+msgid "I never remove any content from the blog."
+msgstr ""
+"Comme je ne supprime jamais rien du blog, tu trouveras ce que tu es venu "
+"chercher 👇"
+
+#: template-parts/elements/share.php:6
+msgid ""
+"I took a long time to make this article,<br>if you want to share it, it will "
+"make my day! ❤️"
+msgstr ""
+"Ça m'a pris un long moment pour l'écrire...<br>Si jamais tu l'as trouvé "
+"sympa, n'hésite pas à le partager ❤️"
+
+#. translators: %s is replaced with the admin email address.
+#: 404.php:22
+msgid ""
+"If you arrived here, please send a kindly message to %s with the post you "
+"were looking for."
+msgstr ""
+"<em>T'aurais jamais dû arriver ici</em>, si jamais tu ne trouves pas ton "
+"bonheur, tu peux m'envoyer un mail %s afin que je puisse te renseigner !"
+
+#: footer.php:23
+msgid "Keep in touch"
+msgstr "On reste en contact !"
+
+#. translators: %s is replaced with the lastly updated date from current post.
+#: inc/template-functions.php:21
+msgid "Last commit: <strong>%s</strong>"
+msgstr "Dernier commit : <strong>%s</strong>"
+
+#: template-parts/elements/widget-cta.php:7
+msgid "Le programme 🚀"
+msgstr ""
+
+#: template-parts/post/post-header.php:35
+msgid "Leave a comment ?"
+msgstr "Donner ton avis ou réagir à ce contenu ?"
+
+#: template-parts/content/content-conseil.php:12
+msgid "Les conseils de dev"
+msgstr ""
+
+#: footer.php:116
+msgid "ma newsletter \"La console\"."
+msgstr ""
+
+#: footer.php:61
+msgid "Made with love on the top of WordPress ❤️"
+msgstr "Site WordPress fait avec ❤️"
+
+#. translators: %s is replace with the title of the block.
+#: inc/table-of-contents.php:15
+msgid "Make a link to: %s"
+msgstr "Faire un lien vers : %s"
+
+#: inc/navigation.php:17
+msgid "Newer <span class=\"nav-short\">posts</span>"
+msgstr "Nouveaux <span class=\"nav-short\">articles</span>"
+
+#: comments.php:63
+msgid "Newer comments"
+msgstr "Nouveaux commentaires"
+
+#: inc/shortcodes/newsletter.php:40
+msgid "Newsletter <span>🚀 La console</span>"
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:81
+msgid "Newsletter entièrement gratuite, RGPD friendly."
+msgstr ""
+
+#: inc/navigation.php:28
+msgid "Older <span class=\"nav-short\">posts</span>"
+msgstr "Anciens <span class=\"nav-short\">articles</span>"
+
+#: comments.php:59
+msgid "Older comments"
+msgstr "Anciens commentaires"
+
+#: comments.php:54 inc/navigation.php:11 search.php:65
+#: template-parts/content/content-category.php:34
+#: template-parts/content/content-conseil.php:40
+#: template-parts/content/content-post.php:47
+#: template-parts/content/content-template-category.php:93
+#: template-parts/content/content.php:25
+msgid "Page"
+msgstr "Page"
+
+#. translators: %: Page number.
+#: search.php:68 template-parts/content/content-category.php:37
+#: template-parts/content/content-conseil.php:43
+#: template-parts/content/content-post.php:50
+#: template-parts/content/content-template-category.php:96
+#: template-parts/content/content.php:28
+msgid "Page %"
+msgstr "Page %"
+
+#: header.php:49
+msgid "Primary menu"
+msgstr "Menu primaire"
+
+#: functions.php:81
+msgid "Primary menu (header)"
+msgstr "Menu principal (entête)"
+
+#: template-parts/post/post-header.php:33
+msgid "Read the"
+msgstr "Lire les"
+
+#: inc/shortcodes/newsletter.php:78
+msgid "Recevoir le prochain 📩"
+msgstr ""
+
+#: inc/shortcodes/newsletter.php:73
+msgid "Rejoindre + 1500 membres"
+msgstr ""
+
+#. translators: %d: Number of posts.
+#: searchform.php:31
+msgid "Search among %d posts..."
+msgstr "Rechercher parmi les %d articles du blog..."
+
+#: searchform.php:33
+msgid "Search&hellip;"
+msgstr "Rechercher&hellip;"
+
+#: footer.php:41
+msgid "Secondary menu"
+msgstr "Menu secondaire"
+
+#: functions.php:82
+msgid "Secondary menu (footer)"
+msgstr "Menu secondaire (pied de page)"
+
+#: inc/template-functions.php:32
+msgid "Share on Facebook"
+msgstr "Partager sur Facebook"
+
+#: inc/template-functions.php:31
+msgid "Share on LinkedIn"
+msgstr "Partager sur LinkedIn"
+
+#: inc/template-functions.php:30
+msgid "Share on Twitter"
+msgstr "Partager sur Twitter"
+
+#: header.php:32
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: functions.php:83
+msgid "Social menu"
+msgstr "Menu des réseaux sociaux"
+
+#. Theme Name of the theme
+msgid "soyes"
+msgstr "soyes"
+
+#: searchform.php:37
+#| msgid "Search"
+msgctxt "submit button"
+msgid "🔍 Search"
+msgstr "🔍 Rechercher"
+
+#: inc/template-functions.php:126
+msgid "Temps de lecture estimé : "
+msgstr ""
+
+#: comments.php:80
+msgid "Thank you for sharing your story with us!"
+msgstr "Merci de partager ton histoire avec la communauté !"
+
+#: template-parts/content/content-simple.php:16
+#: template-parts/content/content-simple.php:49
+msgid "Tous les conseils"
+msgstr ""
+
+#: template-parts/content/content-post.php:88
+msgid "Va encore plus loin dans : "
+msgstr ""
+
+#: search.php:34
+msgid "Wanna try another search? 🍀"
+msgstr "Parcourir les catégories du site :"
+
+#: 404.php:32
+msgid "Wanna try to search for your post? 🍀"
+msgstr "Retrouver ton contenu en 2 secondes 👀"
+
+#. translators: %d: The number of search results.
+#: search.php:17
+#| msgid "We found %1$d result for your search \"%2$s\"."
+#| msgid_plural "We found %1$d results for your search \"%2$s\"."
+msgid "We found %1$s result for your search \"%2$s\"."
+msgid_plural "We found %1$s results for your search \"%2$s\"."
+msgstr[0] "WordPress a trouvé %1$s résultat pour la recherche sur \"%2$s\"."
+msgstr[1] "WordPress a trouvé %1$s résultats pour la recherche sur \"%2$s\"."
+
+#: template-parts/elements/return-home.php:4
+#: template-parts/elements/return-home.php:5
+msgid "Web development : See more"
+msgstr "Développement Web : En savoir plus"
+
+#: template-parts/content/content-simple.php:17
+#: template-parts/content/content-simple.php:50
+msgid "👈 La liste de tous les conseils"
+msgstr ""
+
+#: comments.php:81
+msgid "👩‍💻 Leave a Reply 👨‍💻"
+msgstr "👩‍💻 Réagir à cet article 👨‍💻"

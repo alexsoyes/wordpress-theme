@@ -92,7 +92,7 @@
     padding: 10px 0px;
 }
 
-.popup form > * {
+.popup form > input {
     width: 100%;
     display: block;
 }

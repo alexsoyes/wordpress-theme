@@ -2,10 +2,16 @@
     visibility: hidden;
 }
 
+.g-recaptcha {
+    display: inline-block;
+    margin: 0 auto;
+    width: 305px;
+    height: 82px
+}
+
 .soyes-newsletter-container {
     text-align: center;
     padding: 30px;
-    background-color: var(--color-lightgray);
 }
 
 @media only screen and (max-width: 991px) {
@@ -60,11 +66,12 @@
 
 .soyes-newsletter-form.inline {
     flex-direction: column;
+    display: flex;
+    gap: 15px;
 }
 
 .soyes-newsletter-form {
     margin: 10px 0 10px 0;
-    display: flex;
 }
 
 @media only screen and (min-width: 992px) {
@@ -86,12 +93,12 @@
 
 @media only screen and (min-width: 992px) {
     body:not(.home) main .soyes-newsletter-fill {
-        padding: 0 50px;
+        padding: 0 20px;
     }
 }
 
 body:not(.home) main .soyes-newsletter-submit.wp-block-column.wp-block-button__link,
-body:not(.home) main .soyes-newsletter-form > * {
+body:not(.home) main .soyes-newsletter-form > input {
     margin: 0;
 }
 
@@ -100,8 +107,8 @@ body:not(.home) main .soyes-newsletter-form {
     display: flex;
 }
 
-.soyes-newsletter-form > input[type="submit"],
-.soyes-newsletter-form > input[type="email"] {
+.soyes-newsletter-form input[type="submit"],
+.soyes-newsletter-form input[type="email"] {
     padding: 15px;
 }
 

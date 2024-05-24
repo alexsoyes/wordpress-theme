@@ -32,15 +32,18 @@
             <form class="soyes-newsletter-form"
                   action="<?php echo soyes_form_action('free-lesson-freelance'); ?>"
                   method="post">
-                <input type="hidden" name="type" value="free-lesson-freelance">
-                <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
-                <input type="hidden" name="timezone">
-                <input type="hidden" name="is_desktop">
-                <input name="email" type="email" placeholder="<?php _e('Mon adresse e-mail', 'soyes'); ?>"
-                       required
-                       aria-label="Adresse e-mail" class="soyes-newsletter-email">
-                <input type="submit" class="wp-block-button__link actionable soyes-newsletter-submit"
-                       value="Recevoir">
+
+                <div class="wp-block-columns">
+                    <input type="hidden" name="type" value="free-lesson-freelance">
+                    <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
+                    <input type="hidden" name="timezone">
+                    <input type="hidden" name="is_desktop">
+                    <input name="email" type="email" placeholder="<?php _e('Mon adresse e-mail', 'soyes'); ?>"
+                           required
+                           aria-label="Adresse e-mail" class="soyes-newsletter-email">
+                    <input type="submit" class="wp-block-button__link actionable soyes-newsletter-submit"
+                           value="Recevoir">
+                </div>
             </form><!-- .soyes-newsletter-form -->
 
             <small>

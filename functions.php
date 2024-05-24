@@ -147,7 +147,6 @@ add_action('after_setup_theme', 'soyes_one_setup');
  */
 function soyes_make_script_async(string $tag): string
 {
-
     if (is_admin()) {
         return $tag;
     }
@@ -198,7 +197,7 @@ function soyes_scripts(): void
         wp_enqueue_style('soyes-style-shortcode-testimonial', get_template_directory_uri() . '/assets/css/shortcodes/testimonials.css', array(), $version);
     }
 
-    wp_enqueue_script('google-script-recaptcha', 'https://www.google.com/recaptcha/api.js?render=6LdgxOgkAAAAACxwa9O5V32POHoZ9yoUJtCTrjGX&onload=initRecaptcha', array(), $version, true);
+    wp_enqueue_script('google-script-recaptcha', 'https://www.google.com/recaptcha/api.js?onload=initReCaptcha&render=explicit', array(), $version, true);
 
     if ($post && is_single() || is_category()) {
         wp_enqueue_script('soyes-script-tocbot', get_template_directory_uri() . '/assets/modules/tocbot-4.12.0/dist/tocbot.js', array(), $version, true);

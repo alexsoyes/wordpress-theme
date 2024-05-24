@@ -44,19 +44,32 @@ function soyes_newsletter_form($atts = []): string
     <div class="soyes-newsletter-content">
         <div class="soyes-newsletter-fill">
             <form id="<?php echo $type; ?>"
-                  class="soyes-newsletter-form wp-block-columns"
+                  class="soyes-newsletter-form"
                   action="<?php echo soyes_form_action($type); ?>"
                   method="post">
-                <input type="hidden" name="type" value="<?php echo $type; ?>">
-                <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
-                <input type="hidden" name="timezone">
-                <input type="hidden" name="is_desktop">
-                <input name="email" type="email" placeholder="<?php _e('Ton meilleur e-mail', 'soyes'); ?>"
-                       required
-                       aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
-                <input type="submit"
-                       class="wp-block-button__link soyes-newsletter-submit wp-block-column"
-                       value="<?php _e("Rejoindre + 3000 devs 🔥", 'soyes'); ?>">
+                <div class="wp-block-columns">
+                    <input type="hidden" name="type" value="<?php echo $type; ?>">
+                    <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
+                    <input type="hidden" name="timezone">
+                    <input type="hidden" name="is_desktop">
+                    <input name="email" type="email" placeholder="<?php _e('Ton meilleur e-mail', 'soyes'); ?>"
+                           required
+                           aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
+                    <input type="submit"
+                           class="wp-block-button__link soyes-newsletter-submit wp-block-column"
+                           value="<?php _e("Rejoindre + 3000 devs 🔥", 'soyes'); ?>">
+                </div>
+
+
+                <div class="g-recaptcha"
+                     data-sitekey="6LeeH-UpAAAAABXpv9PnfIt9HfFsb4IttXZ24xGU"></div>
+                <input name="g-recaptcha-response-v2" type="hidden">
+
+                <!-- Div pour le message d'erreur -->
+                <div class="recaptcha-error" style="color: red; display: none;">Veuillez compléter le
+                    reCAPTCHA.
+                </div>
+                
             </form><!-- .soyes-newsletter-form -->
             <small class="soyes-newsletter-warn">
                 <?php _e('100% gratuit et respecte ta vie privée 🌱', 'soyes'); ?>

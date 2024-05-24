@@ -17,7 +17,6 @@
 .call-to-action {
     margin: 60px auto 30px auto;
     border-radius: var(--radius-default);
-    max-width: 450px;
 }
 
 .call-to-action .box {
@@ -26,6 +25,9 @@
     background-color: var(--color-lightgray);
 }
 
+.call-to-action .card {
+    margin: 0 auto;
+}
 
 .entry-content .card-content {
     padding: 20px;

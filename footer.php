@@ -81,6 +81,7 @@ $url = "https://learn.alexsoyes.com/ressources-ia?utm_source=blog&utm_medium=pop
                 <div class="popup-header">
                     <p class="popup-title"><?php _e('J\'ai passé 9 mois à coder avec l\'ia...', 'soyes'); ?></p>
                 </div>
+
                 <p class="has-text-align-center">
                     Pour créer <em>+30 prompts testés, 2 GPTs personnalisés, Accès Discord, une liste de +50 outils d'IA
                         pour
@@ -93,15 +94,27 @@ $url = "https://learn.alexsoyes.com/ressources-ia?utm_source=blog&utm_medium=pop
                     <form class="soyes-newsletter-form inline"
                           action="<?php echo soyes_form_action('free-resources-ai'); ?>"
                           method="post">
-                        <input type="hidden" name="type" value="free-resources-ai">
-                        <input type="hidden" name="remote_source" value="<?php soyes_the_current_uri(); ?>">
-                        <input type="hidden" name="timezone">
-                        <input type="hidden" name="is_desktop">
-                        <input name="email" type="email" placeholder="<?php _e('Mon adresse e-mail', 'soyes'); ?>"
-                               required
-                               aria-label="Adresse e-mail" class="soyes-newsletter-email">
-                        <input type="submit" class="wp-block-button__link actionable soyes-newsletter-submit"
+
+                        <input name="type" type="hidden" value="free-resources-ai">
+                        <input name="remote_source" type="hidden" value="<?php soyes_the_current_uri(); ?>">
+                        <input name="timezone" type="hidden">
+                        <input name="is_desktop" type="hidden">
+
+                        <input aria-label="Adresse e-mail" class="soyes-newsletter-email" name="email"
+                               placeholder="<?php _e('Mon adresse e-mail', 'soyes'); ?>"
+                               required type="email">
+                        <input class="wp-block-button__link actionable soyes-newsletter-submit"
+                               type="submit"
                                value="Recevoir maintenant">
+
+                        <div class="g-recaptcha"
+                             data-sitekey="6LeeH-UpAAAAABXpv9PnfIt9HfFsb4IttXZ24xGU"></div>
+                        <input name="g-recaptcha-response-v2" type="hidden">
+
+                        <!-- Div pour le message d'erreur -->
+                        <div class="recaptcha-error" style="color: red; display: none;">Veuillez compléter le
+                            reCAPTCHA.
+                        </div>
                     </form><!-- .soyes-newsletter-form -->
                 </div>
             </div><!-- .popup-more-content -->
@@ -111,41 +124,50 @@ $url = "https://learn.alexsoyes.com/ressources-ia?utm_source=blog&utm_medium=pop
 </aside><!-- .exit-intent-popup -->
 
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-
-    if (urlParams.get('message')) {
-        alert("Ton e-mail est détecté comme SPAM, hello@alexsoyes.com pour plus d'infos.");
-    }
-
-    /**
-     * Loaded by URL script.
-     */
-    function initRecaptcha() {
-        const forms = document.querySelectorAll('form.soyes-newsletter-form');
-
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LdgxOgkAAAAACxwa9O5V32POHoZ9yoUJtCTrjGX', {action: 'submit'}).then(function (token) {
-                const hiddenField = document.createElement('input');
-
-                hiddenField.setAttribute('type', 'hidden');
-                hiddenField.setAttribute('name', 'g-recaptcha-response');
-                hiddenField.setAttribute('value', token);
-
-                console.log(forms);
-                for (let i = 0; i < forms.length; i++) {
-                    const form = forms[i];
-
-                    const isDesktop = form.querySelector('input[name="is_desktop"]');
-                    const timezone = form.querySelector('input[name="timezone"]');
-
-                    isDesktop.value = !window.matchMedia('(max-width: 781px)').matches;
-                    timezone.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-                    form.appendChild(hiddenField);
+    function initReCaptcha() {
+        document.querySelectorAll('.g-recaptcha').forEach(function (el) {
+            const widgetId = grecaptcha.render(el, {
+                'sitekey': el.getAttribute('data-sitekey'),
+                'callback': function (response) {
+                    el.closest('form').querySelector('input[name="g-recaptcha-response-v2"]').value = response;
                 }
             });
+            el.setAttribute('data-widget-id', widgetId);
         });
     }
+
+    function init() {
+        const forms = document.querySelectorAll('form.soyes-newsletter-form');
+
+        forms.forEach(form => {
+            form.addEventListener('submit', function (event) {
+                const recaptchaResponse = form.querySelector('input[name="g-recaptcha-response-v2"]').value;
+                const recaptchaError = form.querySelector('.recaptcha-error');
+
+                if (!recaptchaResponse) {
+                    event.preventDefault();
+                    recaptchaError.style.display = 'block';
+                } else {
+                    recaptchaError.style.display = 'none';
+
+                    // disable submit button and input
+                    form.querySelector('input[type="submit"]').disabled = true;
+                    form.querySelector('input[name="email"]').readonly = true;
+                }
+            });
+
+            const isDesktop = form.querySelector('input[name="is_desktop"]');
+            const timezone = form.querySelector('input[name="timezone"]');
+
+            isDesktop.value = !window.matchMedia('(max-width: 781px)').matches;
+            timezone.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        init();
+        initReCaptcha();
+    });
 </script>
 
 </body>
