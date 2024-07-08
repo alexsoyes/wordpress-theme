@@ -4,8 +4,11 @@
     position: relative;
 }
 
-.card {
+.single-post .card {
     max-width: 450px;
+}
+
+.card {
     margin: 20px 0 40px 0;
     box-shadow: var(--box-shadow-default);
     background-color: var(--color-white);
