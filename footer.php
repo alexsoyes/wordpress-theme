@@ -67,7 +67,7 @@
 <?php wp_footer(); ?>
 
 <?php
-$url = "https://learn.alexsoyes.com/ressources-ia?utm_source=blog&utm_medium=popin&utm_campaign=5-ressources-ia&utm_terms=ia";
+$url = "https://learn.alexsoyes.com/guide-ia?utm_source=blog&utm_medium=popin&utm_campaign=guide-ia&utm_terms=ia";
 ?>
 
 <aside class="exit-intent-popup" style="display: none;">
@@ -75,27 +75,23 @@ $url = "https://learn.alexsoyes.com/ressources-ia?utm_source=blog&utm_medium=pop
         <div class="popup-content">
             <div class="popup-more-content">
 
-                <img src="https://alexsoyes.com/wp-content/uploads/2024/05/5-resources-ia.png"
+                <img src="https://alexsoyes.com/wp-content/uploads/2024/10/2.png"
                      alt="Ressources IA gratuites pour les développeurs">
 
                 <div class="popup-header">
-                    <p class="popup-title"><?php _e('J\'ai passé 9 mois à coder avec l\'ia...', 'soyes'); ?></p>
+                    <p class="popup-title"><?php _e('Guide IA gratuit', 'soyes'); ?></p>
                 </div>
 
-                <p class="has-text-align-center">
-                    Pour créer <em>+30 prompts testés, 2 GPTs personnalisés, Accès Discord, une liste de +50 outils d'IA
-                        pour
-                        devs...</em>
-                </p>
-
-                <small>Je te partage tout ça dans un mail unique :</small>
+                <p class="has-text-align-center">Tu trouveras mes meilleurs <em>prompts</em>, ma <em>stack IA</em>
+                    personnel et notre <em>communauté
+                        privée</em> sur Disord. </p>
 
                 <div class="has-text-align-center">
                     <form class="soyes-newsletter-form inline"
-                          action="<?php echo soyes_form_action('free-resources-ai'); ?>"
+                          action="<?php echo soyes_form_action('free-guide-ai'); ?>"
                           method="post">
 
-                        <input name="type" type="hidden" value="free-resources-ai">
+                        <input name="type" type="hidden" value="free-guide-ai">
                         <input name="remote_source" type="hidden" value="<?php soyes_the_current_uri(); ?>">
                         <input name="timezone" type="hidden">
                         <input name="is_desktop" type="hidden">

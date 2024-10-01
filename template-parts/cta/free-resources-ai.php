@@ -1,10 +1,10 @@
-<?php $link = "https://learn.alexsoyes.com/ressources-ia?utm_source=blog&utm_medium=cta-post&utm_campaign=5-ressources-ia"; ?>
+<?php $link = "https://learn.alexsoyes.com/guide-ia?utm_source=blog&utm_medium=cta-post&utm_campaign=guide-ia"; ?>
 <div class="card wp-block-columns">
     <div class="card-image wp-block-column">
         <div class="card-image">
-            <img src="https://alexsoyes.com/wp-content/uploads/2024/05/5-resources-ia.png"
+            <img src="https://alexsoyes.com/wp-content/uploads/2024/10/2.png"
                  width="450"
-                 alt="Ressources IA gratuites pour les développeurs">
+                 alt="Guide IA gratuit pour les développeurs">
         </div><!-- .card-image -->
 
         <div class="card-content">
@@ -14,22 +14,18 @@
             </div><!-- .card-tag -->
 
             <?php if (is_page_template('page-category.php')): ?>
-                <h2 class="card-title">5 ressources pour "Coder avec l'IA"</h2>
+                <h2 class="card-title">Guide Gratuit : "Coder avec l'IA"</h2>
             <?php else: ?>
-            <div class="card-title">5 ressources pour "Coder avec l'IA"</div>
+            <div class="card-title">Guide Gratuit : "Coder avec l'IA"</div>
             <?php endif; ?><!-- .card-title -->
 
             <div class="card-excerpt">
-                <p>Après 9 mois à utiliser l'IA tous les jours...<br>Voici mon guide pour utiliser au mieux l'IA et
-                    coder
-                    plus vite.</p>
+                <p>Après 1 an à utilise l'IA tous les jours, voici mes secrets.</p>
                 <strong>Contenu</strong>
                 <ul class="simple">
-                    <li>📄 + 30 prompts testés</li>
-                    <li>🤖 2 GPTs personnalisés</li>
-                    <li>👾 1 communauté Discord</li>
-                    <li>🧑‍💻 + 50 outils d'IA pour devs</li>
-                    <li>🚀 Avant-première formation</li>
+                    <li>👾 Communauté IA privée pour les développeurs</li>
+                    <li>📄 Bibliothèque + 50 prompts pour coder</li>
+                    <li>🚀 La meilleure Stack IA de 2024</li>
                 </ul>
             </div><!-- .card-excerpt -->
             <div class="soyes-newsletter-form has-text-align-center">

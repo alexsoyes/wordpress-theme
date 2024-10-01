@@ -12,6 +12,7 @@
 .soyes-newsletter-container {
     text-align: center;
     padding: 30px;
+    color: var(--color-white);
 }
 
 @media only screen and (max-width: 991px) {
@@ -34,7 +35,6 @@
 
 .soyes-newsletter-title span {
     display: inline-block;
-    color: var(--color-white);
     background-color: var(--color-primary);
     padding: 2px 12px;
     margin: 5px 5px 0 0;
@@ -43,6 +43,10 @@
 .soyes-newsletter-desc {
     line-height: var(--line-height-xxl);
     font-size: var(--font-size-m);
+}
+
+.soyes-newsletter-desc em {
+    color: var(--color-gray);
 }
 
 .soyes-newsletter-fill p span {
@@ -123,7 +127,6 @@ body:not(.home) main .soyes-newsletter-form {
 }
 
 .soyes-newsletter-warn {
-    color: var(--color-gray);
     text-align: center;
 }
 
@@ -158,13 +161,6 @@ Cover blocks.
      *   - Issue with background color specificity: https://github.com/WordPress/gutenberg/issues/26545
      *   - Issue with alternative fix: https://github.com/WordPress/gutenberg/issues/26545
      */
-}
-
-.wp-block-cover-image.has-background-dim:not([class*=-background-color]),
-.wp-block-cover-image .has-background-dim:not([class*=-background-color]),
-.wp-block-cover.has-background-dim:not([class*=-background-color]),
-.wp-block-cover .has-background-dim:not([class*=-background-color]) {
-    background-color: var(--color-lightgray);
 }
 
 .wp-block-cover-image.has-background-dim:not(.has-background-gradient)::before,

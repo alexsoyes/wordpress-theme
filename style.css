@@ -1,7 +1,7 @@
 /*
 Theme Name: soyes
 Description: A very simple blog for eco friendly bloggers!
-Version: 0.9.13
+Version: 0.9.14
 Author: Alex so yes
 Theme URI: https://alexsoyes.com
 Author URI: https://alexsoyes.com
@@ -167,7 +167,9 @@ input[type="submit"]:disabled {
 .new-banner {
     position: sticky;
     top: 0;
+    padding: 5px 0;
     z-index: 100;
+    line-height: 1.5;
     text-align: center;
     background-color: var(--color-secondary);
     color: var(--color-white);

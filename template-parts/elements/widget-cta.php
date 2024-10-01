@@ -1,10 +1,11 @@
 <?php
-$url = "https://learn.alexsoyes.com/ressources-ia?utm_source=blog&utm_medium=cta-widget&utm_campaign=free-ai-resources&utm_terms=ia";
+$url = "https://learn.alexsoyes.com/guide-ia?utm_source=blog&utm_medium=cta-widget&utm_campaign=guide-ai&utm_terms=ia";
 ?>
 
 <aside class="new-banner">
-    <p class="new-content"><?php _e('<strong>⚡️5 ressources<br>pour Coder avec l\'IA</strong>', 'soyes'); ?></p>
-    <div>+30 prompts testés, 2 GPTs personnalisés, Accès Discord, +50 outils d'IA pour devs...</div>
+    <p class="new-content"><?php _e('<strong>⚡️Guide pour Coder avec l\'IA</strong>', 'soyes'); ?></p>
+    <div>Tu trouveras mes meilleurs prompts,<br>ma stack IA personnel<br>et notre communauté privée sur Disord.
+    </div>
     <span class="new-cta">
         <span onclick='window.open("<?php echo $url; ?>", "_blank")'>
             <?php esc_attr_e("🎁 Accéder gratuitement", 'soyes'); ?>

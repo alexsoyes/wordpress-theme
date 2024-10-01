@@ -57,7 +57,7 @@ function soyes_newsletter_form($atts = []): string
                            aria-label="Adresse e-mail" class="soyes-newsletter-email wp-block-column">
                     <input type="submit"
                            class="wp-block-button__link soyes-newsletter-submit wp-block-column"
-                           value="<?php _e("Rejoindre + 3000 devs 🔥", 'soyes'); ?>">
+                           value="<?php _e("Rejoins +3000 devs 🔥", 'soyes'); ?>">
                 </div>
 
 
@@ -69,7 +69,7 @@ function soyes_newsletter_form($atts = []): string
                 <div class="recaptcha-error" style="color: red; display: none;">Veuillez compléter le
                     reCAPTCHA.
                 </div>
-                
+
             </form><!-- .soyes-newsletter-form -->
             <small class="soyes-newsletter-warn">
                 <?php _e('100% gratuit et respecte ta vie privée 🌱', 'soyes'); ?>
@@ -102,19 +102,19 @@ function soyes_newsletter($atts = []): string
     ?>
     <div class="<?php echo esc_html($container_class); ?>">
         <div>
-            <img src="<?php echo soyes_get_the_image('logo-only', 'svg', false, false); ?>"
+            <img src="<?php echo soyes_get_the_image('logo-only-white', 'svg', false, false); ?>"
                  alt="<?php echo get_bloginfo('name'); ?>"
                  width="50" height="50">
             <p class="soyes-newsletter-title">
                 <?php
                 _e(
-                    'Newsletter <span>🚀 La console</span>',
+                    'Gagne 1h/jour <span>avec L\'IA</span>',
                     'soyes'
                 );
                 ?>
             </p><!-- .soyes-newsletter-title -->
             <p class="soyes-newsletter-desc">
-                <?php _e("<strong>Les aventures d'un dev qui s'améliore chaque semaine,</strong><br><em>tous les lundis dans ta boîte mail</em>.", 'alexsoyes'); ?>
+                <?php _e("<em>Chaque semaine</em>, je trouve des astuces pour coder plus vite et mieux avec L'IA.</strong>", 'alexsoyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
         </div>
         <?php echo do_shortcode('[soyes_newsletter_form type="' . $type . '"]'); ?>

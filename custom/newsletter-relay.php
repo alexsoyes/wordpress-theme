@@ -46,6 +46,11 @@ function get_endpoint_params(
     string $form_type): array
 {
     switch ($form_type) {
+        case 'free-guide-ai':
+            $entity_id = '93884504-f55a-44f4-abf8-e505842c1ad8';
+            $popup_id = null; // '17281358a431d04543c7d19ea97be4004e6ac2bd';
+            $endpoint = 'https://learn.alexsoyes.com/guide-ia';
+            break;
         case 'free-resources-ai':
             $entity_id = 'cc4e001a-bcbb-4b7e-beb7-f087f21e87fb';
             $popup_id = null; // '17281358a431d04543c7d19ea97be4004e6ac2bd';
