@@ -14,6 +14,10 @@
 /**
  * Call to action
  */
+.call-to-action.course-cta {
+    background-color: var(--color-secondary);
+}
+
 .call-to-action {
     margin: 60px auto 30px auto;
     border-radius: var(--radius-default);
