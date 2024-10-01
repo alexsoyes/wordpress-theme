@@ -3,7 +3,7 @@
     <div class="card-image wp-block-column">
         <div class="card-image">
             <img src="https://alexsoyes.com/wp-content/uploads/2024/10/2.png"
-                 width="450"
+                 width="460"
                  alt="Guide IA gratuit pour les développeurs">
         </div><!-- .card-image -->
 

@@ -3,7 +3,8 @@
     <div class="card-image wp-block-column">
         <div class="card-image">
             <img src="https://alexsoyes.com/wp-content/uploads/2024/10/1.png"
-                 alt="Coaching IA gratuit pour les développeurs" width="450"
+                 alt="Coaching IA gratuit pour les développeurs"
+                 width="460"
                  height="300">
         </div><!-- .card-image -->
 
