@@ -114,7 +114,7 @@ function soyes_newsletter($atts = []): string
                 ?>
             </p><!-- .soyes-newsletter-title -->
             <p class="soyes-newsletter-desc">
-                <?php _e("<em>Chaque semaine</em>, je trouve des astuces pour coder plus vite et mieux avec L'IA.</strong>", 'alexsoyes'); ?>
+                <?php _e("Chaque semaine, <strong>je te donne les astuces qui m'ont fait coder 30% plus rapidement</strong> avec L'IA.", 'alexsoyes'); ?>
             </p><!-- . soyes-newsletter-desc -->
         </div>
         <?php echo do_shortcode('[soyes_newsletter_form type="' . $type . '"]'); ?>

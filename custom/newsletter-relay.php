@@ -47,9 +47,9 @@ function get_endpoint_params(
 {
     switch ($form_type) {
         case 'free-guide-ai':
-            $entity_id = '93884504-f55a-44f4-abf8-e505842c1ad8';
+            $entity_id = 'b1a19ea2-531f-4f39-a2f5-cb20b5698618';
             $popup_id = null; // '17281358a431d04543c7d19ea97be4004e6ac2bd';
-            $endpoint = 'https://learn.alexsoyes.com/guide-ia';
+            $endpoint = 'https://learn.alexsoyes.com/public/22457005339907f0500ca7ef4cda73d86e44dc8b/show?source=https://systeme.io/dashboard/page/22457005/show';
             break;
         case 'free-resources-ai':
             $entity_id = 'cc4e001a-bcbb-4b7e-beb7-f087f21e87fb';
