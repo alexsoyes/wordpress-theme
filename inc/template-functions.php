@@ -3,7 +3,7 @@
  * Functions that are used within the templates.
  */
 
-function soyes_get_the_main_category(): ?WP_Term
+function soyes_get_the_main_category()
 {
     $categories = get_the_category();
 
@@ -114,14 +114,6 @@ function soyes_get_analytics_params(?string $campaign = null): array
     ];
 }
 
-function soyes_form_action(string $type): string
-{
-    return add_query_arg(
-        soyes_get_analytics_params($type),
-        get_template_directory_uri() . "/custom/newsletter-relay.php"
-    );
-}
-
 function soyes_the_reading_time(): void
 {
     $word_count = str_word_count(strip_tags(get_the_content()));
@@ -143,4 +135,3 @@ function soyes_the_reading_time(): void
 
     echo $estimated_read_time;
 }
-

@@ -99,3 +99,7 @@
         margin: auto;
     }
 }
+
+.soyes-newsletter-container-footer {
+    background-color: var(--color-tertiary);
+}

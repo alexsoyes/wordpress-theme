@@ -15,7 +15,6 @@ require 'inc/table-of-contents.php';
 require 'inc/call-to-action-in-content.php';
 require 'inc/shortcodes/toc.php';
 require 'inc/shortcodes/newsletter.php';
-require 'inc/shortcodes/courses.php';
 require 'inc/shortcodes/testimonials.php';
 require 'inc/shortcodes/search-widget.php';
 require 'classes/class-walker-comment.php';
